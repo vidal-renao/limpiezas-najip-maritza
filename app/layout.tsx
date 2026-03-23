@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Link from "next/link";
+import Image from "next/image";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -163,11 +164,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               {/* Brand column */}
               <div className="lg:col-span-1">
                 <Link href="/" className="inline-flex items-center gap-3 mb-4">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src="/images/N.jpeg"
                     alt="D'Namar Logo"
-                    className="w-10 h-10 rounded-xl object-cover"
+                    width={40}
+                    height={40}
+                    className="rounded-xl object-cover"
                   />
                   <span className="font-bold text-lg text-white">D&apos;Namar</span>
                 </Link>

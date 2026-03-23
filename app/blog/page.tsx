@@ -7,6 +7,35 @@ export const metadata: Metadata = {
     "Ratgeber und Tipps rund um Reinigung in Basel. Wie oft soll man das Büro reinigen? Checkliste für die Umzugsreinigung – und mehr von D'Namar.",
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  name: "D'Namar Reinigungsblog Basel",
+  description: "Ratgeber und Tipps rund um Reinigung in Basel – für Haushalte und Unternehmen.",
+  url: "https://dnamar.ch/blog",
+  publisher: {
+    "@type": "Organization",
+    name: "D'Namar Reinigungsdienst",
+    url: "https://dnamar.ch",
+  },
+  blogPost: [
+    {
+      "@type": "BlogPosting",
+      headline: "Wie oft sollte man ein Büro reinigen lassen? Tipps für Unternehmen in Basel",
+      url: "https://dnamar.ch/blog/bueroreinigung-tipps-basel",
+      datePublished: "2025-03-10",
+      author: { "@type": "Organization", name: "D'Namar Reinigungsdienst" },
+    },
+    {
+      "@type": "BlogPosting",
+      headline: "Checkliste für die Endreinigung bei einem Umzug in Basel",
+      url: "https://dnamar.ch/blog/umzug-endreinigung-checkliste-basel",
+      datePublished: "2025-02-25",
+      author: { "@type": "Organization", name: "D'Namar Reinigungsdienst" },
+    },
+  ],
+};
+
 const POSTS = [
   {
     slug: "bueroreinigung-tipps-basel",
@@ -31,6 +60,10 @@ const POSTS = [
 export default function BlogPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* HEADER */}
       <section className="bg-navy pt-28 pb-16">
         <div className="section-container">

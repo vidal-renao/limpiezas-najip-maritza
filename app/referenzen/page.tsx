@@ -136,10 +136,36 @@ function ServiceBadge({ label }: { label: string }) {
   );
 }
 
+/* ─── JSON-LD ───────────────────────────────────────────────────────────── */
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://dnamar.ch/#business",
+  name: "D'Namar Reinigungsdienst",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "6",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  review: TESTIMONIALS.map((t) => ({
+    "@type": "Review",
+    author: { "@type": "Person", name: t.name },
+    reviewRating: { "@type": "Rating", ratingValue: t.rating, bestRating: "5" },
+    reviewBody: t.text,
+    datePublished: t.date,
+  })),
+};
+
 /* ─── Page ──────────────────────────────────────────────────────────────── */
 export default function ReferenzenPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* ── HEADER ───────────────────────────────────────────────────────── */}
       <section className="relative bg-navy pt-28 pb-20 overflow-hidden">
         <div
