@@ -54,6 +54,13 @@ const SERVICE_HREFS: Record<string, string> = {
   praxisreinigung: "/praxisreinigung",
 };
 
+/* ─── Locale flags & labels ──────────────────────────────────────────────── */
+const LOCALE_META: Record<"de" | "en" | "es", { flag: string }> = {
+  de: { flag: "🇩🇪" },
+  en: { flag: "🇬🇧" },
+  es: { flag: "🇪🇸" },
+};
+
 /* ─── Language Switcher ──────────────────────────────────────────────────── */
 function LanguageSwitcher() {
   const locale = useLocale();
@@ -75,7 +82,6 @@ function LanguageSwitcher() {
   const LOCALES = ["de", "en", "es"] as const;
 
   const switchLocale = (newLocale: "de" | "en" | "es") => {
-    // Strip current locale prefix from pathname to get the path
     const localePrefix = `/${locale}`;
     const rawPath = pathname.startsWith(localePrefix)
       ? pathname.slice(localePrefix.length) || "/"
@@ -84,6 +90,8 @@ function LanguageSwitcher() {
     setOpen(false);
   };
 
+  const currentLocale = locale as "de" | "en" | "es";
+
   return (
     <div ref={ref} className="relative">
       <button
@@ -91,22 +99,25 @@ function LanguageSwitcher() {
         onClick={() => setOpen((v) => !v)}
         className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border border-border text-xs font-semibold text-navy/70 hover:text-navy hover:border-brand/50 transition-all duration-200"
         aria-expanded={open}
+        aria-label="Sprache wechseln"
       >
-        <Globe className="w-3.5 h-3.5" />
-        {t(`lang.${locale as "de" | "en" | "es"}`)}
+        <span className="text-sm leading-none" aria-hidden="true">{LOCALE_META[currentLocale].flag}</span>
+        <span>{t(`lang.${currentLocale}`)}</span>
         <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
       </button>
 
       {open && (
-        <div className="absolute top-full right-0 mt-2 bg-white rounded-xl border border-border shadow-lg overflow-hidden z-50">
+        <div className="absolute top-full right-0 mt-2 bg-white rounded-xl border border-border shadow-lg overflow-hidden z-50 min-w-[130px]">
           {LOCALES.map((l) => (
             <button
               key={l}
               type="button"
               onClick={() => switchLocale(l)}
-              className={`w-full px-4 py-2 text-xs font-semibold text-left transition-colors hover:bg-muted ${locale === l ? "text-brand" : "text-navy/70"}`}
+              className={`w-full flex items-center gap-2.5 px-4 py-2.5 text-xs font-semibold text-left transition-colors hover:bg-muted ${locale === l ? "text-brand bg-brand/5" : "text-navy/70"}`}
             >
+              <span className="text-sm leading-none" aria-hidden="true">{LOCALE_META[l].flag}</span>
               {t(`lang.${l}`)}
+              {locale === l && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-brand shrink-0" />}
             </button>
           ))}
         </div>
@@ -518,8 +529,9 @@ function LanguageMobileButton({ locale, label }: { locale: "de" | "en" | "es"; l
     <button
       type="button"
       onClick={switchLocale}
-      className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${currentLocale === locale ? "bg-brand text-white border-brand" : "border-border text-navy/60 hover:border-brand/50 hover:text-navy"}`}
+      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${currentLocale === locale ? "bg-brand text-white border-brand" : "border-border text-navy/60 hover:border-brand/50 hover:text-navy"}`}
     >
+      <span className="text-sm leading-none" aria-hidden="true">{LOCALE_META[locale].flag}</span>
       {label}
     </button>
   );
