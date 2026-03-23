@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 import {
   Home,
   Building2,
@@ -26,50 +27,59 @@ import {
   Ruler,
 } from "lucide-react";
 
-/* ─── Services ───────────────────────────────────────────────────────────── */
-const SERVICES = [
-  { id: "haushaltsreinigung",   label: "Haushaltsreinigung",    icon: Home,         desc: "Privathaushalte & Wohnungen" },
-  { id: "bueroreinigung",       label: "Büroreinigung",         icon: Building2,    desc: "Büros, Praxen & Gewerbe" },
-  { id: "umzugsreinigung",      label: "Umzugsreinigung",       icon: PackageOpen,  desc: "Endreinigung mit Garantie" },
-  { id: "renovationsreinigung", label: "Renovationsreinigung",  icon: Hammer,       desc: "Nach Umbau, Neubau & Bau" },
-  { id: "treppenhausreinigung", label: "Treppenhausreinigung",  icon: Layers,       desc: "Gemeinschaftsflächen & Lifte" },
-  { id: "glasreinigung",        label: "Glasreinigung",         icon: Sparkles,     desc: "Fenster & Glasflächen" },
-  { id: "tiefenreinigung",      label: "Tiefenreinigung",       icon: FlaskConical, desc: "Gründliche Grundreinigung" },
-  { id: "anderes",              label: "Anderes / Kombination", icon: RefreshCw,    desc: "Sonstiges oder mehrere Leistungen" },
+/* ─── Service keys ───────────────────────────────────────────────────────── */
+const SERVICE_KEYS = [
+  "haushaltsreinigung",
+  "bueroreinigung",
+  "umzugsreinigung",
+  "renovationsreinigung",
+  "treppenhausreinigung",
+  "glasreinigung",
+  "tiefenreinigung",
+  "anderes",
 ] as const;
 
-type ServiceId = (typeof SERVICES)[number]["id"];
+type ServiceId = (typeof SERVICE_KEYS)[number];
+
+const SERVICE_ICONS: Record<ServiceId, React.ElementType> = {
+  haushaltsreinigung:   Home,
+  bueroreinigung:       Building2,
+  umzugsreinigung:      PackageOpen,
+  renovationsreinigung: Hammer,
+  treppenhausreinigung: Layers,
+  glasreinigung:        Sparkles,
+  tiefenreinigung:      FlaskConical,
+  anderes:              RefreshCw,
+};
 
 /** Map URL ?service= values → internal IDs (handles aliases from /preise) */
 const SERVICE_ALIASES: Record<string, ServiceId> = {
-  haushalt:          "haushaltsreinigung",
-  buero:             "bueroreinigung",
-  umzug:             "umzugsreinigung",
-  renovation:        "renovationsreinigung",
-  treppenhaus:       "treppenhausreinigung",
-  glas:              "glasreinigung",
-  tiefenreinigung:   "tiefenreinigung",
-  gewerbereinigung:  "renovationsreinigung", // alias from /preise
+  haushalt:         "haushaltsreinigung",
+  buero:            "bueroreinigung",
+  umzug:            "umzugsreinigung",
+  renovation:       "renovationsreinigung",
+  treppenhaus:      "treppenhausreinigung",
+  glas:             "glasreinigung",
+  tiefenreinigung:  "tiefenreinigung",
+  gewerbereinigung: "renovationsreinigung",
 };
 
 function resolveService(param: string | null): string {
   if (!param) return "";
-  if (SERVICES.some((s) => s.id === param)) return param;
+  if ((SERVICE_KEYS as readonly string[]).includes(param)) return param;
   return SERVICE_ALIASES[param] ?? "";
 }
 
-/* ─── Frequency ──────────────────────────────────────────────────────────── */
-const FREQUENCIES = [
-  { id: "einmalig",         label: "Einmalig",      sub: "Nur dieser Einsatz" },
-  { id: "woechentlich",     label: "Wöchentlich",   sub: "1× pro Woche" },
-  { id: "zweiwöchentlich",  label: "2× pro Monat",  sub: "Alle 2 Wochen" },
-  { id: "monatlich",        label: "Monatlich",     sub: "1× pro Monat" },
-  { id: "unbekannt",        label: "Noch unklar",   sub: "Beratung gewünscht" },
+/* ─── Frequency keys ─────────────────────────────────────────────────────── */
+const FREQUENCY_KEYS = [
+  "einmalig",
+  "woechentlich",
+  "zweiwochentlich",
+  "monatlich",
+  "unbekannt",
 ] as const;
 
-/* ─── Size options ───────────────────────────────────────────────────────── */
-const M2_OPTIONS   = ["< 50 m²", "50–80 m²", "80–120 m²", "120–200 m²", "> 200 m²", "Nicht relevant"] as const;
-const ROOM_OPTIONS = ["1 Zimmer", "2 Zimmer", "3–4 Zimmer", "5+ Zimmer", "Nicht relevant"] as const;
+type FrequencyId = (typeof FREQUENCY_KEYS)[number];
 
 /* ─── Types ──────────────────────────────────────────────────────────────── */
 type SizeMode = "m2" | "zimmer";
@@ -94,14 +104,11 @@ const EMPTY: FormState = {
 
 type FormErrors = Partial<Record<keyof FormState, string>>;
 
-/* ─── Steps ──────────────────────────────────────────────────────────────── */
-const STEPS = ["Leistung", "Details", "Kontakt", "Absenden"] as const;
-
 /* ─── Sub-components ─────────────────────────────────────────────────────── */
-function StepBar({ current }: { current: number }) {
+function StepBar({ current, steps }: { current: number; steps: string[] }) {
   return (
     <div className="flex items-center gap-0 mb-10" aria-label="Fortschritt">
-      {STEPS.map((label, i) => (
+      {steps.map((label, i) => (
         <div key={label} className="flex items-center flex-1 last:flex-none">
           <div className="flex flex-col items-center gap-1.5">
             <div
@@ -123,7 +130,7 @@ function StepBar({ current }: { current: number }) {
               {label}
             </span>
           </div>
-          {i < STEPS.length - 1 && (
+          {i < steps.length - 1 && (
             <div
               className={`flex-1 h-0.5 mx-2 mb-4 transition-colors duration-300 ${
                 i < current ? "bg-brand" : "bg-border"
@@ -169,6 +176,7 @@ function inputCls(err?: boolean) {
 
 /* ─── Main form ──────────────────────────────────────────────────────────── */
 export default function AnfrageForm() {
+  const t = useTranslations("anfrage.form");
   const searchParams = useSearchParams();
 
   const [step, setStep]     = useState(0);
@@ -184,25 +192,27 @@ export default function AnfrageForm() {
     setErrors((e) => ({ ...e, [key]: undefined }));
   };
 
+  const steps = t.raw("steps") as string[];
+
   /* ── Validation ── */
   function validateStep(s: number): FormErrors {
     const e: FormErrors = {};
     if (s === 0) {
-      if (!form.service) e.service = "Bitte wählen Sie eine Leistung aus.";
+      if (!form.service) e.service = t("step0.errorService");
     }
     if (s === 1) {
-      if (!form.size)      e.size      = "Bitte wählen Sie eine Grösse.";
-      if (!form.frequency) e.frequency = "Bitte wählen Sie eine Häufigkeit.";
+      if (!form.size)      e.size      = t("step1.errorSize");
+      if (!form.frequency) e.frequency = t("step1.errorFrequency");
     }
     if (s === 2) {
       if (!form.name.trim())
-        e.name = "Name ist erforderlich.";
+        e.name = t("step2.errorName");
       if (!form.email.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
-        e.email = "Bitte geben Sie eine gültige E-Mail-Adresse ein.";
+        e.email = t("step2.errorEmail");
       if (!form.phone.trim())
-        e.phone = "Telefonnummer ist erforderlich.";
+        e.phone = t("step2.errorPhone");
       if (!form.address.trim())
-        e.address = "Adresse in Basel ist erforderlich.";
+        e.address = t("step2.errorAddress");
     }
     return e;
   }
@@ -222,14 +232,18 @@ export default function AnfrageForm() {
 
   async function submit() {
     setStatus("sending");
-    // TODO: replace with real API route (e.g. POST /api/contact using Resend)
     await new Promise((r) => setTimeout(r, 1200));
     setStatus("success");
   }
 
   /* ─── SUCCESS screen ─────────────────────────────────────────────────── */
   if (status === "success") {
-    const serviceLabel = SERVICES.find((s) => s.id === form.service)?.label ?? "–";
+    const serviceKey = form.service as ServiceId;
+    const serviceData = (SERVICE_KEYS as readonly string[]).includes(serviceKey)
+      ? (t.raw(`services.${serviceKey}`) as { label: string; desc: string })
+      : null;
+    const serviceLabel = serviceData?.label ?? "–";
+
     return (
       <div className="flex flex-col items-center text-center py-12 gap-6">
         <div className="w-20 h-20 rounded-full bg-brand/10 flex items-center justify-center">
@@ -237,12 +251,12 @@ export default function AnfrageForm() {
         </div>
         <div>
           <h3 className="text-2xl font-bold text-navy mb-3">
-            Vielen Dank, {form.name}!
+            {t("success.title", { name: form.name })}
           </h3>
           <p className="text-foreground/65 text-base leading-relaxed max-w-sm">
-            Ihre Anfrage ist bei uns eingegangen.{" "}
+            {t("success.subtitle")}{" "}
             <strong className="text-navy">
-              Wir melden uns innerhalb von 24 Stunden bei Ihnen.
+              {t("success.subtitleBold")}
             </strong>
           </p>
         </div>
@@ -250,10 +264,10 @@ export default function AnfrageForm() {
         {/* Summary cards */}
         <div className="grid sm:grid-cols-2 gap-3 text-left w-full max-w-md mt-2">
           {[
-            { label: "Leistung",  value: serviceLabel },
-            { label: "Grösse",    value: form.size || "–" },
-            { label: "E-Mail",    value: form.email },
-            { label: "Adresse",   value: form.address || "–" },
+            { label: t("step3.summaryKeys.service"),  value: serviceLabel },
+            { label: t("step3.summaryKeys.size"),      value: form.size || "–" },
+            { label: t("step3.summaryKeys.email"),     value: form.email },
+            { label: t("step3.summaryKeys.address"),   value: form.address || "–" },
           ].map(({ label, value }) => (
             <div key={label} className="bg-muted rounded-xl px-4 py-3 border border-border">
               <p className="text-xs text-foreground/45 font-semibold uppercase tracking-wide mb-0.5">
@@ -265,7 +279,7 @@ export default function AnfrageForm() {
         </div>
 
         <p className="text-xs text-foreground/40 max-w-sm leading-relaxed">
-          Keine Antwort erhalten? Rufen Sie uns direkt an:{" "}
+          {t("success.noReply")}{" "}
           <a href="tel:+41792527557" className="text-brand font-semibold hover:underline">
             +41 79 252 75 57
           </a>
@@ -277,8 +291,8 @@ export default function AnfrageForm() {
   /* ─── STEP 0 – Service ───────────────────────────────────────────────── */
   const Step0 = (
     <div>
-      <h2 className="text-xl font-bold text-navy mb-1">Welche Leistung wünschen Sie?</h2>
-      <p className="text-sm text-foreground/55 mb-6">Wählen Sie eine Reinigungsart aus.</p>
+      <h2 className="text-xl font-bold text-navy mb-1">{t("step0.title")}</h2>
+      <p className="text-sm text-foreground/55 mb-6">{t("step0.subtitle")}</p>
 
       {errors.service && (
         <p className="flex items-center gap-1.5 text-xs text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-2.5 mb-5">
@@ -287,7 +301,9 @@ export default function AnfrageForm() {
       )}
 
       <div className="grid sm:grid-cols-2 gap-3">
-        {SERVICES.map(({ id, label, icon: Icon, desc }) => {
+        {SERVICE_KEYS.map((id) => {
+          const Icon = SERVICE_ICONS[id];
+          const svc = t.raw(`services.${id}`) as { label: string; desc: string };
           const active = form.service === id;
           return (
             <button
@@ -309,9 +325,9 @@ export default function AnfrageForm() {
               </span>
               <div className="min-w-0">
                 <p className={`text-sm font-semibold leading-tight ${active ? "text-navy" : "text-foreground/80"}`}>
-                  {label}
+                  {svc.label}
                 </p>
-                <p className="text-xs text-foreground/45 mt-0.5">{desc}</p>
+                <p className="text-xs text-foreground/45 mt-0.5">{svc.desc}</p>
               </div>
               {active && <CheckCircle2 className="w-4 h-4 text-brand ml-auto shrink-0" />}
             </button>
@@ -322,17 +338,19 @@ export default function AnfrageForm() {
   );
 
   /* ─── STEP 1 – Details ───────────────────────────────────────────────── */
-  const sizeOptions = form.sizeMode === "m2" ? M2_OPTIONS : ROOM_OPTIONS;
+  const m2Options   = t.raw("sizes.m2")     as string[];
+  const zimmerOptions = t.raw("sizes.zimmer") as string[];
+  const sizeOptions = form.sizeMode === "m2" ? m2Options : zimmerOptions;
 
   const Step1 = (
     <div className="space-y-7">
       <div>
-        <h2 className="text-xl font-bold text-navy mb-1">Objekt & Häufigkeit</h2>
-        <p className="text-sm text-foreground/55">Damit wir Ihnen ein genaues Angebot erstellen können.</p>
+        <h2 className="text-xl font-bold text-navy mb-1">{t("step1.title")}</h2>
+        <p className="text-sm text-foreground/55">{t("step1.subtitle")}</p>
       </div>
 
       {/* Size mode toggle + grid */}
-      <Field label="Grösse des Objekts" required error={errors.size}>
+      <Field label={t("step1.sizeLabel")} required error={errors.size}>
         {/* Toggle: m² ↔ Zimmer */}
         <div className="inline-flex rounded-xl border border-border bg-muted p-1 mb-3 self-start">
           {(["m2", "zimmer"] as SizeMode[]).map((mode) => (
@@ -347,8 +365,8 @@ export default function AnfrageForm() {
               }`}
             >
               {mode === "m2"
-                ? <><Ruler className="w-3.5 h-3.5" /> Quadratmeter</>
-                : <><SquareStack className="w-3.5 h-3.5" /> Zimmeranzahl</>
+                ? <><Ruler className="w-3.5 h-3.5" /> {t("step1.squareMeters")}</>
+                : <><SquareStack className="w-3.5 h-3.5" /> {t("step1.roomCount")}</>
               }
             </button>
           ))}
@@ -373,9 +391,10 @@ export default function AnfrageForm() {
       </Field>
 
       {/* Frequency */}
-      <Field label="Gewünschte Häufigkeit" required error={errors.frequency}>
+      <Field label={t("step1.frequencyLabel")} required error={errors.frequency}>
         <div className="grid sm:grid-cols-2 gap-2">
-          {FREQUENCIES.map(({ id, label, sub }) => {
+          {FREQUENCY_KEYS.map((id) => {
+            const freq = t.raw(`frequencies.${id}`) as { label: string; sub: string };
             const active = form.frequency === id;
             return (
               <button
@@ -389,8 +408,8 @@ export default function AnfrageForm() {
                 }`}
               >
                 <div>
-                  <p className={`text-sm font-semibold ${active ? "text-navy" : "text-foreground/75"}`}>{label}</p>
-                  <p className="text-xs text-foreground/40">{sub}</p>
+                  <p className={`text-sm font-semibold ${active ? "text-navy" : "text-foreground/75"}`}>{freq.label}</p>
+                  <p className="text-xs text-foreground/40">{freq.sub}</p>
                 </div>
                 {active && <CheckCircle2 className="w-4 h-4 text-brand shrink-0" />}
               </button>
@@ -401,8 +420,8 @@ export default function AnfrageForm() {
 
       {/* Desired date */}
       <Field
-        label="Gewünschter Termin"
-        hint="Optional – kann auch telefonisch vereinbart werden."
+        label={t("step1.dateLabel")}
+        hint={t("step1.dateHint")}
       >
         <div className="relative">
           <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-foreground/35 pointer-events-none" />
@@ -417,14 +436,14 @@ export default function AnfrageForm() {
       </Field>
 
       {/* Extra notes */}
-      <Field label="Besondere Anforderungen oder Hinweise">
+      <Field label={t("step1.notesLabel")}>
         <div className="relative">
           <MessageSquare className="absolute left-3 top-3 w-4 h-4 text-foreground/35 pointer-events-none" />
           <textarea
             rows={3}
             value={form.message}
             onChange={(e) => set("message", e.target.value)}
-            placeholder="z.B. Haustiere, schwer zugängliche Flächen, Kalkschutz gewünscht…"
+            placeholder={t("step1.notesPlaceholder")}
             className={inputCls() + " pl-10 resize-none"}
           />
         </div>
@@ -436,32 +455,32 @@ export default function AnfrageForm() {
   const Step2 = (
     <div className="space-y-5">
       <div>
-        <h2 className="text-xl font-bold text-navy mb-1">Ihre Kontaktdaten</h2>
-        <p className="text-sm text-foreground/55">Alle mit * markierten Felder sind erforderlich.</p>
+        <h2 className="text-xl font-bold text-navy mb-1">{t("step2.title")}</h2>
+        <p className="text-sm text-foreground/55">{t("step2.subtitle")}</p>
       </div>
 
-      <Field label="Vollständiger Name" required error={errors.name}>
+      <Field label={t("step2.nameLabel")} required error={errors.name}>
         <div className="relative">
           <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-foreground/35 pointer-events-none" />
           <input
             type="text"
             value={form.name}
             onChange={(e) => set("name", e.target.value)}
-            placeholder="Erika Mustermann"
+            placeholder={t("step2.namePlaceholder")}
             autoComplete="name"
             className={inputCls(!!errors.name) + " pl-10"}
           />
         </div>
       </Field>
 
-      <Field label="E-Mail-Adresse" required error={errors.email}>
+      <Field label={t("step2.emailLabel")} required error={errors.email}>
         <div className="relative">
           <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-foreground/35 pointer-events-none" />
           <input
             type="email"
             value={form.email}
             onChange={(e) => set("email", e.target.value)}
-            placeholder="erika@beispiel.ch"
+            placeholder={t("step2.emailPlaceholder")}
             autoComplete="email"
             className={inputCls(!!errors.email) + " pl-10"}
           />
@@ -469,10 +488,10 @@ export default function AnfrageForm() {
       </Field>
 
       <Field
-        label="Telefon / WhatsApp"
+        label={t("step2.phoneLabel")}
         required
         error={errors.phone}
-        hint="Für schnelle Rückfragen – auch per WhatsApp."
+        hint={t("step2.phoneHint")}
       >
         <div className="relative">
           <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-foreground/35 pointer-events-none" />
@@ -480,7 +499,7 @@ export default function AnfrageForm() {
             type="tel"
             value={form.phone}
             onChange={(e) => set("phone", e.target.value)}
-            placeholder="+41 79 000 00 00"
+            placeholder={t("step2.phonePlaceholder")}
             autoComplete="tel"
             className={inputCls(!!errors.phone) + " pl-10"}
           />
@@ -488,10 +507,10 @@ export default function AnfrageForm() {
       </Field>
 
       <Field
-        label="Adresse des Objekts in Basel"
+        label={t("step2.addressLabel")}
         required
         error={errors.address}
-        hint="Strasse, Hausnummer und Quartier – damit wir Anfahrt und Preis berechnen können."
+        hint={t("step2.addressHint")}
       >
         <div className="relative">
           <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-foreground/35 pointer-events-none" />
@@ -499,7 +518,7 @@ export default function AnfrageForm() {
             type="text"
             value={form.address}
             onChange={(e) => set("address", e.target.value)}
-            placeholder="Musterstrasse 12, 4051 Basel"
+            placeholder={t("step2.addressPlaceholder")}
             autoComplete="street-address"
             className={inputCls(!!errors.address) + " pl-10"}
           />
@@ -509,25 +528,35 @@ export default function AnfrageForm() {
   );
 
   /* ─── STEP 3 – Summary ───────────────────────────────────────────────── */
-  const serviceLabel = SERVICES.find((s) => s.id === form.service)?.label ?? "–";
-  const freqLabel    = FREQUENCIES.find((f) => f.id === form.frequency)?.label ?? "–";
+  const serviceKey = form.service as ServiceId;
+  const serviceData = (SERVICE_KEYS as readonly string[]).includes(serviceKey)
+    ? (t.raw(`services.${serviceKey}`) as { label: string; desc: string })
+    : null;
+  const serviceLabel = serviceData?.label ?? "–";
+
+  const freqData = (FREQUENCY_KEYS as readonly string[]).includes(form.frequency)
+    ? (t.raw(`frequencies.${form.frequency as FrequencyId}`) as { label: string; sub: string })
+    : null;
+  const freqLabel = freqData?.label ?? "–";
+
+  const sk = t.raw("step3.summaryKeys") as Record<string, string>;
 
   const summaryRows: [string, string, number][] = [
-    ["Leistung",   serviceLabel,                   0],
-    ["Grösse",     form.size || "–",               1],
-    ["Häufigkeit", freqLabel,                      1],
-    ["Termin",     form.date || "Nach Absprache",  1],
-    ["Name",       form.name || "–",               2],
-    ["E-Mail",     form.email || "–",              2],
-    ["Telefon",    form.phone || "–",              2],
-    ["Adresse",    form.address || "–",            2],
+    [sk.service,   serviceLabel,                           0],
+    [sk.size,      form.size || "–",                       1],
+    [sk.frequency, freqLabel,                              1],
+    [sk.date,      form.date || sk.dateDefault,            1],
+    [sk.name,      form.name || "–",                       2],
+    [sk.email,     form.email || "–",                      2],
+    [sk.phone,     form.phone || "–",                      2],
+    [sk.address,   form.address || "–",                    2],
   ];
 
   const Step3 = (
     <div className="space-y-6">
       <div>
-        <h2 className="text-xl font-bold text-navy mb-1">Zusammenfassung</h2>
-        <p className="text-sm text-foreground/55">Bitte prüfen Sie Ihre Angaben – dann absenden.</p>
+        <h2 className="text-xl font-bold text-navy mb-1">{t("step3.title")}</h2>
+        <p className="text-sm text-foreground/55">{t("step3.subtitle")}</p>
       </div>
 
       <div className="rounded-2xl border border-border overflow-hidden divide-y divide-border">
@@ -542,21 +571,20 @@ export default function AnfrageForm() {
               onClick={() => setStep(targetStep)}
               className="text-xs text-brand hover:text-brand-dark hover:underline font-semibold shrink-0 transition-colors"
             >
-              Ändern
+              {t("step3.changeLabel")}
             </button>
           </div>
         ))}
         {form.message && (
           <div className="px-5 py-3.5 bg-white">
-            <p className="text-xs text-foreground/40 font-semibold uppercase tracking-wider mb-0.5">Hinweise</p>
+            <p className="text-xs text-foreground/40 font-semibold uppercase tracking-wider mb-0.5">{sk.notes}</p>
             <p className="text-sm text-foreground/65 leading-relaxed">{form.message}</p>
           </div>
         )}
       </div>
 
       <p className="text-xs text-foreground/45 leading-relaxed border-t border-border pt-4">
-        Mit dem Absenden bestätigen Sie, dass wir Ihre Daten ausschliesslich zur
-        Bearbeitung dieser Anfrage verwenden dürfen. Keine Weitergabe an Dritte.
+        {t("step3.privacyNote")}
       </p>
     </div>
   );
@@ -566,7 +594,7 @@ export default function AnfrageForm() {
   /* ─── Render ─────────────────────────────────────────────────────────── */
   return (
     <div>
-      <StepBar current={step} />
+      <StepBar current={step} steps={steps} />
 
       <div className="min-h-[340px]">{STEP_CONTENT[step]}</div>
 
@@ -579,7 +607,7 @@ export default function AnfrageForm() {
             className="inline-flex items-center gap-2 rounded-full border-2 border-border px-6 py-3 text-sm font-semibold text-foreground/65 hover:border-navy hover:text-navy transition-colors"
           >
             <ChevronLeft className="w-4 h-4" />
-            Zurück
+            {steps[step - 1]}
           </button>
         )}
 
@@ -589,7 +617,7 @@ export default function AnfrageForm() {
             onClick={next}
             className="btn-primary text-sm px-7 py-3"
           >
-            Weiter
+            {steps[step + 1]}
             <ChevronRight className="w-4 h-4" />
           </button>
         ) : (
@@ -600,9 +628,9 @@ export default function AnfrageForm() {
             className="btn-primary text-sm px-8 py-3 disabled:opacity-60 disabled:cursor-not-allowed"
           >
             {status === "sending" ? (
-              <><Loader2 className="w-4 h-4 animate-spin" /> Wird gesendet…</>
+              <><Loader2 className="w-4 h-4 animate-spin" /> {t("step3.sending")}</>
             ) : (
-              <><CheckCircle2 className="w-4 h-4" /> Kostenlose Offerte anfordern</>
+              <><CheckCircle2 className="w-4 h-4" /> {t("step3.submitBtn")}</>
             )}
           </button>
         )}

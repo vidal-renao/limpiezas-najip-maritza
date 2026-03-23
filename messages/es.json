@@ -1,0 +1,1096 @@
+{
+  "common": {
+    "requestQuote": "Solicitar presupuesto gratuito",
+    "viewPrices": "Ver precios",
+    "requestOffer": "Solicitar presupuesto",
+    "requestNow": "Solicitar presupuesto ahora",
+    "contact": "Contacto",
+    "learnMore": "Más información",
+    "readMore": "Leer más",
+    "back": "Volver",
+    "next": "Siguiente",
+    "send": "Enviar solicitud",
+    "sending": "Enviando…",
+    "allRightsReserved": "Todos los derechos reservados",
+    "freeAndNonBinding": "Gratuito y sin compromiso",
+    "answerIn24h": "Respuesta en 24 horas",
+    "popular": "Popular",
+    "onRequest": "bajo consulta",
+    "included": "Incluido",
+    "impressum": "Aviso legal",
+    "datenschutz": "Política de privacidad",
+    "hours": "Lun–Vie 08–18 · Sáb 09–14",
+    "phone": "+41 79 252 75 57",
+    "email": "info@dnamar.ch",
+    "whatsappWrite": "Escríbanos por WhatsApp",
+    "directCall": "¿Prefiere llamar directamente?"
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "prices": "Precios",
+    "references": "Referencias",
+    "blog": "Blog",
+    "about": "Sobre nosotros",
+    "contact": "Contacto",
+    "requestOffer": "Solicitar presupuesto",
+    "allServices": "Ver todos",
+    "ourServices": "Nuestros servicios",
+    "freeOffer": "Presupuesto gratuito",
+    "answerIn24h": "Respuesta en 24 horas",
+    "request": "Solicitar",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "lang": {
+      "de": "DE",
+      "en": "EN",
+      "es": "ES"
+    },
+    "services_items": {
+      "haushaltsreinigung": { "label": "Limpieza del hogar", "desc": "Viviendas y apartamentos privados" },
+      "bueroreinigung": { "label": "Limpieza de oficinas", "desc": "Oficinas y locales comerciales" },
+      "umzugsreinigung": { "label": "Limpieza de mudanza", "desc": "Limpieza final con garantía" },
+      "renovationsreinigung": { "label": "Limpieza post-obra", "desc": "Tras reforma y obra nueva" },
+      "treppenhausreinigung": { "label": "Limpieza de escaleras", "desc": "Zonas comunes" },
+      "glasreinigung": { "label": "Limpieza de cristales", "desc": "Ventanas y superficies de vidrio" },
+      "tiefenreinigung": { "label": "Limpieza a fondo", "desc": "Limpieza general exhaustiva" },
+      "praxisreinigung": { "label": "Limpieza de consultorios", "desc": "Consultas médicas y estudios" }
+    }
+  },
+  "footer": {
+    "tagline": "Su servicio de limpieza profesional en Basel – para hogares y empresas en todo el cantón.",
+    "services": "Servicios",
+    "company": "Empresa",
+    "contactTitle": "Contacto",
+    "copyright": "D'Namar Reinigungsdienst Basel.",
+    "hours": "Lun–Vie 08:00–18:00\nSáb 09:00–14:00",
+    "location": "Basel, Cantón de Basilea-Ciudad",
+    "instagramLabel": "D'Namar en Instagram",
+    "facebookLabel": "D'Namar en Facebook",
+    "whatsappLabel": "D'Namar en WhatsApp",
+    "services_items": {
+      "haushaltsreinigung": "Limpieza del hogar",
+      "bueroreinigung": "Limpieza de oficinas",
+      "umzugsreinigung": "Limpieza de mudanza",
+      "glasreinigung": "Limpieza de cristales",
+      "treppenhausreinigung": "Limpieza de escaleras",
+      "preise": "Precios"
+    },
+    "company_items": {
+      "ueber_uns": "Sobre nosotros",
+      "referenzen": "Referencias",
+      "blog": "Blog",
+      "offerte": "Solicitar presupuesto",
+      "kontakt": "Contacto"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Servicio de limpieza profesional en Basel | D'Namar",
+      "description": "D'Namar – su servicio de limpieza de confianza en Basel. Limpieza del hogar, oficinas, mudanzas y escaleras con experiencia en cal. Presupuesto gratuito en 24 horas."
+    },
+    "hero": {
+      "badge": "Profesionales de la limpieza en Basel desde 2015",
+      "title1": "Limpieza",
+      "titleBrand1": "que se ve",
+      "titleSep": " –",
+      "title2": "Calidad que",
+      "titleBrand2": "se siente",
+      "subtitle": "Maritza Rodriguez y Nadjib Rasuly y su equipo ofrecen servicios de limpieza profesional para hogares privados y empresas en todo el cantón de Basel – minuciosa, discreta y personalizada.",
+      "ctaPrimary": "Solicitar presupuesto gratuito",
+      "ctaPhone": "+41 79 252 75 57",
+      "signals": ["Sin pago anticipado", "Garantía de entrega incluida", "Respuesta en 24 horas", "Local y asegurado"],
+      "maritzaRole": "Cofundadora",
+      "nadjibRole": "Cofundador",
+      "stats": {
+        "clients": "Clientes",
+        "years": "Años",
+        "rating": "Valoración",
+        "responseTime": "Tiempo de respuesta"
+      }
+    },
+    "trustBar": [
+      "Más de 10 años de experiencia",
+      "Asegurado y verificado",
+      "Equipo local en Basel",
+      "Garantía de precio fijo"
+    ],
+    "services": {
+      "eyebrow": "Lo que ofrecemos",
+      "title": "Nuestros servicios de limpieza",
+      "subtitle": "Desde la limpieza de mantenimiento semanal hasta la limpieza final con garantía de entrega – soluciones a medida para todo Basel.",
+      "cta": "Solicitar presupuesto ahora"
+    },
+    "why": {
+      "eyebrow": "¿Por qué D'Namar?",
+      "title": "Limpieza con",
+      "titleLine2": "corazón y precisión",
+      "learnMore": "Más sobre nosotros",
+      "quote": "«La limpieza para nosotros no es solo un trabajo – es nuestra promesa a cada cliente en Basel.»",
+      "quoteAuthor": "— Maritza & Nadjib",
+      "points": [
+        {
+          "title": "Expertos en cal para Basel",
+          "desc": "El agua del grifo de Basel es conocida por su alto contenido de cal. Nuestro equipo conoce los productos y técnicas adecuados para eliminar eficazmente los depósitos de cal persistentes en baños, cocinas y superficies de vidrio."
+        },
+        {
+          "title": "Soluciones a medida",
+          "desc": "Cada encargo se adapta individualmente a sus necesidades – ya sea una limpieza a fondo puntual o un mantenimiento regular."
+        },
+        {
+          "title": "Flexible y fiable",
+          "desc": "Limpiamos según su horario – a primera hora, por la tarde o los fines de semana. Las citas de último momento son posibles bajo consulta."
+        },
+        {
+          "title": "Transparente y justo",
+          "desc": "Sin costes ocultos. Recibirá un presupuesto claro antes del servicio y pagará solo lo acordado."
+        }
+      ]
+    },
+    "kalk": {
+      "eyebrow": "Nuestra experiencia antiincrustante",
+      "title1": "Agua dura.",
+      "titleBrand": "Resultados impecables.",
+      "titleLine2": "Protección contra la cal en Basel.",
+      "badgeTitle": "Expertos antiincrustantes",
+      "badgeSub": "Especializados en el agua de Basel",
+      "p1": "El agua del grifo de Basel se encuentra entre las más duras de la Suiza germanófona – con un contenido de cal de hasta 35 grados franceses. Esto significa que sin un cuidado profesional se forman manchas persistentes de cal en grifos, duchas, superficies de vidrio y electrodomésticos de cocina, que son prácticamente imposibles de eliminar con productos domésticos comunes.",
+      "p1Bold": "35 grados franceses",
+      "p2": "D'Namar se ha especializado desde 2015 exactamente en este problema. Utilizamos descalcificantes comprobados y selladores protectores desarrollados específicamente para agua dura – suaves con las superficies, eficaces contra los depósitos. Tras cada limpieza aplicamos, a petición del cliente, una película protectora antiincrustante en vidrio, cromo y piedra natural que mantiene alejados los nuevos depósitos hasta 8 semanas.",
+      "p2Bold1": "descalcificantes y selladores protectores",
+      "p2Bold2": "8 semanas",
+      "p3": "Ya sea una cabina de ducha en Gundeldingen, una cocina de acero inoxidable en Riehen o una fachada de vidrio en un local comercial de Basel – nuestro equipo conoce el método adecuado para cada superficie y cada nivel de dureza del agua.",
+      "bullets": [
+        "Descalcificantes de pH neutro – suaves y muy eficaces",
+        "Sellado antiincrustante disponible a petición",
+        "Productos certificados – seguros para personas y mascotas",
+        "Garantía de resultado o corrección gratuita"
+      ],
+      "ctaPrimary": "Solicitar asesoramiento antiincrustante",
+      "ctaSecondary": "Más sobre limpieza de cristales"
+    },
+    "testimonials": {
+      "eyebrow": "Opiniones de clientes",
+      "title": "Lo que dicen nuestros clientes",
+      "rating": "4.9 / 5 – Basado en más de 90 valoraciones",
+      "viewAll": "Ver todas las referencias",
+      "items": [
+        {
+          "name": "Petra M.",
+          "location": "Gundeldingen, Basel",
+          "service": "Limpieza del hogar",
+          "rating": 5,
+          "text": "D'Namar limpia nuestro apartamento desde hace más de un año. Siempre puntual, siempre minucioso – y la cal en nuestro baño es ya historia. ¡Muy recomendable!",
+          "date": "Febrero 2025"
+        },
+        {
+          "name": "Thomas K.",
+          "location": "Kleinbasel",
+          "service": "Limpieza de oficinas",
+          "rating": 5,
+          "text": "Cambiamos nuestras oficinas (12 empleados) a D'Namar. La diferencia se notó de inmediato. El equipo trabaja de forma discreta, eficiente y a precios justos.",
+          "date": "Enero 2025"
+        },
+        {
+          "name": "Sandra B.",
+          "location": "St. Alban, Basel",
+          "service": "Limpieza de mudanza",
+          "rating": 5,
+          "text": "Gracias a la garantía de entrega estuve tranquila. La administración no puso ni una sola objeción – ni siquiera al horno. Absolutamente profesional y sin complicaciones.",
+          "date": "Marzo 2025"
+        }
+      ]
+    },
+    "districts": {
+      "eyebrow": "Área de servicio",
+      "title": "Limpiamos en todo Basel",
+      "subtitle": "Desde Grossbasel hasta Riehen – su equipo de limpieza local.",
+      "items": ["Grossbasel", "Kleinbasel", "Gundeldingen", "St. Alban", "Riehen", "Bettingen", "Allschwil", "Binningen", "Birsfelden", "Muttenz"]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Preguntas frecuentes",
+      "moreQuestions": "¿Tiene más preguntas? Estaremos encantados de ayudarle personalmente.",
+      "askNow": "Hacer una pregunta ahora",
+      "items": [
+        {
+          "q": "¿Con qué rapidez puede D'Namar ofrecer una cita?",
+          "a": "Por lo general, podemos ofrecer una cita en un plazo de 3 a 5 días hábiles. En caso de urgencia – por ejemplo, antes de la entrega de un piso – haremos todo lo posible para ayudar con poca antelación."
+        },
+        {
+          "q": "¿Están incluidos los productos de limpieza y los equipos?",
+          "a": "Sí. Traemos todos los productos de limpieza y máquinas profesionales. Usted no necesita preparar ni proporcionar nada."
+        },
+        {
+          "q": "¿Cuánto cuesta una limpieza del hogar en Basel?",
+          "a": "Los precios dependen del tamaño y el estado del inmueble. Como referencia: apartamentos pequeños desde CHF 180, apartamentos grandes desde CHF 320. Limpieza por horas desde CHF 45/hora. Con gusto elaboramos un presupuesto gratuito."
+        },
+        {
+          "q": "¿Qué significa la garantía de entrega en la limpieza de mudanza?",
+          "a": "Si la administración de la finca presenta objeciones tras nuestra limpieza final, regresamos gratuitamente una segunda vez – hasta que la entrega se realice con éxito."
+        },
+        {
+          "q": "¿Realiza D'Namar también limpiezas regulares (mantenimiento)?",
+          "a": "Sí. Muchos de nuestros clientes nos contratan semanal o quincenalmente. Los clientes habituales se benefician de equipos fijos y citas preferentes."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "Gratuito y sin compromiso",
+      "title": "¿Listo para un Basel más limpio?",
+      "subtitle": "Contáctenos hoy mismo. Elaboraremos su presupuesto personalizado y nos pondremos en contacto con usted en 24 horas.",
+      "ctaPrimary": "Solicitar presupuesto",
+      "ctaPhone": "+41 79 252 75 57",
+      "hours": "Lun–Vie 08–18 · Sáb 09–14"
+    }
+  },
+  "haushaltsreinigung": {
+    "meta": {
+      "title": "Limpieza del hogar Basel | Limpieza profesional de pisos desde CHF 45/h",
+      "description": "Limpieza profesional del hogar en Basel – Gundeldingen, St. Alban, Riehen y Kleinbasel. Regular o puntual, con protección antiincrustante para el baño. Presupuesto en 24 horas."
+    },
+    "breadcrumb": "Limpieza del hogar",
+    "hero": {
+      "eyebrow": "Servicios",
+      "title": "Limpieza del hogar",
+      "titleBrand": "en Basel",
+      "subtitle": "Relájese – nosotros nos encargamos de la limpieza de su hogar. Regular o puntual, siempre minuciosa, puntual y discreta. En St. Alban, Gundeldingen, Riehen y todo Basel."
+    },
+    "benefits": [
+      { "title": "Flexible y puntual", "desc": "Nos adaptamos a su horario – puntual, semanal o según sus necesidades." },
+      { "title": "Asegurado y de confianza", "desc": "Nuestro equipo está completamente asegurado y trabaja de forma discreta en su hogar." },
+      { "title": "Productos profesionales", "desc": "Traemos todos los productos de limpieza y equipos – sin costes adicionales." },
+      { "title": "Atención personalizada", "desc": "Siempre la misma persona de contacto – para una relación de confianza duradera." }
+    ],
+    "seo": {
+      "title": "Su tiempo es valioso – nosotros nos encargamos de la limpieza",
+      "p1": "Un piso limpio aporta bienestar, ahorra tiempo y preserva el valor de su propiedad. D'Namar ofrece a los hogares privados de Basel una limpieza doméstica fiable y a medida – ya sea puntual, semanal o según las necesidades. Estamos activos en todos los barrios de Basel: St. Alban, Gundeldingen, Kleinbasel, Riehen y más allá.",
+      "p2": "Nuestro equipo limpia su piso completamente: aspirar y fregar los suelos, limpiar a fondo la cocina incluida la placa y el horno, desinfectar el baño y el WC, quitar el polvo de los muebles y pulir las superficies de vidrio sin rayaduras. Traemos todos los productos de limpieza y equipos necesarios – sin costes de materiales ocultos.",
+      "p3": "Prestamos especial atención a la protección antiincrustante de su baño. El agua del grifo de Basel tiene uno de los contenidos de cal más altos de Suiza. La cal se deposita en grifos, cabinas de ducha, bañeras y azulejos y es casi imposible de eliminar sin los productos adecuados. Utilizamos descalcificantes profesionales y aplicamos un sellador protector tras la limpieza – así su baño permanece limpio más tiempo y se cuidan los grifos.",
+      "p3Bold": "descalcificantes",
+      "p4": "Lo que nos distingue: siempre tendrá la misma persona de limpieza, que conoce y respeta sus costumbres. Esto genera confianza – especialmente importante cuando limpiamos en su ausencia. Con 4,9 estrellas de valoración y más de 500 hogares satisfechos en Basel, representamos la calidad que se nota."
+    },
+    "sidebar": {
+      "title": "Resumen de precios",
+      "rows": [
+        { "val": "desde CHF 45", "label": "por hora" },
+        { "val": "desde CHF 180", "label": "Piso pequeño (hasta 60 m²)" },
+        { "val": "desde CHF 280", "label": "Piso grande (hasta 100 m²)" },
+        { "val": "24 h", "label": "Tiempo de respuesta garantizado" }
+      ],
+      "kalkBadge": "Protección antiincrustante para el baño incluida",
+      "kalkText": "sellado profesional contra el agua dura de Basel."
+    },
+    "tasks": {
+      "title": "¿Qué está incluido?",
+      "subtitle": "Servicios estándar – personalizables según sus deseos.",
+      "items": [
+        "Aspirar y fregar todos los suelos",
+        "Limpiar la cocina incl. placa, horno y encimeras",
+        "Desinfectar baño y WC + protección antiincrustante",
+        "Limpiar espejos y superficies de vidrio sin rayas",
+        "Quitar el polvo de los muebles y limpiar las superficies",
+        "Dormitorio incl. cambio de ropa de cama (a petición)",
+        "Quitar el polvo de alféizares y radiadores",
+        "Vaciar papeleras y retirar basura",
+        "Escalera y zona de entrada (a petición)",
+        "Limpiar balcón o terraza (a petición)"
+      ]
+    },
+    "priceTeaser": {
+      "label": "Precio orientativo",
+      "price": "desde CHF 45",
+      "unit": "/ hora",
+      "sub": "Piso pequeño desde CHF 180 · Piso grande desde CHF 280"
+    },
+    "cta": {
+      "title": "¿Listo para un hogar más limpio en Basel?",
+      "subtitle": "Contáctenos – elaboraremos un presupuesto gratuito y sin compromiso en 24 horas."
+    }
+  },
+  "bueroreinigung": {
+    "meta": {
+      "title": "Limpieza de oficinas Basel | Limpieza profesional para empresas – desde CHF 40/h",
+      "description": "Limpieza profesional de oficinas en Basel para oficinas, consultorios y locales comerciales. Discreta, fuera del horario laboral, con protección antiincrustante en instalaciones sanitarias. Presupuesto gratuito en 24 horas."
+    },
+    "breadcrumb": "Limpieza de oficinas",
+    "hero": {
+      "eyebrow": "Servicios",
+      "title": "Limpieza de oficinas Basel",
+      "titleBrand": "para empresas",
+      "subtitle": "Un entorno de trabajo limpio aumenta la productividad, causa una impresión profesional y protege la salud de sus empleados. D'Namar se encarga de ello de forma fiable – a su ritmo, fuera del horario comercial.",
+      "ctaPrimary": "Solicitar presupuesto B2B gratuito"
+    },
+    "sectors": {
+      "title": "Limpiamos para",
+      "items": [
+        "Oficinas y espacios abiertos",
+        "Consultorios médicos y dentales",
+        "Centros de fitness",
+        "Tiendas y salas de exposición"
+      ]
+    },
+    "seo": {
+      "title": "Limpieza profesional de oficinas en Basel – discreta, puntual, fiable",
+      "p1": "Su empresa merece un entorno de trabajo que transmita profesionalidad – cada día, sin excepción. D'Namar ofrece a las empresas de Basel una limpieza de oficinas adaptada a su negocio que se integra perfectamente en su jornada laboral. Ya sea en el barrio de Gundeldingen, en Grossbasel, en St. Alban o en Kleinbasel – conocemos los locales comerciales de Basel y trabajamos exclusivamente fuera de su horario comercial.",
+      "p2": "Nuestros equipos limpian a primera hora antes de la primera reunión, por la tarde después del cierre de oficinas o los fines de semana. Cada intervención se realiza con productos de limpieza profesionales que también respetan las superficies delicadas y el equipamiento moderno de oficinas. A petición, elaboramos un protocolo de limpieza tras cada intervención – especialmente útil para consultorios médicos e instituciones con requisitos de higiene elevados.",
+      "p3": "En los edificios de Basel el contenido de cal del agua es especialmente alto. En instalaciones sanitarias, cocinas y salas de descanso apostamos por una protección antiincrustante eficaz: nuestros descalcificantes especiales y selladores protectores prolongan considerablemente la vida útil de sus grifos y superficies cerámicas y reducen el esfuerzo de limpieza a largo plazo.",
+      "p3Bold": "protección antiincrustante",
+      "p4": "Lo que distingue a D'Namar de otros: siempre contará con el mismo equipo de confianza que conoce su empresa, respeta sus procesos y actúa con discreción. Con más de 10 años de experiencia en Basel y más de 500 clientes satisfechos – desde la consulta individual en Riehen hasta el espacio abierto en Grossbasel – somos su socio fiable para la limpieza al más alto nivel."
+    },
+    "sidebar": {
+      "title": "De un vistazo",
+      "rows": [
+        { "val": "desde CHF 40", "label": "por hora" },
+        { "val": "24 h", "label": "Tiempo de respuesta garantizado" },
+        { "val": "10+", "label": "Años de experiencia en Basel" },
+        { "val": "500+", "label": "Clientes satisfechos" }
+      ],
+      "kalkBadge": "Protección antiincrustante incluida",
+      "kalkText": "para todas las instalaciones sanitarias – especialmente eficaz con el agua dura de Basel."
+    },
+    "benefits": [
+      { "title": "Fuera del horario de oficina", "desc": "Limpiamos a primera hora, por la tarde o los fines de semana – para no interrumpir su actividad." },
+      { "title": "Discreto y asegurado", "desc": "Nuestro equipo está sujeto a confidencialidad, completamente asegurado y verificado con referencias." },
+      { "title": "Ritmo de limpieza fijo", "desc": "Semanal, diario o según las necesidades – nos adaptamos a su calendario operativo." },
+      { "title": "Facturación transparente", "desc": "Factura mensual, sin costes ocultos, con protocolo de limpieza a petición." }
+    ],
+    "tasks": {
+      "title": "Alcance del servicio",
+      "subtitle": "Servicios estándar – personalizables para su empresa.",
+      "items": [
+        "Desinfectar escritorios, pantallas y teclados",
+        "Aspirar y fregar los suelos",
+        "Limpiar cocina y sala de descanso",
+        "Desinfectar instalaciones sanitarias y aplicar protección antiincrustante",
+        "Vaciar papeleras y retirar basura",
+        "Cuidar la recepción y sala de espera",
+        "Salas de reuniones según necesidad",
+        "Ventanas y mamparas de vidrio sin rayas",
+        "Desinfectar manillas y interruptores de luz",
+        "Escaleras y zonas comunes",
+        "Limpieza a fondo por acuerdo",
+        "Certificado de limpieza a petición"
+      ]
+    },
+    "priceTeaser": {
+      "label": "Precio orientativo comercial",
+      "price": "desde CHF 40",
+      "unit": "/ hora",
+      "sub": "Precios a tanto alzado por objeto bajo consulta",
+      "cta": "Presupuesto B2B gratuito"
+    },
+    "cta": {
+      "title": "¿Limpieza profesional de oficinas en Basel?",
+      "subtitle": "Le elaboraremos una oferta B2B a medida – gratuita y sin compromiso, respuesta en 24 horas."
+    }
+  },
+  "glasreinigung": {
+    "meta": {
+      "title": "Limpieza de cristales Basel | Limpieza de ventanas con protección antiincrustante – Particular y comercial",
+      "description": "Limpieza profesional de cristales y ventanas en Basel con sellado antiincrustante. Sin rayas, interior y exterior, para particulares y empresas en Riehen, Allschwil y Basel-Stadt."
+    },
+    "breadcrumb": "Limpieza de cristales",
+    "hero": {
+      "eyebrow": "Servicios",
+      "title": "Limpieza de cristales y",
+      "titleBrand": "ventanas Basel",
+      "subtitle": "Ventanas cristalinas – con protección antiincrustante profesional contra el agua dura de Basel. Sin rayas, interior y exterior, para hogares y locales comerciales en Riehen, Allschwil y todo Basel-Stadt.",
+      "kalkBadge": "Con sellado antiincrustante hasta 8 semanas"
+    },
+    "benefits": [
+      { "title": "Sellado antiincrustante", "desc": "Aplicamos un sellador protector tras la limpieza – hasta 8 semanas de protección antiincrustante con el agua dura de Basel." },
+      { "title": "Particular y comercial", "desc": "Desde el piso antiguo hasta la fachada de vidrio – limpiamos cualquier superficie de ventana en Basel y alrededores." },
+      { "title": "Interior y exterior", "desc": "Limpieza completa de ambas caras incluidos marcos, juntas y alféizares." },
+      { "title": "Agua osmótica", "desc": "Trabajamos con agua 100% desmineralizada y osmótica – sin rayas, sin cal." }
+    ],
+    "seo": {
+      "title": "Limpieza de cristales en Basel – y por qué la protección antiincrustante es clave",
+      "p1": "Las ventanas limpias dejan entrar más luz, mejoran el ambiente del interior y revalorizan cualquier edificio. D'Namar ofrece limpieza profesional de cristales para hogares privados y empresas en Basel y alrededores – en Riehen, Allschwil, Gundeldingen, St. Alban y todo el cantón urbano.",
+      "p2": "Lo que nos diferencia de los limpiadores de ventanas ordinarios: trabajamos exclusivamente con agua osmótica completamente desmineralizada. Esto significa que tras el secado no quedan residuos minerales en el cristal – el resultado es 100% sin rayas, incluso sin rastrillo manual.",
+      "p2Bold": "agua osmótica completamente desmineralizada",
+      "p3": "Especialmente importante en Basel: el agua del grifo en Basel-Stadt tiene un contenido de cal de hasta 35 grados franceses. Esto significa que en ventanas, duchas de vidrio y fachadas de vidrio sin un mantenimiento regular se forman manchas de cal persistentes que pueden dañar permanentemente la superficie. Tras cada limpieza aplicamos a petición un sellado antiincrustante que protege el vidrio hasta ocho semanas de nuevos depósitos.",
+      "p3Bold": "sellado antiincrustante",
+      "p4": "Nuestra limpieza de cristales es ideal para intervalos regulares – mensual, trimestral o según las necesidades. Para edificios comerciales e inmuebles ofrecemos contratos de mantenimiento con protocolos de intervención documentados. Desde la villa individual en Riehen hasta el edificio de oficinas en Grossbasel – contáctenos para un presupuesto gratuito."
+    },
+    "sidebar": {
+      "title": "Resumen de precios",
+      "rows": [
+        { "val": "desde CHF 8", "label": "por ventana (una cara)" },
+        { "val": "desde CHF 14", "label": "por ventana (ambas caras)" },
+        { "val": "desde CHF 120", "label": "Piso (hasta 10 ventanas)" },
+        { "val": "bajo consulta", "label": "Fachadas de vidrio y comercial" }
+      ],
+      "kalkTitle": "Sellado antiincrustante",
+      "kalkText": "Hasta 8 semanas de protección contra nuevos depósitos de cal – con sellado profesional tras la limpieza. Ideal para el agua dura de Basel (hasta 35 °fH)."
+    },
+    "tasks": {
+      "title": "Qué limpiamos",
+      "subtitle": "Todas las superficies de vidrio – del piso a la fachada comercial.",
+      "items": [
+        "Ventanas interior y exterior, sin rayas",
+        "Escaparates y fachadas de vidrio",
+        "Jardines de invierno y techos de vidrio",
+        "Ventanas de escaleras y zonas comunes",
+        "Marcos, ranuras y alféizares interiores",
+        "Quitar el polvo de persianas y estores",
+        "Espejos y mamparas de vidrio",
+        "Cristales de puertas y elementos de vidrio",
+        "Ventanas de tejado (Velux etc.)",
+        "Puertas de balcón y acristalamientos de terraza"
+      ]
+    },
+    "cta": {
+      "title": "¿Ventanas sin rayas con protección antiincrustante en Basel?",
+      "subtitle": "Le elaboramos un presupuesto gratuito – para una limpieza de cristales puntual o regular en su barrio."
+    }
+  },
+  "umzugsreinigung": {
+    "meta": {
+      "title": "Limpieza de mudanza Basel | Limpieza final con garantía de entrega",
+      "description": "Limpieza profesional de mudanza y final en Basel con garantía de entrega. Eliminación de cal en baño y cocina – cumplimos los requisitos de su administración. Presupuesto gratuito."
+    },
+    "breadcrumb": "Limpieza de mudanza",
+    "hero": {
+      "eyebrow": "Servicios",
+      "title": "Limpieza de mudanza y",
+      "titleBrand": "limpieza final Basel",
+      "badge": "Con garantía de entrega",
+      "subtitle": "Entrega del piso sin estrés – garantizada. Limpiamos su piso según los estándares de la administración y volvemos gratuitamente si hay deficiencias. En Gundeldingen, Kleinbasel, Dreispitz y todo Basel.",
+      "ctaPrimary": "Solicitar cita ahora"
+    },
+    "steps": {
+      "title": "Cómo funciona",
+      "items": [
+        { "title": "Reservar cita", "desc": "Contáctenos – coordinamos la cita adaptada a su fecha de entrega." },
+        { "title": "Revisar protocolo de entrega", "desc": "Conocemos los requisitos de las administraciones de Basel y los cumplimos." },
+        { "title": "Limpieza final a fondo", "desc": "Nuestro equipo limpia el piso según los estándares de la administración – completamente." },
+        { "title": "Garantía de entrega", "desc": "Si la administración detecta deficiencias, volvemos gratuitamente." }
+      ]
+    },
+    "seo": {
+      "title": "Limpieza final en Basel – perfecta para la entrega del piso",
+      "p1": "Una mudanza ya es bastante estresante – la limpieza final no tiene que serlo. D'Namar se encarga de la limpieza de mudanza completa de su piso en Basel y garantiza que pueda entregar las llaves sin objeciones. Nuestros empleados conocen exactamente los requisitos de las administraciones de Basel – ya sea en Gundeldingen, Kleinbasel, Dreispitz o St. Alban.",
+      "p2": "La limpieza de mudanza abarca todas las estancias: salón, dormitorio, cocina, baño, WC, sótano y balcón. La cocina y el baño requieren especial cuidado en la entrega del piso en Basel. La placa, el horno y el extractor deben estar completamente desengrasados. En el baño eliminamos los depósitos de cal persistentes en grifos, ducha y bañera con descalcificantes profesionales – imprescindible en Basel, donde el agua del grifo es especialmente calcárea.",
+      "p2Bold": "descalcificantes",
+      "p3": "Nuestra mayor ventaja: la garantía de entrega. Si la administración o el propietario detecta deficiencias en la entrega del piso, volvemos gratuitamente y corregimos – hasta que la entrega se realice con éxito. Esto le proporciona la seguridad que necesita al mudarse.",
+      "p3Bold": "garantía de entrega",
+      "p4": "Nuestro equipo puede reaccionar con poco tiempo y coordina directamente con su administración o agente inmobiliario. Somos su socio fiable para la entrega sin estrés del piso en Basel – con más de 10 años de experiencia y más de 500 entregas exitosas en todo el cantón urbano."
+    },
+    "sidebar": {
+      "title": "Resumen de precios",
+      "rows": [
+        { "val": "desde CHF 350", "label": "Piso de 2 hab. (hasta 50 m²)" },
+        { "val": "desde CHF 480", "label": "Piso de 3 hab. (hasta 80 m²)" },
+        { "val": "desde CHF 650", "label": "Piso de 4 hab. (hasta 110 m²)" }
+      ],
+      "ctaLabel": "Solicitar cita",
+      "kalkTitle": "Eliminación de cal incluida",
+      "kalkText": "Los depósitos de cal persistentes en el baño y la cocina se eliminan completamente con descalcificantes profesionales – para superar la entrega del piso."
+    },
+    "tasks": {
+      "title": "Alcance del servicio",
+      "subtitle": "Todos los puntos del protocolo de entrega – ampliable individualmente.",
+      "items": [
+        "Todas las estancias limpiadas en húmedo",
+        "Cocina: placa, horno, extractor, armarios interior y exterior",
+        "Baño y WC: eliminación de cal y desinfección",
+        "Ventanas interior y exterior (marcos y cristales)",
+        "Armarios empotrados y encastrados por dentro",
+        "Suelos: aspirar, fregar, limpiar transiciones",
+        "Limpiar balcón o terraza",
+        "Sótano y trastero a petición",
+        "Enchufes, interruptores y marcos de puertas",
+        "Despolvar radiadores",
+        "Buzón y zona de entrada",
+        "Preparación para la entrega de llaves"
+      ]
+    },
+    "cta": {
+      "title": "¿Entrega del piso sin estrés?",
+      "subtitle": "Nos encargamos de la limpieza final completa – puntualmente para la fecha de entrega, con garantía de entrega. Presupuesto gratuito en 24 horas."
+    }
+  },
+  "treppenhausreinigung": {
+    "meta": {
+      "title": "Limpieza de escaleras Basel | Zonas comunes para administraciones",
+      "description": "Limpieza fiable de escaleras en Basel para administraciones, propietarios y comunidades de vecinos. Con protección antiincrustante en ascensores y azulejos – en Gundeldingen, Riehen y todo Basel."
+    },
+    "breadcrumb": "Limpieza de escaleras",
+    "hero": {
+      "eyebrow": "Servicios",
+      "title": "Limpieza de escaleras",
+      "titleBrand": "en Basel",
+      "subtitle": "Una escalera bien cuidada causa una primera impresión excelente y aumenta el valor residencial de su inmueble. D'Namar se encarga del mantenimiento regular de sus zonas comunes – en todos los barrios de Basel, de forma fiable y según los estándares.",
+      "ctaSecondary": "Contactar directamente"
+    },
+    "features": [
+      { "title": "Ritmo regular", "desc": "Semanal, quincenal o mensual – nos adaptamos a su contrato." },
+      { "title": "Para administraciones", "desc": "Colaboramos con administraciones de fincas y propietarios en todo Basel." },
+      { "title": "Comunicación fiable", "desc": "Respuesta rápida ante problemas – siempre disponibles y sin complicaciones." },
+      { "title": "Certificado de limpieza", "desc": "A petición documentamos cada intervención con un certificado para sus archivos." }
+    ],
+    "seo": {
+      "title": "Limpieza de escaleras para inmuebles de Basel – discreta y fiable",
+      "p1": "La escalera es la tarjeta de visita de cada inmueble. Una zona de entrada cuidada transmite consideración hacia los inquilinos y contribuye esencialmente a la calidad residencial. D'Namar se encarga de la limpieza regular de escaleras para administraciones, propietarios y comunidades de vecinos en todo Basel – en Gundeldingen, Kleinbasel, St. Alban, Riehen, Allschwil y todos los demás barrios del cantón urbano.",
+      "p2": "Nuestro servicio abarca todas las zonas comunes: barrer y fregar en húmedo las escaleras, desinfectar barandillas y pasamanos, cuidar el buzón y la zona de entrada, limpiar y desinfectar cabinas de ascensor, así como limpiar las ventanas de la escalera. Nos adaptamos a su ritmo – semanal, quincenal o mensual, según los requisitos del inmueble.",
+      "p3": "En cabinas de ascensor y escaleras con baldosas cerámicas, el agua calcárea de Basel forma rápidamente una película de cal antiestética. Por eso utilizamos en la limpieza de baldosas y paredes de ascensores descalcificantes específicos y sellamos a petición las superficies lisas con una capa antiincrustante – para un resultado de limpieza más duradero.",
+      "p3Bold": "descalcificantes",
+      "p4": "Para las administraciones de fincas de Basel elaboramos a petición tras cada intervención un protocolo de limpieza digital – como justificante para propietarios e inquilinos. Somos socio de larga trayectoria de numerosas administraciones de Basel y entendemos los requisitos específicos de las zonas comunes en edificios de apartamentos, locales comerciales e inmuebles mixtos."
+    },
+    "sidebar": {
+      "title": "Resumen de precios",
+      "rows": [
+        { "val": "desde CHF 80", "label": "hasta 3 plantas" },
+        { "val": "desde CHF 130", "label": "hasta 6 plantas" },
+        { "val": "desde CHF 200", "label": "Inmueble grande" },
+        { "val": "bajo consulta", "label": "Contrato de mantenimiento" }
+      ],
+      "kalkTitle": "Protección antiincrustante para ascensor y baldosas",
+      "kalkText": "Descalcificación profesional y sellado protector para baldosas cerámicas y cabinas de ascensor – ideal contra el agua dura de Basel."
+    },
+    "tasks": {
+      "title": "¿Qué está incluido?",
+      "subtitle": "Cuidado completo de todas las zonas comunes – reservable individualmente.",
+      "items": [
+        "Barrer y fregar en húmedo la escalera",
+        "Desinfectar barandillas y pasamanos",
+        "Buzón y zona de entrada",
+        "Limpiar panel de timbres e intercomunicador",
+        "Escalera y pasillo del sótano",
+        "Limpiar y desinfectar el ascensor",
+        "Ventanas y alféizares de la escalera",
+        "Quitar el polvo de bombillas e interruptores",
+        "Puertas, marcos y manillas",
+        "Sótano comunitario y lavandería",
+        "Barrer la zona exterior / entrada",
+        "Retirar pequeños residuos"
+      ]
+    },
+    "cta": {
+      "title": "¿Busca mantenimiento de escaleras en Basel?",
+      "subtitle": "Para administraciones, propietarios y comunidades de vecinos en todos los barrios de Basel – presupuesto gratuito en 24 horas."
+    }
+  },
+  "preise": {
+    "meta": {
+      "title": "Precios y tarifas | Servicio de limpieza Basel – D'Namar",
+      "description": "Precios transparentes para todos los servicios de limpieza en Basel. Limpieza del hogar desde CHF 45/h, limpieza de mudanza desde CHF 380, limpieza de oficinas desde CHF 40/h. Presupuesto gratuito en 24 horas."
+    },
+    "hero": {
+      "badge": "Transparencia y equidad",
+      "title1": "Precios claros.",
+      "titleBrand": "Sin costes ocultos.",
+      "subtitle": "Todas las tarifas de un vistazo – desde la limpieza doméstica semanal hasta la limpieza final de obra. El precio exacto depende del tamaño, el estado y los requisitos de su objeto. Le elaboramos un presupuesto gratuito y sin compromiso en 24 horas."
+    },
+    "tableHeaders": {
+      "service": "Servicio",
+      "details": "Detalles",
+      "price": "Precio"
+    },
+    "priceNote": "Precios sin IVA · Precio final tras presupuesto gratuito.",
+    "alwaysIncluded": {
+      "eyebrow": "Siempre incluido",
+      "title": "Incluido en el precio",
+      "subtitle": "En cada encargo – ya sea puntual o regular – están incluidos los siguientes servicios sin cargo adicional.",
+      "items": [
+        "Todos los productos de limpieza y máquinas incluidos",
+        "Personal formado y asegurado",
+        "Persona de contacto fija para cada encargo",
+        "Planificación flexible de citas según sus deseos",
+        "Presupuesto gratuito en 24 horas",
+        "Experiencia antiincrustante para el agua de Basel"
+      ]
+    },
+    "disclaimer": "Aviso: Todos los precios son orientativos y se entienden sin IVA. El precio final se determina individualmente tras una visita gratuita o una solicitud escrita detallada. Solo el presupuesto confirmado por escrito es vinculante. D'Namar se reserva el derecho de modificar las tarifas en cualquier momento.",
+    "cta": {
+      "badge": "Gratuito y sin compromiso",
+      "title": "¿Desea calcular el precio para su objeto?",
+      "subtitle": "Rellene el formulario – nos pondremos en contacto con usted en 24 horas con un presupuesto personalizado para su situación.",
+      "hours": "Lun–Vie 08–18 · Sáb 09–14 · Respuesta en 24 horas"
+    },
+    "sections": {
+      "haushaltsreinigung": {
+        "category": "Limpieza del hogar",
+        "tagline": "Particular",
+        "description": "Limpieza de mantenimiento regular y limpieza puntual para hogares privados en Basel.",
+        "ctaLabel": "Solicitar limpieza del hogar",
+        "note": null,
+        "rows": [
+          { "service": "Limpieza por horas", "detail": "Reservable con flexibilidad · Duración mínima 2 horas", "price": "CHF 45 – 55", "unit": "/ hora" },
+          { "service": "Piso de 1-2 habitaciones", "detail": "Incl. baño, cocina y suelos", "price": "desde CHF 180", "unit": "/ intervención" },
+          { "service": "Piso de 3-4 habitaciones", "detail": "Incl. baño, cocina y suelos", "price": "desde CHF 320", "unit": "/ intervención", "highlight": true },
+          { "service": "5+ habitaciones / casa unifamiliar", "detail": "Incl. baño, cocina, suelos y escalera", "price": "desde CHF 480", "unit": "/ intervención" },
+          { "service": "Limpieza de mantenimiento (mensual)", "detail": "Equipo fijo, citas preferentes, encargo recurrente", "price": "desde CHF 160", "unit": "/ mes" }
+        ]
+      },
+      "umzugsreinigung": {
+        "category": "Limpieza de mudanza",
+        "tagline": "Con garantía de entrega",
+        "description": "Limpieza final profesional para entregas de pisos – con garantía de entrega hasta la aprobación exitosa.",
+        "ctaLabel": "Solicitar limpieza de mudanza",
+        "note": "La garantía de entrega se aplica a todas las limpiezas de mudanza: si la administración de la finca presenta objeciones, volvemos gratuitamente.",
+        "rows": [
+          { "service": "Piso de 1-2 habitaciones", "detail": "Incl. horno, frigorífico, baño y todos los suelos", "price": "desde CHF 380", "unit": "/ encargo" },
+          { "service": "Piso de 3-4 habitaciones", "detail": "Incl. horno, frigorífico, baño y todos los suelos", "price": "desde CHF 580", "unit": "/ encargo", "highlight": true },
+          { "service": "5+ habitaciones / casa unifamiliar", "detail": "Incl. todas las superficies, sótano bajo consulta", "price": "desde CHF 780", "unit": "/ encargo" },
+          { "service": "Garantía de entrega", "detail": "Corrección gratuita hasta la aprobación exitosa", "price": "Incluido", "unit": "" }
+        ]
+      },
+      "bueroreinigung": {
+        "category": "Limpieza de oficinas y locales",
+        "tagline": "Comercial",
+        "description": "Limpieza de mantenimiento para oficinas, consultorios médicos, centros de fitness y tiendas en Basel.",
+        "ctaLabel": "Solicitar limpieza de oficinas",
+        "note": null,
+        "rows": [
+          { "service": "Limpieza por horas", "detail": "Locales comerciales y oficinas · Duración mínima 2 horas", "price": "CHF 40 – 50", "unit": "/ hora" },
+          { "service": "Oficina hasta 100 m²", "detail": "Limpieza de mantenimiento semanal, equipo fijo", "price": "desde CHF 280", "unit": "/ mes" },
+          { "service": "Oficina 100-250 m²", "detail": "Limpieza de mantenimiento semanal, equipo fijo", "price": "desde CHF 480", "unit": "/ mes", "highlight": true },
+          { "service": "Limpieza de consultorios", "detail": "Según requisitos de higiene · Protocolo bajo consulta", "price": "bajo consulta", "unit": "" },
+          { "service": "Local comercial grande 250+ m²", "detail": "Oferta individualizada tras visita", "price": "bajo consulta", "unit": "" }
+        ]
+      },
+      "glasreinigung": {
+        "category": "Limpieza de cristales",
+        "tagline": "Particular y comercial",
+        "description": "Ventanas y fachadas de vidrio sin rayas para hogares y empresas – con sellado antiincrustante.",
+        "ctaLabel": "Solicitar limpieza de cristales",
+        "note": null,
+        "rows": [
+          { "service": "Superficie de vidrio (por m²)", "detail": "Interior y exterior, sin rayas · Encargo mínimo CHF 90", "price": "desde CHF 5", "unit": "/ m²" },
+          { "service": "Hogar particular (precio fijo)", "detail": "Hasta 10 ventanas estándar, incl. marcos", "price": "desde CHF 90", "unit": "/ intervención" },
+          { "service": "Fachada de vidrio comercial", "detail": "Escaparates, edificios de oficinas – precio según superficie", "price": "desde CHF 150", "unit": "/ intervención", "highlight": true },
+          { "service": "Sellado antiincrustante", "detail": "Protege hasta 8 semanas contra nuevos depósitos", "price": "desde CHF 30", "unit": "/ intervención" }
+        ]
+      },
+      "treppenhausreinigung": {
+        "category": "Limpieza de escaleras",
+        "tagline": "Administraciones",
+        "description": "Zonas de entrada y escaleras bien cuidadas – fiable, discreta y según acuerdo.",
+        "ctaLabel": "Solicitar limpieza de escaleras",
+        "note": null,
+        "rows": [
+          { "service": "Limpieza semanal", "detail": "Hasta 4 plantas · Suelos, barandillas, buzón", "price": "desde CHF 80", "unit": "/ intervención" },
+          { "service": "Limpieza quincenal", "detail": "Hasta 4 plantas · Suelos, barandillas, buzón", "price": "desde CHF 100", "unit": "/ intervención", "highlight": true },
+          { "service": "Limpieza básica mensual", "detail": "Incl. ventanas de escalera y sótano", "price": "desde CHF 180", "unit": "/ intervención" },
+          { "service": "Edificios plurifamiliares (6+ partes)", "detail": "Oferta individualizada para administraciones", "price": "bajo consulta", "unit": "" }
+        ]
+      },
+      "gewerbereinigung": {
+        "category": "Limpieza industrial y especial",
+        "tagline": "Bajo consulta",
+        "description": "Limpieza a fondo, limpieza final de obra y limpiezas especiales tras reforma o construcción.",
+        "ctaLabel": "Solicitar limpieza especial",
+        "note": null,
+        "rows": [
+          { "service": "Limpieza final de obra", "detail": "Tras reforma o obra nueva · Incl. ventanas y suelos", "price": "desde CHF 400", "unit": "/ encargo" },
+          { "service": "Limpieza a fondo de cocina", "detail": "Horno, placas, extractor, eliminación de cal", "price": "desde CHF 120", "unit": "/ cocina" },
+          { "service": "Limpieza de moquetas y tapicería", "detail": "Extracción en húmedo o limpieza en seco según el material", "price": "desde CHF 4", "unit": "/ m²" },
+          { "service": "Grandes obras / instalaciones industriales", "detail": "Visita obligatoria · Presupuesto en 48 horas", "price": "bajo consulta", "unit": "", "highlight": true }
+        ]
+      }
+    }
+  },
+  "referenzen": {
+    "meta": {
+      "title": "Referencias y testimonios – D'Namar Servicio de limpieza Basel",
+      "description": "Lea valoraciones reales de clientes de Basel. D'Namar convence en limpieza del hogar, oficinas, mudanza y más – con 4,9 de 5 estrellas."
+    },
+    "hero": {
+      "badge": "Lo que dicen los clientes",
+      "title1": "Referencias y",
+      "titleBrand": "testimonios",
+      "subtitle": "Más de 500 hogares y empresas en Basel confían en D'Namar. Aquí algunas de sus opiniones – íntegras y auténticas."
+    },
+    "aggregate": {
+      "outOf": "Ø de",
+      "reviews": "valoraciones",
+      "disclaimer": "Todas las valoraciones provienen de clientes reales de Basel y alrededores – sin editar y transmitidas directamente."
+    },
+    "stats": [
+      { "value": "500+", "label": "Clientes satisfechos" },
+      { "value": "4.9", "label": "Valoración media" },
+      { "value": "10+", "label": "Años en Basel" },
+      { "value": "100%", "label": "Tasa de recomendación" }
+    ],
+    "cta": {
+      "badge": "Solicitar ahora",
+      "title1": "Conviértase en nuestro próximo",
+      "titleBrand": "cliente satisfecho",
+      "subtitle": "Solicite su presupuesto gratuito ahora – en 24 horas recibirá una oferta personal y sin compromiso."
+    }
+  },
+  "ueber-uns": {
+    "meta": {
+      "title": "Sobre nosotros – D'Namar Servicio de limpieza Basel",
+      "description": "Conozca a Maritza Rodriguez y Nadjib Rasuly – los fundadores de D'Namar. Limpieza profesional en Basel con dedicación personal, calidad suiza y garantía de entrega."
+    },
+    "hero": {
+      "badge": "El equipo detrás de D'Namar",
+      "title1": "Limpieza como",
+      "titleBrand": "promesa",
+      "title2": "No como rutina.",
+      "subtitle": "Detrás de D'Namar no hay empleados anónimos, sino personas que ponen su nombre en su trabajo. Maritza Rodriguez y Nadjib Rasuly construyeron esta empresa porque creen en la calidad real – y en la diferencia que marca el compromiso personal.",
+      "stats": [
+        { "value": "500+", "label": "Clientes satisfechos" },
+        { "value": "10+", "label": "Años de experiencia" },
+        { "value": "4.9 ★", "label": "Valoración de clientes" },
+        { "value": "100%", "label": "Garantía de entrega" }
+      ]
+    },
+    "manifest": {
+      "eyebrow": "Nuestra historia",
+      "title1": "Fundados en Basel.",
+      "title2": "Arraigados en Basel.",
+      "p1": "Todo comenzó con un pensamiento sencillo: la limpieza no debe ser un servicio anónimo – sino una promesa personal. Maritza Rodriguez y Nadjib Rasuly fundaron D'Namar con el objetivo de dar a los hogares y empresas de Basel exactamente lo que muchas grandes empresas no pueden ofrecer: fiabilidad con rostro.",
+      "p1Bold": "fiabilidad con rostro.",
+      "p2": "Basel es nuestro hogar. Conocemos los edificios, las administraciones de fincas y las altas exigencias de los inquilinos y propietarios de Basel. Sabemos lo que el duro cal de Basel hace a grifos, duchas y superficies de vidrio – y tenemos los productos adecuados y el conocimiento técnico para eliminarlo de forma suave y eficaz.",
+      "p3": "Lo que nos impulsa desde el primer día: el momento en que un cliente entra en su piso recién limpiado y ve lo que significa el verdadero cuidado. Esa confianza es nuestra motivación – y nuestra mayor recompensa.",
+      "readReferences": "Leer referencias",
+      "badgeVerified": "Asegurado y verificado"
+    },
+    "team": {
+      "eyebrow": "Las personas detrás",
+      "title": "Nuestro equipo fundador",
+      "subtitle": "Dos personas, una misión: limpieza a un nivel que no se espera en Basel – y que ya no se quiere perder.",
+      "maritza": {
+        "name": "Maritza Rodriguez",
+        "role": "Fundadora y profesional de la limpieza",
+        "quote": "«Para mí, limpiar es más que simplemente limpiar – es una expresión de respeto hacia la persona para quien trabajo. No me voy hasta que yo misma esté satisfecha.»",
+        "p1": "Maritza aporta más de diez años de experiencia en limpieza profesional de hogares y locales comerciales. Su ojo para el detalle es legendario entre los clientes habituales: ni una mancha de cal, ni un rastro de grasa, ni un rincón pasado por alto. A ello se suma su carácter amable y discreto – es la primera persona de contacto para clientes privados en todo Basel.",
+        "p2": "Las limpiezas de mudanza le tocan especialmente el corazón: «La entrega del piso suele ser estresante. Quiero que mis clientes vayan a la entrega tranquilos – porque saben que todo está en orden.»",
+        "tags": ["Limpieza del hogar", "Limpieza de mudanza", "Limpieza a fondo", "Clientes privados"]
+      },
+      "nadjib": {
+        "name": "Nadjib Rasuly",
+        "role": "Cofundador y profesional de la limpieza",
+        "quote": "«La calidad no se reconoce solo en el brillo – sino en la confianza que los clientes nos otorgan al volver a contratarnos. Ese es el estándar con el que mido mi trabajo.»",
+        "p1": "Nadjib es la fuerza operativa detrás de D'Namar. Coordina los trabajos, es el primer interlocutor para los clientes comerciales y se asegura de que cada encargo transcurra sin problemas – puntual, completo y según lo acordado. Su precisión ha contribuido a que muchas empresas de Basel hayan elegido a D'Namar como socio fijo para la limpieza de mantenimiento.",
+        "p2": "Su exigencia: «Cada limpieza de oficina, cada escalera, cada consultorio – todo se trata como lo más importante que hacemos hoy. Porque lo es para nuestros clientes.»",
+        "tags": ["Limpieza de oficinas", "Limpieza de escaleras", "Limpieza comercial", "Clientes B2B"]
+      }
+    },
+    "qualityPromise": {
+      "eyebrow": "Nuestra promesa de calidad",
+      "title1": "Lo que «limpio» en Basel",
+      "title2": "realmente significa",
+      "p1": "El agua del grifo de Basel es conocida por su alto contenido de cal. Esto significa: los grifos se calcifican más rápido, las duchas de vidrio muestran antes manchas blancas, y las superficies de cocina necesitan un cuidado específico. Muchos servicios de limpieza conocen el problema – pero no todos tienen el conocimiento técnico para tratarlo correctamente.",
+      "p2": "En D'Namar, el tratamiento antiincrustante es una parte fija de cada intervención. Trabajamos con descalcificantes profesionales que respetan los materiales y conocemos los límites de cada tipo de superficie – cromo, vidrio, cerámica, piedra natural. El resultado: grifos que vuelven a brillar. Duchas que parecen nuevas.",
+      "p2Bold": "parte fija de cada intervención",
+      "p3": "Esto es solo un ejemplo de lo que nos distingue. Nuestra promesa de calidad vale para cada gesto: cuando terminamos, está realmente limpio. No «suficientemente bien» – sino como usted se lo imagina.",
+      "p3Bold": "Cuando terminamos, está realmente limpio.",
+      "kalkTitle": "Experiencia antiincrustante",
+      "kalkText": "Eliminamos los depósitos de cal de Basel de forma suave y duradera.",
+      "bullets": [
+        "Descalcificantes profesionales – suaves y eficaces",
+        "Control tras cada intervención por el equipo fundador",
+        "Garantía de entrega en limpieza de mudanza – sin cargo adicional",
+        "Garantía de satisfacción: volvemos gratuitamente"
+      ]
+    },
+    "values": {
+      "eyebrow": "Lo que nos impulsa",
+      "title": "Nuestros valores",
+      "subtitle": "Seis principios que guían nuestras acciones cada día – en cada hogar, en cada oficina, en cada escalera.",
+      "items": [
+        { "title": "Puntualidad suiza", "desc": "Los plazos se cumplen – sin excepción. Su confianza es nuestro capital más valioso." },
+        { "title": "Compromiso familiar", "desc": "Tratamos su hogar como si fuera el nuestro – con cuidado, discreción y respeto genuino." },
+        { "title": "Completamente asegurado", "desc": "Nuestro equipo trabaja con seguro de responsabilidad civil profesional. Para su seguridad – y para nuestra profesionalidad." },
+        { "title": "Atención personalizada", "desc": "Sin centro de llamadas, sin equipos anónimos. En D'Namar sabe quién viene – en cada visita." },
+        { "title": "Experiencia antiincrustante Basel", "desc": "Conocemos el cal de Basel y sabemos exactamente cómo eliminarlo de forma eficaz y respetuosa con los materiales." },
+        { "title": "Garantía de calidad", "desc": "Si algo no está bien, volvemos gratuitamente – hasta que esté completamente satisfecho. Nuestra palabra vale." }
+      ]
+    },
+    "timeline": {
+      "eyebrow": "Nuestra historia",
+      "title": "Cómo empezó todo",
+      "items": [
+        { "year": "La fundación", "period": "2015", "text": "Maritza Rodriguez y Nadjib Rasuly fundan D'Namar en Basel – con un objetivo claro: ofrecer limpieza profesional de forma personal, fiable y sin costes ocultos. Los primeros clientes llegan por recomendación boca a boca." },
+        { "year": "El crecimiento", "period": "2018–2021", "text": "Gracias a la calidad constante y las recomendaciones personales, la base de clientes crece de forma continua. D'Namar amplía su oferta a oficinas, escaleras y limpieza de mudanza con garantía de entrega." },
+        { "year": "Hoy", "period": "2025", "text": "D'Namar es una empresa de limpieza consolidada en Basel con más de 500 clientes satisfechos, un equipo compenetrado y la misma pasión que el primer día." }
+      ]
+    },
+    "cta": {
+      "title1": "Compruébelo usted mismo –",
+      "titleBrand": "personalmente y de forma gratuita.",
+      "subtitle": "Solicite su presupuesto sin compromiso. Nos pondremos en contacto con usted en 24 horas – de forma personal, no automatizada.",
+      "ctaSecondary": "Contactar directamente",
+      "trust": ["Garantía de entrega", "Seguro de responsabilidad civil", "Local en Basel", "Respuesta en 24 h"]
+    }
+  },
+  "anfrage": {
+    "meta": {
+      "title": "Solicitar presupuesto gratuito | D'Namar Servicio de limpieza Basel",
+      "description": "Presupuesto de limpieza gratuito para Basel en 4 pasos. Limpieza del hogar, oficinas, mudanza y cristales – respuesta en 24 horas. Solicitar ahora."
+    },
+    "hero": {
+      "badge": "Rápido y sin complicaciones",
+      "title": "Presupuesto gratuito",
+      "titleBrand": "en 4 pasos",
+      "subtitle": "Elija su servicio, proporcione los detalles del objeto y le elaboraremos una oferta a medida – en 24 horas, de forma personal y sin compromiso.",
+      "promises": [
+        "Respuesta en 24 horas",
+        "Sin pago anticipado requerido",
+        "Gratuito y sin compromiso",
+        "Asesoramiento personal incluido"
+      ]
+    },
+    "sidebar": {
+      "whyTitle": "¿Por qué D'Namar?",
+      "stats": [
+        { "val": "10+", "label": "Años de experiencia en Basel" },
+        { "val": "500+", "label": "Clientes satisfechos" },
+        { "val": "24 h", "label": "Tiempo de respuesta garantizado" },
+        { "val": "4.9 ★", "label": "Valoración de clientes" },
+        { "val": "CHF 40–", "label": "Desde CHF 40 por hora" }
+      ],
+      "guaranteeTitle": "Garantía de entrega",
+      "guaranteeText": "En la limpieza de mudanza volvemos gratuitamente – hasta la aprobación exitosa por la administración.",
+      "callTitle": "¿Prefiere llamar directamente?",
+      "hours": "Lun–Vie 08–18 · Sáb 09–14",
+      "whatsappLink": "Escribir por WhatsApp"
+    },
+    "form": {
+      "formLoading": "Cargando formulario…",
+      "steps": ["Servicio", "Detalles", "Contacto", "Enviar"],
+      "step0": {
+        "title": "¿Qué servicio desea?",
+        "subtitle": "Seleccione un tipo de limpieza.",
+        "errorService": "Por favor seleccione un servicio."
+      },
+      "step1": {
+        "title": "Objeto y frecuencia",
+        "subtitle": "Para que podamos elaborarle una oferta exacta.",
+        "sizeLabel": "Tamaño del objeto",
+        "squareMeters": "Metros cuadrados",
+        "roomCount": "Número de habitaciones",
+        "frequencyLabel": "Frecuencia deseada",
+        "dateLabel": "Fecha deseada",
+        "dateHint": "Opcional – también se puede acordar por teléfono.",
+        "notesLabel": "Requisitos especiales o indicaciones",
+        "notesPlaceholder": "p.ej. mascotas, superficies de difícil acceso, protección antiincrustante deseada…",
+        "errorSize": "Por favor seleccione un tamaño.",
+        "errorFrequency": "Por favor seleccione una frecuencia."
+      },
+      "step2": {
+        "title": "Sus datos de contacto",
+        "subtitle": "Todos los campos marcados con * son obligatorios.",
+        "nameLabel": "Nombre completo",
+        "namePlaceholder": "Juan García",
+        "emailLabel": "Dirección de correo electrónico",
+        "emailPlaceholder": "juan@ejemplo.ch",
+        "phoneLabel": "Teléfono / WhatsApp",
+        "phoneHint": "Para consultas rápidas – también por WhatsApp.",
+        "phonePlaceholder": "+41 79 000 00 00",
+        "addressLabel": "Dirección del objeto en Basel",
+        "addressHint": "Calle, número y barrio – para que podamos calcular el desplazamiento y el precio.",
+        "addressPlaceholder": "Calle Ejemplo 12, 4051 Basel",
+        "errorName": "El nombre es obligatorio.",
+        "errorEmail": "Por favor introduzca una dirección de correo electrónico válida.",
+        "errorPhone": "El número de teléfono es obligatorio.",
+        "errorAddress": "La dirección en Basel es obligatoria."
+      },
+      "step3": {
+        "title": "Resumen",
+        "subtitle": "Por favor revise sus datos – luego enviar.",
+        "changeLabel": "Cambiar",
+        "privacyNote": "Al enviar confirma que podemos usar sus datos exclusivamente para gestionar esta solicitud. Sin cesión a terceros.",
+        "submitBtn": "Solicitar presupuesto gratuito",
+        "sending": "Enviando…",
+        "summaryKeys": {
+          "service": "Servicio",
+          "size": "Tamaño",
+          "frequency": "Frecuencia",
+          "date": "Fecha",
+          "name": "Nombre",
+          "email": "Correo",
+          "phone": "Teléfono",
+          "address": "Dirección",
+          "notes": "Indicaciones",
+          "dateDefault": "A acordar"
+        }
+      },
+      "success": {
+        "title": "¡Muchas gracias, {name}!",
+        "subtitle": "Hemos recibido su solicitud. Nos pondremos en contacto con usted en 24 horas.",
+        "subtitleBold": "Nos pondremos en contacto con usted en 24 horas.",
+        "noReply": "¿No ha recibido respuesta? Llámenos directamente:"
+      },
+      "services": {
+        "haushaltsreinigung": { "label": "Limpieza del hogar", "desc": "Hogares privados y apartamentos" },
+        "bueroreinigung": { "label": "Limpieza de oficinas", "desc": "Oficinas, consultorios y locales" },
+        "umzugsreinigung": { "label": "Limpieza de mudanza", "desc": "Limpieza final con garantía" },
+        "renovationsreinigung": { "label": "Limpieza post-obra", "desc": "Tras reforma, obra nueva y construcción" },
+        "treppenhausreinigung": { "label": "Limpieza de escaleras", "desc": "Zonas comunes y ascensores" },
+        "glasreinigung": { "label": "Limpieza de cristales", "desc": "Ventanas y superficies de vidrio" },
+        "tiefenreinigung": { "label": "Limpieza a fondo", "desc": "Limpieza general exhaustiva" },
+        "anderes": { "label": "Otro / Combinación", "desc": "Otro o varios servicios" }
+      },
+      "frequencies": {
+        "einmalig": { "label": "Puntual", "sub": "Solo esta intervención" },
+        "woechentlich": { "label": "Semanal", "sub": "1× por semana" },
+        "zweiwochentlich": { "label": "2× al mes", "sub": "Cada 2 semanas" },
+        "monatlich": { "label": "Mensual", "sub": "1× al mes" },
+        "unbekannt": { "label": "Aún no está claro", "sub": "Asesoramiento deseado" }
+      },
+      "sizes": {
+        "m2": ["< 50 m²", "50–80 m²", "80–120 m²", "120–200 m²", "> 200 m²", "No relevante"],
+        "zimmer": ["1 habitación", "2 habitaciones", "3–4 habitaciones", "5+ habitaciones", "No relevante"]
+      }
+    }
+  },
+  "kontakt": {
+    "meta": {
+      "title": "Contacto | D'Namar Servicio de limpieza Basel",
+      "description": "Contacte con D'Namar en Basel. Teléfono: +41 79 252 75 57. Presupuesto gratuito en 24 horas."
+    },
+    "hero": {
+      "eyebrow": "Estaremos encantados de atenderle",
+      "title": "Contacto",
+      "subtitle": "Escríbanos o llame – le elaboraremos un presupuesto gratuito y sin compromiso en 24 horas."
+    },
+    "info": {
+      "title": "Datos de contacto",
+      "items": [
+        { "label": "Teléfono y WhatsApp", "value": "+41 79 252 75 57" },
+        { "label": "Correo electrónico", "value": "info@dnamar.ch" },
+        { "label": "Área de servicio", "value": "Basel y alrededores" },
+        { "label": "Disponibilidad", "value": "Lun–Vie 08:00–18:00 · Sáb 09:00–14:00" }
+      ]
+    },
+    "form": {
+      "title": "Enviar presupuesto o consulta",
+      "subtitle": "Todos los campos con * son obligatorios.",
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Juan García",
+      "emailLabel": "Correo electrónico",
+      "emailPlaceholder": "juan@ejemplo.ch",
+      "phoneLabel": "Teléfono",
+      "phoneOptional": "Opcional",
+      "phonePlaceholder": "+41 79 000 00 00",
+      "serviceLabel": "Servicio deseado",
+      "servicePlaceholder": "Por favor seleccione…",
+      "messageLabel": "Su mensaje",
+      "messagePlaceholder": "Describa su necesidad – p.ej. tamaño del piso, fecha deseada, requisitos especiales…",
+      "submitBtn": "Enviar solicitud",
+      "sending": "Enviando…",
+      "successTitle": "¡Muchas gracias!",
+      "successText": "Hemos recibido su solicitud y nos pondremos en contacto con usted en 24 horas.",
+      "errorMsg": "Se ha producido un error. Por favor inténtelo de nuevo.",
+      "errorName": "Por favor introduzca su nombre.",
+      "errorEmailEmpty": "Por favor introduzca su dirección de correo electrónico.",
+      "errorEmailInvalid": "Por favor introduzca una dirección de correo electrónico válida.",
+      "errorPhone": "Por favor introduzca un número de teléfono válido.",
+      "errorService": "Por favor seleccione un servicio.",
+      "errorMessage": "Por favor describa su necesidad (mín. 10 caracteres).",
+      "services": [
+        "Limpieza del hogar",
+        "Limpieza de oficinas",
+        "Limpieza de mudanza / limpieza final",
+        "Limpieza post-obra",
+        "Limpieza de escaleras",
+        "Limpieza de cristales / ventanas",
+        "Limpieza a fondo",
+        "Limpieza de consultorios",
+        "Otro"
+      ]
+    },
+    "mapTitle": "Área de servicio D'Namar Basel"
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog y consejos de limpieza | D'Namar Basel",
+      "description": "Guías y consejos sobre limpieza en Basel. ¿Con qué frecuencia limpiar la oficina? Lista de comprobación para la limpieza de mudanza – y más de D'Namar."
+    },
+    "hero": {
+      "eyebrow": "Conocimiento y consejos",
+      "title": "Blog de limpieza",
+      "subtitle": "Guías, listas de comprobación y consejos de expertos sobre limpieza – para hogares y empresas en Basel."
+    },
+    "readTime": "Tiempo de lectura",
+    "readMore": "Leer más",
+    "cta": {
+      "title": "¿Preguntas sobre limpieza en Basel?",
+      "subtitle": "Estaremos encantados de asesorarle – de forma gratuita y sin compromiso."
+    },
+    "posts": {
+      "bueroreinigung-tipps-basel": {
+        "title": "¿Con qué frecuencia se debe limpiar una oficina? Consejos para empresas en Basel",
+        "excerpt": "Una oficina limpia es más que estética – protege la salud de sus empleados y causa una impresión profesional. Explicamos qué frecuencia de limpieza es óptima para su empresa.",
+        "category": "Limpieza de oficinas",
+        "date": "10 de marzo de 2025",
+        "readTime": "6 min."
+      },
+      "umzug-endreinigung-checkliste-basel": {
+        "title": "Lista de comprobación para la limpieza final en una mudanza en Basel",
+        "excerpt": "Quien se muda de un piso de alquiler en Basel debe presentar una limpieza a fondo. Con esta lista de comprobación no se perderá ningún punto y evitará costes innecesarios.",
+        "category": "Limpieza de mudanza",
+        "date": "25 de febrero de 2025",
+        "readTime": "7 min."
+      }
+    },
+    "blogPost": {
+      "backToBlog": "Blog",
+      "bueroreinigung": "Limpieza de oficinas",
+      "umzugsreinigung": "Limpieza de mudanza",
+      "readTime": "Tiempo de lectura",
+      "author": "D'Namar Servicio de limpieza Basel",
+      "ctaBuero": {
+        "title": "¿Busca limpieza de oficinas en Basel?",
+        "subtitle": "Presupuesto gratuito y en 24 horas."
+      },
+      "ctaUmzug": {
+        "title": "Limpieza de mudanza con garantía de entrega",
+        "subtitle": "Presupuesto gratuito – respuesta en 24 horas."
+      }
+    }
+  },
+  "whatsapp": {
+    "message": "Hola equipo D'Namar, me intereso por sus servicios de limpieza en Basel. ¿Podrían elaborarme un presupuesto?",
+    "tooltip": "Escribir por WhatsApp ahora",
+    "ariaLabel": "Escribir por WhatsApp"
+  },
+  "slider": {
+    "prevLabel": "Servicio anterior",
+    "nextLabel": "Siguiente servicio",
+    "slides": [
+      {
+        "title": "Limpieza de oficinas Basel",
+        "desc": "Limpieza profesional para oficinas, consultorios y locales comerciales – en Gundeldingen, Grossbasel y todo el cantón urbano.",
+        "badge": "Comercial",
+        "cta": "Ver limpieza de oficinas"
+      },
+      {
+        "title": "Limpieza del hogar",
+        "desc": "Limpieza minuciosa de pisos según su horario – en St. Alban, Kleinbasel, Gundeldingen y Riehen.",
+        "badge": "Particular",
+        "cta": "Ver limpieza del hogar"
+      },
+      {
+        "title": "Limpieza de cristales Basel",
+        "desc": "Ventanas y fachadas de vidrio sin rayas – para hogares y empresas en Riehen, Allschwil y Basel-Stadt.",
+        "badge": "Particular y comercial",
+        "cta": "Ver limpieza de cristales"
+      },
+      {
+        "title": "Limpieza de mudanza",
+        "desc": "Placa sin cal, horno desengrasado, cocina impecable – con garantía de entrega para su traspaso de piso en Basel.",
+        "badge": "Con garantía de entrega",
+        "cta": "Ver limpieza de mudanza"
+      },
+      {
+        "title": "Limpieza de escaleras",
+        "desc": "Zonas de entrada y escaleras bien cuidadas en todos los barrios de Basel – fiable, regular y discreta.",
+        "badge": "Administraciones",
+        "cta": "Ver limpieza de escaleras"
+      },
+      {
+        "title": "Limpieza comercial",
+        "desc": "Limpieza a medida para consultorios, centros de fitness y tiendas en Basel y alrededores.",
+        "badge": "Comercial",
+        "cta": "Más información"
+      }
+    ]
+  }
+}

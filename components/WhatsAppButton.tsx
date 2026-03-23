@@ -1,22 +1,22 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 const WHATSAPP_NUMBER = "41792527557"; // +41 79 252 75 57 — no + or spaces
-const WHATSAPP_MESSAGE = encodeURIComponent(
-  "Hallo D'Namar Team, ich interessiere mich für Ihre Reinigungsdienstleistungen in Basel. Könnten Sie mir bitte eine Offerte erstellen?"
-);
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
 
 export default function WhatsAppButton() {
+  const t = useTranslations("whatsapp");
   const [hovered, setHovered] = useState(false);
+
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t("message"))}`;
 
   return (
     <a
-      href={WHATSAPP_URL}
+      href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="WhatsApp schreiben"
+      aria-label={t("ariaLabel")}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="fixed bottom-6 right-6 z-50 flex items-center gap-3 group"
@@ -29,7 +29,7 @@ export default function WhatsAppButton() {
           ${hovered ? "opacity-100 translate-x-0" : "opacity-0 translate-x-2 pointer-events-none"}
         `}
       >
-        Jetzt auf WhatsApp schreiben
+        {t("tooltip")}
       </span>
 
       {/* Button */}

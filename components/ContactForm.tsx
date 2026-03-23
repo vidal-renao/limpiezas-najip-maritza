@@ -1,19 +1,8 @@
 "use client";
 
 import { useState, useId } from "react";
+import { useTranslations } from "next-intl";
 import { Send, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
-
-const SERVICES = [
-  "Haushaltsreinigung",
-  "Büroreinigung",
-  "Umzugsreinigung / Endreinigung",
-  "Renovationsreinigung",
-  "Treppenhausreinigung",
-  "Glasreinigung / Fensterreinigung",
-  "Tiefenreinigung",
-  "Praxisreinigung",
-  "Anderes",
-] as const;
 
 type FormData = {
   name: string;
@@ -25,26 +14,30 @@ type FormData = {
 
 type Errors = Partial<Record<keyof FormData, string>>;
 
-function validate(data: FormData): Errors {
-  const errors: Errors = {};
-  if (!data.name.trim()) errors.name = "Bitte geben Sie Ihren Namen ein.";
-  if (!data.email.trim()) {
-    errors.email = "Bitte geben Sie Ihre E-Mail-Adresse ein.";
-  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
-    errors.email = "Bitte geben Sie eine gültige E-Mail-Adresse ein.";
-  }
-  if (data.phone && !/^[\d\s+\-().]{7,20}$/.test(data.phone)) {
-    errors.phone = "Bitte geben Sie eine gültige Telefonnummer ein.";
-  }
-  if (!data.service) errors.service = "Bitte wählen Sie eine Leistung aus.";
-  if (!data.message.trim() || data.message.trim().length < 10) {
-    errors.message = "Bitte beschreiben Sie Ihr Anliegen (mind. 10 Zeichen).";
-  }
-  return errors;
-}
-
 export default function ContactForm() {
+  const t = useTranslations("kontakt.form");
   const id = useId();
+
+  const services = t.raw("services") as string[];
+
+  function validate(data: FormData): Errors {
+    const errors: Errors = {};
+    if (!data.name.trim()) errors.name = t("errorName");
+    if (!data.email.trim()) {
+      errors.email = t("errorEmailEmpty");
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
+      errors.email = t("errorEmailInvalid");
+    }
+    if (data.phone && !/^[\d\s+\-().]{7,20}$/.test(data.phone)) {
+      errors.phone = t("errorPhone");
+    }
+    if (!data.service) errors.service = t("errorService");
+    if (!data.message.trim() || data.message.trim().length < 10) {
+      errors.message = t("errorMessage");
+    }
+    return errors;
+  }
+
   const [form, setForm] = useState<FormData>({
     name: "",
     email: "",
@@ -69,7 +62,7 @@ export default function ContactForm() {
 
   const handleBlur = (e: React.FocusEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name } = e.target;
-    setTouched((t) => ({ ...t, [name]: true }));
+    setTouched((prev) => ({ ...prev, [name]: true }));
     setErrors(validate(form));
   };
 
@@ -84,7 +77,6 @@ export default function ContactForm() {
     if (Object.keys(errs).length > 0) return;
 
     setStatus("sending");
-    // TODO: Replace with your API route or email service (e.g. Resend, Formspree)
     await new Promise((r) => setTimeout(r, 1200));
     setStatus("success");
   };
@@ -93,10 +85,9 @@ export default function ContactForm() {
     return (
       <div className="flex flex-col items-center text-center py-10 gap-4">
         <CheckCircle2 className="w-12 h-12 text-brand" />
-        <h3 className="text-xl font-bold text-navy">Vielen Dank!</h3>
+        <h3 className="text-xl font-bold text-navy">{t("successTitle")}</h3>
         <p className="text-foreground/65 text-sm max-w-xs leading-relaxed">
-          Wir haben Ihre Anfrage erhalten und melden uns innerhalb von 24
-          Stunden bei Ihnen.
+          {t("successText")}
         </p>
       </div>
     );
@@ -108,7 +99,7 @@ export default function ContactForm() {
       <div className="grid sm:grid-cols-2 gap-4">
         <Field
           id={`${id}-name`}
-          label="Name"
+          label={t("nameLabel")}
           required
           error={touched.name ? errors.name : undefined}
         >
@@ -120,14 +111,14 @@ export default function ContactForm() {
             value={form.name}
             onChange={handleChange}
             onBlur={handleBlur}
-            placeholder="Max Mustermann"
+            placeholder={t("namePlaceholder")}
             className={inputClass(touched.name && !!errors.name)}
           />
         </Field>
 
         <Field
           id={`${id}-email`}
-          label="E-Mail"
+          label={t("emailLabel")}
           required
           error={touched.email ? errors.email : undefined}
         >
@@ -139,7 +130,7 @@ export default function ContactForm() {
             value={form.email}
             onChange={handleChange}
             onBlur={handleBlur}
-            placeholder="max@beispiel.ch"
+            placeholder={t("emailPlaceholder")}
             className={inputClass(touched.email && !!errors.email)}
           />
         </Field>
@@ -149,9 +140,9 @@ export default function ContactForm() {
       <div className="grid sm:grid-cols-2 gap-4">
         <Field
           id={`${id}-phone`}
-          label="Telefon"
+          label={t("phoneLabel")}
           error={touched.phone ? errors.phone : undefined}
-          hint="Optional"
+          hint={t("phoneOptional")}
         >
           <input
             id={`${id}-phone`}
@@ -161,14 +152,14 @@ export default function ContactForm() {
             value={form.phone}
             onChange={handleChange}
             onBlur={handleBlur}
-            placeholder="+41 79 000 00 00"
+            placeholder={t("phonePlaceholder")}
             className={inputClass(touched.phone && !!errors.phone)}
           />
         </Field>
 
         <Field
           id={`${id}-service`}
-          label="Gewünschte Leistung"
+          label={t("serviceLabel")}
           required
           error={touched.service ? errors.service : undefined}
         >
@@ -180,8 +171,8 @@ export default function ContactForm() {
             onBlur={handleBlur}
             className={selectClass(touched.service && !!errors.service)}
           >
-            <option value="">Bitte wählen…</option>
-            {SERVICES.map((s) => (
+            <option value="">{t("servicePlaceholder")}</option>
+            {services.map((s) => (
               <option key={s} value={s}>
                 {s}
               </option>
@@ -193,7 +184,7 @@ export default function ContactForm() {
       {/* Message */}
       <Field
         id={`${id}-message`}
-        label="Ihre Nachricht"
+        label={t("messageLabel")}
         required
         error={touched.message ? errors.message : undefined}
         hint={`${form.message.length} / 1000`}
@@ -206,7 +197,7 @@ export default function ContactForm() {
           value={form.message}
           onChange={handleChange}
           onBlur={handleBlur}
-          placeholder="Beschreiben Sie Ihr Anliegen – z.B. Grösse der Wohnung, gewünschter Termin, besondere Anforderungen…"
+          placeholder={t("messagePlaceholder")}
           className={`${inputClass(touched.message && !!errors.message)} resize-none`}
         />
       </Field>
@@ -215,7 +206,7 @@ export default function ContactForm() {
       {status === "error" && (
         <div className="flex items-center gap-2 text-sm text-red-600 bg-red-50 border border-red-200 rounded-lg px-4 py-3">
           <AlertCircle className="w-4 h-4 shrink-0" />
-          <span>Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.</span>
+          <span>{t("errorMsg")}</span>
         </div>
       )}
 
@@ -228,12 +219,12 @@ export default function ContactForm() {
         {status === "sending" ? (
           <>
             <Loader2 className="w-4 h-4 animate-spin" />
-            Wird gesendet…
+            {t("sending")}
           </>
         ) : (
           <>
             <Send className="w-4 h-4" />
-            Anfrage senden
+            {t("submitBtn")}
           </>
         )}
       </button>

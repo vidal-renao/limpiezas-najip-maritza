@@ -1,0 +1,1096 @@
+{
+  "common": {
+    "requestQuote": "Kostenlose Offerte anfordern",
+    "viewPrices": "Preise ansehen",
+    "requestOffer": "Offerte anfordern",
+    "requestNow": "Jetzt Offerte anfordern",
+    "contact": "Kontakt",
+    "learnMore": "Mehr erfahren",
+    "readMore": "Weiterlesen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "send": "Anfrage senden",
+    "sending": "Wird gesendet…",
+    "allRightsReserved": "Alle Rechte vorbehalten",
+    "freeAndNonBinding": "Kostenlos & unverbindlich",
+    "answerIn24h": "Antwort in 24 Stunden",
+    "popular": "Beliebt",
+    "onRequest": "auf Anfrage",
+    "included": "Inklusive",
+    "impressum": "Impressum",
+    "datenschutz": "Datenschutz",
+    "hours": "Mo–Fr 08–18 Uhr · Sa 09–14 Uhr",
+    "phone": "+41 79 252 75 57",
+    "email": "info@dnamar.ch",
+    "whatsappWrite": "Jetzt auf WhatsApp schreiben",
+    "directCall": "Lieber direkt anrufen?"
+  },
+  "nav": {
+    "home": "Startseite",
+    "services": "Leistungen",
+    "prices": "Preise",
+    "references": "Referenzen",
+    "blog": "Blog",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "requestOffer": "Offerte anfordern",
+    "allServices": "Alle anfragen",
+    "ourServices": "Unsere Leistungen",
+    "freeOffer": "Kostenlose Offerte",
+    "answerIn24h": "Antwort in 24 Stunden",
+    "request": "Anfragen",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schliessen",
+    "lang": {
+      "de": "DE",
+      "en": "EN",
+      "es": "ES"
+    },
+    "services_items": {
+      "haushaltsreinigung": { "label": "Haushaltsreinigung", "desc": "Privathaushalte & Wohnungen" },
+      "bueroreinigung": { "label": "Büroreinigung", "desc": "Büros & Gewerbeflächen" },
+      "umzugsreinigung": { "label": "Umzugsreinigung", "desc": "Endreinigung mit Garantie" },
+      "renovationsreinigung": { "label": "Renovationsreinigung", "desc": "Nach Umbau & Neubau" },
+      "treppenhausreinigung": { "label": "Treppenhausreinigung", "desc": "Gemeinschaftsflächen" },
+      "glasreinigung": { "label": "Glasreinigung", "desc": "Fenster & Glasflächen" },
+      "tiefenreinigung": { "label": "Tiefenreinigung", "desc": "Gründliche Grundreinigung" },
+      "praxisreinigung": { "label": "Praxisreinigung", "desc": "Arztpraxen & Studios" }
+    }
+  },
+  "footer": {
+    "tagline": "Ihr professioneller Reinigungsdienst in Basel – für Privathaushalte und Unternehmen im ganzen Kanton.",
+    "services": "Leistungen",
+    "company": "Unternehmen",
+    "contactTitle": "Kontakt",
+    "copyright": "D'Namar Reinigungsdienst Basel.",
+    "hours": "Mo–Fr 08:00–18:00\nSa 09:00–14:00",
+    "location": "Basel, Kanton Basel-Stadt",
+    "instagramLabel": "D'Namar auf Instagram",
+    "facebookLabel": "D'Namar auf Facebook",
+    "whatsappLabel": "D'Namar auf WhatsApp",
+    "services_items": {
+      "haushaltsreinigung": "Haushaltsreinigung",
+      "bueroreinigung": "Büroreinigung",
+      "umzugsreinigung": "Umzugsreinigung",
+      "glasreinigung": "Glasreinigung",
+      "treppenhausreinigung": "Treppenhausreinigung",
+      "preise": "Preise"
+    },
+    "company_items": {
+      "ueber_uns": "Über uns",
+      "referenzen": "Referenzen",
+      "blog": "Blog",
+      "offerte": "Offerte anfordern",
+      "kontakt": "Kontakt"
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Professioneller Reinigungsdienst Basel | D'Namar",
+      "description": "D'Namar – Ihr zuverlässiger Reinigungsprofi in Basel. Haushalts-, Büro-, Umzugs- und Treppenhausreinigung mit Kalkschutz-Expertise. Kostenlose Offerte in 24 Stunden."
+    },
+    "hero": {
+      "badge": "Reinigungsprofi in Basel seit 2015",
+      "title1": "Sauberkeit,",
+      "titleBrand1": "die man sieht",
+      "titleSep": " –",
+      "title2": "Qualität, die",
+      "titleBrand2": "man spürt",
+      "subtitle": "Maritza Rodriguez und Nadjib Rasuly und ihr Team bieten professionelle Reinigungsdienstleistungen für Privathaushalte und Unternehmen im ganzen Kanton Basel – gründlich, diskret und persönlich.",
+      "ctaPrimary": "Kostenlose Offerte anfordern",
+      "ctaPhone": "+41 79 252 75 57",
+      "signals": ["Keine Vorauszahlung", "Abgabegarantie inklusive", "Antwort in 24 Stunden", "Lokal & versichert"],
+      "maritzaRole": "Mitgründerin",
+      "nadjibRole": "Mitgründer",
+      "stats": {
+        "clients": "Kunden",
+        "years": "Jahre",
+        "rating": "Bewertung",
+        "responseTime": "Antwortzeit"
+      }
+    },
+    "trustBar": [
+      "10+ Jahre Erfahrung",
+      "Versichert & Geprüft",
+      "Lokales Team Basel",
+      "Festpreis-Garantie"
+    ],
+    "services": {
+      "eyebrow": "Was wir anbieten",
+      "title": "Unsere Reinigungsleistungen",
+      "subtitle": "Von der wöchentlichen Unterhaltsreinigung bis zur Endreinigung mit Abgabegarantie – massgeschneiderte Lösungen für ganz Basel.",
+      "cta": "Jetzt Offerte anfordern"
+    },
+    "why": {
+      "eyebrow": "Warum D'Namar?",
+      "title": "Reinigung mit Herz",
+      "titleLine2": "und Präzision",
+      "learnMore": "Mehr über uns erfahren",
+      "quote": "«Sauberkeit ist für uns nicht nur ein Job – es ist unser Versprechen an jeden Kunden in Basel.»",
+      "quoteAuthor": "— Maritza & Nadjib",
+      "points": [
+        {
+          "title": "Kalkexperten für Basel",
+          "desc": "Das Basler Leitungswasser ist bekannt für seinen hohen Kalkgehalt. Unser Team kennt die richtigen Mittel und Techniken, um hartnäckige Kalkablagerungen in Bad, Küche und an Glasflächen effektiv zu entfernen."
+        },
+        {
+          "title": "Massgeschneiderte Lösungen",
+          "desc": "Jeder Auftrag wird individuell auf Ihre Bedürfnisse abgestimmt – ob einmalige Tiefenreinigung oder regelmässige Unterhaltsreinigung."
+        },
+        {
+          "title": "Flexibel & zuverlässig",
+          "desc": "Wir reinigen nach Ihrem Zeitplan – frühmorgens, abends oder am Wochenende. Kurzfristige Termine sind auf Anfrage möglich."
+        },
+        {
+          "title": "Transparent & fair",
+          "desc": "Keine versteckten Kosten. Sie erhalten eine klare Offerte vor dem Auftrag und zahlen nur, was vereinbart wurde."
+        }
+      ]
+    },
+    "kalk": {
+      "eyebrow": "Unsere Kalkschutz-Expertise",
+      "title1": "Hartes Wasser.",
+      "titleBrand": "Weiche Ergebnisse.",
+      "titleLine2": "Kalkschutz in Basel.",
+      "badgeTitle": "Kalkschutz-Experten",
+      "badgeSub": "Spezialisiert auf Basler Leitungswasser",
+      "p1": "Basler Leitungswasser zählt zu den härtesten in der Deutschschweiz – mit einem Kalkgehalt von bis zu 35 französischen Härtegraden. Das bedeutet: Ohne professionelle Pflege bilden sich auf Armaturen, Duschen, Glasflächen und Küchengeräten hartnäckige Kalkflecken, die mit gewöhnlichen Haushaltsmitteln kaum zu entfernen sind.",
+      "p1Bold": "35 französischen Härtegraden",
+      "p2": "D'Namar hat sich seit 2015 auf genau dieses Problem spezialisiert. Wir setzen geprüfte Kalklöser und Schutzversiegelungen ein, die speziell für hartes Wasser entwickelt wurden – schonend für Oberflächen, wirksam gegen Ablagerungen. Nach jeder Reinigung tragen wir auf Wunsch einen Kalkschutzfilm auf Glas, Chrom und Naturstein auf, der neue Ablagerungen bis zu 8 Wochen fernhält.",
+      "p2Bold1": "Kalklöser und Schutzversiegelungen",
+      "p2Bold2": "8 Wochen",
+      "p3": "Ob Duschkabine in Gundeldingen, Edelstahlküche in Riehen oder Glasfront in einem Basler Gewerbeobjekt – unser Team kennt die richtige Methode für jede Oberfläche und jeden Kalkgrad.",
+      "bullets": [
+        "pH-neutrale Kalklöser – schonend & hochwirksam",
+        "Kalkschutzversiegelung auf Wunsch inklusive",
+        "Geprüfte Mittel – sicher für Mensch & Haustier",
+        "Ergebnis-Garantie oder kostenlose Nachbesserung"
+      ],
+      "ctaPrimary": "Kalkschutz-Beratung anfragen",
+      "ctaSecondary": "Mehr zur Glasreinigung"
+    },
+    "testimonials": {
+      "eyebrow": "Kundenstimmen",
+      "title": "Was unsere Kunden sagen",
+      "rating": "4.9 / 5 – Basierend auf 90+ Bewertungen",
+      "viewAll": "Alle Referenzen ansehen",
+      "items": [
+        {
+          "name": "Petra M.",
+          "location": "Gundeldingen, Basel",
+          "service": "Haushaltsreinigung",
+          "rating": 5,
+          "text": "D'Namar reinigt unsere Wohnung seit über einem Jahr. Immer pünktlich, immer gründlich – und der Kalk in unserem Bad ist endlich Geschichte. Sehr empfehlenswert!",
+          "date": "Februar 2025"
+        },
+        {
+          "name": "Thomas K.",
+          "location": "Kleinbasel",
+          "service": "Büroreinigung",
+          "rating": 5,
+          "text": "Wir haben unser Büro (12 Mitarbeitende) zu D'Namar gewechselt. Der Unterschied war sofort spürbar. Das Team arbeitet diskret, effizient und zu fairen Konditionen.",
+          "date": "Januar 2025"
+        },
+        {
+          "name": "Sandra B.",
+          "location": "St. Alban, Basel",
+          "service": "Umzugsreinigung",
+          "rating": 5,
+          "text": "Dank der Abgabegarantie war ich entspannt. Die Verwaltung hatte keine einzige Beanstandung – nicht mal am Backofen. Absolut professionell und unkompliziert.",
+          "date": "März 2025"
+        }
+      ]
+    },
+    "districts": {
+      "eyebrow": "Einsatzgebiet",
+      "title": "Wir reinigen in ganz Basel",
+      "subtitle": "Von Grossbasel bis Riehen – Ihr lokales Reinigungsteam.",
+      "items": ["Grossbasel", "Kleinbasel", "Gundeldingen", "St. Alban", "Riehen", "Bettingen", "Allschwil", "Binningen", "Birsfelden", "Muttenz"]
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Häufig gestellte Fragen",
+      "moreQuestions": "Haben Sie weitere Fragen? Wir helfen gerne persönlich weiter.",
+      "askNow": "Jetzt Frage stellen",
+      "items": [
+        {
+          "q": "Wie schnell kann D'Namar einen Termin anbieten?",
+          "a": "In der Regel können wir innerhalb von 3–5 Werktagen einen Termin anbieten. Bei dringendem Bedarf – z. B. vor einer Wohnungsübergabe – setzen wir alles daran, kurzfristig zu helfen."
+        },
+        {
+          "q": "Sind Reinigungsmittel und Geräte inklusive?",
+          "a": "Ja. Wir bringen alle professionellen Reinigungsmittel und Maschinen mit. Sie müssen nichts vorbereiten oder bereitstellen."
+        },
+        {
+          "q": "Was kostet eine Haushaltsreinigung in Basel?",
+          "a": "Die Preise richten sich nach Grösse und Zustand des Objekts. Als Orientierung: kleine Wohnungen ab CHF 180, grosse Wohnungen ab CHF 320. Stundenweise Reinigung ab CHF 45/Stunde. Wir erstellen gerne eine kostenlose Offerte."
+        },
+        {
+          "q": "Was bedeutet die Abgabegarantie bei der Umzugsreinigung?",
+          "a": "Wenn die Liegenschaftsverwaltung nach unserer Endreinigung Beanstandungen hat, kommen wir kostenlos ein zweites Mal – bis zur erfolgreichen Abnahme."
+        },
+        {
+          "q": "Reinigt D'Namar auch regelmässig (Unterhaltsreinigung)?",
+          "a": "Ja. Viele unserer Kunden buchen uns wöchentlich oder zweiwöchentlich. Regelmässige Kunden profitieren von festen Teams und bevorzugten Terminen."
+        }
+      ]
+    },
+    "cta": {
+      "badge": "Kostenlos & unverbindlich",
+      "title": "Bereit für ein saubereres Basel?",
+      "subtitle": "Kontaktieren Sie uns noch heute. Wir erstellen Ihre persönliche Offerte und melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "ctaPrimary": "Offerte anfordern",
+      "ctaPhone": "+41 79 252 75 57",
+      "hours": "Mo–Fr 08–18 Uhr · Sa 09–14 Uhr"
+    }
+  },
+  "haushaltsreinigung": {
+    "meta": {
+      "title": "Haushaltsreinigung Basel | Professionelle Wohnungsreinigung ab CHF 45/Std.",
+      "description": "Professionelle Haushaltsreinigung in Basel – Gundeldingen, St. Alban, Riehen und Kleinbasel. Regelmässig oder einmalig, mit Kalkschutz für Badezimmer. Offerte in 24 Stunden."
+    },
+    "breadcrumb": "Haushaltsreinigung",
+    "hero": {
+      "eyebrow": "Leistungen",
+      "title": "Haushaltsreinigung",
+      "titleBrand": "in Basel",
+      "subtitle": "Entspannen Sie sich – wir übernehmen die Reinigung Ihres Zuhauses. Regelmässig oder einmalig, immer gründlich, pünktlich und diskret. In St. Alban, Gundeldingen, Riehen und ganz Basel."
+    },
+    "benefits": [
+      { "title": "Flexibel & pünktlich", "desc": "Wir richten uns nach Ihrem Zeitplan – einmalig, wöchentlich oder nach Bedarf." },
+      { "title": "Versichert & vertrauenswürdig", "desc": "Unser Team ist vollständig versichert und arbeitet diskret in Ihrem Zuhause." },
+      { "title": "Professionelle Mittel", "desc": "Wir bringen alle Reinigungsmittel und Geräte mit – keine Zusatzkosten." },
+      { "title": "Persönliche Betreuung", "desc": "Immer dieselbe Ansprechperson – für ein Vertrauensverhältnis, das bleibt." }
+    ],
+    "seo": {
+      "title": "Ihre Zeit ist wertvoll – wir übernehmen die Reinigung",
+      "p1": "Eine saubere Wohnung schafft Wohlbefinden, spart Zeit und erhält den Wert Ihrer Immobilie. D'Namar Reinigungsdienst bietet Privathaushalten in Basel eine verlässliche, massgeschneiderte Haushaltsreinigung – ob einmalig, wöchentlich oder nach Bedarf. Wir sind in allen Basler Quartieren aktiv: in St. Alban, Gundeldingen, Kleinbasel, Riehen und darüber hinaus.",
+      "p2": "Unser Team reinigt Ihre Wohnung vollständig: Böden saugen und feucht wischen, Küche gründlich reinigen inklusive Herd und Backofen, Badezimmer und WC desinfizieren, Möbel abstauben und Glasflächen streifenfrei polieren. Wir bringen alle notwendigen Reinigungsmittel und Geräte selbst mit – keine versteckten Materialkosten.",
+      "p3": "Besonderes Augenmerk legen wir auf Ihren Kalkschutz im Badezimmer. Basler Leitungswasser weist einen der höchsten Kalkanteile der Schweiz auf. Kalk setzt sich auf Armaturen, Duschkabinen, Badewannen und Fliesen ab und ist ohne die richtigen Mittel kaum zu entfernen. Wir verwenden professionelle Entkalkungsmittel und tragen nach der Reinigung eine Schutzversiegelung auf – so bleibt Ihr Bad länger sauber und die Armaturen werden geschont.",
+      "p3Bold": "Entkalkungsmittel",
+      "p4": "Was uns auszeichnet: Sie erhalten stets dieselbe Reinigungsperson, die Ihre Gewohnheiten kennt und respektiert. Das schafft Vertrauen – besonders wichtig, wenn wir in Ihrer Abwesenheit reinigen. Mit 4.9 Sternen Kundenbewertung und über 500 zufriedenen Haushalten in Basel stehen wir für Qualität, die man spürt."
+    },
+    "sidebar": {
+      "title": "Preisübersicht",
+      "rows": [
+        { "val": "ab CHF 45", "label": "pro Stunde" },
+        { "val": "ab CHF 180", "label": "Kleine Wohnung (bis 60 m²)" },
+        { "val": "ab CHF 280", "label": "Grosse Wohnung (bis 100 m²)" },
+        { "val": "24 Std.", "label": "Antwortzeit garantiert" }
+      ],
+      "kalkBadge": "Kalkschutz für Bad inklusive",
+      "kalkText": "professionelle Versiegelung gegen Basler Hartwasser."
+    },
+    "tasks": {
+      "title": "Was ist inbegriffen?",
+      "subtitle": "Standardleistungen – individuell anpassbar nach Ihren Wünschen.",
+      "items": [
+        "Staubsaugen & Bodenwischen aller Räume",
+        "Küche reinigen inkl. Herd, Backofen & Arbeitsflächen",
+        "Badezimmer & WC desinfizieren + Kalkschutz",
+        "Spiegel & Glasflächen streifenfrei reinigen",
+        "Möbel abstauben & Oberflächen wischen",
+        "Schlafzimmer inkl. Bettenwechsel (auf Wunsch)",
+        "Fensterbank & Heizungen abstauben",
+        "Mülleimer leeren & Müll entsorgen",
+        "Treppenhaus & Eingangsbereich (auf Wunsch)",
+        "Balkon oder Terrasse reinigen (auf Wunsch)"
+      ]
+    },
+    "priceTeaser": {
+      "label": "Richtpreis",
+      "price": "ab CHF 45",
+      "unit": "/ Std.",
+      "sub": "Kleine Wohnung ab CHF 180 · Grosse Wohnung ab CHF 280"
+    },
+    "cta": {
+      "title": "Bereit für ein saubereres Zuhause in Basel?",
+      "subtitle": "Kontaktieren Sie uns – wir erstellen Ihnen innerhalb von 24 Stunden eine kostenlose, unverbindliche Offerte."
+    }
+  },
+  "bueroreinigung": {
+    "meta": {
+      "title": "Büroreinigung Basel | Professionelle Reinigung für Unternehmen – ab CHF 40/Std.",
+      "description": "Professionelle Büroreinigung in Basel für Büros, Arztpraxen und Gewerbe. Diskret, ausserhalb der Arbeitszeiten, mit Kalkschutz in Sanitäranlagen. Kostenlose Offerte in 24 Stunden."
+    },
+    "breadcrumb": "Büroreinigung",
+    "hero": {
+      "eyebrow": "Leistungen",
+      "title": "Büroreinigung Basel",
+      "titleBrand": "für Unternehmen",
+      "subtitle": "Ein sauberes Arbeitsumfeld steigert Produktivität, hinterlässt einen professionellen Eindruck und schützt die Gesundheit Ihrer Mitarbeitenden. D'Namar übernimmt das zuverlässig – in Ihrem Rhythmus, ausserhalb der Geschäftszeiten.",
+      "ctaPrimary": "Kostenlose B2B-Offerte anfordern"
+    },
+    "sectors": {
+      "title": "Wir reinigen für",
+      "items": [
+        "Büros & Open Spaces",
+        "Arztpraxen & Zahnarztpraxen",
+        "Fitnesscenters",
+        "Ladengeschäfte & Showrooms"
+      ]
+    },
+    "seo": {
+      "title": "Professionelle Büroreinigung in Basel – diskret, pünktlich, verlässlich",
+      "p1": "Ihr Betrieb verdient ein Arbeitsumfeld, das Professionalität ausstrahlt – jeden Tag, ohne Ausnahme. D'Namar Reinigungsdienst bietet Unternehmen in Basel eine auf Ihren Betrieb abgestimmte Büroreinigung an, die sich nahtlos in Ihren Tagesablauf einfügt. Ob im Gundeldingen-Quartier, in Grossbasel, in St. Alban oder in Kleinbasel – wir kennen die Basler Gewerbeimmobilien und arbeiten ausschliesslich ausserhalb Ihrer Geschäftszeiten.",
+      "p2": "Unsere Teams reinigen frühmorgens vor dem ersten Meeting, abends nach Büroschluss oder am Wochenende. Jeder Einsatz wird mit professionellen Reinigungsmitteln durchgeführt, die auch empfindliche Oberflächen und moderne Büroausstattung schonen. Auf Wunsch erstellen wir nach jedem Einsatz ein Reinigungsprotokoll – besonders hilfreich für Arztpraxen und Institutionen mit erhöhten Hygieneanforderungen.",
+      "p3": "Gerade in Basler Gebäuden ist der Kalkgehalt des Wassers besonders hoch. In Sanitäranlagen, Küchen und Pausenräumen setzen wir deshalb auf wirksamen Kalkschutz: Unsere speziellen Entkalkungsmittel und Schutzversiegelungen verlängern die Lebensdauer Ihrer Armaturen und Keramikflächen deutlich und reduzieren den Reinigungsaufwand langfristig.",
+      "p3Bold": "Kalkschutz",
+      "p4": "Was D'Namar von anderen unterscheidet: Sie erhalten stets dasselbe vertraute Team, das Ihren Betrieb kennt, Ihre Abläufe respektiert und diskret agiert. Mit über 10 Jahren Erfahrung in Basel und mehr als 500 zufriedenen Kunden – von der Einzelpraxis in Riehen bis zum Open-Space in Grossbasel – sind wir Ihr verlässlicher Partner für Sauberkeit auf höchstem Niveau."
+    },
+    "sidebar": {
+      "title": "Auf einen Blick",
+      "rows": [
+        { "val": "ab CHF 40", "label": "pro Stunde" },
+        { "val": "24 Std.", "label": "Antwortzeit garantiert" },
+        { "val": "10+", "label": "Jahre Erfahrung in Basel" },
+        { "val": "500+", "label": "Zufriedene Kunden" }
+      ],
+      "kalkBadge": "Kalkschutz inklusive",
+      "kalkText": "für alle Sanitäranlagen – besonders wirksam bei Basler Hartwasser."
+    },
+    "benefits": [
+      { "title": "Ausserhalb der Bürozeiten", "desc": "Wir reinigen früh morgens, abends oder am Wochenende – damit Ihr Betrieb nicht unterbrochen wird." },
+      { "title": "Diskret & versichert", "desc": "Unser Team ist verschwiegenheitsverpflichtet, vollständig versichert und mit Referenzen geprüft." },
+      { "title": "Fixer Reinigungsrhythmus", "desc": "Wöchentlich, täglich oder nach Bedarf – wir passen uns Ihrem Betriebskalender an." },
+      { "title": "Transparente Abrechnung", "desc": "Monatliche Rechnung, keine versteckten Kosten, auf Wunsch mit Reinigungsprotokoll." }
+    ],
+    "tasks": {
+      "title": "Leistungsumfang",
+      "subtitle": "Standardleistungen – individuell auf Ihren Betrieb anpassbar.",
+      "items": [
+        "Schreibtische, Bildschirme & Tastaturen desinfizieren",
+        "Böden saugen & feucht wischen",
+        "Küche & Pausenraum reinigen",
+        "Sanitäranlagen desinfizieren & Kalkschutz auftragen",
+        "Papierkorb leeren & Müll entsorgen",
+        "Empfangsbereich & Wartezimmer pflegen",
+        "Konferenzräume nach Bedarf",
+        "Fenster & Glastrennwände streifenfrei",
+        "Türgriffe & Lichtschalter desinfizieren",
+        "Treppenhäuser & Gemeinschaftsflächen",
+        "Tiefenreinigung nach Vereinbarung",
+        "Reinigungsnachweis auf Wunsch"
+      ]
+    },
+    "priceTeaser": {
+      "label": "Richtpreis Gewerbe",
+      "price": "ab CHF 40",
+      "unit": "/ Std.",
+      "sub": "Pauschalpreise nach Objekt auf Anfrage",
+      "cta": "Kostenlose B2B-Offerte"
+    },
+    "cta": {
+      "title": "Professionelle Büroreinigung in Basel?",
+      "subtitle": "Wir erstellen Ihnen ein massgeschneidertes B2B-Angebot – kostenlos und unverbindlich, Antwort innerhalb von 24 Stunden."
+    }
+  },
+  "glasreinigung": {
+    "meta": {
+      "title": "Glasreinigung Basel | Fensterreinigung mit Kalkschutz – Privat & Gewerbe",
+      "description": "Professionelle Glasreinigung & Fensterreinigung in Basel mit Kalkschutz-Versiegelung. Streifenfrei, innen & aussen, für Privat und Gewerbe in Riehen, Allschwil und Basel-Stadt."
+    },
+    "breadcrumb": "Glasreinigung",
+    "hero": {
+      "eyebrow": "Leistungen",
+      "title": "Glasreinigung &",
+      "titleBrand": "Fensterreinigung Basel",
+      "subtitle": "Kristallklare Fenster – mit professionellem Kalkschutz gegen Basler Hartwasser. Streifenfrei, innen und aussen, für Privathaushalte und Gewerbeobjekte in Riehen, Allschwil und ganz Basel-Stadt.",
+      "kalkBadge": "Mit Kalkschutz-Versiegelung bis 8 Wochen"
+    },
+    "benefits": [
+      { "title": "Kalkschutz-Versiegelung", "desc": "Wir tragen nach der Reinigung eine Schutzversiegelung auf – bis zu 8 Wochen Kalkschutz bei Basler Hartwasser." },
+      { "title": "Privat & Gewerbe", "desc": "Von der Altbauwohnung bis zur Glasfassade – wir reinigen jede Fensterfläche in Basel und Umgebung." },
+      { "title": "Innen & Aussen", "desc": "Vollständige Reinigung beider Seiten inklusive Rahmen, Dichtungen und Fensterbänken." },
+      { "title": "Osmotisch gereinigtes Wasser", "desc": "Wir arbeiten mit 100 % enthärtetem, osmotisch gereinigtem Wasser – keine Streifen, kein Kalk." }
+    ],
+    "seo": {
+      "title": "Glasreinigung in Basel – und warum Kalkschutz entscheidend ist",
+      "p1": "Saubere Fenster lassen mehr Licht herein, verbessern das Raumklima und werten jedes Gebäude auf. D'Namar bietet professionelle Glasreinigung für Privathaushalte und Unternehmen in Basel und Umgebung – in Riehen, Allschwil, Gundeldingen, St. Alban und dem gesamten Stadtkanton.",
+      "p2": "Was uns von gewöhnlichen Fensterputzern unterscheidet: Wir arbeiten ausschliesslich mit osmotisch gereinigtem, vollentsalztem Wasser. Das bedeutet, dass nach dem Trocknen keinerlei Mineralrückstände auf der Glasscheibe verbleiben – das Ergebnis ist zu 100 % streifenfrei, auch ohne Abzieher von Hand.",
+      "p2Bold": "osmotisch gereinigtem, vollentsalztem Wasser",
+      "p3": "Besonders wichtig in Basel: Das Leitungswasser im Baselbiet und Basel-Stadt hat einen Kalkgehalt von bis zu 35 französischen Härtegraden. Das bedeutet, dass sich auf Fensterscheiben, Glasduschen und Glasfronten ohne regelmässige Pflege hartnäckige Kalkflecken bilden, die die Oberfläche dauerhaft schädigen können. Nach jeder Reinigung tragen wir auf Wunsch eine Kalkschutz-Versiegelung auf, die das Glas bis zu acht Wochen lang vor neuen Ablagerungen schützt.",
+      "p3Bold": "Kalkschutz-Versiegelung",
+      "p4": "Unsere Glasreinigung ist ideal für regelmässige Intervalle – monatlich, vierteljährlich oder nach Bedarf. Für Geschäftsgebäude und Liegenschaften bieten wir Wartungsverträge mit dokumentierten Einsatzprotokollen an. Von der Einzelvilla in Riehen bis zum Bürogebäude in Grossbasel – kontaktieren Sie uns für eine kostenlose Offerte."
+    },
+    "sidebar": {
+      "title": "Preisübersicht",
+      "rows": [
+        { "val": "ab CHF 8", "label": "pro Fenster (einseitig)" },
+        { "val": "ab CHF 14", "label": "pro Fenster (beidseitig)" },
+        { "val": "ab CHF 120", "label": "Wohnung (bis 10 Fenster)" },
+        { "val": "auf Anfrage", "label": "Glasfronten & Gewerbe" }
+      ],
+      "kalkTitle": "Kalkschutz-Versiegelung",
+      "kalkText": "Bis zu 8 Wochen Schutz vor neuen Kalkablagerungen – mit professioneller Versiegelung nach der Reinigung. Ideal für Basler Hartwasser (bis 35 °fH)."
+    },
+    "tasks": {
+      "title": "Was wir reinigen",
+      "subtitle": "Alle Glasflächen – von der Wohnung bis zur Gewerbefassade.",
+      "items": [
+        "Fenster innen & aussen, streifenfrei",
+        "Schaufenster und Glasfronten",
+        "Wintergärten & Glasdächer",
+        "Treppenhausfenster & Gemeinschaftsflächen",
+        "Rahmen, Falze & Fensterbänke innen",
+        "Rollladen & Jalousien abstauben",
+        "Spiegel und Glastrennwände",
+        "Türscheiben & Glaselemente",
+        "Dachfenster (Velux etc.)",
+        "Balkontüren & Terrassenverglasungen"
+      ]
+    },
+    "cta": {
+      "title": "Streifenfreie Fenster mit Kalkschutz in Basel?",
+      "subtitle": "Wir erstellen Ihnen eine kostenlose Offerte – für einmalige oder regelmässige Glasreinigung in Ihrem Quartier."
+    }
+  },
+  "umzugsreinigung": {
+    "meta": {
+      "title": "Umzugsreinigung Basel | Endreinigung mit Abgabegarantie",
+      "description": "Professionelle Umzugsreinigung & Endreinigung in Basel mit Abgabegarantie. Kalkentfernung in Bad und Küche – wir erfüllen die Anforderungen Ihrer Verwaltung. Kostenlose Offerte."
+    },
+    "breadcrumb": "Umzugsreinigung",
+    "hero": {
+      "eyebrow": "Leistungen",
+      "title": "Umzugsreinigung &",
+      "titleBrand": "Endreinigung Basel",
+      "badge": "Mit Abgabegarantie",
+      "subtitle": "Stressfreie Wohnungsübergabe – garantiert. Wir reinigen Ihre Wohnung nach Verwaltungsstandard und kommen bei Mängeln kostenlos nochmals. In Gundeldingen, Kleinbasel, Dreispitz und ganz Basel.",
+      "ctaPrimary": "Jetzt Termin anfragen"
+    },
+    "steps": {
+      "title": "So funktioniert es",
+      "items": [
+        { "title": "Termin buchen", "desc": "Kontaktieren Sie uns – wir koordinieren den Termin passend zu Ihrer Abgabe." },
+        { "title": "Abnahmeprotokoll prüfen", "desc": "Wir kennen die Anforderungen der Basler Verwaltungen und richten uns danach." },
+        { "title": "Gründliche Endreinigung", "desc": "Unser Team reinigt die Wohnung nach Verwaltungsstandard – vollständig." },
+        { "title": "Abgabegarantie", "desc": "Falls die Verwaltung Mängel feststellt, kommen wir kostenlos nochmals." }
+      ]
+    },
+    "seo": {
+      "title": "Endreinigung in Basel – perfekt für die Wohnungsübergabe",
+      "p1": "Ein Umzug ist stressig genug – die Endreinigung muss es nicht sein. D'Namar übernimmt die komplette Umzugsreinigung Ihrer Wohnung in Basel und stellt sicher, dass Sie die Schlüssel ohne Beanstandungen abgeben können. Unsere Mitarbeitenden kennen die Anforderungen der Basler Verwaltungen genau – ob in Gundeldingen, Kleinbasel, Dreispitz oder St. Alban.",
+      "p2": "Die Umzugsreinigung umfasst alle Räume: Wohnzimmer, Schlafzimmer, Küche, Badezimmer, WC, Keller und Balkon. Besonders die Küche und das Badezimmer erfordern bei der Wohnungsabgabe in Basel besondere Sorgfalt. Herd, Backofen und Dunstabzug müssen vollständig entfettet sein. Im Bad entfernen wir hartnäckige Kalkablagerungen an Armaturen, Dusche und Badewanne mit professionellen Entkalkungsmitteln – ein Muss in Basel, wo das Leitungswasser besonders kalkhaltig ist.",
+      "p2Bold": "Entkalkungsmitteln",
+      "p3": "Unser grösster Vorteil: die Abgabegarantie. Falls die Verwaltung oder Hausverwaltung bei der Wohnungsabnahme Mängel feststellt, kommen wir kostenlos nochmals und reinigen nach – bis die Abnahme erfolgreich ist. Das gibt Ihnen die Sicherheit, die Sie beim Umzug brauchen.",
+      "p3Bold": "Abgabegarantie",
+      "p4": "Unser Team kann kurzfristig reagieren und koordiniert sich direkt mit Ihrer Verwaltung oder Ihrem Makler. Wir sind Ihr zuverlässiger Partner für die stressfreie Wohnungsübergabe in Basel – mit über 10 Jahren Erfahrung und mehr als 500 erfolgreichen Wohnungsabgaben im ganzen Stadtkanton."
+    },
+    "sidebar": {
+      "title": "Preisübersicht",
+      "rows": [
+        { "val": "ab CHF 350", "label": "2-Zi-Wohnung (bis 50 m²)" },
+        { "val": "ab CHF 480", "label": "3-Zi-Wohnung (bis 80 m²)" },
+        { "val": "ab CHF 650", "label": "4-Zi-Wohnung (bis 110 m²)" }
+      ],
+      "ctaLabel": "Termin anfragen",
+      "kalkTitle": "Kalkentfernung inklusive",
+      "kalkText": "Hartnäckige Kalkablagerungen in Bad und Küche werden mit professionellen Entkalkungsmitteln vollständig entfernt – für die bestandene Wohnungsabnahme."
+    },
+    "tasks": {
+      "title": "Leistungsumfang",
+      "subtitle": "Alle Punkte nach Abnahmeprotokoll – individuell erweiterbar.",
+      "items": [
+        "Alle Räume feucht durchgereinigt",
+        "Küche: Herd, Backofen, Dunstabzug, Schränke innen & aussen",
+        "Badezimmer & WC: Kalkentfernung & Desinfektion",
+        "Fenster innen & aussen (Rahmen & Scheiben)",
+        "Wandschränke und Einbauschränke innen",
+        "Böden: saugen, wischen, Übergänge säubern",
+        "Balkon oder Terrasse reinigen",
+        "Keller & Kellerraum auf Wunsch",
+        "Steckdosen, Lichtschalter & Türrahmen",
+        "Heizungsrippen entstauben",
+        "Briefkasten & Eingangsbereich",
+        "Schlüsselübergabe-Vorbereitung"
+      ]
+    },
+    "cta": {
+      "title": "Wohnung abgeben ohne Stress?",
+      "subtitle": "Wir übernehmen die komplette Endreinigung – pünktlich zum Übergabetermin, mit Abgabegarantie. Kostenlose Offerte in 24 Stunden."
+    }
+  },
+  "treppenhausreinigung": {
+    "meta": {
+      "title": "Treppenhausreinigung Basel | Gemeinschaftsflächen für Verwaltungen",
+      "description": "Zuverlässige Treppenhausreinigung in Basel für Verwaltungen, Eigentümer und Wohngemeinschaften. Mit Kalkschutz in Liften und Fliesen – in Gundeldingen, Riehen und ganz Basel."
+    },
+    "breadcrumb": "Treppenhausreinigung",
+    "hero": {
+      "eyebrow": "Leistungen",
+      "title": "Treppenhausreinigung",
+      "titleBrand": "in Basel",
+      "subtitle": "Ein gepflegtes Treppenhaus hinterlässt einen guten ersten Eindruck und erhöht den Wohnwert Ihrer Liegenschaft. D'Namar übernimmt die regelmässige Pflege Ihrer Gemeinschaftsflächen – in allen Basler Quartieren, zuverlässig und nach Standard.",
+      "ctaSecondary": "Direkt kontaktieren"
+    },
+    "features": [
+      { "title": "Regelmässiger Rhythmus", "desc": "Wöchentlich, zweiwöchentlich oder monatlich – wir passen uns Ihrem Vertrag an." },
+      { "title": "Für Verwaltungen", "desc": "Wir arbeiten mit Liegenschaftsverwaltungen und Eigentümern in ganz Basel zusammen." },
+      { "title": "Verlässliche Kommunikation", "desc": "Schnelle Reaktion bei Problemen – immer erreichbar und unkompliziert." },
+      { "title": "Reinigungsnachweis", "desc": "Auf Wunsch dokumentieren wir jeden Einsatz mit einem Nachweis für Ihre Unterlagen." }
+    ],
+    "seo": {
+      "title": "Treppenhausreinigung für Basler Liegenschaften – diskret und verlässlich",
+      "p1": "Das Treppenhaus ist das Aushängeschild jeder Liegenschaft. Ein gepflegter Eingangsbereich signalisiert Wertschätzung für die Mieterinnen und Mieter und trägt wesentlich zur Wohnqualität bei. D'Namar übernimmt die regelmässige Treppenhausreinigung für Verwaltungen, Eigentümer und Hausgemeinschaften in ganz Basel – in Gundeldingen, Kleinbasel, St. Alban, Riehen, Allschwil und allen weiteren Quartieren des Stadtkantons.",
+      "p2": "Unser Service umfasst alle Gemeinschaftsflächen: Treppen kehren und feucht wischen, Geländer und Handläufe desinfizieren, Briefkastenanlage und Eingangsbereich pflegen, Liftkabinen reinigen und desinfizieren sowie Fenster im Treppenhaus säubern. Wir passen uns Ihrem Rhythmus an – wöchentlich, zweiwöchentlich oder monatlich, je nach Anforderung der Liegenschaft.",
+      "p3": "In Liftkabinen und Treppenhäusern mit Keramikfliesen setzt sich durch das kalkhaltige Basler Leitungswasser schnell ein unschöner Kalkfilm ab. Deshalb verwenden wir bei der Reinigung von Fliesen und Aufzugswänden gezielte Entkalkungsmittel und versiegeln auf Wunsch glatte Flächen mit einer Kalkschutzschicht – für ein länger anhaltendes Reinigungsergebnis.",
+      "p3Bold": "Entkalkungsmittel",
+      "p4": "Für Liegenschaftsverwaltungen in Basel erstellen wir auf Wunsch nach jedem Einsatz ein digitales Reinigungsprotokoll – als Nachweis für Eigentümer und Mieter. Wir sind langjähriger Partner zahlreicher Basler Verwaltungen und verstehen die spezifischen Anforderungen an Gemeinschaftsflächen in Mehrfamilienhäusern, Gewerbeliegenschaften und Mischobjekten."
+    },
+    "sidebar": {
+      "title": "Preisübersicht",
+      "rows": [
+        { "val": "ab CHF 80", "label": "bis 3 Stockwerke" },
+        { "val": "ab CHF 130", "label": "bis 6 Stockwerke" },
+        { "val": "ab CHF 200", "label": "Grosse Liegenschaft" },
+        { "val": "auf Anfrage", "label": "Wartungsvertrag" }
+      ],
+      "kalkTitle": "Kalkschutz für Lift & Fliesen",
+      "kalkText": "Professionelle Entkalkung und Schutzversiegelung für Keramikfliesen und Liftkabinen – ideal gegen Basler Hartwasser."
+    },
+    "tasks": {
+      "title": "Was ist inbegriffen?",
+      "subtitle": "Vollständige Pflege aller Gemeinschaftsbereiche – individuell buchbar.",
+      "items": [
+        "Treppenhaus kehren & feucht wischen",
+        "Geländer & Handläufe desinfizieren",
+        "Briefkastenanlage & Eingangsbereich",
+        "Klingeltableau & Gegensprechanlage reinigen",
+        "Kellertreppenhaus & Kellergang",
+        "Lift innen reinigen & desinfizieren",
+        "Fenster & Fensterbänke im Treppenhaus",
+        "Leuchtmittel & Lichtschalter abstauben",
+        "Türen, Rahmen & Türgriffe",
+        "Gemeinschaftskeller & Waschküche",
+        "Aussenbereich / Eingang kehren",
+        "Entsorgung von Kleinabfällen"
+      ]
+    },
+    "cta": {
+      "title": "Treppenhaus-Pflege in Basel gesucht?",
+      "subtitle": "Für Verwaltungen, Eigentümer und Hausgemeinschaften in allen Basler Quartieren – kostenlose Offerte innerhalb von 24 Stunden."
+    }
+  },
+  "preise": {
+    "meta": {
+      "title": "Preise & Tarife | Reinigungsdienst Basel – D'Namar",
+      "description": "Transparente Preise für alle Reinigungsleistungen in Basel. Haushaltsreinigung ab CHF 45/Std., Umzugsreinigung ab CHF 380, Büroreinigung ab CHF 40/Std. Kostenlose Offerte in 24 Stunden."
+    },
+    "hero": {
+      "badge": "Transparenz & Fairness",
+      "title1": "Klare Preise.",
+      "titleBrand": "Keine versteckten Kosten.",
+      "subtitle": "Alle Tarife auf einen Blick – von der wöchentlichen Haushaltsreinigung bis zur Bauendreinigung. Der genaue Preis richtet sich nach Grösse, Zustand und Anforderungen Ihres Objekts. Wir erstellen Ihnen in 24 Stunden eine kostenlose, unverbindliche Offerte."
+    },
+    "tableHeaders": {
+      "service": "Leistung",
+      "details": "Details",
+      "price": "Preis"
+    },
+    "priceNote": "Preise exkl. MwSt. · Endpreis nach kostenloser Offerte.",
+    "alwaysIncluded": {
+      "eyebrow": "Immer dabei",
+      "title": "Im Preis inbegriffen",
+      "subtitle": "Bei jedem Auftrag – egal ob einmalig oder regelmässig – sind folgende Leistungen ohne Aufpreis inklusive.",
+      "items": [
+        "Alle Reinigungsmittel & Maschinen inklusive",
+        "Geschultes und versichertes Personal",
+        "Feste Ansprechperson für jeden Auftrag",
+        "Flexible Terminplanung nach Ihren Wünschen",
+        "Kostenlose Offerte innert 24 Stunden",
+        "Kalkschutz-Expertise für Basler Leitungswasser"
+      ]
+    },
+    "disclaimer": "Hinweis: Alle Preise sind Richtpreise und verstehen sich exkl. MwSt. Der endgültige Preis wird nach einer kostenlosen Besichtigung oder einer detaillierten schriftlichen Anfrage individuell festgelegt. Massgeblich ist ausschliesslich das schriftlich bestätigte Angebot. D'Namar behält sich das Recht vor, die Tarife jederzeit anzupassen.",
+    "cta": {
+      "badge": "Kostenlos & unverbindlich",
+      "title": "Preis für Ihr Objekt berechnen lassen?",
+      "subtitle": "Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden mit einer massgeschneiderten Offerte für Ihre Situation.",
+      "hours": "Mo–Fr 08–18 Uhr · Sa 09–14 Uhr · Antwort in 24 Stunden"
+    },
+    "sections": {
+      "haushaltsreinigung": {
+        "category": "Haushaltsreinigung",
+        "tagline": "Privat",
+        "description": "Regelmässige Unterhaltsreinigung und Einmalreinigung für Privathaushalte in Basel.",
+        "ctaLabel": "Haushaltsreinigung anfragen",
+        "note": null,
+        "rows": [
+          { "service": "Stundenweise Reinigung", "detail": "Flexibel buchbar · Mindestdauer 2 Stunden", "price": "CHF 45 – 55", "unit": "/ Stunde" },
+          { "service": "1–2-Zimmer-Wohnung", "detail": "Inkl. Bad, Küche und Böden", "price": "ab CHF 180", "unit": "/ Einsatz" },
+          { "service": "3–4-Zimmer-Wohnung", "detail": "Inkl. Bad, Küche und Böden", "price": "ab CHF 320", "unit": "/ Einsatz", "highlight": true },
+          { "service": "5+ Zimmer / Einfamilienhaus", "detail": "Inkl. Bad, Küche, Böden und Treppenhaus", "price": "ab CHF 480", "unit": "/ Einsatz" },
+          { "service": "Unterhaltsreinigung (monatlich)", "detail": "Festes Team, bevorzugte Termine, wiederkehrender Auftrag", "price": "ab CHF 160", "unit": "/ Monat" }
+        ]
+      },
+      "umzugsreinigung": {
+        "category": "Umzugsreinigung",
+        "tagline": "Mit Abgabegarantie",
+        "description": "Professionelle Endreinigung für Wohnungsübergaben – mit Abgabegarantie bis zur erfolgreichen Abnahme.",
+        "ctaLabel": "Umzugsreinigung anfragen",
+        "note": "Die Abgabegarantie gilt für alle Umzugsreinigungen: Falls die Liegenschaftsverwaltung Beanstandungen hat, kommen wir kostenlos nochmals.",
+        "rows": [
+          { "service": "1–2-Zimmer-Wohnung", "detail": "Inkl. Backofen, Kühlschrank, Bad und alle Böden", "price": "ab CHF 380", "unit": "/ Auftrag" },
+          { "service": "3–4-Zimmer-Wohnung", "detail": "Inkl. Backofen, Kühlschrank, Bad und alle Böden", "price": "ab CHF 580", "unit": "/ Auftrag", "highlight": true },
+          { "service": "5+ Zimmer / Einfamilienhaus", "detail": "Inkl. aller Oberflächen, Keller auf Anfrage", "price": "ab CHF 780", "unit": "/ Auftrag" },
+          { "service": "Abgabegarantie", "detail": "Kostenlose Nachbesserung bis zur erfolgreichen Abnahme", "price": "Inklusive", "unit": "" }
+        ]
+      },
+      "bueroreinigung": {
+        "category": "Büro- & Gewerbereinigung",
+        "tagline": "Gewerbe",
+        "description": "Unterhaltsreinigung für Büros, Arztpraxen, Fitnessstudios und Ladengeschäfte in Basel.",
+        "ctaLabel": "Büroreinigung anfragen",
+        "note": null,
+        "rows": [
+          { "service": "Stundenweise Reinigung", "detail": "Gewerbe & Büroflächen · Mindestdauer 2 Stunden", "price": "CHF 40 – 50", "unit": "/ Stunde" },
+          { "service": "Büro bis 100 m²", "detail": "Wöchentliche Unterhaltsreinigung, festes Team", "price": "ab CHF 280", "unit": "/ Monat" },
+          { "service": "Büro 100–250 m²", "detail": "Wöchentliche Unterhaltsreinigung, festes Team", "price": "ab CHF 480", "unit": "/ Monat", "highlight": true },
+          { "service": "Praxisreinigung", "detail": "Nach hygienischen Anforderungen · Protokoll auf Anfrage", "price": "auf Anfrage", "unit": "" },
+          { "service": "Grosse Gewerbefläche 250+ m²", "detail": "Individuelles Angebot nach Besichtigung", "price": "auf Anfrage", "unit": "" }
+        ]
+      },
+      "glasreinigung": {
+        "category": "Glasreinigung",
+        "tagline": "Privat & Gewerbe",
+        "description": "Streifenfreie Fenster und Glasfronten für Privathaushalte und Unternehmen – mit Kalkschutzversiegelung.",
+        "ctaLabel": "Glasreinigung anfragen",
+        "note": null,
+        "rows": [
+          { "service": "Fensterfläche (pro m²)", "detail": "Innen & aussen, streifenfrei · Mindestauftrag CHF 90", "price": "ab CHF 5", "unit": "/ m²" },
+          { "service": "Privathaushalt (Pauschal)", "detail": "Bis 10 Standardfenster, inkl. Rahmen", "price": "ab CHF 90", "unit": "/ Einsatz" },
+          { "service": "Gewerbliche Glasfront", "detail": "Schaufenster, Bürogebäude – Preis nach Fläche", "price": "ab CHF 150", "unit": "/ Einsatz", "highlight": true },
+          { "service": "Kalkschutzversiegelung", "detail": "Schützt bis zu 8 Wochen gegen Neuablagerungen", "price": "ab CHF 30", "unit": "/ Einsatz" }
+        ]
+      },
+      "treppenhausreinigung": {
+        "category": "Treppenhausreinigung",
+        "tagline": "Verwaltungen",
+        "description": "Gepflegte Eingangsbereiche und Treppenhäuser – zuverlässig, diskret und nach Vereinbarung.",
+        "ctaLabel": "Treppenhausreinigung anfragen",
+        "note": null,
+        "rows": [
+          { "service": "Wöchentliche Reinigung", "detail": "Bis 4 Stockwerke · Böden, Geländer, Briefkastenanlage", "price": "ab CHF 80", "unit": "/ Einsatz" },
+          { "service": "Zweiwöchentliche Reinigung", "detail": "Bis 4 Stockwerke · Böden, Geländer, Briefkastenanlage", "price": "ab CHF 100", "unit": "/ Einsatz", "highlight": true },
+          { "service": "Monatliche Grundreinigung", "detail": "Inkl. Fenster Treppenhaus und Keller", "price": "ab CHF 180", "unit": "/ Einsatz" },
+          { "service": "Mehrfamilienhäuser (6+ Parteien)", "detail": "Individuelles Angebot für Verwaltungen", "price": "auf Anfrage", "unit": "" }
+        ]
+      },
+      "gewerbereinigung": {
+        "category": "Industrie- & Spezialreinigung",
+        "tagline": "Auf Anfrage",
+        "description": "Tiefenreinigung, Bauendreinigung und Sonderreinigungen nach Renovation oder Bau.",
+        "ctaLabel": "Spezialreinigung anfragen",
+        "note": null,
+        "rows": [
+          { "service": "Bauendreinigung", "detail": "Nach Renovation oder Neubau · Inkl. Fenster & Böden", "price": "ab CHF 400", "unit": "/ Auftrag" },
+          { "service": "Tiefenreinigung Küche", "detail": "Backofen, Herdplatten, Dunstabzug, Kalkentfernung", "price": "ab CHF 120", "unit": "/ Küche" },
+          { "service": "Teppich- & Polsterreinigung", "detail": "Nassextraktion oder Trockenreinigung je nach Material", "price": "ab CHF 4", "unit": "/ m²" },
+          { "service": "Grossbaustellen / Industrieanlagen", "detail": "Besichtigung erforderlich · Offerte innert 48 Std.", "price": "auf Anfrage", "unit": "", "highlight": true }
+        ]
+      }
+    }
+  },
+  "referenzen": {
+    "meta": {
+      "title": "Referenzen & Kundenstimmen – D'Namar Reinigungsdienst Basel",
+      "description": "Lesen Sie echte Bewertungen von Kunden aus Basel. D'Namar überzeugt bei Haushaltsreinigung, Büroreinigung, Umzugsreinigung und mehr – mit 4.9 von 5 Sternen."
+    },
+    "hero": {
+      "badge": "Was Kunden sagen",
+      "title1": "Referenzen &",
+      "titleBrand": "Kundenstimmen",
+      "subtitle": "Über 500 Haushalte und Unternehmen in Basel vertrauen D'Namar. Hier einige ihrer Stimmen – ungekürzt und authentisch."
+    },
+    "aggregate": {
+      "outOf": "Ø aus",
+      "reviews": "Bewertungen",
+      "disclaimer": "Alle Bewertungen stammen von echten Kunden in Basel und Umgebung – unbearbeitet und direkt weitergegeben."
+    },
+    "stats": [
+      { "value": "500+", "label": "Zufriedene Kunden" },
+      { "value": "4.9", "label": "Durchschnittsbewertung" },
+      { "value": "10+", "label": "Jahre in Basel" },
+      { "value": "100%", "label": "Weiterempfehlungsrate" }
+    ],
+    "cta": {
+      "badge": "Jetzt anfragen",
+      "title1": "Werden Sie unser nächster",
+      "titleBrand": "zufriedener Kunde",
+      "subtitle": "Fordern Sie jetzt Ihre kostenlose Offerte an – innerhalb von 24 Stunden erhalten Sie ein unverbindliches, persönliches Angebot."
+    }
+  },
+  "ueber-uns": {
+    "meta": {
+      "title": "Über uns – D'Namar Reinigungsdienst Basel",
+      "description": "Lernen Sie Maritza Rodriguez und Nadjib Rasuly kennen – die Gründer von D'Namar. Professionelle Reinigung in Basel mit persönlichem Einsatz, Schweizer Qualität und Abgabegarantie."
+    },
+    "hero": {
+      "badge": "Das Team hinter D'Namar",
+      "title1": "Reinigung als",
+      "titleBrand": "Versprechen",
+      "title2": "Nicht als Routine.",
+      "subtitle": "Hinter D'Namar stehen keine anonymen Mitarbeitenden, sondern Menschen, die ihren Namen für ihre Arbeit einsetzen. Maritza Rodriguez und Nadjib Rasuly haben dieses Unternehmen aufgebaut, weil sie an echte Qualität glauben – und an den Unterschied, den persönlicher Einsatz macht.",
+      "stats": [
+        { "value": "500+", "label": "Zufriedene Kunden" },
+        { "value": "10+", "label": "Jahre Erfahrung" },
+        { "value": "4.9 ★", "label": "Kundenbewertung" },
+        { "value": "100%", "label": "Abgabegarantie" }
+      ]
+    },
+    "manifest": {
+      "eyebrow": "Unsere Geschichte",
+      "title1": "Gegründet in Basel.",
+      "title2": "Verwurzelt in Basel.",
+      "p1": "Alles begann mit einem einfachen Gedanken: Reinigung soll kein anonymer Service sein – sondern ein persönliches Versprechen. Maritza Rodriguez und Nadjib Rasuly gründeten D'Namar mit dem Ziel, Basler Haushalten und Unternehmen genau das zu geben, was viele Grossunternehmen nicht bieten können: Verlässlichkeit mit Gesicht.",
+      "p1Bold": "Verlässlichkeit mit Gesicht.",
+      "p2": "Basel ist unsere Heimat. Wir kennen die Häuser, die Liegenschaftsverwaltungen und die hohen Ansprüche der Basler Mieter und Eigentümer. Wir wissen, was der harte Basler Kalk aus Armaturen, Duschen und Glasflächen macht – und wir haben die richtigen Mittel und das Fachwissen, um ihn schonend und wirkungsvoll zu entfernen.",
+      "p3": "Was uns vom ersten Tag an antreibt: der Moment, wenn ein Kunde seine frisch gereinigte Wohnung betritt und sieht, was echte Sorgfalt bedeutet. Dieses Vertrauen ist unser Antrieb – und unser grösster Lohn.",
+      "readReferences": "Referenzen lesen",
+      "badgeVerified": "Versichert & Geprüft"
+    },
+    "team": {
+      "eyebrow": "Die Menschen dahinter",
+      "title": "Unser Gründungsteam",
+      "subtitle": "Zwei Menschen, eine Mission: Reinigung auf einem Niveau, das man in Basel nicht erwartet – und das man nie mehr missen möchte.",
+      "maritza": {
+        "name": "Maritza Rodriguez",
+        "role": "Gründerin & Reinigungsprofi",
+        "quote": "«Sauberkeit bedeutet für mich mehr als nur putzen – es ist ein Ausdruck von Respekt gegenüber dem Menschen, für den ich arbeite. Ich gehe erst, wenn ich selbst zufrieden wäre.»",
+        "p1": "Maritza bringt über zehn Jahre Erfahrung in der professionellen Haushalts- und Gewerbereinigung mit. Ihr Auge fürs Detail ist legendär unter Stammkunden: Kein Kalkfleck, kein Fettrand, kein übersehener Winkel. Dazu kommt ihre freundliche, diskrete Art – sie ist die erste Ansprechperson für Privatkunden in ganz Basel.",
+        "p2": "Besonders am Herzen liegen ihr Umzugsreinigungen: «Die Wohnungsabgabe ist oft stressig. Ich möchte, dass meine Kunden entspannt zum Abgabetermin gehen – weil sie wissen, dass alles sitzt.»",
+        "tags": ["Haushaltsreinigung", "Umzugsreinigung", "Tiefenreinigung", "Privatkunden"]
+      },
+      "nadjib": {
+        "name": "Nadjib Rasuly",
+        "role": "Mitgründer & Reinigungsprofi",
+        "quote": "«Qualität erkennt man nicht nur im Glanz – sondern im Vertrauen, das Kunden uns schenken, indem sie uns wieder buchen. Das ist der Massstab, an dem ich meine Arbeit messe.»",
+        "p1": "Nadjib ist die operative Kraft hinter D'Namar. Er koordiniert Einsätze, ist erster Ansprechpartner für Gewerbekunden und sorgt dafür, dass jeder Auftrag reibungslos abläuft – pünktlich, vollständig und nach Vereinbarung. Seine Präzision hat dazu beigetragen, dass viele Unternehmen in Basel D'Namar als festen Partner für die Unterhaltsreinigung gewählt haben.",
+        "p2": "Sein Anspruch: «Jede Büroreinigung, jedes Treppenhaus, jede Praxis – alles wird so behandelt wie das Wichtigste, was wir heute machen. Weil es das für unsere Kunden ist.»",
+        "tags": ["Büroreinigung", "Treppenhausreinigung", "Gewerbereinigung", "B2B-Kunden"]
+      }
+    },
+    "qualityPromise": {
+      "eyebrow": "Unser Qualitätsversprechen",
+      "title1": "Was «sauber» in Basel",
+      "title2": "wirklich bedeutet",
+      "p1": "Das Basler Leitungswasser ist für seinen hohen Kalkgehalt bekannt. Das bedeutet: Armaturen verkalken schneller, Glasduschen zeigen früher weisse Schlieren, und Küchenoberflächen brauchen spezifische Pflege. Viele Reinigungsdienste kennen das Problem – aber nicht alle haben das Fachwissen, um damit richtig umzugehen.",
+      "p2": "Bei D'Namar ist die Kalkbehandlung ein fester Bestandteil jedes Einsatzes. Wir arbeiten mit professionellen, materialschonenden Entkalkungsmitteln und kennen die Grenzen jedes Oberflächentyps – Chrom, Glas, Keramik, Naturstein. Das Ergebnis: Armaturen, die wieder glänzen. Duschen, die aussehen wie neu.",
+      "p2Bold": "fester Bestandteil jedes Einsatzes",
+      "p3": "Das ist nur ein Beispiel für das, was uns auszeichnet. Unser Qualitätsversprechen gilt für jeden Handgriff: Wenn wir fertig sind, ist es wirklich sauber. Nicht «gut genug» – sondern so, wie Sie es sich vorstellen.",
+      "p3Bold": "Wenn wir fertig sind, ist es wirklich sauber.",
+      "kalkTitle": "Kalk-Expertise",
+      "kalkText": "Wir entfernen Basler Kalkablagerungen schonend und dauerhaft.",
+      "bullets": [
+        "Professionelle Entkalkungsmittel – schonend & wirksam",
+        "Kontrolle nach jedem Einsatz durch das Gründerteam",
+        "Abgabegarantie bei Umzugsreinigung – ohne Aufpreis",
+        "Zufriedenheitsgarantie: Wir kommen kostenlos zurück"
+      ]
+    },
+    "values": {
+      "eyebrow": "Was uns antreibt",
+      "title": "Unsere Werte",
+      "subtitle": "Sechs Grundsätze, die unser Handeln täglich bestimmen – in jedem Haushalt, in jedem Büro, in jedem Treppenhaus.",
+      "items": [
+        { "title": "Schweizer Pünktlichkeit", "desc": "Termine werden eingehalten – ohne Ausnahme. Ihr Vertrauen ist unser wichtigstes Kapital." },
+        { "title": "Familiärer Einsatz", "desc": "Wir behandeln Ihr Zuhause so, als wäre es unser eigenes – mit Sorgfalt, Diskretion und echtem Respekt." },
+        { "title": "Vollständig versichert", "desc": "Unser Team arbeitet mit Berufshaftpflicht. Für Ihre Sicherheit – und für unsere Professionalität." },
+        { "title": "Persönliche Betreuung", "desc": "Kein Callcenter, keine anonymen Teams. Bei D'Namar wissen Sie, wer zu Ihnen kommt – bei jedem Besuch." },
+        { "title": "Kalk-Expertise Basel", "desc": "Wir kennen den Basler Kalk und wissen genau, wie man ihn effektiv und materialschonend entfernt." },
+        { "title": "Qualitätsgarantie", "desc": "Wenn etwas nicht passt, kommen wir kostenlos zurück – bis Sie vollständig zufrieden sind. Unser Wort gilt." }
+      ]
+    },
+    "timeline": {
+      "eyebrow": "Unsere Geschichte",
+      "title": "Wie alles begann",
+      "items": [
+        { "year": "Die Gründung", "period": "2015", "text": "Maritza Rodriguez und Nadjib Rasuly gründen D'Namar in Basel – mit einem klaren Ziel: professionelle Reinigung persönlich, verlässlich und ohne versteckte Kosten anzubieten. Die ersten Kunden kommen über Mundpropaganda." },
+        { "year": "Das Wachstum", "period": "2018–2021", "text": "Dank konstanter Qualität und persönlicher Empfehlungen wächst der Kundenstamm stetig. D'Namar erweitert das Angebot auf Büros, Treppenhäuser und Umzugsreinigung mit Abgabegarantie." },
+        { "year": "Heute", "period": "2025", "text": "D'Namar ist ein etabliertes Reinigungsunternehmen in Basel mit über 500 zufriedenen Kunden, einem eingespielten Team und dem gleichen Herzblut wie am ersten Tag." }
+      ]
+    },
+    "cta": {
+      "title1": "Überzeugen Sie sich selbst –",
+      "titleBrand": "persönlich und kostenlos.",
+      "subtitle": "Fordern Sie Ihre unverbindliche Offerte an. Wir melden uns innerhalb von 24 Stunden – persönlich, nicht automatisiert.",
+      "ctaSecondary": "Direkt kontaktieren",
+      "trust": ["Abgabegarantie", "Berufshaftpflicht", "Lokal in Basel", "Antwort in 24 h"]
+    }
+  },
+  "anfrage": {
+    "meta": {
+      "title": "Kostenlose Offerte anfordern | D'Namar Reinigungsdienst Basel",
+      "description": "In 4 Schritten zur kostenlosen Reinigungsofferte für Basel. Haushalts-, Büro-, Umzugs- und Glasreinigung – Antwort innerhalb von 24 Stunden. Jetzt anfragen."
+    },
+    "hero": {
+      "badge": "Schnell & unkompliziert",
+      "title": "Kostenlose Offerte",
+      "titleBrand": "in 4 Schritten",
+      "subtitle": "Wählen Sie Ihre Leistung, geben Sie die Objektdetails an und wir erstellen Ihnen ein massgeschneidertes Angebot – innerhalb von 24 Stunden, persönlich und unverbindlich.",
+      "promises": [
+        "Antwort innerhalb von 24 Stunden",
+        "Keine Vorauszahlung erforderlich",
+        "Kostenlos & unverbindlich",
+        "Persönliche Beratung inklusive"
+      ]
+    },
+    "sidebar": {
+      "whyTitle": "Warum D'Namar?",
+      "stats": [
+        { "val": "10+", "label": "Jahre Erfahrung in Basel" },
+        { "val": "500+", "label": "Zufriedene Kunden" },
+        { "val": "24 Std.", "label": "Antwortzeit garantiert" },
+        { "val": "4.9 ★", "label": "Kundenbewertung" },
+        { "val": "CHF 40–", "label": "Ab CHF 40 pro Stunde" }
+      ],
+      "guaranteeTitle": "Abgabegarantie",
+      "guaranteeText": "Bei der Umzugsreinigung kommen wir kostenlos nochmals – bis zur erfolgreichen Abnahme durch die Verwaltung.",
+      "callTitle": "Lieber direkt anrufen?",
+      "hours": "Mo–Fr 08–18 · Sa 09–14 Uhr",
+      "whatsappLink": "WhatsApp schreiben"
+    },
+    "form": {
+      "formLoading": "Formular wird geladen…",
+      "steps": ["Leistung", "Details", "Kontakt", "Absenden"],
+      "step0": {
+        "title": "Welche Leistung wünschen Sie?",
+        "subtitle": "Wählen Sie eine Reinigungsart aus.",
+        "errorService": "Bitte wählen Sie eine Leistung aus."
+      },
+      "step1": {
+        "title": "Objekt & Häufigkeit",
+        "subtitle": "Damit wir Ihnen ein genaues Angebot erstellen können.",
+        "sizeLabel": "Grösse des Objekts",
+        "squareMeters": "Quadratmeter",
+        "roomCount": "Zimmeranzahl",
+        "frequencyLabel": "Gewünschte Häufigkeit",
+        "dateLabel": "Gewünschter Termin",
+        "dateHint": "Optional – kann auch telefonisch vereinbart werden.",
+        "notesLabel": "Besondere Anforderungen oder Hinweise",
+        "notesPlaceholder": "z.B. Haustiere, schwer zugängliche Flächen, Kalkschutz gewünscht…",
+        "errorSize": "Bitte wählen Sie eine Grösse.",
+        "errorFrequency": "Bitte wählen Sie eine Häufigkeit."
+      },
+      "step2": {
+        "title": "Ihre Kontaktdaten",
+        "subtitle": "Alle mit * markierten Felder sind erforderlich.",
+        "nameLabel": "Vollständiger Name",
+        "namePlaceholder": "Erika Mustermann",
+        "emailLabel": "E-Mail-Adresse",
+        "emailPlaceholder": "erika@beispiel.ch",
+        "phoneLabel": "Telefon / WhatsApp",
+        "phoneHint": "Für schnelle Rückfragen – auch per WhatsApp.",
+        "phonePlaceholder": "+41 79 000 00 00",
+        "addressLabel": "Adresse des Objekts in Basel",
+        "addressHint": "Strasse, Hausnummer und Quartier – damit wir Anfahrt und Preis berechnen können.",
+        "addressPlaceholder": "Musterstrasse 12, 4051 Basel",
+        "errorName": "Name ist erforderlich.",
+        "errorEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+        "errorPhone": "Telefonnummer ist erforderlich.",
+        "errorAddress": "Adresse in Basel ist erforderlich."
+      },
+      "step3": {
+        "title": "Zusammenfassung",
+        "subtitle": "Bitte prüfen Sie Ihre Angaben – dann absenden.",
+        "changeLabel": "Ändern",
+        "privacyNote": "Mit dem Absenden bestätigen Sie, dass wir Ihre Daten ausschliesslich zur Bearbeitung dieser Anfrage verwenden dürfen. Keine Weitergabe an Dritte.",
+        "submitBtn": "Kostenlose Offerte anfordern",
+        "sending": "Wird gesendet…",
+        "summaryKeys": {
+          "service": "Leistung",
+          "size": "Grösse",
+          "frequency": "Häufigkeit",
+          "date": "Termin",
+          "name": "Name",
+          "email": "E-Mail",
+          "phone": "Telefon",
+          "address": "Adresse",
+          "notes": "Hinweise",
+          "dateDefault": "Nach Absprache"
+        }
+      },
+      "success": {
+        "title": "Vielen Dank, {name}!",
+        "subtitle": "Ihre Anfrage ist bei uns eingegangen. Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+        "subtitleBold": "Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+        "noReply": "Keine Antwort erhalten? Rufen Sie uns direkt an:"
+      },
+      "services": {
+        "haushaltsreinigung": { "label": "Haushaltsreinigung", "desc": "Privathaushalte & Wohnungen" },
+        "bueroreinigung": { "label": "Büroreinigung", "desc": "Büros, Praxen & Gewerbe" },
+        "umzugsreinigung": { "label": "Umzugsreinigung", "desc": "Endreinigung mit Garantie" },
+        "renovationsreinigung": { "label": "Renovationsreinigung", "desc": "Nach Umbau, Neubau & Bau" },
+        "treppenhausreinigung": { "label": "Treppenhausreinigung", "desc": "Gemeinschaftsflächen & Lifte" },
+        "glasreinigung": { "label": "Glasreinigung", "desc": "Fenster & Glasflächen" },
+        "tiefenreinigung": { "label": "Tiefenreinigung", "desc": "Gründliche Grundreinigung" },
+        "anderes": { "label": "Anderes / Kombination", "desc": "Sonstiges oder mehrere Leistungen" }
+      },
+      "frequencies": {
+        "einmalig": { "label": "Einmalig", "sub": "Nur dieser Einsatz" },
+        "woechentlich": { "label": "Wöchentlich", "sub": "1× pro Woche" },
+        "zweiwochentlich": { "label": "2× pro Monat", "sub": "Alle 2 Wochen" },
+        "monatlich": { "label": "Monatlich", "sub": "1× pro Monat" },
+        "unbekannt": { "label": "Noch unklar", "sub": "Beratung gewünscht" }
+      },
+      "sizes": {
+        "m2": ["< 50 m²", "50–80 m²", "80–120 m²", "120–200 m²", "> 200 m²", "Nicht relevant"],
+        "zimmer": ["1 Zimmer", "2 Zimmer", "3–4 Zimmer", "5+ Zimmer", "Nicht relevant"]
+      }
+    }
+  },
+  "kontakt": {
+    "meta": {
+      "title": "Kontakt | D'Namar Reinigungsdienst Basel",
+      "description": "Kontaktieren Sie D'Namar in Basel. Telefon: +41 79 252 75 57. Kostenlose Offerte innerhalb von 24 Stunden."
+    },
+    "hero": {
+      "eyebrow": "Wir freuen uns auf Sie",
+      "title": "Kontakt",
+      "subtitle": "Schreiben Sie uns oder rufen Sie an – wir erstellen Ihnen innerhalb von 24 Stunden eine kostenlose, unverbindliche Offerte."
+    },
+    "info": {
+      "title": "Kontaktdaten",
+      "items": [
+        { "label": "Telefon & WhatsApp", "value": "+41 79 252 75 57" },
+        { "label": "E-Mail", "value": "info@dnamar.ch" },
+        { "label": "Einsatzgebiet", "value": "Basel & Umgebung" },
+        { "label": "Erreichbarkeit", "value": "Mo–Fr 08:00–18:00 · Sa 09:00–14:00" }
+      ]
+    },
+    "form": {
+      "title": "Offerte oder Frage senden",
+      "subtitle": "Alle Felder mit * sind Pflichtfelder.",
+      "nameLabel": "Name",
+      "namePlaceholder": "Max Mustermann",
+      "emailLabel": "E-Mail",
+      "emailPlaceholder": "max@beispiel.ch",
+      "phoneLabel": "Telefon",
+      "phoneOptional": "Optional",
+      "phonePlaceholder": "+41 79 000 00 00",
+      "serviceLabel": "Gewünschte Leistung",
+      "servicePlaceholder": "Bitte wählen…",
+      "messageLabel": "Ihre Nachricht",
+      "messagePlaceholder": "Beschreiben Sie Ihr Anliegen – z.B. Grösse der Wohnung, gewünschter Termin, besondere Anforderungen…",
+      "submitBtn": "Anfrage senden",
+      "sending": "Wird gesendet…",
+      "successTitle": "Vielen Dank!",
+      "successText": "Wir haben Ihre Anfrage erhalten und melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "errorMsg": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+      "errorName": "Bitte geben Sie Ihren Namen ein.",
+      "errorEmailEmpty": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+      "errorEmailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "errorPhone": "Bitte geben Sie eine gültige Telefonnummer ein.",
+      "errorService": "Bitte wählen Sie eine Leistung aus.",
+      "errorMessage": "Bitte beschreiben Sie Ihr Anliegen (mind. 10 Zeichen).",
+      "services": [
+        "Haushaltsreinigung",
+        "Büroreinigung",
+        "Umzugsreinigung / Endreinigung",
+        "Renovationsreinigung",
+        "Treppenhausreinigung",
+        "Glasreinigung / Fensterreinigung",
+        "Tiefenreinigung",
+        "Praxisreinigung",
+        "Anderes"
+      ]
+    },
+    "mapTitle": "D'Namar Einsatzgebiet Basel"
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog & Reinigungstipps | D'Namar Basel",
+      "description": "Ratgeber und Tipps rund um Reinigung in Basel. Wie oft soll man das Büro reinigen? Checkliste für die Umzugsreinigung – und mehr von D'Namar."
+    },
+    "hero": {
+      "eyebrow": "Wissen & Tipps",
+      "title": "Reinigungsblog",
+      "subtitle": "Ratgeber, Checklisten und Expertentipps rund um Reinigung – für Haushalte und Unternehmen in Basel."
+    },
+    "readTime": "Lesezeit",
+    "readMore": "Weiterlesen",
+    "cta": {
+      "title": "Fragen zur Reinigung in Basel?",
+      "subtitle": "Wir beraten Sie gerne – kostenlos und unverbindlich."
+    },
+    "posts": {
+      "bueroreinigung-tipps-basel": {
+        "title": "Wie oft sollte man ein Büro reinigen lassen? Tipps für Unternehmen in Basel",
+        "excerpt": "Ein sauberes Büro ist mehr als Ästhetik – es schützt die Gesundheit Ihrer Mitarbeitenden und hinterlässt einen professionellen Eindruck. Wir erklären, welche Reinigungsfrequenz für Ihren Betrieb optimal ist.",
+        "category": "Büroreinigung",
+        "date": "10. März 2025",
+        "readTime": "6 Min."
+      },
+      "umzug-endreinigung-checkliste-basel": {
+        "title": "Checkliste für die Endreinigung bei einem Umzug in Basel",
+        "excerpt": "Wer in Basel aus einer Mietwohnung auszieht, muss eine gründliche Endreinigung vorweisen. Mit dieser Checkliste verpassen Sie keinen Punkt und vermeiden unnötige Kosten.",
+        "category": "Umzugsreinigung",
+        "date": "25. Februar 2025",
+        "readTime": "7 Min."
+      }
+    },
+    "blogPost": {
+      "backToBlog": "Blog",
+      "bueroreinigung": "Büroreinigung",
+      "umzugsreinigung": "Umzugsreinigung",
+      "readTime": "Lesezeit",
+      "author": "D'Namar Reinigungsdienst Basel",
+      "ctaBuero": {
+        "title": "Büroreinigung in Basel gesucht?",
+        "subtitle": "Offerte kostenlos & in 24 Stunden."
+      },
+      "ctaUmzug": {
+        "title": "Umzugsreinigung mit Abgabegarantie",
+        "subtitle": "Kostenlose Offerte – Antwort in 24 Stunden."
+      }
+    }
+  },
+  "whatsapp": {
+    "message": "Hallo D'Namar Team, ich interessiere mich für Ihre Reinigungsdienstleistungen in Basel. Könnten Sie mir bitte eine Offerte erstellen?",
+    "tooltip": "Jetzt auf WhatsApp schreiben",
+    "ariaLabel": "WhatsApp schreiben"
+  },
+  "slider": {
+    "prevLabel": "Vorherige Leistung",
+    "nextLabel": "Nächste Leistung",
+    "slides": [
+      {
+        "title": "Büroreinigung Basel",
+        "desc": "Professionelle Reinigung für Büros, Arztpraxen und Gewerberäume – in Gundeldingen, Grossbasel und im ganzen Stadtkanton.",
+        "badge": "Gewerbe",
+        "cta": "Zur Büroreinigung"
+      },
+      {
+        "title": "Haushaltsreinigung",
+        "desc": "Gründliche Wohnungsreinigung nach Ihrem Terminplan – in St. Alban, Kleinbasel, Gundeldingen und Riehen.",
+        "badge": "Privat",
+        "cta": "Zur Haushaltsreinigung"
+      },
+      {
+        "title": "Glasreinigung Basel",
+        "desc": "Streifenfreie Fenster und Glasfronten – für Privathaushalte und Unternehmen in Riehen, Allschwil und Basel-Stadt.",
+        "badge": "Privat & Gewerbe",
+        "cta": "Zur Glasreinigung"
+      },
+      {
+        "title": "Umzugsreinigung",
+        "desc": "Kalkfreier Herd, entfetteter Backofen, blitzsaubere Küche – mit Abgabegarantie für Ihre Wohnungsübergabe in Basel.",
+        "badge": "Mit Abgabegarantie",
+        "cta": "Zur Umzugsreinigung"
+      },
+      {
+        "title": "Treppenhausreinigung",
+        "desc": "Gepflegte Eingangsbereiche und Treppenhäuser in allen Basler Quartieren – zuverlässig, regelmässig und diskret.",
+        "badge": "Verwaltungen",
+        "cta": "Zur Treppenhausreinigung"
+      },
+      {
+        "title": "Gewerbereinigung",
+        "desc": "Massgeschneiderte Reinigung für Praxen, Fitnessstudios und Ladengeschäfte in Basel und Umgebung.",
+        "badge": "Gewerbe",
+        "cta": "Mehr erfahren"
+      }
+    ]
+  }
+}

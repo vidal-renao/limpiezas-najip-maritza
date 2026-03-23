@@ -2,36 +2,45 @@ import { MetadataRoute } from "next";
 
 const BASE_URL = "https://dnamar.ch";
 
+// de has no prefix (canonical), en and es have locale prefix
+const LOCALES: Array<{ prefix: string; priority: number }> = [
+  { prefix: "",     priority: 1.0 },
+  { prefix: "/en",  priority: 0.85 },
+  { prefix: "/es",  priority: 0.85 },
+];
+
+const PAGES: Array<{ path: string; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]; priority: number; lastModified?: Date }> = [
+  { path: "",                                            changeFrequency: "weekly",  priority: 1.0 },
+  { path: "/haushaltsreinigung",                         changeFrequency: "monthly", priority: 0.9 },
+  { path: "/bueroreinigung",                             changeFrequency: "monthly", priority: 0.9 },
+  { path: "/umzugsreinigung",                            changeFrequency: "monthly", priority: 0.9 },
+  { path: "/glasreinigung",                              changeFrequency: "monthly", priority: 0.9 },
+  { path: "/treppenhausreinigung",                       changeFrequency: "monthly", priority: 0.9 },
+  { path: "/preise",                                     changeFrequency: "monthly", priority: 0.8 },
+  { path: "/anfrage",                                    changeFrequency: "monthly", priority: 0.8 },
+  { path: "/referenzen",                                 changeFrequency: "monthly", priority: 0.7 },
+  { path: "/ueber-uns",                                  changeFrequency: "monthly", priority: 0.7 },
+  { path: "/kontakt",                                    changeFrequency: "monthly", priority: 0.7 },
+  { path: "/blog",                                       changeFrequency: "weekly",  priority: 0.6 },
+  { path: "/blog/bueroreinigung-tipps-basel",            changeFrequency: "yearly",  priority: 0.6, lastModified: new Date("2025-03-10") },
+  { path: "/blog/umzug-endreinigung-checkliste-basel",   changeFrequency: "yearly",  priority: 0.6, lastModified: new Date("2025-02-25") },
+];
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
+  const entries: MetadataRoute.Sitemap = [];
 
-  // Static pages with priority and changeFrequency
-  const staticPages: MetadataRoute.Sitemap = [
-    { url: BASE_URL, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
-    { url: `${BASE_URL}/haushaltsreinigung`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE_URL}/bueroreinigung`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE_URL}/umzugsreinigung`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE_URL}/glasreinigung`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE_URL}/treppenhausreinigung`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE_URL}/preise`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/anfrage`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE_URL}/referenzen`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/ueber-uns`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/kontakt`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.6 },
-    {
-      url: `${BASE_URL}/blog/bueroreinigung-tipps-basel`,
-      lastModified: new Date("2025-03-10"),
-      changeFrequency: "yearly",
-      priority: 0.6,
-    },
-    {
-      url: `${BASE_URL}/blog/umzug-endreinigung-checkliste-basel`,
-      lastModified: new Date("2025-02-25"),
-      changeFrequency: "yearly",
-      priority: 0.6,
-    },
-  ];
+  for (const { prefix, priority: localePriorityMod } of LOCALES) {
+    for (const page of PAGES) {
+      entries.push({
+        url: `${BASE_URL}${prefix}${page.path}`,
+        lastModified: page.lastModified ?? now,
+        changeFrequency: page.changeFrequency,
+        // de pages keep original priority; en/es pages get a slight reduction
+        priority: prefix === "" ? page.priority : Math.min(page.priority, localePriorityMod),
+      });
+    }
+  }
 
-  return staticPages;
+  return entries;
 }
