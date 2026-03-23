@@ -114,6 +114,13 @@ const jsonLd = {
     { "@type": "Person", name: "Maritza Rodriguez", jobTitle: "Reinigungsprofi & Mitgründerin" },
     { "@type": "Person", name: "Nadjib Rasuly", jobTitle: "Reinigungsprofi & Mitgründer" },
   ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "87",
+    bestRating: "5",
+    worstRating: "1",
+  },
   sameAs: [
     "https://www.instagram.com/dnamar.basel/",
     "https://www.facebook.com/dnamar.basel/",

@@ -122,7 +122,7 @@ function ServicesDropdown({
       {/* Dropdown panel */}
       <div
         className={`
-          absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[540px]
+          absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[min(540px,95vw)]
           bg-white/95 backdrop-blur-xl rounded-2xl shadow-xl border border-white/60
           ring-1 ring-navy/5 overflow-hidden
           transition-all duration-300 ease-out origin-top
