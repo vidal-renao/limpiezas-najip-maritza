@@ -62,7 +62,7 @@ export async function POST(req: NextRequest) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "D'Namar Web <noreply@dnamar.ch>",
+        from: "D'Namar Web <onboarding@resend.dev>",
         to: [toEmail],
         subject: `Neue Bewertung (${rating}★): ${escapeHtml(service)} – ${escapeHtml(displayName)}`,
         html,
