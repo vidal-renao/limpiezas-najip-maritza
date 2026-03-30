@@ -758,6 +758,9 @@
       "retry": "Erneut versuchen",
       "sectionTitle": "Bewertung hinterlassen",
       "sectionSubtitle": "Teilen Sie Ihre persönliche Erfahrung mit D'Namar"
+    },
+    "liveReviews": {
+      "title": "Aktuelle Kundenbewertungen"
     }
   },
   "ueber-uns": {

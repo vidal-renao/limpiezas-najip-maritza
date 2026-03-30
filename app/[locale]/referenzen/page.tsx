@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Star, MessageSquarePlus } from "lucide-react";
 import ReviewForm from "@/components/ui/ReviewForm";
+import { supabase, type Review } from "@/lib/supabase";
 
 export async function generateMetadata({
   params,
@@ -130,6 +131,14 @@ export default async function ReferenzenPage({
 
   const stats = t.raw("stats") as Array<{ value: string; label: string }>;
   const lang = locale as "de" | "en" | "es";
+
+  // Fetch approved reviews from Supabase (newest first, max 12)
+  const { data: liveReviews } = await supabase
+    .from("reviews")
+    .select("id, name, rating, service, comment, created_at")
+    .eq("status", "approved")
+    .order("created_at", { ascending: false })
+    .limit(12);
 
   const featured = TESTIMONIALS.find((t) => t.featured)!;
   const rest = TESTIMONIALS.filter((t) => !t.featured);
@@ -281,6 +290,42 @@ export default async function ReferenzenPage({
           </div>
         </div>
       </section>
+
+      {/* ── LIVE REVIEWS FROM SUPABASE ───────────────────────────────── */}
+      {liveReviews && liveReviews.length > 0 && (
+        <section className="bg-white py-16 lg:py-20">
+          <div className="section-container">
+            <h2 className="text-xl font-bold text-navy mb-8 text-center">
+              {t("liveReviews.title")}
+            </h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {(liveReviews as Review[]).map((review) => (
+                <div key={review.id} className="bg-muted rounded-2xl border border-border p-6 shadow-sm flex flex-col">
+                  <div className="flex gap-0.5 mb-3">
+                    {Array.from({ length: review.rating }).map((_, i) => (
+                      <Star key={i} className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
+                    ))}
+                  </div>
+                  <blockquote className="text-sm text-foreground/75 leading-relaxed flex-1 mb-4">
+                    &ldquo;{review.comment}&rdquo;
+                  </blockquote>
+                  <div className="border-t border-border pt-3 flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <div className="w-7 h-7 rounded-full bg-gradient-to-br from-brand to-brand-dark flex items-center justify-center text-white font-bold text-xs shrink-0">
+                        {review.name.charAt(0).toUpperCase()}
+                      </div>
+                      <span className="text-sm font-medium text-navy">{review.name}</span>
+                    </div>
+                    <span className="rounded-full bg-brand/10 text-brand text-xs font-semibold px-2.5 py-0.5">
+                      {review.service}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── REVIEW FORM ───────────────────────────────────────────────── */}
       <section className="bg-white py-16 lg:py-20" aria-labelledby="review-form-heading">

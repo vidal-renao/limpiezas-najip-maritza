@@ -758,6 +758,9 @@
       "retry": "Try again",
       "sectionTitle": "Leave a review",
       "sectionSubtitle": "Share your personal experience with D'Namar"
+    },
+    "liveReviews": {
+      "title": "Recent Client Reviews"
     }
   },
   "ueber-uns": {

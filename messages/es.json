@@ -758,6 +758,9 @@
       "retry": "Reintentar",
       "sectionTitle": "Deje una valoración",
       "sectionSubtitle": "Comparta su experiencia personal con D'Namar"
+    },
+    "liveReviews": {
+      "title": "Valoraciones recientes de clientes"
     }
   },
   "ueber-uns": {
