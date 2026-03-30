@@ -3,13 +3,13 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import ServiceSlider from "@/components/ui/ServiceSlider";
+import FaqAccordion from "@/components/ui/FaqAccordion";
 import {
   ShieldCheck,
   Clock,
   MapPin,
   Star,
   BadgeCheck,
-  ChevronDown,
   Droplets,
   Sparkles,
   ThumbsUp,
@@ -450,23 +450,47 @@ export default async function HomePage({
       </section>
 
       {/* ── DISTRICT COVERAGE ─────────────────────────────────────────────── */}
-      <section className="bg-white py-14 border-y border-border" aria-label="Service area">
+      <section className="bg-white py-16 lg:py-20 border-y border-border" aria-label="Service area">
         <div className="section-container">
-          <div className="text-center mb-8">
-            <span className="text-brand font-semibold text-sm uppercase tracking-widest">
-              {t("districts.eyebrow")}
-            </span>
-            <h2 className="mt-2 text-2xl sm:text-3xl font-bold text-navy">
-              {t("districts.title")}
-            </h2>
-            <p className="mt-2 text-foreground/60 text-sm">{t("districts.subtitle")}</p>
-          </div>
-          <div className="flex flex-wrap justify-center gap-3">
-            {districts.map((d) => (
-              <span key={d} className="rounded-full border border-border bg-muted px-4 py-2 text-sm text-foreground/70 font-medium">
-                📍 {d}
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+            {/* Left: text + badges */}
+            <div>
+              <span className="text-brand font-semibold text-sm uppercase tracking-widest">
+                {t("districts.eyebrow")}
               </span>
-            ))}
+              <h2 className="mt-2 text-2xl sm:text-3xl font-bold text-navy mb-3">
+                {t("districts.title")}
+              </h2>
+              <p className="text-foreground/60 text-sm mb-7">{t("districts.subtitle")}</p>
+
+              <div className="flex flex-wrap gap-2.5 mb-7">
+                {districts.map((d) => (
+                  <span key={d} className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted px-3.5 py-1.5 text-sm text-foreground/70 font-medium hover:border-brand/40 hover:text-navy transition-colors">
+                    <MapPin className="w-3.5 h-3.5 text-brand shrink-0" />
+                    {d}
+                  </span>
+                ))}
+              </div>
+
+              <Link href="/anfrage" className="btn-primary text-sm px-6 py-3">
+                {t("districts.cta")}
+              </Link>
+            </div>
+
+            {/* Right: Google Maps embed */}
+            <div className="rounded-2xl overflow-hidden border border-border shadow-md h-72 lg:h-80">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43389.86617043455!2d7.5434566!3d47.5595986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b9a441b50327%3A0x5a336bfe16a3b2a4!2sBasel%2C%20Switzerland!5e0!3m2!1sen!2sch!4v1709900000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={t("districts.mapTitle")}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -484,17 +508,7 @@ export default async function HomePage({
               </h2>
             </div>
 
-            <dl className="space-y-4">
-              {faqItems.map(({ q, a }) => (
-                <div key={q} className="bg-white rounded-2xl border border-border px-7 py-6 shadow-sm">
-                  <dt className="font-semibold text-navy flex items-start justify-between gap-4">
-                    <span>{q}</span>
-                    <ChevronDown className="w-5 h-5 text-brand shrink-0 mt-0.5" />
-                  </dt>
-                  <dd className="mt-3 text-sm text-foreground/65 leading-relaxed">{a}</dd>
-                </div>
-              ))}
-            </dl>
+            <FaqAccordion items={faqItems} />
 
             <div className="mt-8 text-center">
               <p className="text-foreground/60 text-sm mb-4">{t("faq.moreQuestions")}</p>

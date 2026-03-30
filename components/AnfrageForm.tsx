@@ -232,8 +232,41 @@ export default function AnfrageForm() {
 
   async function submit() {
     setStatus("sending");
-    await new Promise((r) => setTimeout(r, 1200));
-    setStatus("success");
+    try {
+      const res = await fetch("/api/anfrage", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Network response was not ok");
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  /* ─── ERROR screen ───────────────────────────────────────────────────── */
+  if (status === "error") {
+    return (
+      <div className="flex flex-col items-center text-center py-12 gap-6">
+        <div className="w-20 h-20 rounded-full bg-red-50 flex items-center justify-center">
+          <AlertCircle className="w-10 h-10 text-red-500" />
+        </div>
+        <div>
+          <h3 className="text-2xl font-bold text-navy mb-3">{t("error.title")}</h3>
+          <p className="text-foreground/65 text-base leading-relaxed max-w-sm">
+            {t("error.subtitle")}
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={() => setStatus("idle")}
+          className="btn-primary text-sm px-8 py-3"
+        >
+          {t("error.retry")}
+        </button>
+      </div>
+    );
   }
 
   /* ─── SUCCESS screen ─────────────────────────────────────────────────── */

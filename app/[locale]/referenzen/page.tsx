@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { Star } from "lucide-react";
+import { Star, MessageSquarePlus } from "lucide-react";
+import ReviewForm from "@/components/ui/ReviewForm";
 
 export async function generateMetadata({
   params,
@@ -277,6 +278,47 @@ export default async function ReferenzenPage({
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── REVIEW FORM ───────────────────────────────────────────────── */}
+      <section className="bg-white py-16 lg:py-20" aria-labelledby="review-form-heading">
+        <div className="section-container">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-brand/10 mb-4">
+                <MessageSquarePlus className="w-6 h-6 text-brand" />
+              </div>
+              <h2 id="review-form-heading" className="text-2xl sm:text-3xl font-bold text-navy">
+                {t("reviewForm.sectionTitle")}
+              </h2>
+              <p className="text-foreground/60 mt-2 text-sm">{t("reviewForm.sectionSubtitle")}</p>
+            </div>
+
+            <div className="bg-muted rounded-2xl border border-border p-6 lg:p-8">
+              <ReviewForm
+                locale={locale}
+                labels={{
+                  title: t("reviewForm.title"),
+                  subtitle: t("reviewForm.subtitle"),
+                  ratingLabel: t("reviewForm.ratingLabel"),
+                  nameLabel: t("reviewForm.nameLabel"),
+                  namePlaceholder: t("reviewForm.namePlaceholder"),
+                  nameHint: t("reviewForm.nameHint"),
+                  serviceLabel: t("reviewForm.serviceLabel"),
+                  servicePlaceholder: t("reviewForm.servicePlaceholder"),
+                  commentLabel: t("reviewForm.commentLabel"),
+                  commentPlaceholder: t("reviewForm.commentPlaceholder"),
+                  submitBtn: t("reviewForm.submitBtn"),
+                  sending: t("reviewForm.sending"),
+                  successTitle: t("reviewForm.successTitle"),
+                  successText: t("reviewForm.successText"),
+                  errorText: t("reviewForm.errorText"),
+                  retry: t("reviewForm.retry"),
+                }}
+              />
+            </div>
           </div>
         </div>
       </section>

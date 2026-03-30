@@ -59,13 +59,13 @@ export default async function KontaktPage({
               </div>
 
               {/* Map */}
-              <div className="rounded-2xl overflow-hidden border border-border" title={t("mapTitle")}>
+              <div className="rounded-2xl overflow-hidden border border-border">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43389.86617043455!2d7.5434566!3d47.5595986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b9a441b50327%3A0x5a336bfe16a3b2a4!2sBasel%2C%20Switzerland!5e0!3m2!1sen!2sch!4v1709900000000"
                   width="100%"
                   height="250"
                   style={{ border: 0 }}
-                  allowFullScreen={false}
+                  allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title={t("mapTitle")}
