@@ -10,6 +10,31 @@ function escapeHtml(str: string): string {
     .replace(/'/g, "&#039;");
 }
 
+// Offensive words list (DE / EN / ES) — extend as needed
+const BLOCKED_WORDS = [
+  // German
+  "scheiß", "scheisse", "scheiße", "arschloch", "arsch", "wichser", "hurensohn",
+  "fotze", "fick", "ficken", "idiot", "vollidiot", "depp", "blödmann", "trottel",
+  "nazi", "bastard", "wichse", "schlampe", "nutte",
+  // English
+  "fuck", "fucking", "shit", "asshole", "bitch", "cunt", "bastard", "dick",
+  "prick", "whore", "slut", "retard", "nigger", "faggot",
+  // Spanish
+  "mierda", "puta", "puto", "coño", "joder", "gilipollas", "imbécil", "imbecil",
+  "maricón", "maricon", "cabron", "cabrón", "hostia", "polla", "idiota", "estúpido",
+];
+
+function moderateContent(text: string): "clean" | "offensive" {
+  const lower = text.toLowerCase();
+  return BLOCKED_WORDS.some((word) => lower.includes(word)) ? "offensive" : "clean";
+}
+
+function determineStatus(rating: number, contentResult: "clean" | "offensive"): "approved" | "pending" | "rejected" {
+  if (contentResult === "offensive") return "rejected";
+  if (rating >= 4) return "approved";   // 4-5 stars + clean → auto-publish
+  return "pending";                      // 1-3 stars → manual review
+}
+
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
@@ -34,15 +59,16 @@ export async function POST(req: NextRequest) {
     }
 
     const displayName = name?.trim() || "Anonym";
+    const contentResult = moderateContent(comment + " " + displayName);
+    const status = determineStatus(rating, contentResult);
 
-    // Save to Supabase (status: pending — admin must approve before it appears)
     const { error: dbError } = await supabase.from("reviews").insert({
       name: displayName,
       rating,
       service,
       comment: comment.trim(),
       locale: locale ?? "de",
-      status: "pending",
+      status,
     });
 
     if (dbError) {
@@ -50,23 +76,23 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Failed to save review" }, { status: 500 });
     }
 
-    // Send email notification to admin (non-blocking — DB save already succeeded)
+    // Email notification — only for pending (needs manual review)
     const apiKey = process.env.RESEND_API_KEY;
     const toEmail = process.env.CONTACT_EMAIL ?? "info@dnamar.ch";
 
-    if (apiKey) {
+    if (apiKey && status === "pending") {
       const stars = "⭐".repeat(rating);
       const html = `
-        <h2>Neue Kundenbewertung – D'Namar Basel</h2>
+        <h2>Bewertung zur Prüfung – D'Namar Basel</h2>
         <p><strong>Bewertung:</strong> ${stars} (${rating}/5)</p>
         <table cellpadding="8" style="border-collapse:collapse;width:100%;max-width:600px">
           <tr><td><strong>Name</strong></td><td>${escapeHtml(displayName)}</td></tr>
           <tr><td><strong>Leistung</strong></td><td>${escapeHtml(service)}</td></tr>
           <tr><td><strong>Kommentar</strong></td><td style="white-space:pre-wrap">${escapeHtml(comment.trim())}</td></tr>
         </table>
-        <p style="color:#666;font-size:13px;margin-top:16px">
-          Diese Bewertung wurde in der Datenbank gespeichert (Status: <strong>pending</strong>).<br>
-          Gehen Sie zu Supabase → Table Editor → reviews, um sie zu genehmigen (status = approved).
+        <p style="color:#e67e00;font-size:13px;margin-top:16px">
+          ⚠️ Diese Bewertung hat 1–3 Sterne und wartet auf manuelle Genehmigung.<br>
+          Supabase → Table Editor → reviews → status auf <strong>approved</strong> oder <strong>rejected</strong> setzen.
         </p>
       `;
 
@@ -79,7 +105,7 @@ export async function POST(req: NextRequest) {
         body: JSON.stringify({
           from: "D'Namar Web <onboarding@resend.dev>",
           to: [toEmail],
-          subject: `Neue Bewertung (${rating}★): ${escapeHtml(service)} – ${escapeHtml(displayName)}`,
+          subject: `⚠️ Manuelle Prüfung (${rating}★): ${escapeHtml(service)} – ${escapeHtml(displayName)}`,
           html,
         }),
       }).catch((err) => console.error("Resend notification failed:", err));
