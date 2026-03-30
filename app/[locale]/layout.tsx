@@ -359,7 +359,7 @@ export default async function LocaleLayout({
                   <p>
                     {tCommon("madeBy")}{" "}
                     <a
-                      href="https://vidalecosystem.com"
+                      href="https://github.com/vidal-renao"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-brand/70 hover:text-brand transition-colors font-medium"

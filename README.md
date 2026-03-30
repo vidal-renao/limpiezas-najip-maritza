@@ -165,4 +165,4 @@ Wiesenstrasse 14, 4057 Basel, Switzerland
 
 ## Built by
 
-**[VIDAL ECOSYSTEM](https://vidalecosystem.com)** — Fullstack development & AI-powered product engineering.
+**[VIDAL ECOSYSTEM](https://github.com/vidal-renao)** — Fullstack development & AI-powered product engineering.
