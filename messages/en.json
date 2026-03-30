@@ -12,6 +12,7 @@
     "send": "Send Request",
     "sending": "Sending…",
     "allRightsReserved": "All rights reserved",
+    "madeBy": "Developed by",
     "freeAndNonBinding": "Free & non-binding",
     "answerIn24h": "Response within 24 hours",
     "popular": "Popular",
@@ -204,7 +205,9 @@
     "districts": {
       "eyebrow": "Service Area",
       "title": "We clean throughout Basel",
-      "subtitle": "From Grossbasel to Riehen – your local cleaning team.",
+      "subtitle": "From Grossbasel to Riehen, from Allschwil to Muttenz – D'Namar is your local cleaning team across the entire Basel region.",
+      "cta": "Request a quote",
+      "mapTitle": "D'Namar Basel service area",
       "items": ["Grossbasel", "Kleinbasel", "Gundeldingen", "St. Alban", "Riehen", "Bettingen", "Allschwil", "Binningen", "Birsfelden", "Muttenz"]
     },
     "faq": {
@@ -232,6 +235,22 @@
         {
           "q": "Does D'Namar also clean regularly (maintenance cleaning)?",
           "a": "Yes. Many of our clients book us weekly or fortnightly. Regular clients benefit from dedicated teams and preferred appointment slots."
+        },
+        {
+          "q": "Which areas does D'Namar serve?",
+          "a": "We operate throughout the Canton of Basel-Stadt and surrounding municipalities: Grossbasel, Kleinbasel, Gundeldingen, St. Alban, Riehen, Bettingen as well as Allschwil, Binningen, Birsfelden and Muttenz."
+        },
+        {
+          "q": "Can I book D'Namar for a one-time cleaning?",
+          "a": "Yes, we offer both one-off cleans (e.g. before a move, after a renovation) and regular maintenance cleaning. The same quality standards apply to one-time bookings."
+        },
+        {
+          "q": "Are you insured and do you have references?",
+          "a": "Yes. D'Namar is fully insured (public liability and business insurance). Over 500 satisfied clients in Basel and the surrounding area confirm our quality – you can find references on our references page."
+        },
+        {
+          "q": "How can I request a quote?",
+          "a": "The fastest way is via our online form at /anfrage. Alternatively by WhatsApp (+41 79 252 75 57) or email at info@dnamar.ch. We respond within 24 hours."
         }
       ]
     },
@@ -719,6 +738,26 @@
       "title1": "Become our next",
       "titleBrand": "satisfied client",
       "subtitle": "Request your free quote now – within 24 hours you will receive a non-binding, personal offer."
+    },
+    "reviewForm": {
+      "title": "Share your experience",
+      "subtitle": "Have you used D'Namar? We appreciate your honest review.",
+      "ratingLabel": "Your rating",
+      "nameLabel": "Name",
+      "namePlaceholder": "John Smith",
+      "nameHint": "Optional – or stay anonymous",
+      "serviceLabel": "Service booked",
+      "servicePlaceholder": "Select service…",
+      "commentLabel": "Your comment",
+      "commentPlaceholder": "Share your experience with D'Namar – what convinced you?",
+      "submitBtn": "Submit review",
+      "sending": "Sending…",
+      "successTitle": "Thank you!",
+      "successText": "We have received your review and will publish it on our website after verification.",
+      "errorText": "Unfortunately an error occurred. Please try again.",
+      "retry": "Try again",
+      "sectionTitle": "Leave a review",
+      "sectionSubtitle": "Share your personal experience with D'Namar"
     }
   },
   "ueber-uns": {
@@ -917,6 +956,11 @@
         "subtitleBold": "We will get back to you within 24 hours.",
         "noReply": "No reply received? Call us directly:"
       },
+      "error": {
+        "title": "Submission failed",
+        "subtitle": "An error occurred. Please try again or contact us directly by phone.",
+        "retry": "Try again"
+      },
       "services": {
         "haushaltsreinigung": { "label": "Household Cleaning", "desc": "Private homes & apartments" },
         "bueroreinigung": { "label": "Office Cleaning", "desc": "Offices, practices & commercial" },
@@ -954,6 +998,7 @@
       "title": "Contact Details",
       "items": [
         { "label": "Phone & WhatsApp", "value": "+41 79 252 75 57" },
+        { "label": "Phone 2", "value": "+41 78 241 00 31" },
         { "label": "Email", "value": "info@dnamar.ch" },
         { "label": "Service Area", "value": "Basel & surrounding area" },
         { "label": "Availability", "value": "Mon–Fri 08:00–18:00 · Sat 09:00–14:00" }
@@ -1010,6 +1055,8 @@
     },
     "readTime": "reading time",
     "readMore": "Read more",
+    "featuredLabel": "Latest post",
+    "moreLabel": "More articles",
     "cta": {
       "title": "Questions about cleaning in Basel?",
       "subtitle": "We are happy to advise you – free and non-binding."

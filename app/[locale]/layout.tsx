@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { Link } from "@/i18n/navigation";
 import Navbar from "@/components/Navbar";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 import Image from "next/image";
 
 const inter = Inter({
@@ -53,13 +54,13 @@ export async function generateMetadata({
       title: "D'Namar Reinigungsdienst Basel | Professionelle Reinigung",
       description:
         "Zuverlässige Reinigungsdienstleistungen in Basel – für Privat und Gewerbe.",
-      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "D'Namar Reinigungsdienst Basel" }],
+      images: [{ url: "/images/N.jpeg", width: 1200, height: 630, alt: "D'Namar Reinigungsdienst Basel" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "D'Namar Reinigungsdienst Basel",
       description: "Ihr Reinigungsprofi in Basel – für Privat & Gewerbe.",
-      images: ["/og-image.jpg"],
+      images: ["/images/N.jpeg"],
     },
     robots: {
       index: true,
@@ -74,14 +75,14 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "@id": "https://dnamar.ch/#business",
-  name: "D'Namar Reinigungsdienst",
-  alternateName: "D'Namar Basel",
+  name: "D'Namar GmbH",
+  alternateName: "D'Namar Reinigungsdienst Basel",
   description:
     "Professioneller Reinigungsdienst in Basel für Privat und Gewerbe. Haushaltsreinigung, Büroreinigung, Umzugsreinigung, Tiefenreinigung und mehr.",
   url: "https://dnamar.ch",
-  telephone: "+41 79 252 75 57",
+  telephone: ["+41 79 252 75 57", "+41 78 241 00 31"],
   email: "info@dnamar.ch",
-  image: "https://dnamar.ch/og-image.jpg",
+  image: "https://dnamar.ch/images/N.jpeg",
   priceRange: "$$",
   currenciesAccepted: "CHF",
   paymentAccepted: "Banküberweisung, Bar",
@@ -92,9 +93,10 @@ const jsonLd = {
   ],
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Wiesenstrasse 14",
     addressLocality: "Basel",
     addressRegion: "Basel-Stadt",
-    postalCode: "4000",
+    postalCode: "4057",
     addressCountry: "CH",
   },
   geo: { "@type": "GeoCoordinates", latitude: 47.5596, longitude: 7.5886 },
@@ -123,7 +125,7 @@ const jsonLd = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "87",
+    reviewCount: "90",
     bestRating: "5",
     worstRating: "1",
   },
@@ -195,6 +197,7 @@ export default async function LocaleLayout({
           <Navbar />
           <main className="flex-1">{children}</main>
           <WhatsAppButton />
+          <ScrollToTop />
 
           {/* ── Footer ─────────────────────────────────────────────────────── */}
           <footer className="bg-navy text-white">
@@ -350,10 +353,38 @@ export default async function LocaleLayout({
             {/* Bottom bar */}
             <div className="border-t border-white/10">
               <div className="section-container py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
-                <p>© {new Date().getFullYear()} D&apos;Namar Reinigungsdienst Basel. {tCommon("allRightsReserved")}.</p>
+                <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+                  <p>© {new Date().getFullYear()} D&apos;Namar Reinigungsdienst Basel. {tCommon("allRightsReserved")}.</p>
+                  <span className="hidden sm:inline text-white/20">·</span>
+                  <p>
+                    {tCommon("madeBy")}{" "}
+                    <a
+                      href="https://vidalecosystem.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-brand/70 hover:text-brand transition-colors font-medium"
+                    >
+                      VIDAL ECOSYSTEM
+                    </a>
+                  </p>
+                </div>
                 <div className="flex gap-4">
-                  <Link href="/impressum" className="hover:text-brand transition-colors">{tCommon("impressum")}</Link>
-                  <Link href="/datenschutz" className="hover:text-brand transition-colors">{tCommon("datenschutz")}</Link>
+                  <a
+                    href={`/${locale}/impressum`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-brand transition-colors"
+                  >
+                    {tCommon("impressum")}
+                  </a>
+                  <a
+                    href={`/${locale}/datenschutz`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-brand transition-colors"
+                  >
+                    {tCommon("datenschutz")}
+                  </a>
                 </div>
               </div>
             </div>

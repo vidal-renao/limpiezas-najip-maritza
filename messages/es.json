@@ -12,6 +12,7 @@
     "send": "Enviar solicitud",
     "sending": "Enviando…",
     "allRightsReserved": "Todos los derechos reservados",
+    "madeBy": "Desarrollado por",
     "freeAndNonBinding": "Gratuito y sin compromiso",
     "answerIn24h": "Respuesta en 24 horas",
     "popular": "Popular",
@@ -204,7 +205,9 @@
     "districts": {
       "eyebrow": "Área de servicio",
       "title": "Limpiamos en todo Basel",
-      "subtitle": "Desde Grossbasel hasta Riehen – su equipo de limpieza local.",
+      "subtitle": "Desde Grossbasel hasta Riehen, desde Allschwil hasta Muttenz – D'Namar es su equipo de limpieza local en toda la región de Basel.",
+      "cta": "Solicitar presupuesto",
+      "mapTitle": "Área de servicio D'Namar Basel",
       "items": ["Grossbasel", "Kleinbasel", "Gundeldingen", "St. Alban", "Riehen", "Bettingen", "Allschwil", "Binningen", "Birsfelden", "Muttenz"]
     },
     "faq": {
@@ -232,6 +235,22 @@
         {
           "q": "¿Realiza D'Namar también limpiezas regulares (mantenimiento)?",
           "a": "Sí. Muchos de nuestros clientes nos contratan semanal o quincenalmente. Los clientes habituales se benefician de equipos fijos y citas preferentes."
+        },
+        {
+          "q": "¿En qué zonas trabaja D'Namar?",
+          "a": "Operamos en todo el cantón de Basel-Stadt y en los municipios colindantes: Grossbasel, Kleinbasel, Gundeldingen, St. Alban, Riehen, Bettingen, así como Allschwil, Binningen, Birsfelden y Muttenz."
+        },
+        {
+          "q": "¿Puedo contratar D'Namar para una limpieza puntual?",
+          "a": "Sí, ofrecemos tanto limpiezas puntuales (p. ej. antes de una mudanza, tras una reforma) como limpiezas de mantenimiento regulares. Para reservas puntuales se aplican los mismos estándares de calidad."
+        },
+        {
+          "q": "¿Están asegurados y tienen referencias?",
+          "a": "Sí. D'Namar cuenta con seguro completo (responsabilidad civil y seguro de empresa). Más de 500 clientes satisfechos en Basel y alrededores avalan nuestra calidad – encontrará referencias en nuestra página de referencias."
+        },
+        {
+          "q": "¿Cómo puedo solicitar un presupuesto?",
+          "a": "La forma más rápida es a través de nuestro formulario en línea en /anfrage. También puede contactarnos por WhatsApp (+41 79 252 75 57) o por correo a info@dnamar.ch. Respondemos en 24 horas."
         }
       ]
     },
@@ -719,6 +738,26 @@
       "title1": "Conviértase en nuestro próximo",
       "titleBrand": "cliente satisfecho",
       "subtitle": "Solicite su presupuesto gratuito ahora – en 24 horas recibirá una oferta personal y sin compromiso."
+    },
+    "reviewForm": {
+      "title": "Comparta su experiencia",
+      "subtitle": "¿Ha utilizado D'Namar? Agradecemos su opinión honesta.",
+      "ratingLabel": "Su valoración",
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Juan García",
+      "nameHint": "Opcional – o quédese en el anonimato",
+      "serviceLabel": "Servicio contratado",
+      "servicePlaceholder": "Seleccione un servicio…",
+      "commentLabel": "Su comentario",
+      "commentPlaceholder": "Comparta su experiencia con D'Namar – ¿qué le convenció?",
+      "submitBtn": "Enviar valoración",
+      "sending": "Enviando…",
+      "successTitle": "¡Muchas gracias!",
+      "successText": "Hemos recibido su valoración y la publicaremos en nuestra web tras verificarla.",
+      "errorText": "Lamentablemente ha ocurrido un error. Por favor, inténtelo de nuevo.",
+      "retry": "Reintentar",
+      "sectionTitle": "Deje una valoración",
+      "sectionSubtitle": "Comparta su experiencia personal con D'Namar"
     }
   },
   "ueber-uns": {
@@ -917,6 +956,11 @@
         "subtitleBold": "Nos pondremos en contacto con usted en 24 horas.",
         "noReply": "¿No ha recibido respuesta? Llámenos directamente:"
       },
+      "error": {
+        "title": "Error al enviar",
+        "subtitle": "Ha ocurrido un error. Por favor, inténtelo de nuevo o contáctenos directamente por teléfono.",
+        "retry": "Intentar de nuevo"
+      },
       "services": {
         "haushaltsreinigung": { "label": "Limpieza del hogar", "desc": "Hogares privados y apartamentos" },
         "bueroreinigung": { "label": "Limpieza de oficinas", "desc": "Oficinas, consultorios y locales" },
@@ -954,6 +998,7 @@
       "title": "Datos de contacto",
       "items": [
         { "label": "Teléfono y WhatsApp", "value": "+41 79 252 75 57" },
+        { "label": "Teléfono 2", "value": "+41 78 241 00 31" },
         { "label": "Correo electrónico", "value": "info@dnamar.ch" },
         { "label": "Área de servicio", "value": "Basel y alrededores" },
         { "label": "Disponibilidad", "value": "Lun–Vie 08:00–18:00 · Sáb 09:00–14:00" }
@@ -1010,6 +1055,8 @@
     },
     "readTime": "Tiempo de lectura",
     "readMore": "Leer más",
+    "featuredLabel": "Artículo destacado",
+    "moreLabel": "Más artículos",
     "cta": {
       "title": "¿Preguntas sobre limpieza en Basel?",
       "subtitle": "Estaremos encantados de asesorarle – de forma gratuita y sin compromiso."

@@ -86,6 +86,8 @@ function LanguageSwitcher() {
     const rawPath = pathname.startsWith(localePrefix)
       ? pathname.slice(localePrefix.length) || "/"
       : pathname;
+    // Preserve scroll position across locale change
+    sessionStorage.setItem("__scrollY", String(window.scrollY));
     router.push(rawPath, { locale: newLocale });
     setOpen(false);
   };
@@ -291,6 +293,19 @@ export default function Navbar() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Restore scroll position after locale change
+  useEffect(() => {
+    const saved = sessionStorage.getItem("__scrollY");
+    if (saved) {
+      sessionStorage.removeItem("__scrollY");
+      const y = parseInt(saved, 10);
+      if (!isNaN(y)) {
+        // Wait for page to fully render before restoring
+        requestAnimationFrame(() => window.scrollTo({ top: y, behavior: "instant" }));
+      }
+    }
+  }, [pathname]);
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
@@ -522,6 +537,7 @@ function LanguageMobileButton({ locale, label }: { locale: "de" | "en" | "es"; l
     const rawPath = pathname.startsWith(localePrefix)
       ? pathname.slice(localePrefix.length) || "/"
       : pathname;
+    sessionStorage.setItem("__scrollY", String(window.scrollY));
     router.push(rawPath, { locale });
   };
 
