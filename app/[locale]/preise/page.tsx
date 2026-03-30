@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import PriceCalculator from "@/components/ui/PriceCalculator";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
@@ -207,6 +208,39 @@ export default async function PreisePage({
           <div className="max-w-3xl mx-auto flex items-start gap-3 text-xs text-foreground/50 leading-relaxed">
             <Info className="w-4 h-4 shrink-0 mt-0.5" />
             <p>{t("disclaimer")}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── PRICE CALCULATOR ─────────────────────────────────────────── */}
+      <section className="bg-muted py-16 lg:py-20">
+        <div className="section-container">
+          <div className="max-w-xl mx-auto">
+            <PriceCalculator
+              labels={{
+                title: t("calculator.title"),
+                subtitle: t("calculator.subtitle"),
+                serviceLabel: t("calculator.serviceLabel"),
+                sizeLabel: t("calculator.sizeLabel"),
+                frequencyLabel: t("calculator.frequencyLabel"),
+                resultTitle: t("calculator.resultTitle"),
+                resultNote: t("calculator.resultNote"),
+                ctaLabel: t("calculator.ctaLabel"),
+                services: {
+                  haushalt: t("calculator.services.haushalt"),
+                  buero: t("calculator.services.buero"),
+                  umzug: t("calculator.services.umzug"),
+                  tiefenreinigung: t("calculator.services.tiefenreinigung"),
+                  praxis: t("calculator.services.praxis"),
+                },
+                frequencies: {
+                  einmalig: t("calculator.frequencies.einmalig"),
+                  monatlich: t("calculator.frequencies.monatlich"),
+                  zweimal: t("calculator.frequencies.zweimal"),
+                  woechentlich: t("calculator.frequencies.woechentlich"),
+                },
+              }}
+            />
           </div>
         </div>
       </section>

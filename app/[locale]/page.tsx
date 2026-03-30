@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import ServiceSlider from "@/components/ui/ServiceSlider";
 import FaqAccordion from "@/components/ui/FaqAccordion";
+import GalleryGrid from "@/components/ui/GalleryGrid";
 import {
   ShieldCheck,
   Clock,
@@ -494,6 +495,22 @@ export default async function HomePage({
           </div>
         </div>
       </section>
+
+      {/* ── GALLERY ───────────────────────────────────────────────────────── */}
+      <GalleryGrid
+        title={t("gallery.title")}
+        subtitle={t("gallery.subtitle")}
+        items={[
+          { src: "/images/Buero-768x512.jpg", alt: t("gallery.items.buero"), label: t("gallery.labels.buero") },
+          { src: "/images/Boden-wischen-768x512.jpg", alt: t("gallery.items.boden"), label: t("gallery.labels.boden") },
+          { src: "/images/Fenster-blauer-Himmel-768x512.jpg", alt: t("gallery.items.fenster"), label: t("gallery.labels.fenster") },
+          { src: "/images/Herd-768x512.jpg", alt: t("gallery.items.herd"), label: t("gallery.labels.herd") },
+          { src: "/images/Treppe-Vorraum-768x511.jpg", alt: t("gallery.items.treppe"), label: t("gallery.labels.treppe") },
+          { src: "/images/Gewerberaum-768x512.jpg", alt: t("gallery.items.gewerbe"), label: t("gallery.labels.gewerbe") },
+          { src: "/images/Oberflaechen-768x512.jpg", alt: t("gallery.items.oberflaechen"), label: t("gallery.labels.oberflaechen") },
+          { src: "/images/Teppichboden-768x512.jpg", alt: t("gallery.items.teppich"), label: t("gallery.labels.teppich") },
+        ]}
+      />
 
       {/* ── FAQ ───────────────────────────────────────────────────────────── */}
       <section className="bg-muted py-20 lg:py-24" aria-labelledby="faq-heading">

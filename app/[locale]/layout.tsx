@@ -8,6 +8,7 @@ import { Link } from "@/i18n/navigation";
 import Navbar from "@/components/Navbar";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollToTop from "@/components/ui/ScrollToTop";
+import AnnouncementBar from "@/components/ui/AnnouncementBar";
 import Image from "next/image";
 
 const inter = Inter({
@@ -54,13 +55,13 @@ export async function generateMetadata({
       title: "D'Namar Reinigungsdienst Basel | Professionelle Reinigung",
       description:
         "Zuverlässige Reinigungsdienstleistungen in Basel – für Privat und Gewerbe.",
-      images: [{ url: "/images/N.jpeg", width: 1200, height: 630, alt: "D'Namar Reinigungsdienst Basel" }],
+      images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "D'Namar Reinigungsdienst Basel" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "D'Namar Reinigungsdienst Basel",
       description: "Ihr Reinigungsprofi in Basel – für Privat & Gewerbe.",
-      images: ["/images/N.jpeg"],
+      images: ["/opengraph-image.png"],
     },
     robots: {
       index: true,
@@ -194,6 +195,11 @@ export default async function LocaleLayout({
       </head>
       <body className="min-h-screen flex flex-col antialiased">
         <NextIntlClientProvider>
+          <AnnouncementBar
+            message={tCommon("announcementMsg")}
+            linkLabel={tCommon("announcementLink")}
+            linkHref="/anfrage"
+          />
           <Navbar />
           <main className="flex-1">{children}</main>
           <WhatsAppButton />

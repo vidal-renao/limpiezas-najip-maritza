@@ -12,6 +12,8 @@
     "send": "Enviar solicitud",
     "sending": "Enviando…",
     "allRightsReserved": "Todos los derechos reservados",
+    "announcementMsg": "Nuevo: Presupuesto gratuito en 24h — sin compromiso.",
+    "announcementLink": "Solicitar presupuesto →",
     "madeBy": "Desarrollado por",
     "freeAndNonBinding": "Gratuito y sin compromiso",
     "answerIn24h": "Respuesta en 24 horas",
@@ -209,6 +211,30 @@
       "cta": "Solicitar presupuesto",
       "mapTitle": "Área de servicio D'Namar Basel",
       "items": ["Grossbasel", "Kleinbasel", "Gundeldingen", "St. Alban", "Riehen", "Bettingen", "Allschwil", "Binningen", "Birsfelden", "Muttenz"]
+    },
+    "gallery": {
+      "title": "Nuestro Trabajo",
+      "subtitle": "Un vistazo a nuestros servicios de limpieza — desde oficinas hasta hogares en Basilea.",
+      "items": {
+        "buero": "Limpieza de oficinas en Basilea — profesional y minuciosa",
+        "boden": "Limpieza de suelos en hogar de Basilea",
+        "fenster": "Limpieza de ventanas y cristales con protección antiincrustante Basilea",
+        "herd": "Limpieza de cocina y cuidado de la vitrocerámica en Basilea",
+        "treppe": "Limpieza de escaleras en inmueble de Basilea",
+        "gewerbe": "Limpieza de locales comerciales Basilea",
+        "oberflaechen": "Cuidado de superficies y desinfección",
+        "teppich": "Limpieza de moqueta Basilea"
+      },
+      "labels": {
+        "buero": "Oficinas",
+        "boden": "Suelos",
+        "fenster": "Cristales",
+        "herd": "Cocina",
+        "treppe": "Escaleras",
+        "gewerbe": "Comercial",
+        "oberflaechen": "Superficies",
+        "teppich": "Moqueta"
+      }
     },
     "faq": {
       "eyebrow": "FAQ",
@@ -622,6 +648,29 @@
       ]
     },
     "disclaimer": "Aviso: Todos los precios son orientativos y se entienden sin IVA. El precio final se determina individualmente tras una visita gratuita o una solicitud escrita detallada. Solo el presupuesto confirmado por escrito es vinculante. D'Namar se reserva el derecho de modificar las tarifas en cualquier momento.",
+    "calculator": {
+      "title": "Calculadora de precios",
+      "subtitle": "Estimación en segundos",
+      "serviceLabel": "Servicio",
+      "sizeLabel": "Superficie",
+      "frequencyLabel": "Frecuencia",
+      "resultTitle": "Precio estimado",
+      "resultNote": "Precio orientativo incl. materiales · Presupuesto exacto gratis en 24h",
+      "ctaLabel": "Calcular precio",
+      "services": {
+        "haushalt": "Limpieza del hogar",
+        "buero": "Limpieza de oficinas",
+        "umzug": "Limpieza de mudanza",
+        "tiefenreinigung": "Limpieza profunda",
+        "praxis": "Limpieza de consultorios"
+      },
+      "frequencies": {
+        "einmalig": "Una vez",
+        "monatlich": "Mensual",
+        "zweimal": "2× / mes",
+        "woechentlich": "Semanal"
+      }
+    },
     "cta": {
       "badge": "Gratuito y sin compromiso",
       "title": "¿Desea calcular el precio para su objeto?",
@@ -1044,7 +1093,15 @@
         "Otro"
       ]
     },
-    "mapTitle": "Área de servicio D'Namar Basel"
+    "mapTitle": "Área de servicio D'Namar Basel",
+    "booking": {
+      "badge": "Reserva directa",
+      "title": "Concertar una cita",
+      "subtitle": "Contáctenos por el canal que prefiera. Respondemos en 2 horas.",
+      "whatsapp": { "title": "WhatsApp", "subtitle": "Respuesta más rápida · Chat inmediato" },
+      "phone": { "title": "Llamar", "subtitle": "+41 79 252 75 57 · Lun–Sáb" },
+      "note": "Lun–Vie 08–18 · Sáb 09–14 · Respuesta garantizada en 2 horas"
+    }
   },
   "blog": {
     "meta": {

@@ -12,6 +12,8 @@
     "send": "Send Request",
     "sending": "Sending…",
     "allRightsReserved": "All rights reserved",
+    "announcementMsg": "New: Free quote within 24h — no commitment, no strings attached.",
+    "announcementLink": "Request a quote →",
     "madeBy": "Developed by",
     "freeAndNonBinding": "Free & non-binding",
     "answerIn24h": "Response within 24 hours",
@@ -209,6 +211,30 @@
       "cta": "Request a quote",
       "mapTitle": "D'Namar Basel service area",
       "items": ["Grossbasel", "Kleinbasel", "Gundeldingen", "St. Alban", "Riehen", "Bettingen", "Allschwil", "Binningen", "Birsfelden", "Muttenz"]
+    },
+    "gallery": {
+      "title": "Our Work",
+      "subtitle": "A look at our cleaning assignments — from offices to private homes in Basel.",
+      "items": {
+        "buero": "Office cleaning in Basel — professional and thorough",
+        "boden": "Floor cleaning in Basel household",
+        "fenster": "Window and glass cleaning with limescale protection Basel",
+        "herd": "Kitchen cleaning and stove care in Basel",
+        "treppe": "Stairwell cleaning in Basel property",
+        "gewerbe": "Commercial space cleaning Basel",
+        "oberflaechen": "Surface care and disinfection",
+        "teppich": "Carpet cleaning Basel"
+      },
+      "labels": {
+        "buero": "Office Cleaning",
+        "boden": "Floor Cleaning",
+        "fenster": "Glass Cleaning",
+        "herd": "Kitchen Cleaning",
+        "treppe": "Stairwell",
+        "gewerbe": "Commercial",
+        "oberflaechen": "Surfaces",
+        "teppich": "Carpet"
+      }
     },
     "faq": {
       "eyebrow": "FAQ",
@@ -622,6 +648,29 @@
       ]
     },
     "disclaimer": "Note: All prices are guide prices and are understood to be excl. VAT. The final price is determined individually after a free inspection or detailed written request. Only the written confirmed offer is binding. D'Namar reserves the right to adjust rates at any time.",
+    "calculator": {
+      "title": "Price Calculator",
+      "subtitle": "Estimate in seconds",
+      "serviceLabel": "Service",
+      "sizeLabel": "Area",
+      "frequencyLabel": "Frequency",
+      "resultTitle": "Estimated Price",
+      "resultNote": "Guide price incl. materials · Exact quote free within 24h",
+      "ctaLabel": "Calculate price",
+      "services": {
+        "haushalt": "Household Cleaning",
+        "buero": "Office Cleaning",
+        "umzug": "Move-Out Cleaning",
+        "tiefenreinigung": "Deep Cleaning",
+        "praxis": "Practice Cleaning"
+      },
+      "frequencies": {
+        "einmalig": "One-time",
+        "monatlich": "Monthly",
+        "zweimal": "2× / month",
+        "woechentlich": "Weekly"
+      }
+    },
     "cta": {
       "badge": "Free & non-binding",
       "title": "Get a price calculated for your property?",
@@ -1044,7 +1093,15 @@
         "Other"
       ]
     },
-    "mapTitle": "D'Namar Service Area Basel"
+    "mapTitle": "D'Namar Service Area Basel",
+    "booking": {
+      "badge": "Book directly",
+      "title": "Schedule an appointment",
+      "subtitle": "Contact us through your preferred channel. We respond within 2 hours.",
+      "whatsapp": { "title": "WhatsApp", "subtitle": "Fastest response · Chat instantly" },
+      "phone": { "title": "Call us", "subtitle": "+41 79 252 75 57 · Mon–Sat" },
+      "note": "Mon–Fri 08–18 · Sat 09–14 · Response guaranteed within 2 hours"
+    }
   },
   "blog": {
     "meta": {

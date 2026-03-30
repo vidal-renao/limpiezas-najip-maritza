@@ -12,6 +12,8 @@
     "send": "Anfrage senden",
     "sending": "Wird gesendet…",
     "allRightsReserved": "Alle Rechte vorbehalten",
+    "announcementMsg": "Jetzt neu: Kostenlose Offerte in 24h — unverbindlich und direkt.",
+    "announcementLink": "Offerte anfordern →",
     "madeBy": "Entwickelt von",
     "freeAndNonBinding": "Kostenlos & unverbindlich",
     "answerIn24h": "Antwort in 24 Stunden",
@@ -209,6 +211,30 @@
       "cta": "Offerte anfordern",
       "mapTitle": "Einsatzgebiet D'Namar Basel",
       "items": ["Grossbasel", "Kleinbasel", "Gundeldingen", "St. Alban", "Riehen", "Bettingen", "Allschwil", "Binningen", "Birsfelden", "Muttenz"]
+    },
+    "gallery": {
+      "title": "Unsere Arbeit",
+      "subtitle": "Einblick in unsere Reinigungseinsätze – von Büros bis zu Privathaushalten in Basel.",
+      "items": {
+        "buero": "Büroreinigung Basel – professionell und gründlich",
+        "boden": "Bodenreinigung in Basler Haushalt",
+        "fenster": "Fenster- und Glasreinigung mit Kalkschutz Basel",
+        "herd": "Küchenreinigung und Herdpflege in Basel",
+        "treppe": "Treppenhausreinigung in Basler Liegenschaft",
+        "gewerbe": "Gewerberaumreinigung Basel",
+        "oberflaechen": "Oberflächenpflege und Desinfektion",
+        "teppich": "Teppichbodenreinigung Basel"
+      },
+      "labels": {
+        "buero": "Büroreinigung",
+        "boden": "Bodenreinigung",
+        "fenster": "Glasreinigung",
+        "herd": "Küchenreinigung",
+        "treppe": "Treppenhaus",
+        "gewerbe": "Gewerbe",
+        "oberflaechen": "Oberflächen",
+        "teppich": "Teppichboden"
+      }
     },
     "faq": {
       "eyebrow": "FAQ",
@@ -622,6 +648,29 @@
       ]
     },
     "disclaimer": "Hinweis: Alle Preise sind Richtpreise und verstehen sich exkl. MwSt. Der endgültige Preis wird nach einer kostenlosen Besichtigung oder einer detaillierten schriftlichen Anfrage individuell festgelegt. Massgeblich ist ausschliesslich das schriftlich bestätigte Angebot. D'Namar behält sich das Recht vor, die Tarife jederzeit anzupassen.",
+    "calculator": {
+      "title": "Preisrechner",
+      "subtitle": "Schätzung in Sekunden",
+      "serviceLabel": "Leistung",
+      "sizeLabel": "Fläche",
+      "frequencyLabel": "Häufigkeit",
+      "resultTitle": "Geschätzter Preis",
+      "resultNote": "Richtwert inkl. Materialien · Genaue Offerte kostenlos in 24h",
+      "ctaLabel": "Preis berechnen",
+      "services": {
+        "haushalt": "Haushaltsreinigung",
+        "buero": "Büroreinigung",
+        "umzug": "Umzugsreinigung",
+        "tiefenreinigung": "Tiefenreinigung",
+        "praxis": "Praxisreinigung"
+      },
+      "frequencies": {
+        "einmalig": "Einmalig",
+        "monatlich": "Monatlich",
+        "zweimal": "2× / Monat",
+        "woechentlich": "Wöchentlich"
+      }
+    },
     "cta": {
       "badge": "Kostenlos & unverbindlich",
       "title": "Preis für Ihr Objekt berechnen lassen?",
@@ -1044,7 +1093,15 @@
         "Anderes"
       ]
     },
-    "mapTitle": "D'Namar Einsatzgebiet Basel"
+    "mapTitle": "D'Namar Einsatzgebiet Basel",
+    "booking": {
+      "badge": "Direkt buchen",
+      "title": "Termin vereinbaren",
+      "subtitle": "Kontaktieren Sie uns über den Kanal, der Ihnen am liebsten ist. Wir antworten innerhalb von 2 Stunden.",
+      "whatsapp": { "title": "WhatsApp", "subtitle": "Schnellste Antwort · Sofort chatten" },
+      "phone": { "title": "Anrufen", "subtitle": "+41 79 252 75 57 · Mo–Sa" },
+      "note": "Mo–Fr 08–18 Uhr · Sa 09–14 Uhr · Antwort garantiert innerhalb 2 Stunden"
+    }
   },
   "blog": {
     "meta": {
