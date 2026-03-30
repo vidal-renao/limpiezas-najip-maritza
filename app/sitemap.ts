@@ -24,6 +24,9 @@ const PAGES: Array<{ path: string; changeFrequency: MetadataRoute.Sitemap[number
   { path: "/blog",                                       changeFrequency: "weekly",  priority: 0.6 },
   { path: "/blog/bueroreinigung-tipps-basel",            changeFrequency: "yearly",  priority: 0.6, lastModified: new Date("2025-03-10") },
   { path: "/blog/umzug-endreinigung-checkliste-basel",   changeFrequency: "yearly",  priority: 0.6, lastModified: new Date("2025-02-25") },
+  { path: "/tiefenreinigung",                            changeFrequency: "monthly", priority: 0.9 },
+  { path: "/praxisreinigung",                            changeFrequency: "monthly", priority: 0.9 },
+  { path: "/renovationsreinigung",                       changeFrequency: "monthly", priority: 0.9 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

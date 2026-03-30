@@ -30,12 +30,6 @@ export default function manifest(): MetadataRoute.Manifest {
         purpose: "maskable",
       },
     ],
-    screenshots: [
-      {
-        src: "/og-image.jpg",
-        sizes: "1200x630",
-        type: "image/jpeg",
-      },
-    ],
+    screenshots: [],
   };
 }
