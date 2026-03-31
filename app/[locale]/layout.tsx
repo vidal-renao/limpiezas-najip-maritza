@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -10,12 +9,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import AnnouncementBar from "@/components/ui/AnnouncementBar";
 import Image from "next/image";
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-sans",
-});
+import { buildLocalBusinessJsonLd } from "@/content/site.config";
 
 /* ─── Static Params ─────────────────────────────────────────────────────── */
 export function generateStaticParams() {
@@ -72,69 +66,8 @@ export async function generateMetadata({
 }
 
 /* ─── JSON-LD Structured Data ───────────────────────────────────────────── */
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": "https://dnamar.ch/#business",
-  name: "D'Namar GmbH",
-  alternateName: "D'Namar Reinigungsdienst Basel",
-  description:
-    "Professioneller Reinigungsdienst in Basel für Privat und Gewerbe. Haushaltsreinigung, Büroreinigung, Umzugsreinigung, Tiefenreinigung und mehr.",
-  url: "https://dnamar.ch",
-  telephone: ["+41 79 252 75 57", "+41 78 241 00 31"],
-  email: "info@dnamar.ch",
-  image: "https://dnamar.ch/images/N.jpeg",
-  priceRange: "$$",
-  currenciesAccepted: "CHF",
-  paymentAccepted: "Banküberweisung, Bar",
-  areaServed: [
-    { "@type": "City", name: "Basel", addressCountry: "CH" },
-    { "@type": "City", name: "Riehen", addressCountry: "CH" },
-    { "@type": "City", name: "Allschwil", addressCountry: "CH" },
-  ],
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Wiesenstrasse 14",
-    addressLocality: "Basel",
-    addressRegion: "Basel-Stadt",
-    postalCode: "4057",
-    addressCountry: "CH",
-  },
-  geo: { "@type": "GeoCoordinates", latitude: 47.5596, longitude: 7.5886 },
-  openingHoursSpecification: [
-    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "08:00", closes: "18:00" },
-    { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "09:00", closes: "14:00" },
-  ],
-  hasOfferCatalog: {
-    "@type": "OfferCatalog",
-    name: "Reinigungsdienstleistungen Basel",
-    itemListElement: [
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Haushaltsreinigung Basel" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Büroreinigung Basel" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Umzugsreinigung Basel" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Treppenhausreinigung Basel" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Glasreinigung Basel" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Bauendreinigung Basel" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Gewerbereinigung Basel" } },
-      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Praxisreinigung Basel" } },
-    ],
-  },
-  employee: [
-    { "@type": "Person", name: "Maritza Rodriguez", jobTitle: "Reinigungsprofi & Mitgründerin" },
-    { "@type": "Person", name: "Nadjib Rasuly", jobTitle: "Reinigungsprofi & Mitgründer" },
-  ],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "90",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  sameAs: [
-    "https://www.instagram.com/dnamar.basel/",
-    "https://www.facebook.com/dnamar.basel/",
-  ],
-};
+// Sourced from content/site.config.ts — edit business data there.
+const jsonLd = buildLocalBusinessJsonLd();
 
 /* ─── Locale Layout ─────────────────────────────────────────────────────── */
 export default async function LocaleLayout({
@@ -173,7 +106,7 @@ export default async function LocaleLayout({
   ];
 
   return (
-    <html lang={locale} className={inter.variable}>
+    <html lang={locale}>
       <head>
         <script
           type="application/ld+json"

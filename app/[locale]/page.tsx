@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import TrackedLink from "@/components/ui/TrackedLink";
 import ServiceSlider from "@/components/ui/ServiceSlider";
 import FaqAccordion from "@/components/ui/FaqAccordion";
 import GalleryGrid from "@/components/ui/GalleryGrid";
@@ -98,9 +99,14 @@ export default async function HomePage({
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-10">
-                <Link href="/anfrage" className="btn-primary text-base px-8 py-4">
+                <TrackedLink
+                  href="/anfrage"
+                  eventName="hero_cta_click"
+                  eventProps={{ section: "hero" }}
+                  className="btn-primary text-base px-8 py-4"
+                >
                   {t("hero.ctaPrimary")}
-                </Link>
+                </TrackedLink>
                 <a href="tel:+41792527557" className="btn-secondary text-base px-8 py-4">
                   {t("hero.ctaPhone")}
                 </a>
@@ -377,9 +383,14 @@ export default async function HomePage({
               </ul>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Link href="/anfrage" className="btn-primary px-8 py-4 text-base">
+                <TrackedLink
+                  href="/anfrage"
+                  eventName="kalkschutz_cta_click"
+                  eventProps={{ section: "kalkschutz" }}
+                  className="btn-primary px-8 py-4 text-base"
+                >
                   {t("kalk.ctaPrimary")}
-                </Link>
+                </TrackedLink>
                 <Link href="/glasreinigung" className="inline-flex items-center gap-2 text-brand font-semibold text-sm hover:text-brand-light transition-colors pt-2">
                   {t("kalk.ctaSecondary")}
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -556,9 +567,14 @@ export default async function HomePage({
             {t("cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/anfrage" className="btn-primary text-base px-8 py-4">
+            <TrackedLink
+              href="/anfrage"
+              eventName="contact_cta_click"
+              eventProps={{ section: "cta_banner" }}
+              className="btn-primary text-base px-8 py-4"
+            >
               {t("cta.ctaPrimary")}
-            </Link>
+            </TrackedLink>
             <a href="tel:+41792527557" className="btn-secondary text-base px-8 py-4">
               {t("cta.ctaPhone")}
             </a>
