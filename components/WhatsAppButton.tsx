@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { track } from "@vercel/analytics";
 
 const WHATSAPP_NUMBER = "41792527557"; // +41 79 252 75 57 — no + or spaces
 
@@ -19,6 +20,7 @@ export default function WhatsAppButton() {
       aria-label={t("ariaLabel")}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={() => track("whatsapp_click")}
       className="fixed bottom-6 right-6 z-50 flex items-center gap-3 group"
     >
       {/* Tooltip label */}
