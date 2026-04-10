@@ -333,7 +333,7 @@ export default async function LocaleLayout({
                   </a>
                   {/* Discrete admin access — not indexed, not advertised */}
                   <a
-                    href="/admin"
+                    href="/admin/login"
                     aria-label="Admin"
                     className="opacity-10 hover:opacity-40 transition-opacity select-none"
                     tabIndex={-1}
