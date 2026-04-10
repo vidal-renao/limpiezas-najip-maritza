@@ -18,15 +18,15 @@ const PAGES: Array<{ path: string; changeFrequency: MetadataRoute.Sitemap[number
   { path: "/treppenhausreinigung",                       changeFrequency: "monthly", priority: 0.9 },
   { path: "/preise",                                     changeFrequency: "monthly", priority: 0.8 },
   { path: "/anfrage",                                    changeFrequency: "monthly", priority: 0.8 },
-  { path: "/referenzen",                                 changeFrequency: "monthly", priority: 0.7 },
-  { path: "/ueber-uns",                                  changeFrequency: "monthly", priority: 0.7 },
-  { path: "/kontakt",                                    changeFrequency: "monthly", priority: 0.7 },
-  { path: "/blog",                                       changeFrequency: "weekly",  priority: 0.6 },
-  { path: "/blog/bueroreinigung-tipps-basel",            changeFrequency: "yearly",  priority: 0.6, lastModified: new Date("2025-03-10") },
-  { path: "/blog/umzug-endreinigung-checkliste-basel",   changeFrequency: "yearly",  priority: 0.6, lastModified: new Date("2025-02-25") },
   { path: "/tiefenreinigung",                            changeFrequency: "monthly", priority: 0.9 },
   { path: "/praxisreinigung",                            changeFrequency: "monthly", priority: 0.9 },
   { path: "/renovationsreinigung",                       changeFrequency: "monthly", priority: 0.9 },
+  { path: "/referenzen",                                 changeFrequency: "monthly", priority: 0.7 },
+  { path: "/ueber-uns",                                  changeFrequency: "monthly", priority: 0.7 },
+  { path: "/kontakt",                                    changeFrequency: "monthly", priority: 0.7 },
+  { path: "/blog",                                       changeFrequency: "weekly",  priority: 0.7 },
+  { path: "/blog/bueroreinigung-tipps-basel",            changeFrequency: "yearly",  priority: 0.7, lastModified: new Date("2025-03-10") },
+  { path: "/blog/umzug-endreinigung-checkliste-basel",   changeFrequency: "yearly",  priority: 0.7, lastModified: new Date("2025-02-25") },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

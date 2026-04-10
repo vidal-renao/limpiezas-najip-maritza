@@ -115,6 +115,7 @@ function LanguageSwitcher() {
               key={l}
               type="button"
               onClick={() => switchLocale(l)}
+              lang={l}
               className={`w-full flex items-center gap-2.5 px-4 py-2.5 text-xs font-semibold text-left transition-colors hover:bg-muted ${locale === l ? "text-brand bg-brand/5" : "text-navy/70"}`}
             >
               <span className="text-sm leading-none" aria-hidden="true">{LOCALE_META[l].flag}</span>
@@ -545,6 +546,7 @@ function LanguageMobileButton({ locale, label }: { locale: "de" | "en" | "es"; l
     <button
       type="button"
       onClick={switchLocale}
+      lang={locale}
       className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${currentLocale === locale ? "bg-brand text-white border-brand" : "border-border text-navy/60 hover:border-brand/50 hover:text-navy"}`}
     >
       <span className="text-sm leading-none" aria-hidden="true">{LOCALE_META[locale].flag}</span>

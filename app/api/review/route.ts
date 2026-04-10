@@ -83,16 +83,26 @@ export async function POST(req: NextRequest) {
     if (apiKey && status === "pending") {
       const stars = "⭐".repeat(rating);
       const html = `
-        <h2>Bewertung zur Prüfung – D'Namar Basel</h2>
+        <h2 style="color:#1a2e4a">Neue Bewertung zur Prüfung – D'Namar Basel</h2>
         <p><strong>Bewertung:</strong> ${stars} (${rating}/5)</p>
-        <table cellpadding="8" style="border-collapse:collapse;width:100%;max-width:600px">
-          <tr><td><strong>Name</strong></td><td>${escapeHtml(displayName)}</td></tr>
-          <tr><td><strong>Leistung</strong></td><td>${escapeHtml(service)}</td></tr>
-          <tr><td><strong>Kommentar</strong></td><td style="white-space:pre-wrap">${escapeHtml(comment.trim())}</td></tr>
+        <table cellpadding="8" style="border-collapse:collapse;width:100%;max-width:600px;border:1px solid #dde3ec;border-radius:8px">
+          <tr style="background:#f5f7fa"><td style="padding:8px 12px"><strong>Name</strong></td><td style="padding:8px 12px">${escapeHtml(displayName)}</td></tr>
+          <tr><td style="padding:8px 12px"><strong>Leistung</strong></td><td style="padding:8px 12px">${escapeHtml(service)}</td></tr>
+          <tr style="background:#f5f7fa"><td style="padding:8px 12px;vertical-align:top"><strong>Kommentar</strong></td><td style="padding:8px 12px;white-space:pre-wrap">${escapeHtml(comment.trim())}</td></tr>
         </table>
-        <p style="color:#e67e00;font-size:13px;margin-top:16px">
-          ⚠️ Diese Bewertung hat 1–3 Sterne und wartet auf manuelle Genehmigung.<br>
-          Supabase → Table Editor → reviews → status auf <strong>approved</strong> oder <strong>rejected</strong> setzen.
+        <div style="margin-top:20px;padding:16px;background:#fff8e6;border-left:4px solid #f59e0b;border-radius:4px">
+          <p style="margin:0;font-size:14px;color:#92400e">
+            ⚠️ Diese Bewertung hat <strong>${rating} Stern(e)</strong> und wartet auf manuelle Genehmigung.
+          </p>
+        </div>
+        <p style="margin-top:16px">
+          <a href="https://dnamar.ch/admin/reviews"
+             style="display:inline-block;background:#4caf82;color:#fff;text-decoration:none;padding:10px 20px;border-radius:20px;font-weight:600;font-size:14px">
+            → Im Admin-Panel verwalten
+          </a>
+        </p>
+        <p style="font-size:12px;color:#999;margin-top:8px">
+          Direktlink: https://dnamar.ch/admin/reviews
         </p>
       `;
 

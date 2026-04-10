@@ -339,8 +339,13 @@ export default async function HomePage({
               </div>
 
               <div className="absolute -top-5 -left-5 lg:-top-6 lg:-left-6 w-16 h-16 rounded-2xl overflow-hidden border-2 border-brand/40 shadow-lg bg-navy">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/images/N.jpeg" alt="D'Namar Logo" className="w-full h-full object-cover" />
+                <Image
+                  src="/images/N.jpeg"
+                  alt="D'Namar Logo"
+                  width={64}
+                  height={64}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
@@ -594,6 +599,27 @@ export default async function HomePage({
               name: q,
               acceptedAnswer: { "@type": "Answer", text: a },
             })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            name: "Reinigungsdienstleistungen D'Namar Basel",
+            description: "Professionelle Reinigungsdienstleistungen in Basel für Privat und Gewerbe.",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Haushaltsreinigung Basel", url: "https://dnamar.ch/haushaltsreinigung" },
+              { "@type": "ListItem", position: 2, name: "Büroreinigung Basel", url: "https://dnamar.ch/bueroreinigung" },
+              { "@type": "ListItem", position: 3, name: "Umzugsreinigung Basel", url: "https://dnamar.ch/umzugsreinigung" },
+              { "@type": "ListItem", position: 4, name: "Glasreinigung Basel", url: "https://dnamar.ch/glasreinigung" },
+              { "@type": "ListItem", position: 5, name: "Treppenhausreinigung Basel", url: "https://dnamar.ch/treppenhausreinigung" },
+              { "@type": "ListItem", position: 6, name: "Tiefenreinigung Basel", url: "https://dnamar.ch/tiefenreinigung" },
+              { "@type": "ListItem", position: 7, name: "Praxisreinigung Basel", url: "https://dnamar.ch/praxisreinigung" },
+              { "@type": "ListItem", position: 8, name: "Bauendreinigung Basel", url: "https://dnamar.ch/renovationsreinigung" },
+            ],
           }),
         }}
       />

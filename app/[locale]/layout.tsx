@@ -128,13 +128,20 @@ export default async function LocaleLayout({
       </head>
       <body className="min-h-screen flex flex-col antialiased">
         <NextIntlClientProvider>
+          {/* Skip to main content — keyboard / screen-reader accessibility */}
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:bg-brand focus:text-white focus:px-5 focus:py-2.5 focus:rounded-full focus:text-sm focus:font-semibold focus:shadow-lg focus:outline-none"
+          >
+            Zum Hauptinhalt springen
+          </a>
           <AnnouncementBar
             message={tCommon("announcementMsg")}
             linkLabel={tCommon("announcementLink")}
             linkHref="/anfrage"
           />
           <Navbar />
-          <main className="flex-1">{children}</main>
+          <main id="main-content" className="flex-1">{children}</main>
           <WhatsAppButton />
           <ScrollToTop />
 
@@ -307,7 +314,7 @@ export default async function LocaleLayout({
                     </a>
                   </p>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex items-center gap-4">
                   <a
                     href={`/${locale}/impressum`}
                     target="_blank"
@@ -323,6 +330,17 @@ export default async function LocaleLayout({
                     className="hover:text-brand transition-colors"
                   >
                     {tCommon("datenschutz")}
+                  </a>
+                  {/* Discrete admin access — not indexed, not advertised */}
+                  <a
+                    href="/admin"
+                    aria-label="Admin"
+                    className="opacity-10 hover:opacity-40 transition-opacity select-none"
+                    tabIndex={-1}
+                  >
+                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
+                    </svg>
                   </a>
                 </div>
               </div>
