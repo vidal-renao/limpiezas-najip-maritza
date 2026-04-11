@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Impressum | D'Namar GmbH Basel",
-  description: "Rechtliche Angaben und Impressum der D'Namar GmbH, Reinigungsdienst Basel.",
-  robots: { index: false, follow: false },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "impressum" });
+  return {
+    title: t("meta_title"),
+    description: t("meta_description"),
+    robots: { index: false, follow: false },
+  };
+}
 
 export default async function ImpressumPage({
   params,
@@ -14,6 +22,7 @@ export default async function ImpressumPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "impressum" });
 
   return (
     <section className="bg-muted min-h-screen py-20 lg:py-28">
@@ -21,19 +30,17 @@ export default async function ImpressumPage({
         {/* Header */}
         <div className="mb-10">
           <span className="text-brand font-semibold text-sm uppercase tracking-widest">
-            Rechtliches
+            {t("badge")}
           </span>
-          <h1 className="text-4xl font-bold text-navy mt-2">Impressum</h1>
-          <p className="text-sm text-foreground/50 mt-2">
-            Angaben gemäss Art. 3 lit. s UWG und Schweizer Recht
-          </p>
+          <h1 className="text-4xl font-bold text-navy mt-2">{t("title")}</h1>
+          <p className="text-sm text-foreground/50 mt-2">{t("subtitle")}</p>
         </div>
 
         <div className="bg-white rounded-2xl border border-border p-8 shadow-sm space-y-8 text-sm leading-relaxed text-foreground/75">
 
           {/* Unternehmensangaben */}
           <div>
-            <h2 className="text-base font-bold text-navy mb-3">Unternehmensangaben</h2>
+            <h2 className="text-base font-bold text-navy mb-3">{t("company_title")}</h2>
             <div className="rounded-xl border border-border bg-muted p-5 space-y-1">
               <p className="font-semibold text-navy">D&apos;Namar GmbH</p>
               <p>Wiesenstrasse 14</p>
@@ -44,7 +51,7 @@ export default async function ImpressumPage({
 
           {/* Kontakt */}
           <div>
-            <h2 className="text-base font-bold text-navy mb-3">Kontakt</h2>
+            <h2 className="text-base font-bold text-navy mb-3">{t("contact_title")}</h2>
             <ul className="space-y-2">
               <li>
                 Tel.:{" "}
@@ -74,40 +81,36 @@ export default async function ImpressumPage({
           {/* Gesellschaftsform & Register */}
           <div>
             <h2 className="text-base font-bold text-navy mb-3">
-              Gesellschaftsform &amp; Handelsregister
+              {t("company_title")} &amp; {t("hr_canton_label")}
             </h2>
             <ul className="space-y-2">
               <li>
-                <strong className="text-navy">Rechtsform:</strong> Gesellschaft mit beschränkter
-                Haftung (GmbH), Schweiz
+                <strong className="text-navy">{t("legal_form_label")}:</strong>{" "}
+                {t("legal_form_value")}
               </li>
               <li>
-                <strong className="text-navy">Gründungsjahr:</strong> 2015
+                <strong className="text-navy">{t("founded_label")}:</strong> 2015
               </li>
               <li>
-                <strong className="text-navy">UID:</strong>{" "}
-                <span className="font-mono text-foreground/60">[UID eintragen, z. B. CHE-XXX.XXX.XXX]</span>
+                <strong className="text-navy">{t("uid_label")}:</strong>{" "}
+                <span className="font-mono">CHE-151.721.671</span>
               </li>
               <li>
-                <strong className="text-navy">Handelsregisternummer:</strong>{" "}
-                <span className="font-mono text-foreground/60">[HR-Nummer eintragen]</span>
+                <strong className="text-navy">{t("hr_nr_label")}:</strong>{" "}
+                <span className="font-mono">CH-270.4.009.791-4</span>
               </li>
               <li>
-                <strong className="text-navy">Handelsregister:</strong> Kanton Basel-Stadt
+                <strong className="text-navy">{t("hr_canton_label")}:</strong>{" "}
+                {t("hr_canton_value")}
               </li>
             </ul>
-            <p className="mt-3 text-xs text-foreground/40">
-              * UID und HR-Nummer bitte vor dem Launch eintragen. Abrufbar unter zefix.ch.
-            </p>
           </div>
 
-          {/* Verantwortlich für den Inhalt */}
+          {/* Verantwortlich */}
           <div>
-            <h2 className="text-base font-bold text-navy mb-3">
-              Verantwortlich für den Inhalt
-            </h2>
+            <h2 className="text-base font-bold text-navy mb-3">{t("responsible_title")}</h2>
             <p>
-              Nadjib Rasuly &amp; Maritza Rodriguez<br />
+              {t("responsible_names")}<br />
               D&apos;Namar GmbH<br />
               Wiesenstrasse 14, 4057 Basel, Schweiz
             </p>
@@ -115,50 +118,30 @@ export default async function ImpressumPage({
 
           {/* Haftungsausschluss */}
           <div>
-            <h2 className="text-base font-bold text-navy mb-3">Haftungsausschluss</h2>
-            <p>
-              Die Inhalte dieser Website wurden mit grösster Sorgfalt erstellt. Für die
-              Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir keine
-              Gewähr. Als Diensteanbieter sind wir gemäss den geltenden Schweizer Gesetzen
-              für eigene Inhalte auf diesen Seiten verantwortlich. Für fremde Inhalte, auf
-              die wir verweisen, sind wir nicht verantwortlich.
-            </p>
+            <h2 className="text-base font-bold text-navy mb-3">{t("liability_title")}</h2>
+            <p>{t("liability_text")}</p>
           </div>
 
           {/* Urheberrecht */}
           <div>
-            <h2 className="text-base font-bold text-navy mb-3">Urheberrecht</h2>
-            <p>
-              Sämtliche auf dieser Website veröffentlichten Inhalte (Texte, Bilder,
-              Grafiken, Layout) unterliegen dem Schweizer Urheberrecht. Eine Vervielfältigung,
-              Bearbeitung oder Verbreitung ausserhalb der gesetzlichen Schranken bedarf der
-              schriftlichen Zustimmung der D&apos;Namar GmbH.
-            </p>
+            <h2 className="text-base font-bold text-navy mb-3">{t("copyright_title")}</h2>
+            <p>{t("copyright_text")}</p>
           </div>
 
           {/* Externe Links */}
           <div>
-            <h2 className="text-base font-bold text-navy mb-3">Externe Links</h2>
-            <p>
-              Diese Website enthält Links zu externen Webseiten. Für die Inhalte verlinkter
-              Seiten ist ausschliesslich deren Betreiber verantwortlich. Zum Zeitpunkt der
-              Verlinkung waren keine Rechtsverstösse erkennbar.
-            </p>
+            <h2 className="text-base font-bold text-navy mb-3">{t("external_links_title")}</h2>
+            <p>{t("external_links_text")}</p>
           </div>
 
           {/* Streitschlichtung */}
           <div>
-            <h2 className="text-base font-bold text-navy mb-3">Streitschlichtung</h2>
-            <p>
-              D&apos;Namar GmbH ist nicht verpflichtet und nicht bereit, an einem
-              Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
-              Bei Streitigkeiten gilt Schweizer Recht unter Ausschluss des
-              internationalen Privatrechts. Gerichtsstand ist Basel.
-            </p>
+            <h2 className="text-base font-bold text-navy mb-3">{t("dispute_title")}</h2>
+            <p>{t("dispute_text")}</p>
           </div>
 
           <p className="text-xs text-foreground/40 pt-2 border-t border-border">
-            Stand: April 2026
+            {t("date")}
           </p>
         </div>
       </div>
