@@ -726,10 +726,10 @@
         "ctaLabel": "Solicitar limpieza de cristales",
         "note": null,
         "rows": [
-          { "service": "Superficie de vidrio (por m²)", "detail": "Interior y exterior, sin rayas · Encargo mínimo CHF 90", "price": "desde CHF 5", "unit": "/ m²" },
+          { "service": "Superficie de vidrio (por m²)", "detail": "Interior y exterior, sin rayas · Encargo mínimo CHF 90", "price": "desde CHF 8", "unit": "/ m²" },
           { "service": "Hogar particular (precio fijo)", "detail": "Hasta 10 ventanas estándar, incl. marcos", "price": "desde CHF 90", "unit": "/ intervención" },
           { "service": "Fachada de vidrio comercial", "detail": "Escaparates, edificios de oficinas – precio según superficie", "price": "desde CHF 150", "unit": "/ intervención", "highlight": true },
-          { "service": "Sellado antiincrustante", "detail": "Protege hasta 8 semanas contra nuevos depósitos", "price": "desde CHF 30", "unit": "/ intervención" }
+          { "service": "Sellado antiincrustante", "detail": "Protege hasta 8 semanas contra nuevos depósitos", "price": "desde CHF 60", "unit": "/ intervención" }
         ]
       },
       "treppenhausreinigung": {
@@ -739,9 +739,9 @@
         "ctaLabel": "Solicitar limpieza de escaleras",
         "note": null,
         "rows": [
-          { "service": "Limpieza semanal", "detail": "Hasta 4 plantas · Suelos, barandillas, buzón", "price": "desde CHF 80", "unit": "/ intervención" },
-          { "service": "Limpieza quincenal", "detail": "Hasta 4 plantas · Suelos, barandillas, buzón", "price": "desde CHF 100", "unit": "/ intervención", "highlight": true },
-          { "service": "Limpieza básica mensual", "detail": "Incl. ventanas de escalera y sótano", "price": "desde CHF 180", "unit": "/ intervención" },
+          { "service": "Limpieza semanal", "detail": "Hasta 4 plantas · Suelos, barandillas, buzón", "price": "desde CHF 100", "unit": "/ intervención" },
+          { "service": "Limpieza quincenal", "detail": "Hasta 4 plantas · Suelos, barandillas, buzón", "price": "desde CHF 130", "unit": "/ intervención", "highlight": true },
+          { "service": "Limpieza básica mensual", "detail": "Incl. ventanas de escalera y sótano", "price": "desde CHF 220", "unit": "/ intervención" },
           { "service": "Edificios plurifamiliares (6+ partes)", "detail": "Oferta individualizada para administraciones", "price": "bajo consulta", "unit": "" }
         ]
       },
@@ -810,7 +810,12 @@
     },
     "liveReviews": {
       "title": "Valoraciones recientes de clientes"
-    }
+    },
+    "featured_badge": "Reseña del mes",
+    "verified": "Cliente verificado",
+    "no_reviews_title": "Aún sin reseñas",
+    "no_reviews_text": "Sea el primer cliente en compartir su experiencia.",
+    "star_labels": ["5 estrellas", "4 estrellas", "3 estrellas", "2 estrellas", "1 estrella"]
   },
   "ueber-uns": {
     "meta": {

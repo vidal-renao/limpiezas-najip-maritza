@@ -726,10 +726,10 @@
         "ctaLabel": "Glasreinigung anfragen",
         "note": null,
         "rows": [
-          { "service": "Fensterfläche (pro m²)", "detail": "Innen & aussen, streifenfrei · Mindestauftrag CHF 90", "price": "ab CHF 5", "unit": "/ m²" },
+          { "service": "Fensterfläche (pro m²)", "detail": "Innen & aussen, streifenfrei · Mindestauftrag CHF 90", "price": "ab CHF 8", "unit": "/ m²" },
           { "service": "Privathaushalt (Pauschal)", "detail": "Bis 10 Standardfenster, inkl. Rahmen", "price": "ab CHF 90", "unit": "/ Einsatz" },
           { "service": "Gewerbliche Glasfront", "detail": "Schaufenster, Bürogebäude – Preis nach Fläche", "price": "ab CHF 150", "unit": "/ Einsatz", "highlight": true },
-          { "service": "Kalkschutzversiegelung", "detail": "Schützt bis zu 8 Wochen gegen Neuablagerungen", "price": "ab CHF 30", "unit": "/ Einsatz" }
+          { "service": "Kalkschutzversiegelung", "detail": "Schützt bis zu 8 Wochen gegen Neuablagerungen", "price": "ab CHF 60", "unit": "/ Einsatz" }
         ]
       },
       "treppenhausreinigung": {
@@ -739,9 +739,9 @@
         "ctaLabel": "Treppenhausreinigung anfragen",
         "note": null,
         "rows": [
-          { "service": "Wöchentliche Reinigung", "detail": "Bis 4 Stockwerke · Böden, Geländer, Briefkastenanlage", "price": "ab CHF 80", "unit": "/ Einsatz" },
-          { "service": "Zweiwöchentliche Reinigung", "detail": "Bis 4 Stockwerke · Böden, Geländer, Briefkastenanlage", "price": "ab CHF 100", "unit": "/ Einsatz", "highlight": true },
-          { "service": "Monatliche Grundreinigung", "detail": "Inkl. Fenster Treppenhaus und Keller", "price": "ab CHF 180", "unit": "/ Einsatz" },
+          { "service": "Wöchentliche Reinigung", "detail": "Bis 4 Stockwerke · Böden, Geländer, Briefkastenanlage", "price": "ab CHF 100", "unit": "/ Einsatz" },
+          { "service": "Zweiwöchentliche Reinigung", "detail": "Bis 4 Stockwerke · Böden, Geländer, Briefkastenanlage", "price": "ab CHF 130", "unit": "/ Einsatz", "highlight": true },
+          { "service": "Monatliche Grundreinigung", "detail": "Inkl. Fenster Treppenhaus und Keller", "price": "ab CHF 220", "unit": "/ Einsatz" },
           { "service": "Mehrfamilienhäuser (6+ Parteien)", "detail": "Individuelles Angebot für Verwaltungen", "price": "auf Anfrage", "unit": "" }
         ]
       },
@@ -810,7 +810,12 @@
     },
     "liveReviews": {
       "title": "Aktuelle Kundenbewertungen"
-    }
+    },
+    "featured_badge": "Kundenstimme des Monats",
+    "verified": "Verifizierter Kunde",
+    "no_reviews_title": "Noch keine Bewertungen",
+    "no_reviews_text": "Seien Sie der erste Kunde, der eine Erfahrung teilt.",
+    "star_labels": ["5 Sterne", "4 Sterne", "3 Sterne", "2 Sterne", "1 Stern"]
   },
   "ueber-uns": {
     "meta": {

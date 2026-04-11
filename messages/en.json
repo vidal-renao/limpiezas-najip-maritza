@@ -726,10 +726,10 @@
         "ctaLabel": "Request glass cleaning",
         "note": null,
         "rows": [
-          { "service": "Glass surface (per m²)", "detail": "Inside & outside, streak-free · Minimum order CHF 90", "price": "from CHF 5", "unit": "/ m²" },
+          { "service": "Glass surface (per m²)", "detail": "Inside & outside, streak-free · Minimum order CHF 90", "price": "from CHF 8", "unit": "/ m²" },
           { "service": "Private household (fixed price)", "detail": "Up to 10 standard windows, incl. frames", "price": "from CHF 90", "unit": "/ visit" },
           { "service": "Commercial glass front", "detail": "Shopfront, office building – price by area", "price": "from CHF 150", "unit": "/ visit", "highlight": true },
-          { "service": "Limescale protective sealant", "detail": "Protects up to 8 weeks against new deposits", "price": "from CHF 30", "unit": "/ visit" }
+          { "service": "Limescale protective sealant", "detail": "Protects up to 8 weeks against new deposits", "price": "from CHF 60", "unit": "/ visit" }
         ]
       },
       "treppenhausreinigung": {
@@ -739,9 +739,9 @@
         "ctaLabel": "Request stairwell cleaning",
         "note": null,
         "rows": [
-          { "service": "Weekly cleaning", "detail": "Up to 4 floors · Floors, banisters, letterbox", "price": "from CHF 80", "unit": "/ visit" },
-          { "service": "Fortnightly cleaning", "detail": "Up to 4 floors · Floors, banisters, letterbox", "price": "from CHF 100", "unit": "/ visit", "highlight": true },
-          { "service": "Monthly deep clean", "detail": "Incl. stairwell windows and cellar", "price": "from CHF 180", "unit": "/ visit" },
+          { "service": "Weekly cleaning", "detail": "Up to 4 floors · Floors, banisters, letterbox", "price": "from CHF 100", "unit": "/ visit" },
+          { "service": "Fortnightly cleaning", "detail": "Up to 4 floors · Floors, banisters, letterbox", "price": "from CHF 130", "unit": "/ visit", "highlight": true },
+          { "service": "Monthly deep clean", "detail": "Incl. stairwell windows and cellar", "price": "from CHF 220", "unit": "/ visit" },
           { "service": "Multi-family buildings (6+ units)", "detail": "Individual quote for property managers", "price": "on request", "unit": "" }
         ]
       },
@@ -810,7 +810,12 @@
     },
     "liveReviews": {
       "title": "Recent Client Reviews"
-    }
+    },
+    "featured_badge": "Review of the Month",
+    "verified": "Verified Customer",
+    "no_reviews_title": "No reviews yet",
+    "no_reviews_text": "Be the first customer to share your experience.",
+    "star_labels": ["5 stars", "4 stars", "3 stars", "2 stars", "1 star"]
   },
   "ueber-uns": {
     "meta": {
