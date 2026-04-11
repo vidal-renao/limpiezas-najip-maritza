@@ -21,11 +21,12 @@ export default function WhatsAppButton() {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onClick={() => track("whatsapp_click")}
-      className="flex items-center gap-3 group"
+      className="relative flex items-center justify-center w-14 h-14 group"
     >
-      {/* Tooltip label */}
+      {/* Tooltip label — absolutely positioned to the left of the button */}
       <span
         className={`
+          absolute right-full mr-3 top-1/2 -translate-y-1/2
           bg-navy text-white text-sm font-medium px-3 py-1.5 rounded-full shadow-md
           transition-all duration-200 whitespace-nowrap
           ${hovered ? "opacity-100 translate-x-0" : "opacity-0 translate-x-2 pointer-events-none"}
