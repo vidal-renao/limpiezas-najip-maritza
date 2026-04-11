@@ -7,6 +7,7 @@ import { Link } from "@/i18n/navigation";
 import Navbar from "@/components/Navbar";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollToTop from "@/components/ui/ScrollToTop";
+import DraggableFloating from "@/components/ui/DraggableFloating";
 import AnnouncementBar from "@/components/ui/AnnouncementBar";
 import Image from "next/image";
 import { buildLocalBusinessJsonLd } from "@/content/site.config";
@@ -142,8 +143,16 @@ export default async function LocaleLayout({
           />
           <Navbar />
           <main id="main-content" className="flex-1">{children}</main>
-          <WhatsAppButton />
-          <ScrollToTop />
+
+          {/* WhatsApp — bottom-right, draggable on mobile */}
+          <DraggableFloating storageKey="dnamar-wa-pos" defaultBottom={24} defaultRight={24} zIndex={50}>
+            <WhatsAppButton />
+          </DraggableFloating>
+
+          {/* Scroll-to-top — above WhatsApp, draggable on mobile */}
+          <DraggableFloating storageKey="dnamar-stt-pos" defaultBottom={96} defaultRight={24} zIndex={40}>
+            <ScrollToTop />
+          </DraggableFloating>
 
           {/* ── Footer ─────────────────────────────────────────────────────── */}
           <footer className="bg-navy text-white">
