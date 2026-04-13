@@ -469,7 +469,7 @@ export default async function HomePage({
                         <p className="font-semibold text-navy text-sm truncate">{name}</p>
                         <p className="text-xs text-foreground/50 truncate">{location}</p>
                       </div>
-                      <BadgeCheck className="w-5 h-5 text-brand shrink-0" title="Verifiziert" />
+                      <BadgeCheck className="w-5 h-5 text-brand shrink-0" aria-label="Verifiziert" />
                     </div>
 
                     {/* Stars + date */}
