@@ -50,14 +50,19 @@
       "es": "ES"
     },
     "services_items": {
-      "haushaltsreinigung": { "label": "Haushaltsreinigung", "desc": "Privathaushalte & Wohnungen" },
-      "bueroreinigung": { "label": "Büroreinigung", "desc": "Büros & Gewerbeflächen" },
-      "umzugsreinigung": { "label": "Umzugsreinigung", "desc": "Endreinigung mit Garantie" },
-      "renovationsreinigung": { "label": "Renovationsreinigung", "desc": "Nach Umbau & Neubau" },
-      "treppenhausreinigung": { "label": "Treppenhausreinigung", "desc": "Gemeinschaftsflächen" },
-      "glasreinigung": { "label": "Glasreinigung", "desc": "Fenster & Glasflächen" },
-      "tiefenreinigung": { "label": "Tiefenreinigung", "desc": "Gründliche Grundreinigung" },
-      "praxisreinigung": { "label": "Praxisreinigung", "desc": "Arztpraxen & Studios" }
+      "haushaltsreinigung":   { "label": "Hausreinigung / Privat",          "desc": "Wohnungen & Privathaushalte" },
+      "bueroreinigung":       { "label": "Büroreinigung",                   "desc": "Büros & Gewerbeflächen" },
+      "praxisreinigung":      { "label": "Praxisreinigung",                 "desc": "Arztpraxen & Studios" },
+      "treppenhausreinigung": { "label": "Treppenhausreinigung",            "desc": "Gemeinschaftsflächen" },
+      "glasreinigung":        { "label": "Glasreinigung",                   "desc": "Fenster & Glasflächen" },
+      "unterhaltsreinigung":  { "label": "Unterhaltsreinigung",             "desc": "Liegenschaften & Objekte" },
+      "verkaufsflaeche":      { "label": "Verkaufsflächenreinigung",        "desc": "Shops & Handelsflächen" },
+      "bauendreinigung":      { "label": "Bauendreinigung",                 "desc": "Nach Umbau & Neubau" },
+      "grundreinigung":       { "label": "Grundreinigung",                  "desc": "Gründliche Tiefenreinigung" },
+      "haushaltsdienste":     { "label": "Haushaltsdienste",                "desc": "Bügeln & Wäschepflege" },
+      "fitnesscenter":        { "label": "Fitnesscenter-Reinigung",         "desc": "Sportstudios & Wellness" },
+      "innenreinigung":       { "label": "Innenreinigung",                  "desc": "Innenräume & Oberflächen" },
+      "entsorgung":           { "label": "Entsorgung",                      "desc": "Entrümpelung & Abfall" }
     }
   },
   "footer": {
@@ -177,6 +182,7 @@
       "title": "Was unsere Kunden sagen",
       "rating": "4.9 / 5 – Basierend auf 90+ Bewertungen",
       "viewAll": "Alle Referenzen ansehen",
+      "companyReplyLabel": "Antwort von D'Namar",
       "items": [
         {
           "name": "Petra M.",
@@ -184,7 +190,8 @@
           "service": "Haushaltsreinigung",
           "rating": 5,
           "text": "D'Namar reinigt unsere Wohnung seit über einem Jahr. Immer pünktlich, immer gründlich – und der Kalk in unserem Bad ist endlich Geschichte. Sehr empfehlenswert!",
-          "date": "Februar 2025"
+          "date": "Februar 2025",
+          "company_reply": "Herzlichen Dank, Petra! Es freut uns sehr, dass Sie mit unserem Service rundum zufrieden sind. Kalkschutz ist unser Spezialgebiet – wir freuen uns auf die weitere Zusammenarbeit!"
         },
         {
           "name": "Thomas K.",
@@ -192,7 +199,8 @@
           "service": "Büroreinigung",
           "rating": 5,
           "text": "Wir haben unser Büro (12 Mitarbeitende) zu D'Namar gewechselt. Der Unterschied war sofort spürbar. Das Team arbeitet diskret, effizient und zu fairen Konditionen.",
-          "date": "Januar 2025"
+          "date": "Januar 2025",
+          "company_reply": "Vielen Dank für Ihr Vertrauen, Thomas! Wir legen grossen Wert auf Diskretion im Geschäftsumfeld. Ihr Team ist bei uns in besten Händen."
         },
         {
           "name": "Sandra B.",
@@ -200,7 +208,71 @@
           "service": "Umzugsreinigung",
           "rating": 5,
           "text": "Dank der Abgabegarantie war ich entspannt. Die Verwaltung hatte keine einzige Beanstandung – nicht mal am Backofen. Absolut professionell und unkompliziert.",
-          "date": "März 2025"
+          "date": "März 2025",
+          "company_reply": "Das hören wir sehr gerne! Eine reibungslose Wohnungsübergabe ist unser Ziel – wir sind froh, dass alles geklappt hat."
+        },
+        {
+          "name": "Michael F.",
+          "location": "Riehen, Basel",
+          "service": "Grundreinigung",
+          "rating": 5,
+          "text": "Professioneller Service von A bis Z. Die Grundreinigung unseres Hauses war beeindruckend gründlich. Selbst in Ecken, die ich vergessen hatte, glänzt es jetzt wieder. Klare Weiterempfehlung!",
+          "date": "April 2025",
+          "company_reply": ""
+        },
+        {
+          "name": "Anna L.",
+          "location": "Allschwil",
+          "service": "Glasreinigung",
+          "rating": 5,
+          "text": "Endlich streifenfreie Fenster! D'Namar hat alle Fenster unseres Bürogebäudes gereinigt und dabei auch den Kalkbelag auf den Rahmen beseitigt. Grossartige Arbeit.",
+          "date": "März 2025",
+          "company_reply": "Danke, Anna! Streifenfreie Fenster sind unser Qualitätsversprechen. Unser Kalkschutz-Verfahren hält den Glanz besonders lange."
+        },
+        {
+          "name": "David R.",
+          "location": "Grossbasel",
+          "service": "Treppenhausreinigung",
+          "rating": 5,
+          "text": "Seit D'Namar unser Treppenhaus betreut, gibt es keine Beschwerden mehr von Mietern. Pünktlich, verlässlich und das Ergebnis überzeugt immer. Top!",
+          "date": "Februar 2025",
+          "company_reply": ""
+        },
+        {
+          "name": "Maria S.",
+          "location": "Binningen",
+          "service": "Büroreinigung",
+          "rating": 5,
+          "text": "Unser Praxisteam ist begeistert. Sauberkeit und Hygiene sind in einer Arztpraxis nicht verhandelbar – D'Namar erfüllt alle unsere Anforderungen zuverlässig und diskret.",
+          "date": "Januar 2025",
+          "company_reply": "Vielen Dank, Maria! Hygienestandards in Praxen nehmen wir besonders ernst. Wir schätzen das Vertrauen Ihres Teams sehr."
+        },
+        {
+          "name": "Stefan V.",
+          "location": "Birsfelden",
+          "service": "Unterhaltsreinigung",
+          "rating": 5,
+          "text": "Verwalte mehrere Liegenschaften und D'Namar kümmert sich um alle regelmässig. Zuverlässig, günstig und professionell – genau was ich gesucht habe.",
+          "date": "April 2025",
+          "company_reply": ""
+        },
+        {
+          "name": "Laura H.",
+          "location": "Muttenz",
+          "service": "Haushaltsreinigung",
+          "rating": 5,
+          "text": "Als berufstätige Mutter mit zwei Kindern ist D'Namar ein Segen. Das Team ist freundlich, vertrauenswürdig und lässt unsere Wohnung jedes Mal strahlen. Besser als alles, was ich vorher hatte.",
+          "date": "März 2025",
+          "company_reply": "Das ist wunderschön zu hören, Laura! Genau für solche Momente – mehr Zeit für die Familie – sind wir gerne da."
+        },
+        {
+          "name": "Christian W.",
+          "location": "Basel Zentrum",
+          "service": "Fitnesscenter-Reinigung",
+          "rating": 5,
+          "text": "Unser Fitnessstudio wird seit 6 Monaten von D'Namar gereinigt. Die Mitglieder loben die Sauberkeit regelmässig. Geräte, Umkleiden, Duschen – alles immer makellos. Sehr zu empfehlen!",
+          "date": "April 2025",
+          "company_reply": "Herzlichen Dank, Christian! Sportstudios stellen besondere Anforderungen – wir freuen uns, dass unsere Arbeit bei Ihren Mitgliedern ankommt."
         }
       ]
     },
@@ -237,8 +309,8 @@
       }
     },
     "faq": {
-      "eyebrow": "FAQ",
-      "title": "Häufig gestellte Fragen",
+      "eyebrow": "Fragen & Antworten",
+      "title": "Fragen & Antworten zu unseren Reinigungsdiensten",
       "moreQuestions": "Haben Sie weitere Fragen? Wir helfen gerne persönlich weiter.",
       "askNow": "Jetzt Frage stellen",
       "items": [

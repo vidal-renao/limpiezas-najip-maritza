@@ -4,54 +4,74 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
+import Image from "next/image";
 import {
   ChevronDown,
   Menu,
   X,
   Home,
   Building2,
-  PackageOpen,
-  Hammer,
   Layers,
   Sparkles,
-  FlaskConical,
   Stethoscope,
   ArrowRight,
-  Globe,
+  RotateCcw,
+  ShoppingBag,
+  Wrench,
+  Microscope,
+  Shirt,
+  Dumbbell,
+  LayoutGrid,
+  Trash2,
 } from "lucide-react";
 
-/* ─── Service icons map ──────────────────────────────────────────────────── */
+/* ─── Service icons map (13 services) ───────────────────────────────────── */
 const SERVICE_ICONS = {
-  haushaltsreinigung: Home,
-  bueroreinigung: Building2,
-  umzugsreinigung: PackageOpen,
-  renovationsreinigung: Hammer,
+  haushaltsreinigung:   Home,
+  bueroreinigung:       Building2,
+  praxisreinigung:      Stethoscope,
   treppenhausreinigung: Layers,
-  glasreinigung: Sparkles,
-  tiefenreinigung: FlaskConical,
-  praxisreinigung: Stethoscope,
+  glasreinigung:        Sparkles,
+  unterhaltsreinigung:  RotateCcw,
+  verkaufsflaeche:      ShoppingBag,
+  bauendreinigung:      Wrench,
+  grundreinigung:       Microscope,
+  haushaltsdienste:     Shirt,
+  fitnesscenter:        Dumbbell,
+  innenreinigung:       LayoutGrid,
+  entsorgung:           Trash2,
 } as const;
 
 const SERVICE_KEYS = [
   "haushaltsreinigung",
   "bueroreinigung",
-  "umzugsreinigung",
-  "renovationsreinigung",
+  "praxisreinigung",
   "treppenhausreinigung",
   "glasreinigung",
-  "tiefenreinigung",
-  "praxisreinigung",
+  "unterhaltsreinigung",
+  "verkaufsflaeche",
+  "bauendreinigung",
+  "grundreinigung",
+  "haushaltsdienste",
+  "fitnesscenter",
+  "innenreinigung",
+  "entsorgung",
 ] as const;
 
 const SERVICE_HREFS: Record<string, string> = {
-  haushaltsreinigung: "/haushaltsreinigung",
-  bueroreinigung: "/bueroreinigung",
-  umzugsreinigung: "/umzugsreinigung",
-  renovationsreinigung: "/renovationsreinigung",
+  haushaltsreinigung:   "/haushaltsreinigung",
+  bueroreinigung:       "/bueroreinigung",
+  praxisreinigung:      "/praxisreinigung",
   treppenhausreinigung: "/treppenhausreinigung",
-  glasreinigung: "/glasreinigung",
-  tiefenreinigung: "/tiefenreinigung",
-  praxisreinigung: "/praxisreinigung",
+  glasreinigung:        "/glasreinigung",
+  unterhaltsreinigung:  "/anfrage",
+  verkaufsflaeche:      "/anfrage",
+  bauendreinigung:      "/anfrage",
+  grundreinigung:       "/anfrage",
+  haushaltsdienste:     "/anfrage",
+  fitnesscenter:        "/anfrage",
+  innenreinigung:       "/anfrage",
+  entsorgung:           "/anfrage",
 };
 
 /* ─── Locale flags & labels ──────────────────────────────────────────────── */
@@ -204,7 +224,7 @@ function ServicesDropdown({
 
       <div
         className={`
-          absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[min(540px,95vw)]
+          absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[min(700px,95vw)]
           bg-white/95 backdrop-blur-xl rounded-2xl shadow-xl border border-white/60
           ring-1 ring-navy/5 overflow-hidden
           transition-all duration-300 ease-out origin-top
@@ -225,7 +245,7 @@ function ServicesDropdown({
           </Link>
         </div>
 
-        <div className="grid grid-cols-2 gap-0.5 p-2">
+        <div className="grid grid-cols-3 gap-0.5 p-2">
           {SERVICE_KEYS.map((key) => {
             const href = SERVICE_HREFS[key];
             const Icon = SERVICE_ICONS[key];
@@ -343,21 +363,28 @@ export default function Navbar() {
         <div className="section-container">
           <div className="flex items-center justify-between h-16">
 
-            {/* ── Logo ── */}
+            {/* ── Logo (banner style) ── */}
             <Link
               href="/"
               onClick={closeMobile}
-              className="flex items-center gap-2.5 shrink-0 group"
+              className="flex items-center gap-3 shrink-0 group"
               aria-label="D'Namar Reinigungsdienst Basel"
             >
-              <span className="flex items-center justify-center w-9 h-9 rounded-xl bg-navy text-white font-black text-lg leading-none select-none shadow-sm group-hover:bg-brand transition-colors duration-300">
-                D
-              </span>
+              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-md ring-1 ring-navy/10 group-hover:ring-brand/40 transition-all duration-300 shrink-0">
+                <Image
+                  src="/images/N.jpeg"
+                  alt="D'Namar Logo"
+                  fill
+                  className="object-cover"
+                  sizes="40px"
+                  priority
+                />
+              </div>
               <div className="flex flex-col leading-none">
-                <span className="text-navy font-bold text-[15px] tracking-tight group-hover:text-brand transition-colors duration-300">
+                <span className="text-navy font-extrabold text-[16px] tracking-tight group-hover:text-brand transition-colors duration-300">
                   D&apos;Namar
                 </span>
-                <span className="text-foreground/40 text-[9px] tracking-[0.18em] uppercase mt-0.5">
+                <span className="text-foreground/45 text-[9px] tracking-[0.2em] uppercase mt-0.5 font-medium">
                   Reinigungsdienst · Basel
                 </span>
               </div>

@@ -47,6 +47,23 @@ body {
   @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-white px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-white hover:text-navy focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-navy;
 }
 
+/* ─── Gallery slider progress bar animation ──────────────────────────────── */
+@keyframes gallery-progress {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+.gallery-progress {
+  transform-origin: left;
+  animation: gallery-progress var(--gallery-duration, 4500ms) linear forwards;
+}
+
+/* ─── Hide scrollbar (slider thumbnails) ─────────────────────────────────── */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar { display: none; }
+
 /* ─── Motion safety ───────────────────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   *,

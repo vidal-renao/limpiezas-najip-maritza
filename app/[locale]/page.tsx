@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 import TrackedLink from "@/components/ui/TrackedLink";
 import ServiceSlider from "@/components/ui/ServiceSlider";
 import FaqAccordion from "@/components/ui/FaqAccordion";
-import GalleryGrid from "@/components/ui/GalleryGrid";
+import GallerySlider from "@/components/ui/GallerySlider";
 import {
   ShieldCheck,
   Clock,
@@ -50,7 +50,7 @@ export default async function HomePage({
   const whyPoints = t.raw("why.points") as Array<{ title: string; desc: string }>;
 
   const testimonials = t.raw("testimonials.items") as Array<{
-    name: string; location: string; service: string; rating: number; text: string; date: string;
+    name: string; location: string; service: string; rating: number; text: string; date: string; company_reply?: string;
   }>;
 
   const districts: string[] = t.raw("districts.items") as string[];
@@ -408,9 +408,11 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ──────────────────────────────────────────────────── */}
+      {/* ── KUNDENSTIMMEN (Google Reviews style) ─────────────────────────── */}
       <section className="bg-muted py-20 lg:py-24" aria-labelledby="reviews-heading">
         <div className="section-container">
+
+          {/* Header */}
           <div className="text-center mb-12">
             <span className="text-brand font-semibold text-sm uppercase tracking-widest">
               {t("testimonials.eyebrow")}
@@ -418,44 +420,114 @@ export default async function HomePage({
             <h2 id="reviews-heading" className="mt-2 text-3xl sm:text-4xl font-bold text-navy">
               {t("testimonials.title")}
             </h2>
-            <div className="mt-3 flex items-center justify-center gap-2 text-sm text-foreground/60">
-              <span className="flex">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
-                ))}
-              </span>
-              <span>{t("testimonials.rating")}</span>
-            </div>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map(({ name, location, service, rating, text, date }) => (
-              <div key={name} className="bg-white rounded-2xl border border-border p-7 shadow-sm flex flex-col">
-                <div className="flex gap-0.5 mb-4">
-                  {Array.from({ length: rating }).map((_, i) => (
+            {/* Aggregate score bar */}
+            <div className="mt-5 inline-flex items-center gap-4 bg-white rounded-2xl border border-border px-6 py-4 shadow-sm">
+              <div className="text-center">
+                <p className="text-4xl font-black text-navy leading-none">4.9</p>
+                <div className="flex gap-0.5 justify-center mt-1.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
                     <Star key={i} className="w-4 h-4 text-amber-400 fill-amber-400" />
                   ))}
                 </div>
-                <blockquote className="text-sm text-foreground/75 leading-relaxed flex-1 mb-5">
-                  &ldquo;{text}&rdquo;
-                </blockquote>
-                <div className="border-t border-border pt-4 flex items-center justify-between">
-                  <div>
-                    <p className="font-semibold text-navy text-sm">{name}</p>
-                    <p className="text-xs text-foreground/50">{location}</p>
-                  </div>
-                  <div className="text-right">
-                    <span className="inline-block rounded-full bg-brand/10 text-brand text-xs font-semibold px-2.5 py-0.5">
-                      {service}
-                    </span>
-                    <p className="text-xs text-foreground/40 mt-1">{date}</p>
-                  </div>
+              </div>
+              <div className="w-px h-12 bg-border" />
+              <div className="text-left">
+                <p className="text-sm font-semibold text-navy">{t("testimonials.rating")}</p>
+                <div className="flex items-center gap-1 mt-1">
+                  <BadgeCheck className="w-4 h-4 text-brand" />
+                  <span className="text-xs text-foreground/55">Verifizierte Kundenbewertungen</span>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
 
-          <div className="text-center mt-8">
+          {/* Cards grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {testimonials.map(({ name, location, service, rating, text, date, company_reply }) => {
+              /* avatar gradient derived from name */
+              const GRADS = [
+                "from-brand to-emerald-600",
+                "from-navy to-blue-700",
+                "from-violet-500 to-violet-700",
+                "from-amber-500 to-orange-600",
+                "from-teal-500 to-teal-700",
+                "from-slate-500 to-slate-700",
+              ];
+              const grad = GRADS[name.charCodeAt(0) % GRADS.length];
+              const initials = name.split(" ").map((w) => w[0] ?? "").join("").toUpperCase().slice(0, 2);
+
+              return (
+                <article key={name} className="bg-white rounded-2xl border border-border shadow-sm flex flex-col overflow-hidden">
+                  {/* Card body */}
+                  <div className="p-6 flex flex-col flex-1">
+                    {/* Author row */}
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className={`w-10 h-10 rounded-full bg-gradient-to-br ${grad} flex items-center justify-center text-white font-bold text-sm shrink-0`}>
+                        {initials}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <p className="font-semibold text-navy text-sm truncate">{name}</p>
+                        <p className="text-xs text-foreground/50 truncate">{location}</p>
+                      </div>
+                      <BadgeCheck className="w-5 h-5 text-brand shrink-0" title="Verifiziert" />
+                    </div>
+
+                    {/* Stars + date */}
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="flex gap-0.5">
+                        {Array.from({ length: 5 }).map((_, i) => (
+                          <Star
+                            key={i}
+                            className={`w-4 h-4 ${i < rating ? "text-amber-400 fill-amber-400" : "text-border"}`}
+                          />
+                        ))}
+                      </div>
+                      <span className="text-xs text-foreground/40">{date}</span>
+                    </div>
+
+                    {/* Review text */}
+                    <blockquote className="text-sm text-foreground/75 leading-relaxed flex-1 mb-4">
+                      &ldquo;{text}&rdquo;
+                    </blockquote>
+
+                    {/* Service badge */}
+                    <div className="flex items-center justify-between border-t border-border pt-3">
+                      <span className="rounded-full bg-brand/10 text-brand text-xs font-semibold px-2.5 py-1">
+                        {service}
+                      </span>
+                      <span className="text-xs text-foreground/40 italic">
+                        {locale === "de" ? "Verifiziert" : locale === "en" ? "Verified" : "Verificado"}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Company reply */}
+                  {company_reply && (
+                    <div className="bg-navy/4 border-t border-border px-6 py-4">
+                      <div className="flex items-start gap-2.5">
+                        <div className="w-7 h-7 rounded-full overflow-hidden shrink-0 mt-0.5 ring-1 ring-brand/30">
+                          <Image
+                            src="/images/N.jpeg"
+                            alt="D'Namar"
+                            width={28}
+                            height={28}
+                            className="object-cover w-full h-full"
+                          />
+                        </div>
+                        <div>
+                          <p className="text-xs font-bold text-navy mb-1">{t("testimonials.companyReplyLabel")}</p>
+                          <p className="text-xs text-foreground/65 leading-relaxed">{company_reply}</p>
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </article>
+              );
+            })}
+          </div>
+
+          {/* View all link */}
+          <div className="text-center mt-10">
             <Link href="/referenzen" className="inline-flex items-center gap-2 text-brand font-semibold text-sm hover:text-brand-dark transition-colors">
               {t("testimonials.viewAll")}
               <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -512,19 +584,19 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* ── GALLERY ───────────────────────────────────────────────────────── */}
-      <GalleryGrid
+      {/* ── GALLERY SLIDER ────────────────────────────────────────────────── */}
+      <GallerySlider
         title={t("gallery.title")}
         subtitle={t("gallery.subtitle")}
         items={[
-          { src: "/images/Buero-768x512.jpg", alt: t("gallery.items.buero"), label: t("gallery.labels.buero") },
-          { src: "/images/Boden-wischen-768x512.jpg", alt: t("gallery.items.boden"), label: t("gallery.labels.boden") },
-          { src: "/images/Fenster-blauer-Himmel-768x512.jpg", alt: t("gallery.items.fenster"), label: t("gallery.labels.fenster") },
-          { src: "/images/Herd-768x512.jpg", alt: t("gallery.items.herd"), label: t("gallery.labels.herd") },
-          { src: "/images/Treppe-Vorraum-768x511.jpg", alt: t("gallery.items.treppe"), label: t("gallery.labels.treppe") },
-          { src: "/images/Gewerberaum-768x512.jpg", alt: t("gallery.items.gewerbe"), label: t("gallery.labels.gewerbe") },
-          { src: "/images/Oberflaechen-768x512.jpg", alt: t("gallery.items.oberflaechen"), label: t("gallery.labels.oberflaechen") },
-          { src: "/images/Teppichboden-768x512.jpg", alt: t("gallery.items.teppich"), label: t("gallery.labels.teppich") },
+          { src: "/images/Buero-768x512.jpg",                alt: t("gallery.items.buero"),        label: t("gallery.labels.buero") },
+          { src: "/images/Boden-wischen-768x512.jpg",        alt: t("gallery.items.boden"),        label: t("gallery.labels.boden") },
+          { src: "/images/Fenster-blauer-Himmel-768x512.jpg",alt: t("gallery.items.fenster"),      label: t("gallery.labels.fenster") },
+          { src: "/images/Herd-768x512.jpg",                 alt: t("gallery.items.herd"),         label: t("gallery.labels.herd") },
+          { src: "/images/Treppe-Vorraum-768x511.jpg",       alt: t("gallery.items.treppe"),       label: t("gallery.labels.treppe") },
+          { src: "/images/Gewerberaum-768x512.jpg",          alt: t("gallery.items.gewerbe"),      label: t("gallery.labels.gewerbe") },
+          { src: "/images/Oberflaechen-768x512.jpg",         alt: t("gallery.items.oberflaechen"), label: t("gallery.labels.oberflaechen") },
+          { src: "/images/Teppichboden-768x512.jpg",         alt: t("gallery.items.teppich"),      label: t("gallery.labels.teppich") },
         ]}
       />
 
@@ -611,15 +683,44 @@ export default async function HomePage({
             name: "Reinigungsdienstleistungen D'Namar Basel",
             description: "Professionelle Reinigungsdienstleistungen in Basel für Privat und Gewerbe.",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Haushaltsreinigung Basel", url: "https://dnamar.ch/haushaltsreinigung" },
-              { "@type": "ListItem", position: 2, name: "Büroreinigung Basel", url: "https://dnamar.ch/bueroreinigung" },
-              { "@type": "ListItem", position: 3, name: "Umzugsreinigung Basel", url: "https://dnamar.ch/umzugsreinigung" },
-              { "@type": "ListItem", position: 4, name: "Glasreinigung Basel", url: "https://dnamar.ch/glasreinigung" },
-              { "@type": "ListItem", position: 5, name: "Treppenhausreinigung Basel", url: "https://dnamar.ch/treppenhausreinigung" },
-              { "@type": "ListItem", position: 6, name: "Tiefenreinigung Basel", url: "https://dnamar.ch/tiefenreinigung" },
-              { "@type": "ListItem", position: 7, name: "Praxisreinigung Basel", url: "https://dnamar.ch/praxisreinigung" },
-              { "@type": "ListItem", position: 8, name: "Bauendreinigung Basel", url: "https://dnamar.ch/renovationsreinigung" },
+              { "@type": "ListItem", position: 1,  name: "Hausreinigung / Privat Basel",         url: "https://dnamar.ch/haushaltsreinigung" },
+              { "@type": "ListItem", position: 2,  name: "Büroreinigung Basel",                  url: "https://dnamar.ch/bueroreinigung" },
+              { "@type": "ListItem", position: 3,  name: "Praxisreinigung Basel",                url: "https://dnamar.ch/praxisreinigung" },
+              { "@type": "ListItem", position: 4,  name: "Treppenhausreinigung Basel",           url: "https://dnamar.ch/treppenhausreinigung" },
+              { "@type": "ListItem", position: 5,  name: "Glasreinigung Basel",                  url: "https://dnamar.ch/glasreinigung" },
+              { "@type": "ListItem", position: 6,  name: "Unterhaltsreinigung Liegenschaften Basel", url: "https://dnamar.ch/anfrage" },
+              { "@type": "ListItem", position: 7,  name: "Verkaufsflächenreinigung Basel",       url: "https://dnamar.ch/anfrage" },
+              { "@type": "ListItem", position: 8,  name: "Bauendreinigung Basel",                url: "https://dnamar.ch/anfrage" },
+              { "@type": "ListItem", position: 9,  name: "Grundreinigung Basel",                 url: "https://dnamar.ch/anfrage" },
+              { "@type": "ListItem", position: 10, name: "Haushaltsdienste Bügeln Basel",        url: "https://dnamar.ch/anfrage" },
+              { "@type": "ListItem", position: 11, name: "Fitnesscenter-Reinigung Basel",        url: "https://dnamar.ch/anfrage" },
+              { "@type": "ListItem", position: 12, name: "Innenreinigung Basel",                 url: "https://dnamar.ch/anfrage" },
+              { "@type": "ListItem", position: 13, name: "Entsorgung Basel",                     url: "https://dnamar.ch/anfrage" },
             ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "D'Namar Reinigungsdienst Basel",
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              bestRating: "5",
+              worstRating: "1",
+              ratingCount: "90",
+            },
+            review: testimonials.slice(0, 5).map(({ name, rating, text, date }) => ({
+              "@type": "Review",
+              author: { "@type": "Person", name },
+              reviewRating: { "@type": "Rating", ratingValue: String(rating), bestRating: "5" },
+              reviewBody: text,
+              datePublished: date,
+            })),
           }),
         }}
       />

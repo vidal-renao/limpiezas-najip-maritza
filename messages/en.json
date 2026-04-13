@@ -50,14 +50,19 @@
       "es": "ES"
     },
     "services_items": {
-      "haushaltsreinigung": { "label": "Household Cleaning", "desc": "Private homes & apartments" },
-      "bueroreinigung": { "label": "Office Cleaning", "desc": "Offices & commercial spaces" },
-      "umzugsreinigung": { "label": "Move-Out Cleaning", "desc": "End-of-tenancy with guarantee" },
-      "renovationsreinigung": { "label": "Post-Renovation Cleaning", "desc": "After renovation & new build" },
-      "treppenhausreinigung": { "label": "Stairwell Cleaning", "desc": "Common areas" },
-      "glasreinigung": { "label": "Glass Cleaning", "desc": "Windows & glass surfaces" },
-      "tiefenreinigung": { "label": "Deep Cleaning", "desc": "Thorough base cleaning" },
-      "praxisreinigung": { "label": "Medical Practice Cleaning", "desc": "Doctors' offices & studios" }
+      "haushaltsreinigung":   { "label": "Home Cleaning / Private",         "desc": "Apartments & private homes" },
+      "bueroreinigung":       { "label": "Office Cleaning",                 "desc": "Offices & commercial spaces" },
+      "praxisreinigung":      { "label": "Medical Practice Cleaning",       "desc": "Doctors' offices & studios" },
+      "treppenhausreinigung": { "label": "Stairwell Cleaning",              "desc": "Common areas" },
+      "glasreinigung":        { "label": "Glass Cleaning",                  "desc": "Windows & glass surfaces" },
+      "unterhaltsreinigung":  { "label": "Maintenance Cleaning",            "desc": "Properties & buildings" },
+      "verkaufsflaeche":      { "label": "Retail Space Cleaning",           "desc": "Shops & sales floors" },
+      "bauendreinigung":      { "label": "Post-Construction Cleaning",      "desc": "After renovation & new build" },
+      "grundreinigung":       { "label": "Deep Base Cleaning",              "desc": "Thorough intensive cleaning" },
+      "haushaltsdienste":     { "label": "Household Services",              "desc": "Ironing & laundry care" },
+      "fitnesscenter":        { "label": "Fitness Centre Cleaning",         "desc": "Gyms & wellness studios" },
+      "innenreinigung":       { "label": "Interior Cleaning",               "desc": "Indoor spaces & surfaces" },
+      "entsorgung":           { "label": "Waste Disposal",                  "desc": "Clearance & rubbish removal" }
     }
   },
   "footer": {
@@ -177,6 +182,7 @@
       "title": "What our clients say",
       "rating": "4.9 / 5 – Based on 90+ reviews",
       "viewAll": "View all references",
+      "companyReplyLabel": "Response from D'Namar",
       "items": [
         {
           "name": "Petra M.",
@@ -184,7 +190,8 @@
           "service": "Household Cleaning",
           "rating": 5,
           "text": "D'Namar has been cleaning our apartment for over a year. Always punctual, always thorough – and the limescale in our bathroom is finally gone. Highly recommended!",
-          "date": "February 2025"
+          "date": "February 2025",
+          "company_reply": "Thank you so much, Petra! We're delighted you're satisfied with our service. Limescale protection is our speciality – looking forward to continuing our work together!"
         },
         {
           "name": "Thomas K.",
@@ -192,7 +199,8 @@
           "service": "Office Cleaning",
           "rating": 5,
           "text": "We switched our office (12 employees) to D'Namar. The difference was immediately noticeable. The team works discreetly, efficiently and at fair rates.",
-          "date": "January 2025"
+          "date": "January 2025",
+          "company_reply": "Thank you for your trust, Thomas! Discretion in a business environment is very important to us. Your team is in good hands."
         },
         {
           "name": "Sandra B.",
@@ -200,7 +208,71 @@
           "service": "Move-Out Cleaning",
           "rating": 5,
           "text": "Thanks to the handover guarantee I was relaxed. The property management had not a single complaint – not even about the oven. Absolutely professional and straightforward.",
-          "date": "March 2025"
+          "date": "March 2025",
+          "company_reply": "So glad to hear that! A smooth handover is our goal – happy everything went perfectly."
+        },
+        {
+          "name": "Michael F.",
+          "location": "Riehen, Basel",
+          "service": "Deep Cleaning",
+          "rating": 5,
+          "text": "Professional service from start to finish. The deep cleaning of our house was impressively thorough. Even in corners I had forgotten about, everything shines again. Highly recommended!",
+          "date": "April 2025",
+          "company_reply": ""
+        },
+        {
+          "name": "Anna L.",
+          "location": "Allschwil",
+          "service": "Glass Cleaning",
+          "rating": 5,
+          "text": "Finally streak-free windows! D'Namar cleaned all the windows of our office building and also removed the limescale deposits on the frames. Great work.",
+          "date": "March 2025",
+          "company_reply": "Thank you, Anna! Streak-free windows are our quality promise. Our limescale protection process keeps the shine lasting longer."
+        },
+        {
+          "name": "David R.",
+          "location": "Grossbasel",
+          "service": "Stairwell Cleaning",
+          "rating": 5,
+          "text": "Since D'Namar started maintaining our stairwell, there have been no more tenant complaints. Punctual, reliable and the result always impresses. Top!",
+          "date": "February 2025",
+          "company_reply": ""
+        },
+        {
+          "name": "Maria S.",
+          "location": "Binningen",
+          "service": "Office Cleaning",
+          "rating": 5,
+          "text": "Our practice team is delighted. Cleanliness and hygiene are non-negotiable in a medical practice – D'Namar meets all our requirements reliably and discreetly.",
+          "date": "January 2025",
+          "company_reply": "Thank you, Maria! We take hygiene standards in practices especially seriously. We greatly appreciate the trust your team places in us."
+        },
+        {
+          "name": "Stefan V.",
+          "location": "Birsfelden",
+          "service": "Maintenance Cleaning",
+          "rating": 5,
+          "text": "I manage several properties and D'Namar takes care of all of them regularly. Reliable, affordable and professional – exactly what I was looking for.",
+          "date": "April 2025",
+          "company_reply": ""
+        },
+        {
+          "name": "Laura H.",
+          "location": "Muttenz",
+          "service": "Household Cleaning",
+          "rating": 5,
+          "text": "As a working mother of two, D'Namar is a blessing. The team is friendly, trustworthy and leaves our apartment sparkling every time. Better than anything I had before.",
+          "date": "March 2025",
+          "company_reply": "That is wonderful to hear, Laura! Giving you more time for your family is exactly why we do what we do."
+        },
+        {
+          "name": "Christian W.",
+          "location": "Basel City Centre",
+          "service": "Fitness Centre Cleaning",
+          "rating": 5,
+          "text": "Our fitness studio has been cleaned by D'Namar for 6 months. Members regularly praise the cleanliness. Equipment, changing rooms, showers – always spotless. Highly recommended!",
+          "date": "April 2025",
+          "company_reply": "Many thanks, Christian! Fitness studios have special requirements – we're delighted our work is appreciated by your members."
         }
       ]
     },
@@ -237,8 +309,8 @@
       }
     },
     "faq": {
-      "eyebrow": "FAQ",
-      "title": "Frequently Asked Questions",
+      "eyebrow": "Q&A",
+      "title": "Questions & Answers about our Cleaning Services",
       "moreQuestions": "Have more questions? We are happy to help personally.",
       "askNow": "Ask a question now",
       "items": [

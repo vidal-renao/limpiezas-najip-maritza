@@ -50,14 +50,19 @@
       "es": "ES"
     },
     "services_items": {
-      "haushaltsreinigung": { "label": "Limpieza del hogar", "desc": "Viviendas y apartamentos privados" },
-      "bueroreinigung": { "label": "Limpieza de oficinas", "desc": "Oficinas y locales comerciales" },
-      "umzugsreinigung": { "label": "Limpieza de mudanza", "desc": "Limpieza final con garantía" },
-      "renovationsreinigung": { "label": "Limpieza post-obra", "desc": "Tras reforma y obra nueva" },
-      "treppenhausreinigung": { "label": "Limpieza de escaleras", "desc": "Zonas comunes" },
-      "glasreinigung": { "label": "Limpieza de cristales", "desc": "Ventanas y superficies de vidrio" },
-      "tiefenreinigung": { "label": "Limpieza a fondo", "desc": "Limpieza general exhaustiva" },
-      "praxisreinigung": { "label": "Limpieza de consultorios", "desc": "Consultas médicas y estudios" }
+      "haushaltsreinigung":   { "label": "Limpieza del hogar / Privado",    "desc": "Apartamentos y viviendas privadas" },
+      "bueroreinigung":       { "label": "Limpieza de oficinas",            "desc": "Oficinas y locales comerciales" },
+      "praxisreinigung":      { "label": "Limpieza de consultorios",        "desc": "Consultas médicas y estudios" },
+      "treppenhausreinigung": { "label": "Limpieza de escaleras",           "desc": "Zonas comunes" },
+      "glasreinigung":        { "label": "Limpieza de cristales",           "desc": "Ventanas y superficies de vidrio" },
+      "unterhaltsreinigung":  { "label": "Limpieza de mantenimiento",       "desc": "Fincas y edificios" },
+      "verkaufsflaeche":      { "label": "Limpieza de superficies comerciales", "desc": "Tiendas y zonas de venta" },
+      "bauendreinigung":      { "label": "Limpieza post-obra",              "desc": "Tras reforma y obra nueva" },
+      "grundreinigung":       { "label": "Limpieza a fondo",                "desc": "Limpieza general exhaustiva" },
+      "haushaltsdienste":     { "label": "Servicios domésticos",            "desc": "Planchado y cuidado de ropa" },
+      "fitnesscenter":        { "label": "Limpieza de gimnasios",           "desc": "Estudios deportivos y wellness" },
+      "innenreinigung":       { "label": "Limpieza de interiores",          "desc": "Espacios y superficies interiores" },
+      "entsorgung":           { "label": "Gestión de residuos",             "desc": "Vaciado y eliminación de residuos" }
     }
   },
   "footer": {
@@ -177,6 +182,7 @@
       "title": "Lo que dicen nuestros clientes",
       "rating": "4.9 / 5 – Basado en más de 90 valoraciones",
       "viewAll": "Ver todas las referencias",
+      "companyReplyLabel": "Respuesta de D'Namar",
       "items": [
         {
           "name": "Petra M.",
@@ -184,7 +190,8 @@
           "service": "Limpieza del hogar",
           "rating": 5,
           "text": "D'Namar limpia nuestro apartamento desde hace más de un año. Siempre puntual, siempre minucioso – y la cal en nuestro baño es ya historia. ¡Muy recomendable!",
-          "date": "Febrero 2025"
+          "date": "Febrero 2025",
+          "company_reply": "¡Muchas gracias, Petra! Nos alegra mucho que esté satisfecha con nuestro servicio. La protección antical es nuestra especialidad. ¡Seguimos a su disposición!"
         },
         {
           "name": "Thomas K.",
@@ -192,7 +199,8 @@
           "service": "Limpieza de oficinas",
           "rating": 5,
           "text": "Cambiamos nuestras oficinas (12 empleados) a D'Namar. La diferencia se notó de inmediato. El equipo trabaja de forma discreta, eficiente y a precios justos.",
-          "date": "Enero 2025"
+          "date": "Enero 2025",
+          "company_reply": "¡Gracias por su confianza, Thomas! La discreción en entornos empresariales es muy importante para nosotros. Su equipo está en buenas manos."
         },
         {
           "name": "Sandra B.",
@@ -200,7 +208,71 @@
           "service": "Limpieza de mudanza",
           "rating": 5,
           "text": "Gracias a la garantía de entrega estuve tranquila. La administración no puso ni una sola objeción – ni siquiera al horno. Absolutamente profesional y sin complicaciones.",
-          "date": "Marzo 2025"
+          "date": "Marzo 2025",
+          "company_reply": "¡Nos alegra mucho! Una entrega sin incidencias es nuestro objetivo – encantados de que todo saliera perfecto."
+        },
+        {
+          "name": "Michael F.",
+          "location": "Riehen, Basel",
+          "service": "Limpieza a fondo",
+          "rating": 5,
+          "text": "Servicio profesional de principio a fin. La limpieza a fondo de nuestra casa fue impresionantemente minuciosa. Hasta en rincones olvidados, ahora todo brilla. ¡Muy recomendable!",
+          "date": "Abril 2025",
+          "company_reply": ""
+        },
+        {
+          "name": "Anna L.",
+          "location": "Allschwil",
+          "service": "Limpieza de cristales",
+          "rating": 5,
+          "text": "¡Por fin ventanas sin rayas! D'Namar limpió todas las ventanas de nuestro edificio de oficinas y también eliminó los depósitos de cal en los marcos. Trabajo excelente.",
+          "date": "Marzo 2025",
+          "company_reply": "¡Gracias, Anna! Las ventanas sin rayas son nuestra promesa de calidad. Nuestro proceso antical prolonga el brillo durante más tiempo."
+        },
+        {
+          "name": "David R.",
+          "location": "Grossbasel",
+          "service": "Limpieza de escaleras",
+          "rating": 5,
+          "text": "Desde que D'Namar se ocupa de nuestras escaleras, no hay más quejas de los inquilinos. Puntual, fiable y el resultado siempre convence. ¡Genial!",
+          "date": "Febrero 2025",
+          "company_reply": ""
+        },
+        {
+          "name": "Maria S.",
+          "location": "Binningen",
+          "service": "Limpieza de oficinas",
+          "rating": 5,
+          "text": "Nuestro equipo de consulta está encantado. La limpieza y la higiene son innegociables en una consulta médica – D'Namar cumple todos nuestros requisitos de forma fiable y discreta.",
+          "date": "Enero 2025",
+          "company_reply": "¡Gracias, Maria! Los estándares de higiene en consultas son para nosotros una prioridad. Valoramos enormemente la confianza de su equipo."
+        },
+        {
+          "name": "Stefan V.",
+          "location": "Birsfelden",
+          "service": "Limpieza de mantenimiento",
+          "rating": 5,
+          "text": "Gestiono varias fincas y D'Namar se encarga de todas de forma regular. Fiable, económico y profesional – exactamente lo que buscaba.",
+          "date": "Abril 2025",
+          "company_reply": ""
+        },
+        {
+          "name": "Laura H.",
+          "location": "Muttenz",
+          "service": "Limpieza del hogar",
+          "rating": 5,
+          "text": "Como madre trabajadora con dos hijos, D'Namar es una bendición. El equipo es amable, de confianza y deja nuestro apartamento reluciente cada vez. Lo mejor que he tenido.",
+          "date": "Marzo 2025",
+          "company_reply": "¡Qué bonito leerlo, Laura! Precisamente para eso estamos: para que tenga más tiempo con su familia."
+        },
+        {
+          "name": "Christian W.",
+          "location": "Centro de Basel",
+          "service": "Limpieza de gimnasios",
+          "rating": 5,
+          "text": "Nuestro gimnasio lleva 6 meses siendo limpiado por D'Namar. Los socios elogian la limpieza con regularidad. Máquinas, vestuarios, duchas – siempre impecable. ¡Muy recomendable!",
+          "date": "Abril 2025",
+          "company_reply": "¡Muchas gracias, Christian! Los gimnasios tienen exigencias especiales – nos alegra que nuestro trabajo sea apreciado por sus socios."
         }
       ]
     },
@@ -237,8 +309,8 @@
       }
     },
     "faq": {
-      "eyebrow": "FAQ",
-      "title": "Preguntas frecuentes",
+      "eyebrow": "Preguntas y respuestas",
+      "title": "Preguntas y respuestas sobre nuestros servicios de limpieza",
       "moreQuestions": "¿Tiene más preguntas? Estaremos encantados de ayudarle personalmente.",
       "askNow": "Hacer una pregunta ahora",
       "items": [
