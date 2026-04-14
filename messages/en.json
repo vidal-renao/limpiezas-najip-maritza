@@ -1302,5 +1302,13 @@
     "contact_dpo_title": "Questions About Data Protection",
     "contact_dpo_text": "If you have any questions about data protection, please send us an e-mail or contact the person responsible for data protection listed at the beginning of this privacy policy.",
     "date": "Basel, August 2025"
+  },
+  "cookie": {
+    "title": "This website uses cookies",
+    "desc": "We use necessary cookies to operate this website and analytics cookies (Vercel Analytics) to help us improve our services. You can choose whether to accept only necessary cookies or all cookies.",
+    "accept": "Accept all",
+    "decline": "Necessary only",
+    "privacy": "Privacy Policy",
+    "close": "Close"
   }
 }

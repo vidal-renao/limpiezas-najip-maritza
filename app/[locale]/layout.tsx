@@ -8,6 +8,7 @@ import Navbar from "@/components/Navbar";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 import DraggableFloating from "@/components/ui/DraggableFloating";
+import CookieBanner from "@/components/ui/CookieBanner";
 import AnnouncementBar from "@/components/ui/AnnouncementBar";
 import Image from "next/image";
 import { buildLocalBusinessJsonLd } from "@/content/site.config";
@@ -153,6 +154,9 @@ export default async function LocaleLayout({
           <DraggableFloating storageKey="dnamar-stt-pos" defaultBottom={96} defaultRight={24} zIndex={40}>
             <ScrollToTop />
           </DraggableFloating>
+
+          {/* Cookie consent banner — DSG-compliant, auto-hides after choice */}
+          <CookieBanner />
 
           {/* ── Footer ─────────────────────────────────────────────────────── */}
           <footer className="bg-navy text-white">

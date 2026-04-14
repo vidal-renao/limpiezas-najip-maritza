@@ -558,18 +558,99 @@ export default async function HomePage({
               </Link>
             </div>
 
-            {/* Right: Google Maps embed */}
-            <div className="rounded-2xl overflow-hidden border border-border shadow-md h-72 lg:h-80">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43389.86617043455!2d7.5434566!3d47.5595986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b9a441b50327%3A0x5a336bfe16a3b2a4!2sBasel%2C%20Switzerland!5e0!3m2!1sen!2sch!4v1709900000000"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title={t("districts.mapTitle")}
+            {/* Right: Basel service-area visual — premium placeholder */}
+            <div
+              role="img"
+              aria-label={t("districts.mapTitle")}
+              className="rounded-2xl overflow-hidden border border-border shadow-md h-72 lg:h-80 relative select-none"
+            >
+              {/* Gradient background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#1a2e4a] via-[#1e3a5c] to-[#1a3d2e]" />
+
+              {/* Dot-grid overlay */}
+              <div
+                aria-hidden
+                className="absolute inset-0 opacity-[0.12]"
+                style={{
+                  backgroundImage: "radial-gradient(circle, #4caf82 1px, transparent 1px)",
+                  backgroundSize: "28px 28px",
+                }}
               />
+
+              {/* Soft glow */}
+              <div
+                aria-hidden
+                className="absolute inset-0 opacity-20"
+                style={{
+                  backgroundImage:
+                    "radial-gradient(ellipse 60% 50% at 55% 45%, #4caf82 0%, transparent 70%)",
+                }}
+              />
+
+              {/* Stylised Basel canton SVG */}
+              <svg
+                aria-hidden
+                viewBox="0 0 320 260"
+                className="absolute inset-0 w-full h-full"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                {/* Rhine river */}
+                <path
+                  d="M30 140 Q80 130 130 138 Q170 144 210 132 Q250 120 290 128"
+                  stroke="#4caf82"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  opacity="0.45"
+                />
+                {/* Canton outline — abstract shape */}
+                <path
+                  d="M80 60 L160 45 L240 65 L260 110 L250 160 L210 200 L160 215 L110 200 L70 165 L60 115 Z"
+                  stroke="#4caf82"
+                  strokeWidth="1.5"
+                  strokeDasharray="6 4"
+                  fill="#4caf82"
+                  fillOpacity="0.06"
+                  opacity="0.6"
+                />
+                {/* District grid lines */}
+                <line x1="160" y1="45" x2="160" y2="215" stroke="#4caf82" strokeWidth="0.8" opacity="0.15" strokeDasharray="4 6" />
+                <line x1="60" y1="130" x2="260" y2="130" stroke="#4caf82" strokeWidth="0.8" opacity="0.15" strokeDasharray="4 6" />
+
+                {/* Pin: Basel-Stadt */}
+                <circle cx="155" cy="128" r="5" fill="#4caf82" opacity="0.95" />
+                <circle cx="155" cy="128" r="9" stroke="#4caf82" strokeWidth="1" opacity="0.35" />
+                {/* Pin: Riehen */}
+                <circle cx="200" cy="88" r="3.5" fill="#4caf82" opacity="0.75" />
+                {/* Pin: Allschwil */}
+                <circle cx="100" cy="100" r="3.5" fill="#4caf82" opacity="0.75" />
+                {/* Pin: Gundeldingen */}
+                <circle cx="148" cy="165" r="3.5" fill="#4caf82" opacity="0.75" />
+                {/* Pin: Binningen */}
+                <circle cx="118" cy="155" r="3" fill="#4caf82" opacity="0.60" />
+              </svg>
+
+              {/* District labels */}
+              <div aria-hidden className="absolute inset-0 pointer-events-none">
+                <span className="absolute text-[10px] font-semibold text-brand/80 tracking-wide" style={{ top: "28%", left: "58%" }}>Riehen</span>
+                <span className="absolute text-[10px] font-semibold text-brand/80 tracking-wide" style={{ top: "32%", left: "22%" }}>Allschwil</span>
+                <span className="absolute text-[10px] font-semibold text-brand/80 tracking-wide" style={{ top: "59%", left: "40%" }}>Gundeldingen</span>
+                <span className="absolute text-[10px] font-semibold text-brand/80 tracking-wide" style={{ top: "54%", left: "24%" }}>Binningen</span>
+              </div>
+
+              {/* Info card */}
+              <div className="absolute bottom-4 left-4 right-4">
+                <div className="bg-white/10 backdrop-blur-md rounded-xl px-4 py-3 border border-white/15 flex items-center justify-between">
+                  <div>
+                    <p className="text-white font-bold text-sm leading-tight">Basel &amp; Umgebung</p>
+                    <p className="text-white/55 text-xs mt-0.5">{t("districts.eyebrow")}</p>
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-brand animate-pulse" />
+                    <span className="text-brand text-xs font-semibold">Aktiv</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

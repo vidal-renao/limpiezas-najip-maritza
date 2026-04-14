@@ -1340,5 +1340,13 @@
     "contact_dpo_title": "Preguntas sobre protección de datos",
     "contact_dpo_text": "Si tiene alguna pregunta sobre la protección de datos, envíenos un correo electrónico o contacte directamente con la persona responsable de la protección de datos indicada al principio de esta política de privacidad.",
     "date": "Basilea, agosto de 2025"
+  },
+  "cookie": {
+    "title": "Este sitio usa cookies",
+    "desc": "Utilizamos cookies necesarias para el funcionamiento de este sitio web y cookies de análisis (Vercel Analytics) para mejorar continuamente nuestros servicios. Usted puede elegir si acepta solo las cookies necesarias o todas.",
+    "accept": "Aceptar todas",
+    "decline": "Solo necesarias",
+    "privacy": "Política de privacidad",
+    "close": "Cerrar"
   }
 }

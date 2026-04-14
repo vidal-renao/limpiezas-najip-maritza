@@ -1340,5 +1340,13 @@
     "contact_dpo_title": "Fragen an den Datenschutzbeauftragten",
     "contact_dpo_text": "Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz zu Beginn der Datenschutzerklärung aufgeführten, verantwortlichen Person in unserem Unternehmen.",
     "date": "Basel, August 2025"
+  },
+  "cookie": {
+    "title": "Diese Website verwendet Cookies",
+    "desc": "Wir setzen notwendige Cookies für den Betrieb dieser Website sowie Analyse-Cookies (Vercel Analytics), um unser Angebot kontinuierlich zu verbessern. Sie können selbst entscheiden, ob Sie nur notwendige oder alle Cookies akzeptieren möchten.",
+    "accept": "Alle akzeptieren",
+    "decline": "Nur notwendige",
+    "privacy": "Datenschutzerklärung",
+    "close": "Schließen"
   }
 }
