@@ -25,7 +25,9 @@ const PAGES: Array<{ path: string; changeFrequency: MetadataRoute.Sitemap[number
   { path: "/referenzen",                                 changeFrequency: "monthly", priority: 0.7 },
   { path: "/ueber-uns",                                  changeFrequency: "monthly", priority: 0.7 },
   { path: "/kontakt",                                    changeFrequency: "monthly", priority: 0.7 },
-  { path: "/blog", changeFrequency: "weekly", priority: 0.7 },
+  { path: "/blog",                                       changeFrequency: "weekly",  priority: 0.7 },
+  { path: "/impressum",                                  changeFrequency: "yearly",  priority: 0.3 },
+  { path: "/datenschutz",                                changeFrequency: "yearly",  priority: 0.3 },
   // Blog posts are injected dynamically below from content/blog.config.ts
 ];
 

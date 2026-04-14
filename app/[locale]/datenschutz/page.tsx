@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import {
+  ArrowLeft, ShieldCheck, Lock, Eye,
+  Database, FileText, RefreshCw, MessageSquare,
+} from "lucide-react";
 
 export async function generateMetadata({
   params,
@@ -11,14 +16,9 @@ export async function generateMetadata({
   return {
     title: t("meta_title"),
     description: t("meta_description"),
-    robots: { index: false, follow: false },
+    robots: { index: true, follow: false },
   };
 }
-
-/* ─── Shared layout styles ───────────────────────────────────────────────── */
-const H2 = "text-base font-bold text-navy mb-2 mt-6 first:mt-0";
-const P  = "text-sm leading-relaxed text-foreground/75";
-const LI = "text-sm leading-relaxed text-foreground/75";
 
 export default async function DatenschutzPage({
   params,
@@ -30,115 +30,181 @@ export default async function DatenschutzPage({
   const t = await getTranslations({ locale, namespace: "datenschutz" });
 
   return (
-    <section className="bg-muted min-h-screen py-20 lg:py-28">
-      <div className="section-container max-w-2xl">
-        {/* Header */}
-        <div className="mb-10">
-          <span className="text-brand font-semibold text-sm uppercase tracking-widest">
+    <>
+      {/* ── HERO ─────────────────────────────────────────────────────── */}
+      <section className="relative bg-navy overflow-hidden py-20 lg:py-24">
+        <div
+          aria-hidden
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 80% 30%, #4caf82 0%, transparent 50%), radial-gradient(circle at 10% 70%, #4caf82 0%, transparent 40%)",
+          }}
+        />
+        <div className="section-container relative z-10">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-white/40 hover:text-brand transition-colors text-sm mb-8"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            D&apos;Namar Basel
+          </Link>
+          <div className="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-brand/10 px-4 py-1.5 text-xs font-bold text-brand uppercase tracking-widest mb-5">
+            <ShieldCheck className="w-3.5 h-3.5" />
             {t("badge")}
-          </span>
-          <h1 className="text-4xl font-bold text-navy mt-2">{t("title")}</h1>
-          <p className="text-sm text-foreground/50 mt-2">{t("subtitle")}</p>
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-4">
+            {t("title")}
+          </h1>
+          <p className="text-white/50 text-sm">{t("subtitle")}</p>
         </div>
+        <div
+          aria-hidden
+          className="absolute bottom-0 left-0 right-0 h-12 bg-[#0f1c2e]"
+          style={{ clipPath: "polygon(0 100%, 100% 0, 100% 100%)" }}
+        />
+      </section>
 
-        <div className="bg-white rounded-2xl border border-border p-8 shadow-sm space-y-6 text-sm leading-relaxed text-foreground/75">
+      {/* ── CONTENT ──────────────────────────────────────────────────── */}
+      <section className="bg-[#0f1c2e] py-16 lg:py-20">
+        <div className="section-container">
+          <div className="max-w-3xl mx-auto space-y-8">
 
-          {/* Verantwortliche Stelle */}
-          <div>
-            <h2 className={H2}>{t("responsible_title")}</h2>
-            <p className={P}>
-              {t("responsible_name")}<br />
-              Wiesenstrasse 14<br />
-              4057 Basel<br />
-              E-Mail:{" "}
-              <a href="mailto:info@dnamar.ch" className="text-brand hover:underline">
-                info@dnamar.ch
-              </a>
-              <br />
-              Website: dnamar.ch
-            </p>
+            {/* Responsible party card */}
+            <div className="bg-navy/60 rounded-2xl border border-white/8 p-7 lg:p-9">
+              <div className="flex items-center gap-3 mb-5">
+                <span className="w-9 h-9 rounded-xl bg-brand/15 flex items-center justify-center shrink-0">
+                  <ShieldCheck className="w-4 h-4 text-brand" />
+                </span>
+                <h2 className="text-white font-bold text-lg">{t("responsible_title")}</h2>
+              </div>
+              <dl className="space-y-2.5 text-sm">
+                {([
+                  ["Name",     t("responsible_name")],
+                  ["Adresse",  "Wiesenstrasse 14, 4057 Basel"],
+                  ["E-Mail",   "info@dnamar.ch"],
+                  ["Website",  "dnamar.ch"],
+                ] as [string, string][]).map(([label, value]) => (
+                  <div key={label} className="flex flex-col sm:flex-row sm:gap-4">
+                    <dt className="text-white/40 sm:w-32 shrink-0">{label}</dt>
+                    <dd className="text-white/75">{value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+
+            {/* Sections with icons */}
+            {([
+              {
+                Icon: Database,
+                titleKey: "personal_data_title" as const,
+                body: (
+                  <div className="space-y-3 text-sm text-white/55 leading-relaxed">
+                    <p>{t("personal_data_intro")}</p>
+                    <p className="text-white/40 font-medium">{t("personal_data_reasons_title")}</p>
+                    <ul className="space-y-1.5 pl-2">
+                      {(["personal_data_reason1","personal_data_reason2","personal_data_reason3","personal_data_reason4"] as const).map((k) => (
+                        <li key={k} className="flex items-start gap-2">
+                          <span className="w-1.5 h-1.5 rounded-full bg-brand/50 mt-1.5 shrink-0" />
+                          {t(k)}
+                        </li>
+                      ))}
+                    </ul>
+                    <p>{t("personal_data_note")}</p>
+                  </div>
+                ),
+              },
+              {
+                Icon: RefreshCw,
+                titleKey: "storage_title" as const,
+                body: <p className="text-sm text-white/55 leading-relaxed">{t("storage_text")}</p>,
+              },
+              {
+                Icon: MessageSquare,
+                titleKey: "contact_form_title" as const,
+                body: <p className="text-sm text-white/55 leading-relaxed">{t("contact_form_text")}</p>,
+              },
+              {
+                Icon: FileText,
+                titleKey: "webfonts_title" as const,
+                body: (
+                  <div className="space-y-2 text-sm text-white/55 leading-relaxed">
+                    <p>{t("webfonts_text")}</p>
+                    <p>
+                      {t("webfonts_policy_label")}{" "}
+                      <a
+                        href="https://policies.google.com/privacy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-brand/70 hover:text-brand underline underline-offset-2 transition-colors"
+                      >
+                        policies.google.com/privacy
+                      </a>
+                    </p>
+                  </div>
+                ),
+              },
+              {
+                Icon: Eye,
+                titleKey: "maps_title" as const,
+                body: (
+                  <div className="space-y-2 text-sm text-white/55 leading-relaxed">
+                    <p>{t("maps_text")}</p>
+                    <p>{t("maps_more")}</p>
+                  </div>
+                ),
+              },
+              {
+                Icon: ShieldCheck,
+                titleKey: "rights_title" as const,
+                body: <p className="text-sm text-white/55 leading-relaxed">{t("rights_text")}</p>,
+              },
+              {
+                Icon: Lock,
+                titleKey: "ssl_title" as const,
+                body: (
+                  <div className="space-y-2 text-sm text-white/55 leading-relaxed">
+                    <p className="text-white/40 text-xs font-semibold uppercase tracking-wide">{t("ssl_subtitle")}</p>
+                    <p>{t("ssl_text")}</p>
+                  </div>
+                ),
+              },
+              {
+                Icon: RefreshCw,
+                titleKey: "changes_title" as const,
+                body: <p className="text-sm text-white/55 leading-relaxed">{t("changes_text")}</p>,
+              },
+              {
+                Icon: MessageSquare,
+                titleKey: "contact_dpo_title" as const,
+                body: (
+                  <div className="space-y-2 text-sm text-white/55 leading-relaxed">
+                    <p>{t("contact_dpo_text")}</p>
+                    <a
+                      href="mailto:info@dnamar.ch"
+                      className="inline-flex items-center gap-1.5 text-brand/70 hover:text-brand font-medium transition-colors"
+                    >
+                      info@dnamar.ch
+                    </a>
+                  </div>
+                ),
+              },
+            ]).map(({ Icon, titleKey, body }) => (
+              <div key={titleKey} className="border-t border-white/8 pt-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="w-8 h-8 rounded-lg bg-brand/10 flex items-center justify-center shrink-0">
+                    <Icon className="w-3.5 h-3.5 text-brand/60" />
+                  </span>
+                  <h2 className="text-white font-bold text-base">{t(titleKey)}</h2>
+                </div>
+                {body}
+              </div>
+            ))}
+
+            <p className="text-white/25 text-xs pt-6 border-t border-white/8">{t("date")}</p>
           </div>
-
-          {/* Personenbezogene Daten */}
-          <div>
-            <h2 className={H2}>{t("personal_data_title")}</h2>
-            <p className={P}>{t("personal_data_intro")}</p>
-            <p className="font-semibold text-navy text-sm mt-3 mb-1">
-              {t("personal_data_reasons_title")}
-            </p>
-            <ul className="list-disc list-inside space-y-1">
-              <li className={LI}>{t("personal_data_reason1")}</li>
-              <li className={LI}>{t("personal_data_reason2")}</li>
-              <li className={LI}>{t("personal_data_reason3")}</li>
-              <li className={LI}>{t("personal_data_reason4")}</li>
-            </ul>
-            <p className={`${P} mt-3`}>{t("personal_data_note")}</p>
-          </div>
-
-          {/* Speicherdauer */}
-          <div>
-            <h2 className={H2}>{t("storage_title")}</h2>
-            <p className={P}>{t("storage_text")}</p>
-          </div>
-
-          {/* Kontaktformulare */}
-          <div>
-            <h2 className={H2}>{t("contact_form_title")}</h2>
-            <p className={P}>{t("contact_form_text")}</p>
-          </div>
-
-          {/* Google Webfonts */}
-          <div>
-            <h2 className={H2}>{t("webfonts_title")}</h2>
-            <p className={P}>{t("webfonts_text")}</p>
-            <p className={`${P} mt-2`}>
-              {t("webfonts_policy_label")}{" "}
-              <span className="text-brand">https://www.google.com/policies/privacy/</span>
-            </p>
-          </div>
-
-          {/* Google Maps */}
-          <div>
-            <h2 className={H2}>{t("maps_title")}</h2>
-            <p className={P}>{t("maps_text")}</p>
-            <p className={`${P} mt-2`}>{t("maps_more")}</p>
-          </div>
-
-          {/* Rechte */}
-          <div>
-            <h2 className={H2}>{t("rights_title")}</h2>
-            <p className={P}>{t("rights_text")}</p>
-          </div>
-
-          {/* SSL */}
-          <div>
-            <h2 className={H2}>{t("ssl_title")}</h2>
-            <p className="font-semibold text-navy text-sm mb-1">{t("ssl_subtitle")}</p>
-            <p className={P}>{t("ssl_text")}</p>
-          </div>
-
-          {/* Änderungen */}
-          <div>
-            <h2 className={H2}>{t("changes_title")}</h2>
-            <p className={P}>{t("changes_text")}</p>
-          </div>
-
-          {/* Kontakt Datenschutz */}
-          <div>
-            <h2 className={H2}>{t("contact_dpo_title")}</h2>
-            <p className={P}>
-              {t("contact_dpo_text")}{" "}
-              <a href="mailto:info@dnamar.ch" className="text-brand hover:underline">
-                info@dnamar.ch
-              </a>
-            </p>
-          </div>
-
-          <p className="text-xs text-foreground/40 pt-2 border-t border-border">
-            {t("date")}
-          </p>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
