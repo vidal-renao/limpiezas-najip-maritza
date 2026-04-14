@@ -98,7 +98,7 @@ export default async function UeberUnsPage({
                 <Image src="/images/Maritza-Rodrigeuz-771x1024.jpeg" alt="Maritza Rodriguez – D'Namar" fill className="object-cover object-top" sizes="280px" />
               </div>
               <div className="relative rounded-2xl overflow-hidden aspect-[3/4] shadow-lg mt-8">
-                <Image src="/images/Rasuly-bild.jpeg" alt="Nadjib Rasuly – D'Namar" fill className="object-cover object-top" sizes="280px" />
+                <Image src="/images/nadjib.webp" alt="Nadjib Rasuly – D'Namar" fill className="object-cover object-top" sizes="280px" />
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ export default async function UeberUnsPage({
             <div className="rounded-3xl border border-border bg-muted p-8">
               <div className="flex gap-6 mb-6">
                 <div className="relative w-20 h-20 rounded-2xl overflow-hidden shrink-0">
-                  <Image src="/images/Rasuly-bild.jpeg" alt={t("team.nadjib.name")} fill className="object-cover object-top" sizes="80px" />
+                  <Image src="/images/nadjib.webp" alt={t("team.nadjib.name")} fill className="object-cover object-top" sizes="80px" />
                 </div>
                 <div>
                   <h3 className="font-bold text-navy text-lg">{t("team.nadjib.name")}</h3>

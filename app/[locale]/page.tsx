@@ -145,7 +145,7 @@ export default async function HomePage({
 
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-navy-dark/50 mt-14 self-start h-[calc(100%-56px)]">
                   <Image
-                    src="/images/Rasuly-bild.jpeg"
+                    src="/images/nadjib.webp"
                     alt="Nadjib Rasuly – D'Namar Basel"
                     fill
                     className="object-cover object-top"
@@ -283,7 +283,7 @@ export default async function HomePage({
                 <div className="flex flex-col gap-4">
                   <div className="relative rounded-2xl overflow-hidden aspect-[3/4] shadow-lg">
                     <Image
-                      src="/images/Rasuly-bild.jpeg"
+                      src="/images/nadjib.webp"
                       alt="Nadjib Rasuly, D'Namar Basel"
                       fill
                       className="object-cover object-top"
@@ -338,15 +338,6 @@ export default async function HomePage({
                 </div>
               </div>
 
-              <div className="absolute -top-5 -left-5 lg:-top-6 lg:-left-6 w-16 h-16 rounded-2xl overflow-hidden border-2 border-brand/40 shadow-lg bg-navy">
-                <Image
-                  src="/images/N.jpeg"
-                  alt="D'Namar Logo"
-                  width={64}
-                  height={64}
-                  className="w-full h-full object-cover"
-                />
-              </div>
             </div>
 
             <div>
