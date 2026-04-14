@@ -22,7 +22,7 @@
     "included": "Included",
     "impressum": "Legal Notice",
     "datenschutz": "Privacy Policy",
-    "hours": "Mon–Fri 08–18 · Sat 09–14",
+    "hours": "Mon–Fri 08–12 / 13–18 · Sat–Sun closed",
     "phone": "+41 79 252 75 57",
     "email": "info@dnamar.ch",
     "whatsappWrite": "Write to us on WhatsApp",
@@ -71,7 +71,7 @@
     "company": "Company",
     "contactTitle": "Contact",
     "copyright": "D'Namar Reinigungsdienst Basel.",
-    "hours": "Mon–Fri 08:00–18:00\nSat 09:00–14:00",
+    "hours": "Mon–Fri 08:00–12:00 / 13:00–18:00\nSat–Sun closed",
     "location": "Basel, Canton Basel-City",
     "instagramLabel": "D'Namar on Instagram",
     "facebookLabel": "D'Namar on Facebook",
@@ -358,7 +358,7 @@
       "subtitle": "Contact us today. We will create your personal quote and get back to you within 24 hours.",
       "ctaPrimary": "Request Quote",
       "ctaPhone": "+41 79 252 75 57",
-      "hours": "Mon–Fri 08–18 · Sat 09–14"
+      "hours": "Mon–Fri 08–12 / 13–18 · Sat–Sun closed"
     }
   },
   "haushaltsreinigung": {
@@ -747,7 +747,7 @@
       "badge": "Free & non-binding",
       "title": "Get a price calculated for your property?",
       "subtitle": "Fill in the form – we will get back to you within 24 hours with a tailored quote for your situation.",
-      "hours": "Mon–Fri 08–18 · Sat 09–14 · Response within 24 hours"
+      "hours": "Mon–Fri 08–12 / 13–18 · Sat–Sun closed · Response within 24 hours"
     },
     "sections": {
       "haushaltsreinigung": {
@@ -1016,7 +1016,7 @@
       "guaranteeTitle": "Handover Guarantee",
       "guaranteeText": "For move-out cleaning we return free of charge – until the handover is successfully completed by the management.",
       "callTitle": "Prefer to call directly?",
-      "hours": "Mon–Fri 08–18 · Sat 09–14",
+      "hours": "Mon–Fri 08–12 / 13–18 · Sat–Sun closed",
       "whatsappLink": "Write on WhatsApp"
     },
     "form": {
@@ -1177,7 +1177,7 @@
       "subtitle": "Contact us through your preferred channel. We respond within 2 hours.",
       "whatsapp": { "title": "WhatsApp", "subtitle": "Fastest response · Chat instantly" },
       "phone": { "title": "Call us", "subtitle": "+41 79 252 75 57 · Mon–Sat" },
-      "note": "Mon–Fri 08–18 · Sat 09–14 · Response guaranteed within 2 hours"
+      "note": "Mon–Fri 08–12 / 13–18 · Sat–Sun closed · Response guaranteed within 2 hours"
     }
   },
   "blog": {

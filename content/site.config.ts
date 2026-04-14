@@ -37,8 +37,8 @@ export const siteConfig = {
   },
 
   hours: {
-    weekdays: { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "08:00", closes: "18:00" },
-    saturday: { days: ["Saturday"], opens: "09:00", closes: "14:00" },
+    weekdaysMorning:   { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "08:00", closes: "12:00" },
+    weekdaysAfternoon: { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "13:00", closes: "18:00" },
   },
 
   social: {
@@ -116,15 +116,15 @@ export function buildLocalBusinessJsonLd() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: siteConfig.hours.weekdays.days,
-        opens: siteConfig.hours.weekdays.opens,
-        closes: siteConfig.hours.weekdays.closes,
+        dayOfWeek: siteConfig.hours.weekdaysMorning.days,
+        opens: siteConfig.hours.weekdaysMorning.opens,
+        closes: siteConfig.hours.weekdaysMorning.closes,
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: siteConfig.hours.saturday.days,
-        opens: siteConfig.hours.saturday.opens,
-        closes: siteConfig.hours.saturday.closes,
+        dayOfWeek: siteConfig.hours.weekdaysAfternoon.days,
+        opens: siteConfig.hours.weekdaysAfternoon.opens,
+        closes: siteConfig.hours.weekdaysAfternoon.closes,
       },
     ],
     hasOfferCatalog: {

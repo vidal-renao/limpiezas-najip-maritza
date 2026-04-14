@@ -22,7 +22,7 @@
     "included": "Incluido",
     "impressum": "Aviso legal",
     "datenschutz": "Política de privacidad",
-    "hours": "Lun–Vie 08–18 · Sáb 09–14",
+    "hours": "Lun–Vie 08–12 / 13–18 · Sáb–Dom cerrado",
     "phone": "+41 79 252 75 57",
     "email": "info@dnamar.ch",
     "whatsappWrite": "Escríbanos por WhatsApp",
@@ -71,7 +71,7 @@
     "company": "Empresa",
     "contactTitle": "Contacto",
     "copyright": "D'Namar Reinigungsdienst Basel.",
-    "hours": "Lun–Vie 08:00–18:00\nSáb 09:00–14:00",
+    "hours": "Lun–Vie 08:00–12:00 / 13:00–18:00\nSáb–Dom cerrado",
     "location": "Basel, Cantón de Basilea-Ciudad",
     "instagramLabel": "D'Namar en Instagram",
     "facebookLabel": "D'Namar en Facebook",
@@ -358,7 +358,7 @@
       "subtitle": "Contáctenos hoy mismo. Elaboraremos su presupuesto personalizado y nos pondremos en contacto con usted en 24 horas.",
       "ctaPrimary": "Solicitar presupuesto",
       "ctaPhone": "+41 79 252 75 57",
-      "hours": "Lun–Vie 08–18 · Sáb 09–14"
+      "hours": "Lun–Vie 08–12 / 13–18 · Sáb–Dom cerrado"
     }
   },
   "haushaltsreinigung": {
@@ -747,7 +747,7 @@
       "badge": "Gratuito y sin compromiso",
       "title": "¿Desea calcular el precio para su objeto?",
       "subtitle": "Rellene el formulario – nos pondremos en contacto con usted en 24 horas con un presupuesto personalizado para su situación.",
-      "hours": "Lun–Vie 08–18 · Sáb 09–14 · Respuesta en 24 horas"
+      "hours": "Lun–Vie 08–12 / 13–18 · Sáb–Dom cerrado · Respuesta en 24 horas"
     },
     "sections": {
       "haushaltsreinigung": {
@@ -1016,7 +1016,7 @@
       "guaranteeTitle": "Garantía de entrega",
       "guaranteeText": "En la limpieza de mudanza volvemos gratuitamente – hasta la aprobación exitosa por la administración.",
       "callTitle": "¿Prefiere llamar directamente?",
-      "hours": "Lun–Vie 08–18 · Sáb 09–14",
+      "hours": "Lun–Vie 08–12 / 13–18 · Sáb–Dom cerrado",
       "whatsappLink": "Escribir por WhatsApp"
     },
     "form": {
@@ -1177,7 +1177,7 @@
       "subtitle": "Contáctenos por el canal que prefiera. Respondemos en 2 horas.",
       "whatsapp": { "title": "WhatsApp", "subtitle": "Respuesta más rápida · Chat inmediato" },
       "phone": { "title": "Llamar", "subtitle": "+41 79 252 75 57 · Lun–Sáb" },
-      "note": "Lun–Vie 08–18 · Sáb 09–14 · Respuesta garantizada en 2 horas"
+      "note": "Lun–Vie 08–12 / 13–18 · Sáb–Dom cerrado · Respuesta garantizada en 2 horas"
     }
   },
   "blog": {

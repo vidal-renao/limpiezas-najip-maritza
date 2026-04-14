@@ -22,7 +22,7 @@
     "included": "Inklusive",
     "impressum": "Impressum",
     "datenschutz": "Datenschutz",
-    "hours": "Mo–Fr 08–18 Uhr · Sa 09–14 Uhr",
+    "hours": "Mo–Fr 08–12 / 13–18 Uhr · Sa–So geschlossen",
     "phone": "+41 79 252 75 57",
     "email": "info@dnamar.ch",
     "whatsappWrite": "Jetzt auf WhatsApp schreiben",
@@ -71,7 +71,7 @@
     "company": "Unternehmen",
     "contactTitle": "Kontakt",
     "copyright": "D'Namar Reinigungsdienst Basel.",
-    "hours": "Mo–Fr 08:00–18:00\nSa 09:00–14:00",
+    "hours": "Mo–Fr 08:00–12:00 / 13:00–18:00\nSa–So geschlossen",
     "location": "Basel, Kanton Basel-Stadt",
     "instagramLabel": "D'Namar auf Instagram",
     "facebookLabel": "D'Namar auf Facebook",
@@ -358,7 +358,7 @@
       "subtitle": "Kontaktieren Sie uns noch heute. Wir erstellen Ihre persönliche Offerte und melden uns innerhalb von 24 Stunden bei Ihnen.",
       "ctaPrimary": "Offerte anfordern",
       "ctaPhone": "+41 79 252 75 57",
-      "hours": "Mo–Fr 08–18 Uhr · Sa 09–14 Uhr"
+      "hours": "Mo–Fr 08–12 / 13–18 Uhr · Sa–So geschlossen"
     }
   },
   "haushaltsreinigung": {
@@ -747,7 +747,7 @@
       "badge": "Kostenlos & unverbindlich",
       "title": "Preis für Ihr Objekt berechnen lassen?",
       "subtitle": "Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden mit einer massgeschneiderten Offerte für Ihre Situation.",
-      "hours": "Mo–Fr 08–18 Uhr · Sa 09–14 Uhr · Antwort in 24 Stunden"
+      "hours": "Mo–Fr 08–12 / 13–18 Uhr · Sa–So geschlossen · Antwort in 24 Stunden"
     },
     "sections": {
       "haushaltsreinigung": {
@@ -1016,7 +1016,7 @@
       "guaranteeTitle": "Abgabegarantie",
       "guaranteeText": "Bei der Umzugsreinigung kommen wir kostenlos nochmals – bis zur erfolgreichen Abnahme durch die Verwaltung.",
       "callTitle": "Lieber direkt anrufen?",
-      "hours": "Mo–Fr 08–18 · Sa 09–14 Uhr",
+      "hours": "Mo–Fr 08–12 / 13–18 Uhr · Sa–So geschlossen",
       "whatsappLink": "WhatsApp schreiben"
     },
     "form": {
@@ -1177,7 +1177,7 @@
       "subtitle": "Kontaktieren Sie uns über den Kanal, der Ihnen am liebsten ist. Wir antworten innerhalb von 2 Stunden.",
       "whatsapp": { "title": "WhatsApp", "subtitle": "Schnellste Antwort · Sofort chatten" },
       "phone": { "title": "Anrufen", "subtitle": "+41 79 252 75 57 · Mo–Sa" },
-      "note": "Mo–Fr 08–18 Uhr · Sa 09–14 Uhr · Antwort garantiert innerhalb 2 Stunden"
+      "note": "Mo–Fr 08–12 / 13–18 Uhr · Sa–So geschlossen · Antwort garantiert innerhalb 2 Stunden"
     }
   },
   "blog": {
