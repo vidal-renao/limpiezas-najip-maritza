@@ -366,15 +366,17 @@ export default function Navbar() {
             <Link
               href="/"
               onClick={closeMobile}
-              className="flex flex-col leading-none shrink-0 group select-none"
+              className="flex items-center shrink-0 group select-none px-3 py-1.5 rounded-md border border-navy/10 hover:border-brand/30 bg-white/60 hover:bg-white transition-all duration-300"
               aria-label="D'Namar Reinigungsdienst Basel"
             >
-              <span className="font-black text-[21px] tracking-[-0.03em] text-navy group-hover:text-brand transition-colors duration-300">
-                D<span className="text-brand group-hover:text-navy transition-colors duration-300">&apos;</span>NAMAR
-              </span>
-              <span className="text-foreground/40 text-[8.5px] tracking-[0.24em] uppercase font-semibold mt-[2px]">
-                Reinigungsdienst · Basel
-              </span>
+              <div className="flex flex-col leading-none">
+                <span className="font-extrabold text-[20px] tracking-tighter text-navy group-hover:text-brand transition-colors duration-300">
+                  D<span className="text-brand group-hover:text-navy transition-colors duration-300">&apos;</span>NAMAR
+                </span>
+                <span className="text-foreground/40 text-[8px] tracking-[0.22em] uppercase font-semibold mt-[2px]">
+                  Reinigungsdienst · Basel
+                </span>
+              </div>
             </Link>
 
             {/* ── Desktop nav ── */}

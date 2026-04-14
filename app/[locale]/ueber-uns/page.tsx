@@ -48,7 +48,7 @@ export default async function UeberUnsPage({
         }}
       >
         {/* Dark overlay for legibility */}
-        <div aria-hidden className="absolute inset-0 bg-navy/80" />
+        <div aria-hidden className="absolute inset-0 bg-black/40" />
         {/* Green radial accent */}
         <div aria-hidden className="absolute inset-0 opacity-[0.12]"
           style={{ backgroundImage: "radial-gradient(circle at 70% 30%, #4caf82 0%, transparent 55%)" }} />
