@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ContactForm from "@/components/ContactForm";
+import { Instagram } from "lucide-react";
 
 export async function generateMetadata({
   params,
@@ -58,18 +59,87 @@ export default async function KontaktPage({
                 </ul>
               </div>
 
-              {/* Map */}
-              <div className="rounded-2xl overflow-hidden border border-border">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43389.86617043455!2d7.5434566!3d47.5595986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b9a441b50327%3A0x5a336bfe16a3b2a4!2sBasel%2C%20Switzerland!5e0!3m2!1sen!2sch!4v1709900000000"
-                  width="100%"
-                  height="250"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title={t("mapTitle")}
+              {/* Map — premium Basel visual (Google Maps blocked by CSP frame-src) */}
+              <div
+                role="img"
+                aria-label={t("mapTitle")}
+                className="rounded-2xl overflow-hidden border border-border relative h-[220px] select-none"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-[#1a2e4a] via-[#1e3a5c] to-[#1a3d2e]" />
+                <div
+                  aria-hidden
+                  className="absolute inset-0 opacity-[0.10]"
+                  style={{
+                    backgroundImage: "radial-gradient(circle, #4caf82 1px, transparent 1px)",
+                    backgroundSize: "24px 24px",
+                  }}
                 />
+                <div
+                  aria-hidden
+                  className="absolute inset-0 opacity-20"
+                  style={{
+                    backgroundImage: "radial-gradient(ellipse 55% 45% at 55% 50%, #4caf82 0%, transparent 70%)",
+                  }}
+                />
+                <svg aria-hidden viewBox="0 0 280 220" className="absolute inset-0 w-full h-full" fill="none">
+                  <path d="M25 118 Q70 108 115 116 Q150 122 185 112 Q220 102 255 109"
+                    stroke="#4caf82" strokeWidth="2.5" strokeLinecap="round" opacity="0.4" />
+                  <path d="M68 48 L142 36 L216 54 L232 96 L222 140 L185 172 L142 184 L96 172 L58 140 L50 98 Z"
+                    stroke="#4caf82" strokeWidth="1.5" strokeDasharray="5 4" fill="#4caf82" fillOpacity="0.06" opacity="0.55" />
+                  <line x1="142" y1="36" x2="142" y2="184" stroke="#4caf82" strokeWidth="0.7" opacity="0.12" strokeDasharray="4 6" />
+                  <line x1="50" y1="110" x2="232" y2="110" stroke="#4caf82" strokeWidth="0.7" opacity="0.12" strokeDasharray="4 6" />
+                  <circle cx="136" cy="108" r="5" fill="#4caf82" opacity="0.95" />
+                  <circle cx="136" cy="108" r="9" stroke="#4caf82" strokeWidth="1" opacity="0.30" />
+                  <circle cx="178" cy="72" r="3" fill="#4caf82" opacity="0.70" />
+                  <circle cx="88" cy="84" r="3" fill="#4caf82" opacity="0.70" />
+                  <circle cx="128" cy="142" r="3" fill="#4caf82" opacity="0.65" />
+                </svg>
+                <div aria-hidden className="absolute inset-0 pointer-events-none">
+                  <span className="absolute text-[9px] font-semibold text-brand/75 tracking-wide" style={{ top: "28%", left: "60%" }}>Riehen</span>
+                  <span className="absolute text-[9px] font-semibold text-brand/75 tracking-wide" style={{ top: "33%", left: "22%" }}>Allschwil</span>
+                  <span className="absolute text-[9px] font-semibold text-brand/75 tracking-wide" style={{ top: "60%", left: "38%" }}>Gundeldingen</span>
+                </div>
+                {/* Address card */}
+                <div className="absolute bottom-3 left-3 right-3">
+                  <div className="bg-white/10 backdrop-blur-md rounded-xl px-3.5 py-2.5 border border-white/15 flex items-center gap-3">
+                    <div className="w-7 h-7 rounded-lg bg-brand/20 flex items-center justify-center shrink-0">
+                      <svg className="w-3.5 h-3.5 text-brand" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-white font-semibold text-xs leading-tight">Wiesenstrasse 14</p>
+                      <p className="text-white/55 text-[10px]">4057 Basel, Schweiz</p>
+                    </div>
+                    <span className="ml-auto flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-brand animate-pulse" />
+                      <span className="text-brand text-[10px] font-semibold">Aktiv</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Social */}
+              <div className="rounded-2xl border border-border bg-white p-5">
+                <p className="text-xs text-foreground/50 uppercase tracking-widest mb-3 font-semibold">Social Media</p>
+                <a
+                  href="https://www.instagram.com/dnamar_gmbh?igsh=MW91dmx1Y2FyaGx6NA%3D%3D&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 p-3 rounded-xl border border-border hover:border-[#E1306C]/40 hover:bg-[#E1306C]/5 transition-all group"
+                >
+                  <span className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#f09433] via-[#e6683c] via-[#dc2743] to-[#bc1888] flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                    <Instagram className="w-4 h-4 text-white" />
+                  </span>
+                  <div>
+                    <p className="text-sm font-semibold text-navy">@dnamar_gmbh</p>
+                    <p className="text-xs text-foreground/50">Folgen Sie uns auf Instagram</p>
+                  </div>
+                  <svg className="w-4 h-4 text-foreground/25 ml-auto group-hover:text-[#E1306C] transition-colors" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
             </div>
 

@@ -94,8 +94,8 @@
   },
   "home": {
     "meta": {
-      "title": "Professional Cleaning Service Basel | D'Namar",
-      "description": "D'Namar – your reliable cleaning professionals in Basel. Household, office, move-out and stairwell cleaning with limescale expertise. Free quote within 24 hours."
+      "title": "Professional Cleaning Company Basel | D'Namar GmbH",
+      "description": "D'Namar – Basel's trusted cleaning company (Reinigungsfirma Basel). Office Cleaning, Move-Out Cleaning, Household & Stairwell. Limescale protection experts. Free quote within 24 h."
     },
     "hero": {
       "badge": "Cleaning professionals in Basel since 2015",
@@ -1194,6 +1194,10 @@
     "readMore": "Read more",
     "featuredLabel": "Latest post",
     "moreLabel": "More articles",
+    "upcomingLabel": "Coming soon",
+    "upcomingBadge": "Coming soon",
+    "upcomingDesc": "Exclusive cleaning guides – tailor-made for Basel.",
+    "expertBadge": "Cleaning experts since 2015",
     "cta": {
       "title": "Questions about cleaning in Basel?",
       "subtitle": "We are happy to advise you – free and non-binding."
@@ -1214,6 +1218,23 @@
         "readTime": "7 min."
       }
     },
+    "upcoming": [
+      {
+        "title": "Limescale Protection in Basel: How to Keep Fixtures and Glass Surfaces Clean Long-Term",
+        "excerpt": "Basel tap water is among the hardest in Switzerland. D'Namar explains how professional limescale protection coatings work and why they are worthwhile for every household and business.",
+        "category": "Limescale Protection"
+      },
+      {
+        "title": "Hygiene Standards for Medical Practices in Basel – What a Cleaning Company Must Deliver",
+        "excerpt": "Medical practices are subject to strict cantonal and federal hygiene regulations. Find out what requirements practice cleaning in Basel must meet – and how D'Namar implements these standards.",
+        "category": "Practice Cleaning"
+      },
+      {
+        "title": "Glass Cleaning Basel: Streak-Free Windows Despite Hard Water – Professional Techniques",
+        "excerpt": "Limescale stains on glass fronts are a well-known problem in Basel. D'Namar reveals professional techniques for streak-free results when cleaning windows for private homes and commercial premises.",
+        "category": "Glass Cleaning"
+      }
+    ],
     "blogPost": {
       "backToBlog": "Blog",
       "bueroreinigung": "Office Cleaning",

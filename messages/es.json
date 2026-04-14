@@ -94,8 +94,8 @@
   },
   "home": {
     "meta": {
-      "title": "Servicio de limpieza profesional en Basel | D'Namar",
-      "description": "D'Namar – su servicio de limpieza de confianza en Basel. Limpieza del hogar, oficinas, mudanzas y escaleras con experiencia en cal. Presupuesto gratuito en 24 horas."
+      "title": "Empresa de limpieza profesional en Basel | D'Namar GmbH",
+      "description": "D'Namar – empresa de limpieza (Reinigungsfirma) de confianza en Basel. Limpieza de oficinas, mudanzas, hogares y escaleras con protección anticalizas. Presupuesto gratis en 24 h."
     },
     "hero": {
       "badge": "Profesionales de la limpieza en Basel desde 2015",
@@ -1194,6 +1194,10 @@
     "readMore": "Leer más",
     "featuredLabel": "Artículo destacado",
     "moreLabel": "Más artículos",
+    "upcomingLabel": "Próximamente en el blog",
+    "upcomingBadge": "Próximamente",
+    "upcomingDesc": "Guías exclusivas de limpieza – especialmente para Basel.",
+    "expertBadge": "Expertos en limpieza desde 2015",
     "cta": {
       "title": "¿Preguntas sobre limpieza en Basel?",
       "subtitle": "Estaremos encantados de asesorarle – de forma gratuita y sin compromiso."
@@ -1214,6 +1218,23 @@
         "readTime": "7 min."
       }
     },
+    "upcoming": [
+      {
+        "title": "Protección anticalizas en Basel: cómo proteger grifos y superficies de cristal de forma duradera",
+        "excerpt": "El agua del grifo de Basel es una de las más duras de Suiza. D'Namar explica cómo funcionan los selladores anticalizas profesionales y por qué son rentables para todo hogar y empresa.",
+        "category": "Protección anticalizas"
+      },
+      {
+        "title": "Normas de higiene para consultorios médicos en Basel – qué debe ofrecer una empresa de limpieza",
+        "excerpt": "Los consultorios médicos están sujetos a estrictas normativas de higiene cantonales y federales. Descubra qué requisitos debe cumplir la limpieza de consultorios en Basel y cómo los aplica D'Namar.",
+        "category": "Limpieza de consultorios"
+      },
+      {
+        "title": "Limpieza de cristales en Basel: ventanas sin rayas pese al agua dura – técnicas profesionales",
+        "excerpt": "Las manchas de cal en las fachadas de cristal son un problema habitual en Basel. D'Namar revela las técnicas profesionales para resultados sin rayas en la limpieza de ventanas para particulares y empresas.",
+        "category": "Limpieza de cristales"
+      }
+    ],
     "blogPost": {
       "backToBlog": "Blog",
       "bueroreinigung": "Limpieza de oficinas",

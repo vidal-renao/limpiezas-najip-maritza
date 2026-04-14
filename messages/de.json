@@ -1194,6 +1194,10 @@
     "readMore": "Weiterlesen",
     "featuredLabel": "Aktueller Beitrag",
     "moreLabel": "Weitere Beiträge",
+    "upcomingLabel": "Demnächst im Blog",
+    "upcomingBadge": "Bald verfügbar",
+    "upcomingDesc": "Exklusive Reinigungsratgeber – speziell für Basel.",
+    "expertBadge": "Reinigungsexperten seit 2015",
     "cta": {
       "title": "Fragen zur Reinigung in Basel?",
       "subtitle": "Wir beraten Sie gerne – kostenlos und unverbindlich."
@@ -1214,6 +1218,23 @@
         "readTime": "7 Min."
       }
     },
+    "upcoming": [
+      {
+        "title": "Kalkschutz in Basel: So schützen Sie Armaturen und Glasflächen dauerhaft",
+        "excerpt": "Basler Leitungswasser gehört zu den härtesten der Schweiz. D'Namar erklärt, wie professionelle Kalkschutzversiegelungen funktionieren und warum sie sich für jeden Haushalt und jedes Unternehmen lohnen.",
+        "category": "Kalkschutz"
+      },
+      {
+        "title": "Hygienestandards für Arztpraxen in Basel – was eine Reinigungsfirma leisten muss",
+        "excerpt": "Arztpraxen unterliegen strengen kantonalen und bundesrechtlichen Hygienevorgaben. Erfahren Sie, welche Anforderungen die Praxisreinigung in Basel erfüllen muss – und wie D'Namar diese Standards umsetzt.",
+        "category": "Praxisreinigung"
+      },
+      {
+        "title": "Glasreinigung Basel: Streifenfreie Fenster trotz hartem Wasser – Profi-Techniken",
+        "excerpt": "Kalkflecken auf Glasfronten sind in Basel ein bekanntes Problem. D'Namar verrät professionelle Techniken für streifenfreie Ergebnisse – bei Glasreinigung für Privathaushalte und Gewerbeobjekte.",
+        "category": "Glasreinigung"
+      }
+    ],
     "blogPost": {
       "backToBlog": "Blog",
       "bueroreinigung": "Büroreinigung",

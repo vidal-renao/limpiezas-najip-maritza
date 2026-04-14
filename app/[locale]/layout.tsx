@@ -182,7 +182,7 @@ export default async function LocaleLayout({
                   {/* Social icons */}
                   <div className="flex gap-3">
                     <a
-                      href="https://www.instagram.com/dnamar.basel/"
+                      href="https://www.instagram.com/dnamar_gmbh?igsh=MW91dmx1Y2FyaGx6NA%3D%3D&utm_source=qr"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={t("instagramLabel")}
