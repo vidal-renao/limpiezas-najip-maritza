@@ -344,6 +344,14 @@ export default async function LocaleLayout({
                   >
                     {tCommon("datenschutz")}
                   </a>
+                  <a
+                    href="https://www.local.ch/de/d/basel/4057/reinigungsdienst/d-namar-gmbh-BuWHHPsTLBn"
+                    target="_blank"
+                    rel="noopener noreferrer me"
+                    className="hover:text-brand transition-colors"
+                  >
+                    local.ch
+                  </a>
                   {/* Discrete admin access — not indexed, not advertised */}
                   <a
                     href="/admin/login"

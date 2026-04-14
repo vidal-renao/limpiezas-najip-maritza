@@ -15,8 +15,8 @@ const CSP = [
   "font-src 'self'",
   // Connections: self + Supabase API + Vercel
   "connect-src 'self' https://*.supabase.co https://*.supabase.in https://va.vercel-scripts.com wss://*.supabase.co",
-  // Frames: none
-  "frame-src 'none'",
+  // Frames: Google Maps embeds only
+  "frame-src https://www.google.com https://maps.google.com",
   // Objects: none
   "object-src 'none'",
   // Base URI: self

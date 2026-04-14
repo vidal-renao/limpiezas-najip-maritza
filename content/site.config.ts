@@ -42,7 +42,7 @@ export const siteConfig = {
   },
 
   social: {
-    instagram: "https://www.instagram.com/dnamar.basel/",
+    instagram: "https://www.instagram.com/dnamar_gmbh",
     facebook: "https://www.facebook.com/dnamar.basel/",
     github: "https://github.com/vidal-renao",
   },
