@@ -38,8 +38,19 @@ export default async function UeberUnsPage({
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────────────── */}
-      <section className="relative bg-navy overflow-hidden py-20 lg:py-28">
-        <div aria-hidden className="absolute inset-0 opacity-[0.07]"
+      <section
+        className="relative overflow-hidden py-20 lg:py-28"
+        style={{
+          backgroundImage: "url('/images/fondo.jpg')",
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        {/* Dark overlay for legibility */}
+        <div aria-hidden className="absolute inset-0 bg-navy/80" />
+        {/* Green radial accent */}
+        <div aria-hidden className="absolute inset-0 opacity-[0.12]"
           style={{ backgroundImage: "radial-gradient(circle at 70% 30%, #4caf82 0%, transparent 55%)" }} />
         <div className="section-container relative z-10">
           <div className="max-w-3xl">

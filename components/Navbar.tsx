@@ -4,7 +4,6 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
-import Image from "next/image";
 import {
   ChevronDown,
   Menu,
@@ -363,31 +362,19 @@ export default function Navbar() {
         <div className="section-container">
           <div className="flex items-center justify-between h-16">
 
-            {/* ── Logo (banner style) ── */}
+            {/* ── Wordmark ── */}
             <Link
               href="/"
               onClick={closeMobile}
-              className="flex items-center gap-3 shrink-0 group"
+              className="flex flex-col leading-none shrink-0 group select-none"
               aria-label="D'Namar Reinigungsdienst Basel"
             >
-              <div className="relative w-10 h-10 rounded-xl overflow-hidden shadow-md ring-1 ring-navy/10 group-hover:ring-brand/40 transition-all duration-300 shrink-0">
-                <Image
-                  src="/images/N.jpeg"
-                  alt="D'Namar Logo"
-                  fill
-                  className="object-cover"
-                  sizes="40px"
-                  priority
-                />
-              </div>
-              <div className="flex flex-col leading-none">
-                <span className="text-navy font-extrabold text-[16px] tracking-tight group-hover:text-brand transition-colors duration-300">
-                  D&apos;Namar
-                </span>
-                <span className="text-foreground/45 text-[9px] tracking-[0.2em] uppercase mt-0.5 font-medium">
-                  Reinigungsdienst · Basel
-                </span>
-              </div>
+              <span className="font-black text-[21px] tracking-[-0.03em] text-navy group-hover:text-brand transition-colors duration-300">
+                D<span className="text-brand group-hover:text-navy transition-colors duration-300">&apos;</span>NAMAR
+              </span>
+              <span className="text-foreground/40 text-[8.5px] tracking-[0.24em] uppercase font-semibold mt-[2px]">
+                Reinigungsdienst · Basel
+              </span>
             </Link>
 
             {/* ── Desktop nav ── */}
