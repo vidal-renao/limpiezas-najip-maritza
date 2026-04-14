@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { ArrowRight, Clock, Calendar, BookOpen, Sparkles, Lock } from "lucide-react";
+import { BLOG_POSTS } from "@/content/blog.config";
 
 export async function generateMetadata({
   params,
@@ -24,20 +25,14 @@ export async function generateMetadata({
   };
 }
 
-const POST_SLUGS = [
-  "bueroreinigung-tipps-basel",
-  "umzug-endreinigung-checkliste-basel",
-] as const;
-
-const POST_DATES: Record<string, string> = {
-  "bueroreinigung-tipps-basel":          "2025-03-10",
-  "umzug-endreinigung-checkliste-basel": "2025-02-25",
-};
-
-const POST_IMAGES: Record<string, string> = {
-  "bueroreinigung-tipps-basel":          "/images/Buero-768x512.jpg",
-  "umzug-endreinigung-checkliste-basel": "/images/Wohnungsbau-768x512.jpg",
-};
+// Slugs, dates, and images sourced from content/blog.config.ts
+const POST_IMAGES: Record<string, string> = Object.fromEntries(
+  BLOG_POSTS.map((p) => [p.slug, p.image])
+);
+const POST_DATES: Record<string, string> = Object.fromEntries(
+  BLOG_POSTS.map((p) => [p.slug, p.dateIso])
+);
+const POST_SLUGS = BLOG_POSTS.map((p) => p.slug) as unknown as readonly string[];
 
 const UPCOMING_IMAGES = [
   "/images/Herd-768x512.jpg",

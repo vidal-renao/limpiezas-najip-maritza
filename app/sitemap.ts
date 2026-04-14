@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { BLOG_POSTS } from "@/content/blog.config";
 
 const BASE_URL = "https://dnamar.ch";
 
@@ -24,9 +25,8 @@ const PAGES: Array<{ path: string; changeFrequency: MetadataRoute.Sitemap[number
   { path: "/referenzen",                                 changeFrequency: "monthly", priority: 0.7 },
   { path: "/ueber-uns",                                  changeFrequency: "monthly", priority: 0.7 },
   { path: "/kontakt",                                    changeFrequency: "monthly", priority: 0.7 },
-  { path: "/blog",                                       changeFrequency: "weekly",  priority: 0.7 },
-  { path: "/blog/bueroreinigung-tipps-basel",            changeFrequency: "yearly",  priority: 0.7, lastModified: new Date("2025-03-10") },
-  { path: "/blog/umzug-endreinigung-checkliste-basel",   changeFrequency: "yearly",  priority: 0.7, lastModified: new Date("2025-02-25") },
+  { path: "/blog", changeFrequency: "weekly", priority: 0.7 },
+  // Blog posts are injected dynamically below from content/blog.config.ts
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -39,8 +39,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${BASE_URL}${prefix}${page.path}`,
         lastModified: page.lastModified ?? now,
         changeFrequency: page.changeFrequency,
-        // de pages keep original priority; en/es pages get a slight reduction
         priority: prefix === "" ? page.priority : Math.min(page.priority, localePriorityMod),
+      });
+    }
+    // Dynamic blog posts — add entry in content/blog.config.ts to register new posts
+    for (const post of BLOG_POSTS) {
+      entries.push({
+        url: `${BASE_URL}${prefix}/blog/${post.slug}`,
+        lastModified: new Date(post.dateIso),
+        changeFrequency: "yearly",
+        priority: prefix === "" ? 0.75 : Math.min(0.75, localePriorityMod),
       });
     }
   }
