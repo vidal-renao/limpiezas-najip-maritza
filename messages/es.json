@@ -1248,6 +1248,13 @@
       "ctaUmzug": {
         "title": "Limpieza de mudanza con garantía de entrega",
         "subtitle": "Presupuesto gratuito – respuesta en 24 horas."
+      },
+      "comingSoon": {
+        "badge": "Próximamente",
+        "heading": "Este artículo está en preparación",
+        "sub": "Estamos trabajando en esta guía. Vuelva pronto o contáctenos directamente.",
+        "cta": "Contactar ahora",
+        "backLabel": "Volver al Blog"
       }
     }
   },

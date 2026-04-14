@@ -1248,6 +1248,13 @@
       "ctaUmzug": {
         "title": "Umzugsreinigung mit Abgabegarantie",
         "subtitle": "Kostenlose Offerte – Antwort in 24 Stunden."
+      },
+      "comingSoon": {
+        "badge": "Bald verfügbar",
+        "heading": "Dieser Artikel ist in Vorbereitung",
+        "sub": "Wir arbeiten gerade an diesem Ratgeber. Schauen Sie bald wieder vorbei oder kontaktieren Sie uns direkt.",
+        "cta": "Jetzt Kontakt aufnehmen",
+        "backLabel": "Zurück zum Blog"
       }
     }
   },

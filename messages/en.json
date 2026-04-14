@@ -1248,6 +1248,13 @@
       "ctaUmzug": {
         "title": "Move-out cleaning with handover guarantee",
         "subtitle": "Free quote – response within 24 hours."
+      },
+      "comingSoon": {
+        "badge": "Coming soon",
+        "heading": "This article is being prepared",
+        "sub": "We are currently working on this guide. Check back soon or contact us directly.",
+        "cta": "Get in touch now",
+        "backLabel": "Back to Blog"
       }
     }
   },
