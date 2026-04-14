@@ -38,6 +38,7 @@ export async function generateMetadata({
     alternates: {
       canonical: locale === "de" ? base : `${base}/${locale}`,
       languages: {
+        "x-default": base,
         de: base,
         en: `${base}/en`,
         es: `${base}/es`,
@@ -343,14 +344,6 @@ export default async function LocaleLayout({
                     className="hover:text-brand transition-colors"
                   >
                     {tCommon("datenschutz")}
-                  </a>
-                  <a
-                    href="https://www.local.ch/de/d/basel/4057/reinigungsdienst/d-namar-gmbh-BuWHHPsTLBn"
-                    target="_blank"
-                    rel="noopener noreferrer me"
-                    className="hover:text-brand transition-colors"
-                  >
-                    local.ch
                   </a>
                   {/* Discrete admin access — not indexed, not advertised */}
                   <a
