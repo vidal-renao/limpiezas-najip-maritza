@@ -164,7 +164,7 @@ function NavLink({
     <Link
       href={href}
       onClick={onClick}
-      className="relative group inline-flex items-center px-1 py-1 text-sm font-medium text-navy/75 hover:text-navy transition-colors duration-300"
+      className="relative group inline-flex items-center px-2.5 py-1 text-sm font-medium tracking-wide text-navy/75 hover:text-navy transition-colors duration-300"
     >
       {label}
       <span
@@ -206,7 +206,7 @@ function ServicesDropdown({
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="relative group inline-flex items-center gap-1 px-1 py-1 text-sm font-medium text-navy/75 hover:text-navy transition-colors duration-300"
+        className="relative group inline-flex items-center gap-1 px-2.5 py-1 text-sm font-medium tracking-wide text-navy/75 hover:text-navy transition-colors duration-300"
         aria-expanded={open}
         aria-haspopup="true"
       >
@@ -366,7 +366,7 @@ export default function Navbar() {
             <Link
               href="/"
               onClick={closeMobile}
-              className="flex items-center shrink-0 group select-none px-3 py-1.5 rounded-md border border-navy/10 hover:border-brand/30 bg-white/60 hover:bg-white transition-all duration-300"
+              className="flex items-center shrink-0 group select-none px-4 py-2 rounded-md border border-navy/12 hover:border-brand/35 bg-transparent hover:bg-white/25 transition-all duration-300"
               aria-label="D'Namar Reinigungsdienst Basel"
             >
               <div className="flex flex-col leading-none">

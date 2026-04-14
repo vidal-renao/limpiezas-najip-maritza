@@ -6,6 +6,7 @@ import TrackedLink from "@/components/ui/TrackedLink";
 import ServiceSlider from "@/components/ui/ServiceSlider";
 import FaqAccordion from "@/components/ui/FaqAccordion";
 import GallerySlider from "@/components/ui/GallerySlider";
+import BaselServiceMap from "@/components/BaselServiceMap";
 import {
   ShieldCheck,
   Clock,
@@ -530,7 +531,7 @@ export default async function HomePage({
       </section>
 
       {/* ── DISTRICT COVERAGE ─────────────────────────────────────────────── */}
-      <section className="bg-white py-16 lg:py-20 border-y border-border" aria-label="Service area">
+      <section className="bg-navy py-16 lg:py-20" aria-label="Service area">
         <div className="section-container">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
@@ -539,14 +540,14 @@ export default async function HomePage({
               <span className="text-brand font-semibold text-sm uppercase tracking-widest">
                 {t("districts.eyebrow")}
               </span>
-              <h2 className="mt-2 text-2xl sm:text-3xl font-bold text-navy mb-3">
+              <h2 className="mt-2 text-2xl sm:text-3xl font-bold text-white mb-3">
                 {t("districts.title")}
               </h2>
-              <p className="text-foreground/60 text-sm mb-7">{t("districts.subtitle")}</p>
+              <p className="text-white/55 text-sm mb-7">{t("districts.subtitle")}</p>
 
               <div className="flex flex-wrap gap-2.5 mb-7">
                 {districts.map((d) => (
-                  <span key={d} className="inline-flex items-center gap-1.5 rounded-full border border-border bg-muted px-3.5 py-1.5 text-sm text-foreground/70 font-medium hover:border-brand/40 hover:text-navy transition-colors">
+                  <span key={d} className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/8 px-3.5 py-1.5 text-sm text-white/65 font-medium hover:border-brand/50 hover:text-white transition-colors">
                     <MapPin className="w-3.5 h-3.5 text-brand shrink-0" />
                     {d}
                   </span>
@@ -558,21 +559,8 @@ export default async function HomePage({
               </Link>
             </div>
 
-            {/* Right: Basel service-area map */}
-            <div
-              className="rounded-2xl overflow-hidden border border-border shadow-md h-72 lg:h-80 relative"
-            >
-              <iframe
-                src="https://maps.google.com/maps?q=Wiesenstrasse+14,+4057+Basel,+Schweiz&t=m&z=13&output=embed&iwloc=near"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="D'Namar GmbH Einsatzgebiet Basel"
-              />
-            </div>
+            {/* Right: Basel service-area SVG map */}
+            <BaselServiceMap />
           </div>
         </div>
       </section>
