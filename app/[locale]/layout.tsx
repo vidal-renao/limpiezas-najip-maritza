@@ -317,14 +317,13 @@ export default async function LocaleLayout({
                   <p>© {new Date().getFullYear()} D&apos;Namar Reinigungsdienst Basel. {tCommon("allRightsReserved")}.</p>
                   <span className="hidden sm:inline text-white/20">·</span>
                   <p>
-                    {tCommon("madeBy")}{" "}
                     <a
-                      href="https://github.com/vidal-renao"
+                      href="https://vidal-pro-portfolio.vercel.app"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-brand/70 hover:text-brand transition-colors font-medium"
                     >
-                      VIDAL ECOSYSTEM
+                      Digital Transformation by VIDAL ECOSYSTEM
                     </a>
                   </p>
                 </div>
