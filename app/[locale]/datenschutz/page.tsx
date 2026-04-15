@@ -146,6 +146,11 @@ export default async function DatenschutzPage({
               },
               {
                 Icon: Eye,
+                titleKey: "analytics_title" as const,
+                body: <p className="text-sm text-white/55 leading-relaxed">{t("analytics_text")}</p>,
+              },
+              {
+                Icon: Eye,
                 titleKey: "maps_title" as const,
                 body: (
                   <div className="space-y-2 text-sm text-white/55 leading-relaxed">

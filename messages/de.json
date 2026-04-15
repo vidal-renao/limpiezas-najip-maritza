@@ -1337,7 +1337,7 @@
     "meta_description": "Datenschutzerklärung der D'Namar GmbH Basel gemäss Schweizer Datenschutzrecht.",
     "badge": "Rechtliches",
     "title": "Datenschutzerklärung",
-    "subtitle": "Stand: August 2025",
+    "subtitle": "Stand: April 2026",
     "responsible_title": "Verantwortliche Stelle",
     "responsible_name": "Nadjib Rasuly",
     "personal_data_title": "Personenbezogene Daten",
@@ -1367,7 +1367,9 @@
     "changes_text": "Wir können diese Datenschutzerklärung jederzeit ohne Vorankündigung anpassen. Es gilt die jeweils aktuelle, auf unserer Website publizierte Fassung.",
     "contact_dpo_title": "Fragen an den Datenschutzbeauftragten",
     "contact_dpo_text": "Wenn Sie Fragen zum Datenschutz haben, schreiben Sie uns bitte eine E-Mail oder wenden Sie sich direkt an die für den Datenschutz zu Beginn der Datenschutzerklärung aufgeführten, verantwortlichen Person in unserem Unternehmen.",
-    "date": "Basel, August 2025"
+    "analytics_title": "Vercel Analytics",
+    "analytics_text": "Diese Website verwendet Vercel Analytics, einen Analysedienst der Vercel Inc. (440 N Barranca Ave #4133, Covina, CA 91723, USA). Der Dienst erfasst anonymisierte Nutzungsdaten (Seitenaufrufe, Herkunftsland, verwendetes Gerät) ohne persönliche Identifizierung. Es werden keine Cookies gesetzt. Die Daten werden auf Servern von Vercel verarbeitet und nach 90 Tagen gelöscht. Rechtsgrundlage ist Art. 31 DSG (berechtigtes Interesse an der Optimierung des Webauftritts). Weitere Informationen: vercel.com/legal/privacy-policy",
+    "date": "Basel, April 2026"
   },
   "cookie": {
     "title": "Diese Website verwendet Cookies",

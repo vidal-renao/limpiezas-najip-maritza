@@ -1337,7 +1337,7 @@
     "meta_description": "Política de privacidad de D'Namar GmbH Basilea conforme a la legislación suiza de protección de datos.",
     "badge": "Legal",
     "title": "Política de Privacidad",
-    "subtitle": "A partir de agosto de 2025",
+    "subtitle": "A partir de abril de 2026",
     "responsible_title": "Responsable del tratamiento",
     "responsible_name": "Nadjib Rasuly",
     "personal_data_title": "Datos personales",
@@ -1367,7 +1367,9 @@
     "changes_text": "Podemos actualizar esta política de privacidad en cualquier momento sin previo aviso. Se aplicará la versión vigente publicada en nuestro sitio web.",
     "contact_dpo_title": "Preguntas sobre protección de datos",
     "contact_dpo_text": "Si tiene alguna pregunta sobre la protección de datos, envíenos un correo electrónico o contacte directamente con la persona responsable de la protección de datos indicada al principio de esta política de privacidad.",
-    "date": "Basilea, agosto de 2025"
+    "analytics_title": "Vercel Analytics",
+    "analytics_text": "Este sitio web utiliza Vercel Analytics, un servicio de análisis de Vercel Inc. (440 N Barranca Ave #4133, Covina, CA 91723, EE.UU.). El servicio recopila datos de uso anonimizados (páginas vistas, país de origen, tipo de dispositivo) sin identificación personal. No se establecen cookies. Los datos se procesan en servidores de Vercel y se eliminan tras 90 días. La base legal es el Art. 31 DSG (interés legítimo en la optimización del sitio web). Más información: vercel.com/legal/privacy-policy",
+    "date": "Basilea, abril de 2026"
   },
   "cookie": {
     "title": "Este sitio usa cookies",
