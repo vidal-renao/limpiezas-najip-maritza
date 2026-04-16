@@ -1,72 +1,92 @@
-# D'NAMAR BASEL - Project Manual
+# VIDAL ECOSYSTEM — MASTER ENGINEERING STANDARD
 
-## 🤖 Role & Persona
-Act as a Senior Fullstack Developer and Local SEO Expert. Your mission is to build the premier cleaning service website for Basel, Switzerland.
+## IDENTIDAD
+**Vidal Reñao** — Senior Engineer & AI-Powered SaaS Architect  
+Ubicación: Basel, Switzerland · Mercado objetivo: Swiss & DACH SMEs  
+Especialización: AI-Powered SaaS Infrastructure · Swiss DSG/nDSG Compliance · Microsoft 365 Enterprise
 
-## 🛠 Tech Stack
-- **Framework:** Next.js 16 (App Router)
-- **Styling:** Tailwind CSS 4 (Colors: Navy #1a2e4a, Green #4caf82)
-- **Icons:** Lucide-react
-- **Language:** UI in High German (Hochdeutsch), Code/Comments in English.
+## STACK GLOBAL
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 15+ (App Router, RSC) |
+| Language | TypeScript strict mode |
+| Database | Supabase (PostgreSQL + RLS) |
+| Auth | Supabase Auth + Entra ID (enterprise) |
+| AI | Claude Sonnet 4.6 (Anthropic) |
+| Deployment | Vercel |
+| i18n | next-intl (ES / DE / EN) |
+| Styling | Tailwind CSS v4 |
+| Animation | Framer Motion 12 |
 
-## 📁 Assets & Images (Local Path: /public/images/)
-Use these exact filenames for components:
-- **Logo:** `N.jpeg`
-- **Team:** `Maritza-Rodrigeuz-771x1024.jpeg`, `Rasuly-bild.jpeg`
-- **Services:** - `Buero-768x512.jpg` (Offices)
-  - `Boden-wischen-768x512.jpg` (Floors)
-  - `Fenster-blauer-Himmel-768x512.jpg` (Windows/Glass)
-  - `Gewerberaum-768x512.jpg` (Commercial)
-  - `Herd-768x512.jpg` (Kitchen/Detail)
-  - `Treppe-Vorraum-768x512.jpg` (Staircases)
+## COMANDOS (TRIGGERS)
+| Comando | Acción |
+|---|---|
+| `/ghost` | Tono ejecutivo / humano — para comunicaciones cliente |
+| `/uda` | Análisis raíz + arquitectura: leer código → diagnosticar → proponer |
+| `/ooda` | Guía técnica paso a paso — orientada a implementación |
+| `L99` | Modo experto senior: sin simplificaciones, edge-cases incluidos |
+| `/godmode` | Profundidad máxima — arquitectura, trade-offs, alternativas |
+| `/audit` | Auditoría de seguridad: OWASP Top 10, RLS, secrets, injection |
 
-## 🇨🇭 Basel Context & SEO
-- **Location:** Basel city and surroundings (Gundeldingen, St. Alban, Riehen, Allschwil).
-- **USP:** Experts in "Kalkschutz" (calcium/limescale protection) due to Basel's hard water.
-- **Tone:** Professional, trustworthy, Swiss-quality focused.
+## REGLAS DE EJECUCIÓN (NO NEGOCIABLES)
+1. **Sin relleno** — directo a la solución. Cero "analizando...", "explorando...", "perfecto!".
+2. **Clean Architecture**: separación de capas, single responsibility, dependency inversion.
+3. **Tipado estricto**: sin `any`, sin `as unknown`, interfaces > types para contratos públicos.
+4. **SOLID en todo**: especialmente Open/Closed en features IA y Single Responsibility en Server Actions.
+5. **Docs estándar suizo**: Mermaid (arquitectura), Shields.io (badges), ADRs (decisiones), SEO estructurado.
+6. **Autonomía**: actualizar README al detectar cambios en APIs, Schema o variables de entorno.
+7. **Seguridad primero**: validar en boundaries (input usuario, APIs externas). No validar código interno.
+8. **No over-engineering**: 0 abstracciones especulativas. Solo la complejidad que la tarea requiere.
 
-## 📜 Development Rules
-1. **DRY Principle:** Create reusable components in `/components/ui/`.
-2. **SEO First:** Every page must have a unique Metadata object and JSON-LD for LocalBusiness.
-3. **Responsive:** Mobile-first design is mandatory.
-4. **Build Check:** Always run `npm run build` after major changes to ensure zero TypeScript errors.
+## COMPLIANCE SWISS DSG / nDSG
+- **RLS obligatorio** en todas las tablas Supabase con datos de usuario
+- **Audit logs inmutables** para operaciones críticas (INSERT-only, sin UPDATE/DELETE)
+- **PII Detection** antes de persistir datos sensibles — usar Claude API si aplica
+- **Retención definida** por proyecto — documentar en ADR
+- **Sin transferencia de datos** fuera de jurisdicción suiza sin consentimiento explícito
+- **Modelo de amenazas** documentado en proyectos con datos de terceros
 
-## 🛠 Advanced Skills & Agent Protocols
+## ARQUITECTURA DE REFERENCIA
+```
+app/
+├── [locale]/           ← next-intl routing
+│   ├── (auth)/         ← auth group
+│   ├── (dashboard)/    ← protected routes
+│   └── layout.tsx      ← locale metadata + OG
+├── api/                ← Route Handlers (edge-compatible)
+│   └── webhooks/       ← external integrations
+components/
+├── ui/                 ← primitives (Button, Card, Input)
+├── sections/           ← page sections (no business logic)
+└── features/           ← domain components con lógica
+lib/
+├── supabase/           ← client + server + middleware
+├── ai/                 ← Claude API wrappers
+└── validations/        ← Zod schemas (single source of truth)
+middleware.ts           ← next-intl + Supabase session refresh
+```
 
-### 🎨 Skill: UI_Refiner (Swiss Aesthetic & UX)
-- **Objective:** Ensure pixel-perfect, clean, and trustworthy design.
-- **Protocol:** - Use generous whitespace (Swiss style).
-  - Apply `rounded-2xl` for main cards and `rounded-full` for badges/buttons.
-  - Interactive elements MUST have subtle hover states (`hover:scale-[1.02]` or `hover:shadow-lg`).
-  - Colors: Primarily Navy (#1a2e4a) for text/headings, White for backgrounds, Green (#4caf82) for CTAs and success signals.
+## ESTÁNDARES UI/UX
+- **Dark mode nativo**: background `#060606`, glassmorphism con `rgba(255,255,255,0.04)`
+- **Grid system**: max-w-6xl, px-6, gap-5/gap-6
+- **Animaciones**: Framer Motion `initial/animate/transition` — `once: true` en scroll triggers
+- **Tipografía**: Geist Sans variable, tracking-tight en headings, text-white/50 para muted
+- **Badges Shields.io**: stack, compliance, deployment status en READMEs
+- **Diagramas Mermaid**: arquitectura, flujos de datos, ERD en docs/
 
-### 🔍 Skill: SEO_Architect (Basel Local Authority)
-- **Objective:** Dominate the Basel cleaning market on Google.
-- **Protocol:** - Every new page MUST include a `LocalBusiness` or `Service` JSON-LD Schema.
-  - Images MUST have descriptive ALT text in German including the neighborhood (e.g., "Büroreinigung in Basel Gundeldingen").
-  - Keywords to weave naturally: *Reinigung Basel*, *Putzfrau Basel*, *Umzugsreinigung*.
-  - Strategic mention of **Kalkschutz** in every service involving water (Glass, Bathrooms, Kitchens).
+## GESTIÓN DEL ECOSISTEMA
+- Al entrar en un subproyecto: leer su `README.md` y estructura antes de actuar
+- Mantener siempre los estándares globales — el contexto específico nunca los anula
+- Propagar cambios de estándar al master (`VIDAL ECOSYSTEM/CLAUDE.md`) primero, luego a subproyectos
+- Cada proyecto tiene su propio ADR para decisiones arquitectónicas locales
 
-### 🛡️ Skill: Quality_Guard (Technical Excellence)
-- **Objective:** Zero-error production code.
-- **Protocol:**
-  - **No `any`:** Strict TypeScript typing is mandatory.
-  - **Performance:** Use `next/image` for all assets and `next/link` for internal navigation.
-  - **Build First:** Run `npm run build` after every structural change to the `/app` directory.
-  - **Mobile-First:** Verify responsiveness for iPhone and Android screens before marking a task as done.
-
-### ✍️ Skill: Swiss_Copywriter (Tone & Language)
-- **Objective:** Professional, close, and reliable communication.
-- **Protocol:**
-  - Use **High German (Hochdeutsch)**, not Swiss German (Schwiizertüütsch), unless specifically asked.
-  - Address the user as **"Sie"** (formal) to maintain Swiss professional standards.
-  - Focus on benefits: "Time-saving", "Value preservation of property", "Eco-friendly products".
-
-  ### 🧐 Skill: Auditor_Agente (Final Quality Control)
-- **Objective:** Critical review of all outputs to ensure they meet "Swiss Elite" standards.
-- **Protocol:**
-  - **SEO Check:** Verify H1 presence, unique meta-descriptions, and Basel-specific keywords.
-  - **Content Check:** Ensure the "Sie" form is used and "Kalkschutz" is mentioned where relevant.
-  - **Technical Check:** Run a silent `npm run build` and check for any console warnings or hydration errors.
-  - **Visual Check:** Verify that colors Navy (#1a2e4a) and Green (#4caf82) are the only brand accents used.
-  - **Asset Check:** Ensure all images use the exact paths from `/public/images/` and have ALT texts.
+## PROYECTOS ACTIVOS (Abril 2026)
+| Proyecto | Estado | Stack destacado |
+|---|---|---|
+| `limpiezas-najip-maritza` | Producción (dnamar.ch) | Next.js 16, Tailwind 4, Resend |
+| `invoice-auto` | Avanzado | Claude Vision AI, Supabase, PWA |
+| `cv-platform` | Production-ready | Node.js/Express, PostgreSQL, Twilio |
+| `matchpoint-ai` | Fase 3 MVP | Claude Sonnet 4.6, 4D matching |
+| `vidal-pro-portfolio` | Publicado | Next.js 16, next-intl, Framer Motion |
+| `Ticket System` | En desarrollo | Next.js 15, AI Triaging, DSG |
+| `vidal-standards` | Referencia | Este repositorio |
