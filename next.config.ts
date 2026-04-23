@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
+import path from "path";
 
 const withNextIntl = createNextIntlPlugin();
 
@@ -38,12 +39,30 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Fix Turbopack CSS resolver escaping project boundary in workspaces without root package.json
+  turbopack: {
+    resolveAlias: {
+      tailwindcss: path.resolve(__dirname, "node_modules/tailwindcss"),
+    },
+  },
   async headers() {
     return [
       {
         source: "/(.*)",
         headers: securityHeaders,
       },
+    ];
+  },
+  async redirects() {
+    return [
+      { source: "/blog/:path*",    destination: "/",         permanent: true },
+      { source: "/de/blog/:path*", destination: "/",         permanent: true },
+      { source: "/en/blog/:path*", destination: "/en",       permanent: true },
+      { source: "/es/blog/:path*", destination: "/es",       permanent: true },
+      { source: "/preise",         destination: "/anfrage",  permanent: true },
+      { source: "/de/preise",      destination: "/anfrage",  permanent: true },
+      { source: "/en/preise",      destination: "/en/anfrage", permanent: true },
+      { source: "/es/preise",      destination: "/es/anfrage", permanent: true },
     ];
   },
 };
