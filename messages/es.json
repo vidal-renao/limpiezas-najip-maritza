@@ -62,17 +62,20 @@
       "haushaltsdienste":     { "label": "Servicios domésticos",            "desc": "Planchado y cuidado de ropa" },
       "fitnesscenter":        { "label": "Limpieza de gimnasios",           "desc": "Estudios deportivos y wellness" },
       "innenreinigung":       { "label": "Limpieza de interiores",          "desc": "Espacios y superficies interiores" },
-      "entsorgung":           { "label": "Gestión de residuos",             "desc": "Vaciado y eliminación de residuos" }
+      "entsorgung":           { "label": "Gestión de residuos",             "desc": "Vaciado y eliminación de residuos" },
+      "umzugsreinigung":      { "label": "Limpieza de mudanza",             "desc": "Limpieza profunda para entrega de llaves." },
+      "renovationsreinigung": { "label": "Limpieza de reforma",             "desc": "Eliminación de escombros y polvo post-obra." },
+      "tiefenreinigung":      { "label": "Limpieza profunda",               "desc": "Desinfección total de superficies y áreas difíciles." }
     }
   },
   "footer": {
-    "tagline": "Su servicio de limpieza profesional en Basel – para hogares y empresas en todo el cantón.",
+    "tagline": "Su servicio de limpieza profesional en la región de Basilea – para hogares y empresas.",
     "services": "Servicios",
     "company": "Empresa",
     "contactTitle": "Contacto",
     "copyright": "D'Namar Reinigungsdienst Basel.",
     "hours": "Lun–Vie 08:00–12:00 / 13:00–18:00\nSáb–Dom cerrado",
-    "location": "Basel, Cantón de Basilea-Ciudad",
+    "location": "Región de Basilea, Suiza",
     "instagramLabel": "D'Namar en Instagram",
     "facebookLabel": "D'Namar en Facebook",
     "whatsappLabel": "D'Namar en WhatsApp",
@@ -81,13 +84,11 @@
       "bueroreinigung": "Limpieza de oficinas",
       "umzugsreinigung": "Limpieza de mudanza",
       "glasreinigung": "Limpieza de cristales",
-      "treppenhausreinigung": "Limpieza de escaleras",
-      "preise": "Precios"
+      "treppenhausreinigung": "Limpieza de escaleras"
     },
     "company_items": {
       "ueber_uns": "Sobre nosotros",
       "referenzen": "Referencias",
-      "blog": "Blog",
       "offerte": "Solicitar presupuesto",
       "kontakt": "Contacto"
     }
@@ -128,6 +129,17 @@
       "title": "Nuestros servicios de limpieza",
       "subtitle": "Desde la limpieza de mantenimiento semanal hasta la limpieza final con garantía de entrega – soluciones a medida para todo Basel.",
       "cta": "Solicitar presupuesto ahora"
+    },
+    "vertrauen": {
+      "eyebrow": "Calidad & Confianza",
+      "title": "Su socio de limpieza de confianza en Basilea",
+      "subtitle": "D'Namar Reinigungsdienst GmbH es sinónimo de limpieza en la que puede confiar – profesional, asegurado y con raíces locales en la región de Basilea.",
+      "bullets": [
+        "Seguro de responsabilidad civil profesional",
+        "Garantía de entrega en limpiezas finales",
+        "Presupuestos a medida en 24 horas",
+        "Productos de limpieza ecológicos"
+      ]
     },
     "why": {
       "eyebrow": "¿Por qué D'Namar?",
@@ -288,24 +300,28 @@
       "title": "Nuestro Trabajo",
       "subtitle": "Un vistazo a nuestros servicios de limpieza — desde oficinas hasta hogares en Basilea.",
       "items": {
+        "team": "Equipo de D'Namar en servicio profesional de limpieza en la región de Basilea",
+        "bad": "Limpieza profesional de baños en Basilea — sin cal e higiénica",
+        "kueche": "Limpieza de cocina en la región de Basilea — brillo sin manchas",
         "buero": "Limpieza de oficinas en Basilea — profesional y minuciosa",
         "boden": "Limpieza de suelos en hogar de Basilea",
         "fenster": "Limpieza de ventanas y cristales con protección antiincrustante Basilea",
         "herd": "Limpieza de cocina y cuidado de la vitrocerámica en Basilea",
         "treppe": "Limpieza de escaleras en inmueble de Basilea",
         "gewerbe": "Limpieza de locales comerciales Basilea",
-        "oberflaechen": "Cuidado de superficies y desinfección",
-        "teppich": "Limpieza de moqueta Basilea"
+        "fenster2": "Limpieza de ventanas en la región de Basilea — cristales limpios sin rayas"
       },
       "labels": {
+        "team": "Nuestro equipo",
+        "bad": "Baño",
+        "kueche": "Cocina",
         "buero": "Oficinas",
         "boden": "Suelos",
         "fenster": "Cristales",
         "herd": "Cocina",
         "treppe": "Escaleras",
         "gewerbe": "Comercial",
-        "oberflaechen": "Superficies",
-        "teppich": "Moqueta"
+        "fenster2": "Ventanas"
       }
     },
     "faq": {

@@ -39,7 +39,7 @@ export default function AngebotPage() {
               <div className="flex items-center gap-3">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/N.jpeg"
+                  src="/images/N.webp"
                   alt="D'Namar"
                   className="w-12 h-12 rounded-xl object-cover border-2 border-white/20"
                 />

@@ -22,6 +22,9 @@ import {
   Dumbbell,
   LayoutGrid,
   Trash2,
+  PackageOpen,
+  HardHat,
+  Zap,
 } from "lucide-react";
 
 /* ─── Service icons map (13 services) ───────────────────────────────────── */
@@ -39,6 +42,9 @@ const SERVICE_ICONS = {
   fitnesscenter:        Dumbbell,
   innenreinigung:       LayoutGrid,
   entsorgung:           Trash2,
+  umzugsreinigung:      PackageOpen,
+  renovationsreinigung: HardHat,
+  tiefenreinigung:      Zap,
 } as const;
 
 const SERVICE_KEYS = [
@@ -55,6 +61,9 @@ const SERVICE_KEYS = [
   "fitnesscenter",
   "innenreinigung",
   "entsorgung",
+  "umzugsreinigung",
+  "renovationsreinigung",
+  "tiefenreinigung",
 ] as const;
 
 const SERVICE_HREFS: Record<string, string> = {
@@ -71,6 +80,9 @@ const SERVICE_HREFS: Record<string, string> = {
   fitnesscenter:        "/anfrage",
   innenreinigung:       "/anfrage",
   entsorgung:           "/anfrage",
+  umzugsreinigung:      "/umzugsreinigung",
+  renovationsreinigung: "/renovationsreinigung",
+  tiefenreinigung:      "/tiefenreinigung",
 };
 
 /* ─── Locale flags & labels ──────────────────────────────────────────────── */
@@ -105,7 +117,6 @@ function LanguageSwitcher() {
     const rawPath = pathname.startsWith(localePrefix)
       ? pathname.slice(localePrefix.length) || "/"
       : pathname;
-    // Preserve scroll position across locale change
     sessionStorage.setItem("__scrollY", String(window.scrollY));
     router.push(rawPath, { locale: newLocale });
     setOpen(false);
@@ -148,7 +159,7 @@ function LanguageSwitcher() {
   );
 }
 
-/* ─── Sub-components ────────────────────────────────────────────────────── */
+/* ─── NavLink ────────────────────────────────────────────────────────────── */
 function NavLink({
   href,
   label,
@@ -178,6 +189,7 @@ function NavLink({
   );
 }
 
+/* ─── ServicesDropdown ───────────────────────────────────────────────────── */
 function ServicesDropdown({
   activeHref,
   onNavigate,
@@ -253,7 +265,7 @@ function ServicesDropdown({
             const isItemActive = activeHref.includes(href);
             return (
               <Link
-                key={href}
+                key={key}
                 href={href}
                 role="menuitem"
                 onClick={() => { setOpen(false); onNavigate(); }}
@@ -314,14 +326,12 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Restore scroll position after locale change
   useEffect(() => {
     const saved = sessionStorage.getItem("__scrollY");
     if (saved) {
       sessionStorage.removeItem("__scrollY");
       const y = parseInt(saved, 10);
       if (!isNaN(y)) {
-        // Wait for page to fully render before restoring
         requestAnimationFrame(() => window.scrollTo({ top: y, behavior: "instant" }));
       }
     }
@@ -341,9 +351,7 @@ export default function Navbar() {
 
   const NAV_ITEMS = [
     { label: t("home"), href: "/" },
-    { label: t("prices"), href: "/preise" },
     { label: t("references"), href: "/referenzen" },
-    { label: t("blog"), href: "/blog" },
     { label: t("about"), href: "/ueber-uns" },
   ];
 
@@ -399,14 +407,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/anfrage"
-                className={`
-                  inline-flex items-center gap-1.5 rounded-full px-5 py-2.5
-                  bg-brand text-white text-sm font-semibold
-                  shadow-md shadow-brand/25
-                  transition-all duration-300
-                  hover:bg-brand-dark hover:shadow-lg hover:shadow-brand/30 hover:scale-105
-                  active:scale-95
-                `}
+                className="inline-flex items-center gap-1.5 rounded-full px-5 py-2.5 bg-brand text-white text-sm font-semibold shadow-md shadow-brand/25 transition-all duration-300 hover:bg-brand-dark hover:shadow-lg hover:shadow-brand/30 hover:scale-105 active:scale-95"
               >
                 {t("requestOffer")}
               </Link>
@@ -475,7 +476,7 @@ export default function Navbar() {
                       const isItemActive = pathname.includes(href);
                       return (
                         <Link
-                          key={href}
+                          key={key}
                           href={href}
                           onClick={closeMobile}
                           className={`
@@ -486,7 +487,7 @@ export default function Navbar() {
                         >
                           <Icon className={`w-4 h-4 shrink-0 ${isItemActive ? "text-brand" : "text-foreground/35"}`} />
                           {label}
-                          {isItemActive && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-brand" />}
+                          {isItemActive && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-brand shrink-0" />}
                         </Link>
                       );
                     })}
@@ -499,7 +500,7 @@ export default function Navbar() {
               ))}
               <MobileNavLink href="/kontakt" label={t("contact")} active={pathname.includes("/kontakt")} onClick={closeMobile} />
 
-              {/* Language switcher in mobile */}
+              {/* Language switcher mobile */}
               <div className="flex gap-2 px-3 pt-2 pb-1">
                 {(["de", "en", "es"] as const).map((l) => (
                   <LanguageMobileButton key={l} locale={l} label={t(`lang.${l}`)} />
@@ -525,7 +526,7 @@ export default function Navbar() {
   );
 }
 
-/* ─── Mobile nav link ────────────────────────────────────────────────────── */
+/* ─── MobileNavLink ──────────────────────────────────────────────────────── */
 function MobileNavLink({ href, label, active, onClick }: { href: string; label: string; active: boolean; onClick: () => void }) {
   return (
     <Link
@@ -543,7 +544,7 @@ function MobileNavLink({ href, label, active, onClick }: { href: string; label: 
   );
 }
 
-/* ─── Mobile language button ─────────────────────────────────────────────── */
+/* ─── LanguageMobileButton ───────────────────────────────────────────────── */
 function LanguageMobileButton({ locale, label }: { locale: "de" | "en" | "es"; label: string }) {
   const currentLocale = useLocale();
   const router = useRouter();

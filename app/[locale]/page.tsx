@@ -67,12 +67,22 @@ export default async function HomePage({
     <>
       {/* ── HERO ──────────────────────────────────────────────────────────── */}
       <section className="relative bg-navy overflow-hidden" aria-label="Hero">
+        <Image
+          src="/images/reinigung-basel-team-einsatz.jpg"
+          alt="D'Namar Reinigungsteam im professionellen Einsatz in Basel"
+          fill
+          className="object-cover object-[center_center] lg:object-[75%_center]"
+          priority
+          sizes="100vw"
+        />
+        <div aria-hidden className="absolute inset-0 bg-black/50 lg:hidden" />
+        <div aria-hidden className="absolute inset-0 hidden lg:block bg-gradient-to-r from-black/95 via-black/65 to-black/30" />
         <div
           aria-hidden
-          className="absolute inset-0 opacity-[0.07]"
+          className="absolute inset-0 opacity-[0.12]"
           style={{
             backgroundImage:
-              "radial-gradient(circle at 70% 30%, #4caf82 0%, transparent 55%), radial-gradient(circle at 10% 80%, #4caf82 0%, transparent 40%)",
+              "radial-gradient(circle at 20% 60%, #4caf82 0%, transparent 45%)",
           }}
         />
 
@@ -225,6 +235,57 @@ export default async function HomePage({
             <Link href="/anfrage" className="btn-primary text-base px-8 py-4">
               {t("services.cta")}
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ── VERTRAUEN ─────────────────────────────────────────────────────── */}
+      <section className="bg-muted py-20 lg:py-28" aria-labelledby="vertrauen-heading">
+        <div className="section-container">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            {/* Left: copy */}
+            <div>
+              <span className="text-brand font-semibold text-sm uppercase tracking-widest">
+                {t("vertrauen.eyebrow")}
+              </span>
+              <h2 id="vertrauen-heading" className="mt-2 text-3xl sm:text-4xl font-bold text-navy leading-snug mb-6">
+                {t("vertrauen.title")}
+              </h2>
+              <p className="text-foreground/65 leading-relaxed mb-8">
+                {t("vertrauen.subtitle")}
+              </p>
+
+              <ul className="space-y-4 mb-10">
+                {(t.raw("vertrauen.bullets") as string[]).map((b) => (
+                  <li key={b} className="flex items-start gap-3 text-sm text-foreground/80">
+                    <svg className="w-5 h-5 text-brand shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    {b}
+                  </li>
+                ))}
+              </ul>
+
+              <Link href="/anfrage" className="btn-primary text-sm px-8 py-3">
+                {tCommon("requestQuote")}
+              </Link>
+            </div>
+
+            {/* Right: service flyer */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-200 max-w-sm w-full">
+                <Image
+                  src="/images/reinigungsfirma-basel-service.webp"
+                  alt="D'Namar Reinigungsdienst GmbH Basel – Leistungsübersicht"
+                  width={600}
+                  height={800}
+                  className="w-full h-auto object-contain"
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -499,11 +560,12 @@ export default async function HomePage({
                       <div className="flex items-start gap-2.5">
                         <div className="w-7 h-7 rounded-full overflow-hidden shrink-0 mt-0.5 ring-1 ring-brand/30">
                           <Image
-                            src="/images/N.jpeg"
+                            src="/images/N.webp"
                             alt="D'Namar"
                             width={28}
                             height={28}
-                            className="object-cover w-full h-full"
+                            className="object-cover"
+                            style={{ width: 'auto', height: 'auto' }}
                           />
                         </div>
                         <div>
@@ -570,14 +632,16 @@ export default async function HomePage({
         title={t("gallery.title")}
         subtitle={t("gallery.subtitle")}
         items={[
-          { src: "/images/Buero-768x512.jpg",                alt: t("gallery.items.buero"),        label: t("gallery.labels.buero") },
-          { src: "/images/Boden-wischen-768x512.jpg",        alt: t("gallery.items.boden"),        label: t("gallery.labels.boden") },
-          { src: "/images/Fenster-blauer-Himmel-768x512.jpg",alt: t("gallery.items.fenster"),      label: t("gallery.labels.fenster") },
-          { src: "/images/Herd-768x512.jpg",                 alt: t("gallery.items.herd"),         label: t("gallery.labels.herd") },
-          { src: "/images/Treppe-Vorraum-768x511.jpg",       alt: t("gallery.items.treppe"),       label: t("gallery.labels.treppe") },
-          { src: "/images/Gewerberaum-768x512.jpg",          alt: t("gallery.items.gewerbe"),      label: t("gallery.labels.gewerbe") },
-          { src: "/images/Oberflaechen-768x512.jpg",         alt: t("gallery.items.oberflaechen"), label: t("gallery.labels.oberflaechen") },
-          { src: "/images/Teppichboden-768x512.jpg",         alt: t("gallery.items.teppich"),      label: t("gallery.labels.teppich") },
+          { src: "/images/reinigung-basel-team-einsatz.jpg",      alt: t("gallery.items.team"),         label: t("gallery.labels.team") },
+          { src: "/images/reinigung-basel-badezimmer-profi.jpg",  alt: t("gallery.items.bad"),          label: t("gallery.labels.bad") },
+          { src: "/images/reinigung-basel-kueche-glanz.jpg",      alt: t("gallery.items.kueche"),       label: t("gallery.labels.kueche") },
+          { src: "/images/Buero-768x512.jpg",                     alt: t("gallery.items.buero"),        label: t("gallery.labels.buero") },
+          { src: "/images/Boden-wischen-768x512.jpg",             alt: t("gallery.items.boden"),        label: t("gallery.labels.boden") },
+          { src: "/images/Fenster-blauer-Himmel-768x512.jpg",     alt: t("gallery.items.fenster"),      label: t("gallery.labels.fenster") },
+          { src: "/images/Herd-768x512.jpg",                      alt: t("gallery.items.herd"),         label: t("gallery.labels.herd") },
+          { src: "/images/Treppe-Vorraum-768x511.jpg",            alt: t("gallery.items.treppe"),       label: t("gallery.labels.treppe") },
+          { src: "/images/Gewerberaum-768x512.jpg",               alt: t("gallery.items.gewerbe"),      label: t("gallery.labels.gewerbe") },
+          { src: "/images/reinigung-basel-fenster-streifenfrei.jpg", alt: t("gallery.items.fenster2"),  label: t("gallery.labels.fenster2") },
         ]}
       />
 

@@ -38,11 +38,13 @@ export default function LoginForm() {
         <div className="text-center mb-8">
           <div className="inline-flex items-center gap-3 mb-4">
             <Image
-              src="/images/N.jpeg"
+              src="/images/N.webp"
               alt="D'Namar Logo"
               width={48}
               height={48}
               className="rounded-xl object-cover"
+              style={{ width: 'auto', height: 'auto' }}
+              priority
             />
             <span className="font-bold text-xl text-[#1a2e4a]">D&apos;Namar</span>
           </div>

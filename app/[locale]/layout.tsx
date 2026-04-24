@@ -97,19 +97,17 @@ export default async function LocaleLayout({
     { label: t("services_items.umzugsreinigung"), href: "/umzugsreinigung" },
     { label: t("services_items.glasreinigung"), href: "/glasreinigung" },
     { label: t("services_items.treppenhausreinigung"), href: "/treppenhausreinigung" },
-    { label: t("services_items.preise"), href: "/preise" },
   ];
 
   const FOOTER_COMPANY = [
     { label: t("company_items.ueber_uns"), href: "/ueber-uns" },
     { label: t("company_items.referenzen"), href: "/referenzen" },
-    { label: t("company_items.blog"), href: "/blog" },
     { label: t("company_items.offerte"), href: "/anfrage" },
     { label: t("company_items.kontakt"), href: "/kontakt" },
   ];
 
   return (
-    <html lang={locale}>
+    <html lang={locale} data-scroll-behavior="smooth">
       <head>
         <script
           type="application/ld+json"
@@ -169,11 +167,13 @@ export default async function LocaleLayout({
                 <div className="lg:col-span-1">
                   <Link href="/" className="inline-flex items-center gap-3 mb-4">
                     <Image
-                      src="/images/N.jpeg"
+                      src="/images/N.webp"
                       alt="D'Namar Logo"
                       width={40}
                       height={40}
                       className="rounded-xl object-cover"
+                      style={{ width: 'auto', height: 'auto' }}
+                      priority
                     />
                     <span className="font-bold text-lg text-white">D&apos;Namar</span>
                   </Link>

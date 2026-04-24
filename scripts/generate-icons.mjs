@@ -17,7 +17,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
-const SOURCE = join(ROOT, "public", "images", "N.jpeg");
+const SOURCE = join(ROOT, "public", "images", "N.webp");
 
 const ICONS_DIR = join(ROOT, "public", "icons");
 const PUBLIC_DIR = join(ROOT, "public");
@@ -86,7 +86,7 @@ async function generateFaviconIco() {
 
 // ── Run all ──────────────────────────────────────────────────────────────────
 async function main() {
-  console.log("🎨 D'Namar — Generating brand icons from N.jpeg...\n");
+  console.log("🎨 D'Namar — Generating brand icons from N.webp...\n");
 
   await Promise.all(ICONS.map(generateIcon));
   await generateFaviconIco();

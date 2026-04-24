@@ -171,7 +171,7 @@ export default async function BueroreinigungPage({
             <p className="text-white/65 mb-6">{t("cta.subtitle")}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/anfrage" className="btn-primary px-8 py-4">{t("priceTeaser.cta")}</Link>
-              <Link href="/preise" className="btn-secondary px-8 py-4">{tCommon("viewPrices")}</Link>
+              <a href="tel:+41792527557" className="btn-secondary px-8 py-4">{tCommon("directCall")}</a>
             </div>
           </div>
         </div>

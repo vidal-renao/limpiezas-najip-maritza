@@ -91,7 +91,7 @@ export function buildLocalBusinessJsonLd() {
     url: siteConfig.url,
     telephone: [siteConfig.phone.primary, siteConfig.phone.secondary],
     email: siteConfig.email,
-    image: `${siteConfig.url}/images/N.jpeg`,
+    image: `${siteConfig.url}/images/N.webp`,
     priceRange: siteConfig.priceRange,
     currenciesAccepted: siteConfig.currenciesAccepted,
     paymentAccepted: siteConfig.paymentAccepted,

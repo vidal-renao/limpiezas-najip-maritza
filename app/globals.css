@@ -1,20 +1,20 @@
-@import "../node_modules/tailwindcss/index.css";
+@import "tailwindcss";
 
 /* ─── D'Namar Brand Theme (Tailwind v4 CSS-based config) ─────────────────── */
 @theme inline {
   /* Brand colours */
-  --color-navy:       #1a2e4a;
+  --color-navy: #1a2e4a;
   --color-navy-light: #243d61;
-  --color-navy-dark:  #111e30;
-  --color-brand:      #4caf82;
-  --color-brand-light:#6dc49a;
+  --color-navy-dark: #111e30;
+  --color-brand: #4caf82;
+  --color-brand-light: #6dc49a;
   --color-brand-dark: #3a9068;
 
   /* Neutral palette */
   --color-background: #ffffff;
-  --color-foreground:  #1a2e4a;
-  --color-muted:       #f5f7fa;
-  --color-border:      #dde3ec;
+  --color-foreground: #1a2e4a;
+  --color-muted: #f5f7fa;
+  --color-border: #dde3ec;
 
   /* Typography — Inter via system font stack (no remote fetch needed) */
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -49,9 +49,15 @@ body {
 
 /* ─── Gallery slider progress bar animation ──────────────────────────────── */
 @keyframes gallery-progress {
-  from { transform: scaleX(0); }
-  to   { transform: scaleX(1); }
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
 }
+
 .gallery-progress {
   transform-origin: left;
   animation: gallery-progress var(--gallery-duration, 4500ms) linear forwards;
@@ -62,10 +68,14 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.scrollbar-none::-webkit-scrollbar { display: none; }
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
 
 /* ─── Motion safety ───────────────────────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

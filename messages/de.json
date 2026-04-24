@@ -62,17 +62,20 @@
       "haushaltsdienste":     { "label": "Haushaltsdienste",                "desc": "Bügeln & Wäschepflege" },
       "fitnesscenter":        { "label": "Fitnesscenter-Reinigung",         "desc": "Sportstudios & Wellness" },
       "innenreinigung":       { "label": "Innenreinigung",                  "desc": "Innenräume & Oberflächen" },
-      "entsorgung":           { "label": "Entsorgung",                      "desc": "Entrümpelung & Abfall" }
+      "entsorgung":           { "label": "Entsorgung",                      "desc": "Entrümpelung & Abfall" },
+      "umzugsreinigung":      { "label": "Umzugsreinigung",                 "desc": "Endreinigung mit Garantie" },
+      "renovationsreinigung": { "label": "Renovationsreinigung",            "desc": "Nach Umbau, Neubau & Bau" },
+      "tiefenreinigung":      { "label": "Tiefenreinigung",                 "desc": "Gründliche Grundreinigung" }
     }
   },
   "footer": {
-    "tagline": "Ihr professioneller Reinigungsdienst in Basel – für Privathaushalte und Unternehmen im ganzen Kanton.",
+    "tagline": "Ihr professioneller Reinigungsdienst in der Region Basel – für Privathaushalte und Unternehmen.",
     "services": "Leistungen",
     "company": "Unternehmen",
     "contactTitle": "Kontakt",
     "copyright": "D'Namar Reinigungsdienst Basel.",
     "hours": "Mo–Fr 08:00–12:00 / 13:00–18:00\nSa–So geschlossen",
-    "location": "Basel, Kanton Basel-Stadt",
+    "location": "Region Basel, Schweiz",
     "instagramLabel": "D'Namar auf Instagram",
     "facebookLabel": "D'Namar auf Facebook",
     "whatsappLabel": "D'Namar auf WhatsApp",
@@ -81,13 +84,11 @@
       "bueroreinigung": "Büroreinigung",
       "umzugsreinigung": "Umzugsreinigung",
       "glasreinigung": "Glasreinigung",
-      "treppenhausreinigung": "Treppenhausreinigung",
-      "preise": "Preise"
+      "treppenhausreinigung": "Treppenhausreinigung"
     },
     "company_items": {
       "ueber_uns": "Über uns",
       "referenzen": "Referenzen",
-      "blog": "Blog",
       "offerte": "Offerte anfordern",
       "kontakt": "Kontakt"
     }
@@ -104,7 +105,7 @@
       "titleSep": " –",
       "title2": "Qualität, die",
       "titleBrand2": "man spürt",
-      "subtitle": "Maritza Rodriguez und Nadjib Rasuly und ihr Team bieten professionelle Reinigungsdienstleistungen für Privathaushalte und Unternehmen im ganzen Kanton Basel – gründlich, diskret und persönlich.",
+      "subtitle": "Maritza Rodriguez und Nadjib Rasuly und ihr Team bieten professionelle Reinigungsdienstleistungen für Privathaushalte und Unternehmen in der Region Basel – gründlich, diskret und persönlich.",
       "ctaPrimary": "Kostenlose Offerte anfordern",
       "ctaPhone": "+41 79 252 75 57",
       "signals": ["Keine Vorauszahlung", "Abgabegarantie inklusive", "Antwort in 24 Stunden", "Lokal & versichert"],
@@ -128,6 +129,17 @@
       "title": "Unsere Reinigungsleistungen",
       "subtitle": "Von der wöchentlichen Unterhaltsreinigung bis zur Endreinigung mit Abgabegarantie – massgeschneiderte Lösungen für ganz Basel.",
       "cta": "Jetzt Offerte anfordern"
+    },
+    "vertrauen": {
+      "eyebrow": "Qualität & Vertrauen",
+      "title": "Ihr zuverlässiger Reinigungspartner in Basel",
+      "subtitle": "D'Namar Reinigungsdienst GmbH steht für Sauberkeit, auf die Sie zählen können – professionell, versichert und lokal verankert in der Region Basel.",
+      "bullets": [
+        "Berufshaftpflicht & vollständig versichert",
+        "Abgabegarantie bei Endreinigungen",
+        "Massgeschneiderte Angebote in 24 Stunden",
+        "Umweltbewusste Reinigungsmittel"
+      ]
     },
     "why": {
       "eyebrow": "Warum D'Namar?",
@@ -288,24 +300,28 @@
       "title": "Unsere Arbeit",
       "subtitle": "Einblick in unsere Reinigungseinsätze – von Büros bis zu Privathaushalten in Basel.",
       "items": {
+        "team": "D'Namar Team bei professioneller Reinigung in der Region Basel",
+        "bad": "Professionelle Badezimmerreinigung in Basel – kalkfrei und hygienisch",
+        "kueche": "Küchenreinigung in der Region Basel – streifenfreier Glanz",
         "buero": "Büroreinigung Basel – professionell und gründlich",
         "boden": "Bodenreinigung in Basler Haushalt",
         "fenster": "Fenster- und Glasreinigung mit Kalkschutz Basel",
         "herd": "Küchenreinigung und Herdpflege in Basel",
         "treppe": "Treppenhausreinigung in Basler Liegenschaft",
         "gewerbe": "Gewerberaumreinigung Basel",
-        "oberflaechen": "Oberflächenpflege und Desinfektion",
-        "teppich": "Teppichbodenreinigung Basel"
+        "fenster2": "Fensterreinigung in der Region Basel – streifenfreie saubere Fenster"
       },
       "labels": {
+        "team": "Unser Team",
+        "bad": "Badezimmer",
+        "kueche": "Küche",
         "buero": "Büroreinigung",
         "boden": "Bodenreinigung",
         "fenster": "Glasreinigung",
         "herd": "Küchenreinigung",
         "treppe": "Treppenhaus",
         "gewerbe": "Gewerbe",
-        "oberflaechen": "Oberflächen",
-        "teppich": "Teppichboden"
+        "fenster2": "Fensterreinigung"
       }
     },
     "faq": {
@@ -336,7 +352,7 @@
         },
         {
           "q": "In welchen Gebieten ist D'Namar tätig?",
-          "a": "Wir sind im gesamten Kanton Basel-Stadt sowie in angrenzenden Gemeinden tätig: Grossbasel, Kleinbasel, Gundeldingen, St. Alban, Riehen, Bettingen sowie Allschwil, Binningen, Birsfelden und Muttenz."
+          "a": "Wir sind in der gesamten Region Basel tätig: Grossbasel, Kleinbasel, Gundeldingen, St. Alban, Riehen, Bettingen sowie Allschwil, Binningen, Birsfelden und Muttenz."
         },
         {
           "q": "Kann ich D'Namar für eine einmalige Reinigung buchen?",

@@ -62,17 +62,20 @@
       "haushaltsdienste":     { "label": "Household Services",              "desc": "Ironing & laundry care" },
       "fitnesscenter":        { "label": "Fitness Centre Cleaning",         "desc": "Gyms & wellness studios" },
       "innenreinigung":       { "label": "Interior Cleaning",               "desc": "Indoor spaces & surfaces" },
-      "entsorgung":           { "label": "Waste Disposal",                  "desc": "Clearance & rubbish removal" }
+      "entsorgung":           { "label": "Waste Disposal",                  "desc": "Clearance & rubbish removal" },
+      "umzugsreinigung":      { "label": "Move-Out Cleaning",               "desc": "End-of-tenancy clean with guarantee" },
+      "renovationsreinigung": { "label": "Renovation Cleaning",             "desc": "After building work & new construction" },
+      "tiefenreinigung":      { "label": "Deep Cleaning",                   "desc": "Thorough full-surface disinfection" }
     }
   },
   "footer": {
-    "tagline": "Your professional cleaning service in Basel – for private households and businesses throughout the canton.",
+    "tagline": "Your professional cleaning service in the Basel region – for private households and businesses.",
     "services": "Services",
     "company": "Company",
     "contactTitle": "Contact",
     "copyright": "D'Namar Reinigungsdienst Basel.",
     "hours": "Mon–Fri 08:00–12:00 / 13:00–18:00\nSat–Sun closed",
-    "location": "Basel, Canton Basel-City",
+    "location": "Basel region, Switzerland",
     "instagramLabel": "D'Namar on Instagram",
     "facebookLabel": "D'Namar on Facebook",
     "whatsappLabel": "D'Namar on WhatsApp",
@@ -81,13 +84,11 @@
       "bueroreinigung": "Office Cleaning",
       "umzugsreinigung": "Move-Out Cleaning",
       "glasreinigung": "Glass Cleaning",
-      "treppenhausreinigung": "Stairwell Cleaning",
-      "preise": "Prices"
+      "treppenhausreinigung": "Stairwell Cleaning"
     },
     "company_items": {
       "ueber_uns": "About Us",
       "referenzen": "References",
-      "blog": "Blog",
       "offerte": "Request Quote",
       "kontakt": "Contact"
     }
@@ -128,6 +129,17 @@
       "title": "Our Cleaning Services",
       "subtitle": "From weekly maintenance cleaning to end-of-tenancy cleaning with handover guarantee – tailored solutions for all of Basel.",
       "cta": "Request Quote Now"
+    },
+    "vertrauen": {
+      "eyebrow": "Quality & Trust",
+      "title": "Your reliable cleaning partner in Basel",
+      "subtitle": "D'Namar Reinigungsdienst GmbH stands for cleanliness you can count on – professional, insured and locally rooted in the Basel region.",
+      "bullets": [
+        "Professional liability insurance & fully covered",
+        "Handover guarantee on end-of-tenancy cleans",
+        "Tailored quotes within 24 hours",
+        "Eco-conscious cleaning products"
+      ]
     },
     "why": {
       "eyebrow": "Why D'Namar?",
@@ -288,24 +300,28 @@
       "title": "Our Work",
       "subtitle": "A look at our cleaning assignments — from offices to private homes in Basel.",
       "items": {
+        "team": "D'Namar team providing professional cleaning in the Basel region",
+        "bad": "Professional bathroom cleaning in Basel — limescale-free and hygienic",
+        "kueche": "Kitchen cleaning in the Basel region — streak-free shine",
         "buero": "Office cleaning in Basel — professional and thorough",
         "boden": "Floor cleaning in Basel household",
         "fenster": "Window and glass cleaning with limescale protection Basel",
         "herd": "Kitchen cleaning and stove care in Basel",
         "treppe": "Stairwell cleaning in Basel property",
         "gewerbe": "Commercial space cleaning Basel",
-        "oberflaechen": "Surface care and disinfection",
-        "teppich": "Carpet cleaning Basel"
+        "fenster2": "Window cleaning in the Basel region — streak-free clean windows"
       },
       "labels": {
+        "team": "Our Team",
+        "bad": "Bathroom",
+        "kueche": "Kitchen",
         "buero": "Office Cleaning",
         "boden": "Floor Cleaning",
         "fenster": "Glass Cleaning",
         "herd": "Kitchen Cleaning",
         "treppe": "Stairwell",
         "gewerbe": "Commercial",
-        "oberflaechen": "Surfaces",
-        "teppich": "Carpet"
+        "fenster2": "Window Cleaning"
       }
     },
     "faq": {

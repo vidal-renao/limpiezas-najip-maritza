@@ -66,7 +66,7 @@ export default function ReviewsClient({ initialReviews }: { initialReviews: Revi
       <header className="bg-[#1a2e4a] text-white px-6 py-4 flex items-center justify-between shadow-md">
         <div className="flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/N.jpeg" alt="D'Namar" className="w-8 h-8 rounded-lg object-cover" />
+          <img src="/images/N.webp" alt="D'Namar" className="w-8 h-8 rounded-lg object-cover" />
           <div>
             <p className="font-bold text-sm leading-none">D&apos;Namar Admin</p>
             <p className="text-white/50 text-xs mt-0.5">Bewertungsverwaltung</p>
