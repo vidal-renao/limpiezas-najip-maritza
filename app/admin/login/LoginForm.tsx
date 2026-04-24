@@ -2,7 +2,8 @@
 
 import { useState, FormEvent } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Loader2, Lock, ShieldCheck } from "lucide-react";
+import { Loader2, Lock, ShieldCheck, ArrowLeft } from "lucide-react";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function LoginForm() {
@@ -93,6 +94,16 @@ export default function LoginForm() {
               )}
             </button>
           </form>
+
+          <div className="mt-6">
+            <Link
+              href="/"
+              className="w-full flex items-center justify-center gap-2 rounded-lg border border-gray-200 bg-gray-50 hover:bg-white px-4 py-2.5 text-sm font-medium text-gray-600 transition-colors"
+            >
+              <ArrowLeft className="w-4 h-4 shrink-0" />
+              Zurück zur Startseite
+            </Link>
+          </div>
         </div>
 
         <p className="text-center text-xs text-slate-400 mt-6">
