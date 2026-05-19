@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { createTransporter, FROM_ADDRESS, TO_ADDRESS } from "@/lib/mailer";
 
 function escapeHtml(str: string): string {
   return str
@@ -24,11 +25,8 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    const apiKey = process.env.RESEND_API_KEY;
-    const toEmail = process.env.CONTACT_EMAIL ?? "info@dnamar.ch";
-
-    if (!apiKey) {
-      console.error("RESEND_API_KEY not set");
+    if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASSWORD) {
+      console.error("SMTP configuration incomplete");
       return NextResponse.json({ error: "Mail service not configured" }, { status: 500 });
     }
 
@@ -43,26 +41,14 @@ export async function POST(req: NextRequest) {
       </table>
     `;
 
-    const res = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from: "D'Namar Web <onboarding@resend.dev>",
-        to: [toEmail],
-        reply_to: email,
-        subject: `Kontaktanfrage von ${name}`,
-        html,
-      }),
+    const transporter = createTransporter();
+    await transporter.sendMail({
+      from: FROM_ADDRESS,
+      to: TO_ADDRESS(),
+      replyTo: email,
+      subject: `Kontaktanfrage von ${name}`,
+      html,
     });
-
-    if (!res.ok) {
-      const err = await res.text();
-      console.error("Resend error:", err);
-      return NextResponse.json({ error: "Failed to send email" }, { status: 502 });
-    }
 
     return NextResponse.json({ ok: true });
   } catch (err) {

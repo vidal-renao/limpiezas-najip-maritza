@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { supabase } from "@/lib/supabase";
+import { createTransporter, FROM_ADDRESS, TO_ADDRESS } from "@/lib/mailer";
 
 function escapeHtml(str: string): string {
   return str
@@ -77,10 +78,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Email notification — only for pending (needs manual review)
-    const apiKey = process.env.RESEND_API_KEY;
-    const toEmail = process.env.CONTACT_EMAIL ?? "info@dnamar.ch";
-
-    if (apiKey && status === "pending") {
+    if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASSWORD && status === "pending") {
       const stars = "⭐".repeat(rating);
       const html = `
         <h2 style="color:#1a2e4a">Neue Bewertung zur Prüfung – D'Namar Basel</h2>
@@ -106,19 +104,12 @@ export async function POST(req: NextRequest) {
         </p>
       `;
 
-      await fetch("https://api.resend.com/emails", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          from: "D'Namar Web <onboarding@resend.dev>",
-          to: [toEmail],
-          subject: `⚠️ Manuelle Prüfung (${rating}★): ${escapeHtml(service)} – ${escapeHtml(displayName)}`,
-          html,
-        }),
-      }).catch((err) => console.error("Resend notification failed:", err));
+      createTransporter().sendMail({
+        from: FROM_ADDRESS,
+        to: TO_ADDRESS(),
+        subject: `⚠️ Manuelle Prüfung (${rating}★): ${escapeHtml(service)} – ${escapeHtml(displayName)}`,
+        html,
+      }).catch((err) => console.error("SMTP notification failed:", err));
     }
 
     return NextResponse.json({ ok: true });
