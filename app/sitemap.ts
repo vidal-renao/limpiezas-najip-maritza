@@ -25,7 +25,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return locales.flatMap((locale) =>
     routes.map((route) => ({
-      url: BASE_URL + "/" + locale + route,
+      url: locale === "de"
+        ? BASE_URL + route
+        : BASE_URL + "/" + locale + route,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: route === "" ? 1 : 0.8,
