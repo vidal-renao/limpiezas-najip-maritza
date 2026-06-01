@@ -290,11 +290,11 @@
     },
     "districts": {
       "eyebrow": "Einsatzgebiet",
-      "title": "Wir reinigen in ganz Basel",
-      "subtitle": "Von Grossbasel bis Riehen, von Allschwil bis Muttenz – D'Namar ist Ihr lokales Reinigungsteam in der ganzen Region Basel.",
+      "title": "Wir reinigen in ganz Basel und Umgebung",
+      "subtitle": "Von Basel-Innenstadt bis Riehen, von Allschwil bis Pratteln – D'Namar ist Ihr lokales Reinigungsteam in der gesamten Region Basel und Umgebung.",
       "cta": "Offerte anfordern",
       "mapTitle": "Einsatzgebiet D'Namar Basel",
-      "items": ["Grossbasel", "Kleinbasel", "Gundeldingen", "St. Alban", "Riehen", "Bettingen", "Allschwil", "Binningen", "Birsfelden", "Muttenz"]
+      "items": ["Grossbasel", "Kleinbasel", "Gundeldingen", "St. Alban", "Bruderholz", "Riehen", "Bettingen", "Allschwil", "Binningen", "Birsfelden", "Muttenz", "Pratteln", "Bottmingen", "Reinach", "Münchenstein", "Dornach", "Arlesheim", "Schönenbuch"]
     },
     "gallery": {
       "title": "Unsere Arbeit",
@@ -352,7 +352,7 @@
         },
         {
           "q": "In welchen Gebieten ist D'Namar tätig?",
-          "a": "Wir sind in der gesamten Region Basel tätig: Grossbasel, Kleinbasel, Gundeldingen, St. Alban, Riehen, Bettingen sowie Allschwil, Binningen, Birsfelden und Muttenz."
+          "a": "Wir sind in der gesamten Region Basel und Umgebung tätig: Grossbasel, Kleinbasel, Gundeldingen, St. Alban, Bruderholz, Riehen, Bettingen sowie Allschwil, Binningen, Birsfelden, Muttenz, Pratteln, Bottmingen, Reinach, Münchenstein, Dornach, Arlesheim und Schönenbuch."
         },
         {
           "q": "Kann ich D'Namar für eine einmalige Reinigung buchen?",

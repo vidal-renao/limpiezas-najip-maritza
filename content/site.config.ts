@@ -60,9 +60,20 @@ export const siteConfig = {
   ],
 
   areaServed: [
-    { name: "Basel", addressCountry: "CH" },
-    { name: "Riehen", addressCountry: "CH" },
-    { name: "Allschwil", addressCountry: "CH" },
+    { name: "Basel",          addressCountry: "CH" },
+    { name: "Riehen",         addressCountry: "CH" },
+    { name: "Bettingen",      addressCountry: "CH" },
+    { name: "Allschwil",      addressCountry: "CH" },
+    { name: "Binningen",      addressCountry: "CH" },
+    { name: "Birsfelden",     addressCountry: "CH" },
+    { name: "Muttenz",        addressCountry: "CH" },
+    { name: "Pratteln",       addressCountry: "CH" },
+    { name: "Bottmingen",     addressCountry: "CH" },
+    { name: "Reinach",        addressCountry: "CH" },
+    { name: "Münchenstein",   addressCountry: "CH" },
+    { name: "Dornach",        addressCountry: "CH" },
+    { name: "Arlesheim",      addressCountry: "CH" },
+    { name: "Schönenbuch",    addressCountry: "CH" },
   ],
 
   services: [

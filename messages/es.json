@@ -290,11 +290,11 @@
     },
     "districts": {
       "eyebrow": "Área de servicio",
-      "title": "Limpiamos en todo Basel",
-      "subtitle": "Desde Grossbasel hasta Riehen, desde Allschwil hasta Muttenz – D'Namar es su equipo de limpieza local en toda la región de Basel.",
+      "title": "Limpiamos en todo Basel y alrededores",
+      "subtitle": "Desde el centro de Basel hasta Riehen, desde Allschwil hasta Pratteln – D'Namar es su equipo de limpieza local en toda la región de Basel y alrededores.",
       "cta": "Solicitar presupuesto",
       "mapTitle": "Área de servicio D'Namar Basel",
-      "items": ["Grossbasel", "Kleinbasel", "Gundeldingen", "St. Alban", "Riehen", "Bettingen", "Allschwil", "Binningen", "Birsfelden", "Muttenz"]
+      "items": ["Grossbasel", "Kleinbasel", "Gundeldingen", "St. Alban", "Bruderholz", "Riehen", "Bettingen", "Allschwil", "Binningen", "Birsfelden", "Muttenz", "Pratteln", "Bottmingen", "Reinach", "Münchenstein", "Dornach", "Arlesheim", "Schönenbuch"]
     },
     "gallery": {
       "title": "Nuestro Trabajo",
@@ -352,7 +352,7 @@
         },
         {
           "q": "¿En qué zonas trabaja D'Namar?",
-          "a": "Operamos en todo el cantón de Basel-Stadt y en los municipios colindantes: Grossbasel, Kleinbasel, Gundeldingen, St. Alban, Riehen, Bettingen, así como Allschwil, Binningen, Birsfelden y Muttenz."
+          "a": "Operamos en toda la región de Basel y alrededores: Grossbasel, Kleinbasel, Gundeldingen, St. Alban, Bruderholz, Riehen, Bettingen, así como Allschwil, Binningen, Birsfelden, Muttenz, Pratteln, Bottmingen, Reinach, Münchenstein, Dornach, Arlesheim y Schönenbuch."
         },
         {
           "q": "¿Puedo contratar D'Namar para una limpieza puntual?",
