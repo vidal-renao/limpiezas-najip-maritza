@@ -25,6 +25,7 @@ import {
   PackageOpen,
   HardHat,
   Zap,
+  Check,
 } from "lucide-react";
 
 /* ─── Service icons map (13 services) ───────────────────────────────────── */
@@ -85,19 +86,56 @@ const SERVICE_HREFS: Record<string, string> = {
   tiefenreinigung:      "/tiefenreinigung",
 };
 
-/* ─── Locale flags & labels ──────────────────────────────────────────────── */
-const LOCALE_META: Record<"de" | "en" | "es", { flag: string }> = {
-  de: { flag: "🇩🇪" },
-  en: { flag: "🇬🇧" },
-  es: { flag: "🇪🇸" },
-};
+/* ─── SVG Flag Components ────────────────────────────────────────────────── */
+function FlagDE({ className }: { className?: string }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 3" className={className} aria-hidden="true">
+      <rect width="5" height="1" fill="#000" />
+      <rect y="1" width="5" height="1" fill="#D00" />
+      <rect y="2" width="5" height="1" fill="#FFCE00" />
+    </svg>
+  );
+}
+
+function FlagGB({ className }: { className?: string }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" className={className} aria-hidden="true">
+      <rect width="60" height="30" fill="#012169" />
+      <path d="M0,0 60,30M60,0 0,30" stroke="#fff" strokeWidth="7" />
+      <path d="M0,0 60,30M60,0 0,30" stroke="#C8102E" strokeWidth="4.5" />
+      <path d="M30,0V30M0,15H60" stroke="#fff" strokeWidth="11" />
+      <path d="M30,0V30M0,15H60" stroke="#C8102E" strokeWidth="6.5" />
+    </svg>
+  );
+}
+
+function FlagES({ className }: { className?: string }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" className={className} aria-hidden="true">
+      <rect width="3" height="2" fill="#C60B1E" />
+      <rect y=".5" width="3" height="1" fill="#FFC400" />
+    </svg>
+  );
+}
+
+const FLAG_COMPONENTS = { de: FlagDE, en: FlagGB, es: FlagES } as const;
+const LOCALE_NAMES = { de: "Deutsch", en: "English", es: "Español" } as const;
+
+function FlagBadge({ locale, size = "sm" }: { locale: "de" | "en" | "es"; size?: "sm" | "md" | "lg" }) {
+  const Flag = FLAG_COMPONENTS[locale];
+  const dims = size === "lg" ? "w-[30px] h-5" : size === "md" ? "w-6 h-4" : "w-5 h-[13px]";
+  return (
+    <span className={`${dims} rounded-[3px] overflow-hidden border border-black/10 shrink-0 shadow-[0_1px_2px_rgba(0,0,0,0.12)] block`}>
+      <Flag className="w-full h-full" />
+    </span>
+  );
+}
 
 /* ─── Language Switcher ──────────────────────────────────────────────────── */
 function LanguageSwitcher() {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const t = useTranslations("nav");
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -111,6 +149,7 @@ function LanguageSwitcher() {
   }, [open]);
 
   const LOCALES = ["de", "en", "es"] as const;
+  const currentLocale = locale as "de" | "en" | "es";
 
   const switchLocale = (newLocale: "de" | "en" | "es") => {
     const localePrefix = `/${locale}`;
@@ -122,39 +161,79 @@ function LanguageSwitcher() {
     setOpen(false);
   };
 
-  const currentLocale = locale as "de" | "en" | "es";
-
   return (
     <div ref={ref} className="relative">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full border border-border text-xs font-semibold text-navy/70 hover:text-navy hover:border-brand/50 transition-all duration-200"
+        className={`
+          flex items-center gap-2 px-3 py-2 rounded-xl border select-none
+          transition-all duration-200
+          ${open
+            ? "border-brand/40 bg-white/95 shadow-sm shadow-navy/8"
+            : "border-navy/12 hover:border-brand/35 hover:bg-white/40 hover:shadow-sm hover:shadow-navy/6"
+          }
+        `}
         aria-expanded={open}
+        aria-haspopup="listbox"
         aria-label="Sprache wechseln"
       >
-        <span className="text-sm leading-none" aria-hidden="true">{LOCALE_META[currentLocale].flag}</span>
-        <span>{t(`lang.${currentLocale}`)}</span>
-        <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
+        <FlagBadge locale={currentLocale} size="sm" />
+        <span className="text-[13px] font-semibold text-navy/80 leading-none tracking-wide">
+          {LOCALE_NAMES[currentLocale]}
+        </span>
+        <ChevronDown className={`w-3 h-3 text-navy/40 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
       </button>
 
-      {open && (
-        <div className="absolute top-full right-0 mt-2 bg-white rounded-xl border border-border shadow-lg overflow-hidden z-50 min-w-[130px]">
-          {LOCALES.map((l) => (
-            <button
-              key={l}
-              type="button"
-              onClick={() => switchLocale(l)}
-              lang={l}
-              className={`w-full flex items-center gap-2.5 px-4 py-2.5 text-xs font-semibold text-left transition-colors hover:bg-muted ${locale === l ? "text-brand bg-brand/5" : "text-navy/70"}`}
-            >
-              <span className="text-sm leading-none" aria-hidden="true">{LOCALE_META[l].flag}</span>
-              {t(`lang.${l}`)}
-              {locale === l && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-brand shrink-0" />}
-            </button>
-          ))}
+      <div
+        className={`
+          absolute top-full right-0 mt-2.5 min-w-[188px] z-50
+          bg-white/98 backdrop-blur-xl rounded-2xl
+          border border-navy/8
+          shadow-[0_8px_32px_rgba(26,46,74,0.14),0_2px_8px_rgba(26,46,74,0.06)]
+          overflow-hidden
+          transition-all duration-200 ease-out origin-top-right
+          ${open
+            ? "opacity-100 scale-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 scale-95 -translate-y-1.5 pointer-events-none"
+          }
+        `}
+        role="listbox"
+        aria-label="Sprache auswählen"
+      >
+        <div className="px-4 pt-3 pb-2">
+          <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-navy/30">Sprache</p>
         </div>
-      )}
+        <div className="px-1.5 pb-1.5 flex flex-col gap-0.5">
+          {LOCALES.map((l) => {
+            const isActive = l === currentLocale;
+            return (
+              <button
+                key={l}
+                type="button"
+                onClick={() => switchLocale(l)}
+                role="option"
+                aria-selected={isActive}
+                lang={l}
+                className={`
+                  w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left
+                  transition-all duration-150
+                  ${isActive
+                    ? "bg-brand/8 text-navy"
+                    : "text-navy/60 hover:text-navy hover:bg-navy/4"
+                  }
+                `}
+              >
+                <FlagBadge locale={l} size="md" />
+                <span className={`text-sm leading-none ${isActive ? "font-semibold" : "font-medium"}`}>
+                  {LOCALE_NAMES[l]}
+                </span>
+                {isActive && <Check className="w-3.5 h-3.5 text-brand ml-auto shrink-0" />}
+              </button>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }
@@ -503,7 +582,7 @@ export default function Navbar() {
               {/* Language switcher mobile */}
               <div className="flex gap-2 px-3 pt-2 pb-1">
                 {(["de", "en", "es"] as const).map((l) => (
-                  <LanguageMobileButton key={l} locale={l} label={t(`lang.${l}`)} />
+                  <LanguageMobileButton key={l} locale={l} />
                 ))}
               </div>
 
@@ -545,10 +624,11 @@ function MobileNavLink({ href, label, active, onClick }: { href: string; label: 
 }
 
 /* ─── LanguageMobileButton ───────────────────────────────────────────────── */
-function LanguageMobileButton({ locale, label }: { locale: "de" | "en" | "es"; label: string }) {
+function LanguageMobileButton({ locale }: { locale: "de" | "en" | "es" }) {
   const currentLocale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
+  const isActive = currentLocale === locale;
 
   const switchLocale = () => {
     const localePrefix = `/${currentLocale}`;
@@ -564,10 +644,21 @@ function LanguageMobileButton({ locale, label }: { locale: "de" | "en" | "es"; l
       type="button"
       onClick={switchLocale}
       lang={locale}
-      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${currentLocale === locale ? "bg-brand text-white border-brand" : "border-border text-navy/60 hover:border-brand/50 hover:text-navy"}`}
+      aria-label={LOCALE_NAMES[locale]}
+      aria-pressed={isActive}
+      className={`
+        flex-1 flex flex-col items-center gap-1.5 py-3 min-h-[56px] rounded-xl border
+        transition-all duration-200
+        ${isActive
+          ? "border-brand bg-brand/8 shadow-sm shadow-brand/10"
+          : "border-border hover:border-brand/40 hover:bg-muted"
+        }
+      `}
     >
-      <span className="text-sm leading-none" aria-hidden="true">{LOCALE_META[locale].flag}</span>
-      {label}
+      <FlagBadge locale={locale} size="lg" />
+      <span className={`text-[10px] font-bold uppercase tracking-widest leading-none ${isActive ? "text-brand" : "text-navy/45"}`}>
+        {locale.toUpperCase()}
+      </span>
     </button>
   );
 }

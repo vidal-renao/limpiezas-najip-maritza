@@ -11,7 +11,7 @@ import DraggableFloating from "@/components/ui/DraggableFloating";
 import CookieBanner from "@/components/ui/CookieBanner";
 import AnnouncementBar from "@/components/ui/AnnouncementBar";
 import Image from "next/image";
-import { buildLocalBusinessJsonLd } from "@/content/site.config";
+import { buildLocalBusinessJsonLd, siteConfig } from "@/content/site.config";
 
 /* ─── Static Params ─────────────────────────────────────────────────────── */
 export function generateStaticParams() {
@@ -97,6 +97,9 @@ export default async function LocaleLayout({
     { label: t("services_items.umzugsreinigung"), href: "/umzugsreinigung" },
     { label: t("services_items.glasreinigung"), href: "/glasreinigung" },
     { label: t("services_items.treppenhausreinigung"), href: "/treppenhausreinigung" },
+    { label: t("services_items.praxisreinigung"), href: "/praxisreinigung" },
+    { label: t("services_items.tiefenreinigung"), href: "/tiefenreinigung" },
+    { label: t("services_items.renovationsreinigung"), href: "/renovationsreinigung" },
   ];
 
   const FOOTER_COMPANY = [
@@ -303,7 +306,11 @@ export default async function LocaleLayout({
                           <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                       </span>
-                      {t("location")}
+                      <address className="not-italic leading-relaxed">
+                        <span className="block">{siteConfig.address.street}</span>
+                        <span className="block">{siteConfig.address.postalCode} {siteConfig.address.city}</span>
+                        <span className="block">{t("location").split(",").pop()?.trim()}</span>
+                      </address>
                     </li>
                   </ul>
                 </div>
@@ -328,22 +335,22 @@ export default async function LocaleLayout({
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
-                  <a
-                    href={`/${locale}/impressum`}
+                  <Link
+                    href="/impressum"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-brand transition-colors"
                   >
                     {tCommon("impressum")}
-                  </a>
-                  <a
-                    href={`/${locale}/datenschutz`}
+                  </Link>
+                  <Link
+                    href="/datenschutz"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-brand transition-colors"
                   >
                     {tCommon("datenschutz")}
-                  </a>
+                  </Link>
                   {/* Discrete admin access — not indexed, not advertised */}
                   <a
                     href="/admin/login"

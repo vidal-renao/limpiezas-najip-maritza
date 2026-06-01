@@ -84,7 +84,10 @@
       "bueroreinigung": "Office Cleaning",
       "umzugsreinigung": "Move-Out Cleaning",
       "glasreinigung": "Glass Cleaning",
-      "treppenhausreinigung": "Stairwell Cleaning"
+      "treppenhausreinigung": "Stairwell Cleaning",
+      "praxisreinigung": "Medical Practice Cleaning",
+      "tiefenreinigung": "Deep Cleaning",
+      "renovationsreinigung": "Renovation Cleaning"
     },
     "company_items": {
       "ueber_uns": "About Us",

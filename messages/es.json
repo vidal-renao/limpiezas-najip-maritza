@@ -84,7 +84,10 @@
       "bueroreinigung": "Limpieza de oficinas",
       "umzugsreinigung": "Limpieza de mudanza",
       "glasreinigung": "Limpieza de cristales",
-      "treppenhausreinigung": "Limpieza de escaleras"
+      "treppenhausreinigung": "Limpieza de escaleras",
+      "praxisreinigung": "Limpieza de consultorios",
+      "tiefenreinigung": "Limpieza profunda",
+      "renovationsreinigung": "Limpieza de reformas"
     },
     "company_items": {
       "ueber_uns": "Sobre nosotros",

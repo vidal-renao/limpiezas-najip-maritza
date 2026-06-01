@@ -84,7 +84,10 @@
       "bueroreinigung": "Büroreinigung",
       "umzugsreinigung": "Umzugsreinigung",
       "glasreinigung": "Glasreinigung",
-      "treppenhausreinigung": "Treppenhausreinigung"
+      "treppenhausreinigung": "Treppenhausreinigung",
+      "praxisreinigung": "Praxisreinigung",
+      "tiefenreinigung": "Tiefenreinigung",
+      "renovationsreinigung": "Renovationsreinigung"
     },
     "company_items": {
       "ueber_uns": "Über uns",

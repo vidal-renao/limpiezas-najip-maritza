@@ -94,8 +94,16 @@ export const siteConfig = {
 export function buildLocalBusinessJsonLd() {
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "ProfessionalService"],
     "@id": `${siteConfig.url}/#business`,
+    foundingDate: String(siteConfig.foundingYear),
+    logo: {
+      "@type": "ImageObject",
+      url: `${siteConfig.url}/favicon-32x32.png`,
+      width: 32,
+      height: 32,
+    },
+    hasMap: "https://maps.google.com/maps?q=Wiesenstrasse+14,+4057+Basel,+Schweiz",
     name: siteConfig.name,
     alternateName: siteConfig.alternateName,
     description: siteConfig.description,

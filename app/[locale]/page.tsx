@@ -32,6 +32,17 @@ export async function generateMetadata({
   };
 }
 
+/* ─── Helpers ───────────────────────────────────────────────────────────── */
+function toISODate(germanDate: string): string {
+  const months: Record<string, string> = {
+    Januar: "01", Februar: "02", März: "03", April: "04",
+    Mai: "05", Juni: "06", Juli: "07", August: "08",
+    September: "09", Oktober: "10", November: "11", Dezember: "12",
+  };
+  const [month, year] = germanDate.trim().split(" ");
+  return `${year}-${months[month] ?? "01"}-01`;
+}
+
 /* ─── Page ──────────────────────────────────────────────────────────────── */
 export default async function HomePage({
   params,
@@ -764,7 +775,7 @@ export default async function HomePage({
               author: { "@type": "Person", name },
               reviewRating: { "@type": "Rating", ratingValue: String(rating), bestRating: "5" },
               reviewBody: text,
-              datePublished: date,
+              datePublished: toISODate(date),
             })),
           }),
         }}
