@@ -116,9 +116,9 @@ export default async function ImpressumPage({
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+41782410031" className="flex items-center gap-3 text-white/60 hover:text-brand transition-colors">
+                  <a href="tel:+41615018116" className="flex items-center gap-3 text-white/60 hover:text-brand transition-colors">
                     <Phone className="w-4 h-4 text-brand/50 shrink-0" />
-                    +41 78 241 00 31
+                    +41 61 501 81 16
                   </a>
                 </li>
                 <li>

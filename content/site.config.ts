@@ -17,7 +17,8 @@ export const siteConfig = {
   phone: {
     primary: "+41 79 252 75 57",
     primaryHref: "tel:+41792527557",
-    secondary: "+41 78 241 00 31",
+    secondary: "+41 61 501 81 16",
+    secondaryHref: "tel:+41615018116",
     whatsappHref: "https://wa.me/41792527557",
   },
 
@@ -109,6 +110,20 @@ export function buildLocalBusinessJsonLd() {
     description: siteConfig.description,
     url: siteConfig.url,
     telephone: [siteConfig.phone.primary, siteConfig.phone.secondary],
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: siteConfig.phone.primary,
+        contactType: "customer service",
+        availableLanguage: ["German", "Spanish", "English"],
+      },
+      {
+        "@type": "ContactPoint",
+        telephone: siteConfig.phone.secondary,
+        contactType: "customer service",
+        availableLanguage: ["German", "Spanish", "English"],
+      },
+    ],
     email: siteConfig.email,
     image: `${siteConfig.url}/images/N.webp`,
     priceRange: siteConfig.priceRange,

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import ContactForm from "@/components/ContactForm";
 import { Instagram } from "lucide-react";
+import { siteConfig } from "@/content/site.config";
 
 export async function generateMetadata({
   params,
@@ -114,10 +115,10 @@ export default async function KontaktPage({
             <h2 className="text-2xl sm:text-3xl font-bold text-navy mb-3">{t("booking.title")}</h2>
             <p className="text-foreground/60 mb-10 max-w-xl mx-auto">{t("booking.subtitle")}</p>
 
-            <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
               {/* WhatsApp */}
               <a
-                href="https://wa.me/41792527557"
+                href={siteConfig.phone.whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center gap-3 rounded-2xl border-2 border-[#25D366]/30 bg-[#25D366]/5 p-6 hover:border-[#25D366] hover:bg-[#25D366]/10 transition-all group"
@@ -133,9 +134,9 @@ export default async function KontaktPage({
                 </div>
               </a>
 
-              {/* Phone */}
+              {/* Mobile */}
               <a
-                href="tel:+41792527557"
+                href={siteConfig.phone.primaryHref}
                 className="flex flex-col items-center gap-3 rounded-2xl border-2 border-brand/30 bg-brand/5 p-6 hover:border-brand hover:bg-brand/10 transition-all group"
               >
                 <div className="w-14 h-14 rounded-full bg-brand flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -146,6 +147,22 @@ export default async function KontaktPage({
                 <div>
                   <p className="font-bold text-navy">{t("booking.phone.title")}</p>
                   <p className="text-sm text-foreground/55">{t("booking.phone.subtitle")}</p>
+                </div>
+              </a>
+
+              {/* Office Basel */}
+              <a
+                href={siteConfig.phone.secondaryHref}
+                className="flex flex-col items-center gap-3 rounded-2xl border-2 border-navy/20 bg-navy/5 p-6 hover:border-navy/40 hover:bg-navy/10 transition-all group"
+              >
+                <div className="w-14 h-14 rounded-full bg-navy flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="font-bold text-navy">{t("booking.office.title")}</p>
+                  <p className="text-sm text-foreground/55">{t("booking.office.subtitle")}</p>
                 </div>
               </a>
             </div>

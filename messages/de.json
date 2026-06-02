@@ -1135,7 +1135,7 @@
   "kontakt": {
     "meta": {
       "title": "Kontakt | D'Namar Reinigungsdienst Basel",
-      "description": "Kontaktieren Sie D'Namar in Basel. Telefon: +41 79 252 75 57. Kostenlose Offerte innerhalb von 24 Stunden."
+      "description": "Kontaktieren Sie D'Namar in Basel. Mobile: +41 79 252 75 57 · Office: +41 61 501 81 16. Kostenlose Offerte innerhalb von 24 Stunden."
     },
     "hero": {
       "eyebrow": "Wir freuen uns auf Sie",
@@ -1145,8 +1145,8 @@
     "info": {
       "title": "Kontaktdaten",
       "items": [
-        { "label": "Telefon & WhatsApp", "value": "+41 79 252 75 57" },
-        { "label": "Telefon 2", "value": "+41 78 241 00 31" },
+        { "label": "📱 Mobile & WhatsApp", "value": "+41 79 252 75 57" },
+        { "label": "☎ Office Basel", "value": "+41 61 501 81 16" },
         { "label": "E-Mail", "value": "info@dnamar.ch" },
         { "label": "Einsatzgebiet", "value": "Basel & Umgebung" },
         { "label": "Erreichbarkeit", "value": "Mo–Fr 08:00–18:00 · Sa 09:00–14:00" }
@@ -1195,7 +1195,8 @@
       "title": "Termin vereinbaren",
       "subtitle": "Kontaktieren Sie uns über den Kanal, der Ihnen am liebsten ist. Wir antworten innerhalb von 2 Stunden.",
       "whatsapp": { "title": "WhatsApp", "subtitle": "Schnellste Antwort · Sofort chatten" },
-      "phone": { "title": "Anrufen", "subtitle": "+41 79 252 75 57 · Mo–Sa" },
+      "phone": { "title": "Mobile", "subtitle": "+41 79 252 75 57 · Mo–Sa" },
+      "office": { "title": "Office Basel", "subtitle": "+41 61 501 81 16 · Mo–Fr" },
       "note": "Mo–Fr 08–12 / 13–18 Uhr · Sa–So geschlossen · Antwort garantiert innerhalb 2 Stunden"
     }
   },
