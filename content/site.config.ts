@@ -20,6 +20,7 @@ export const siteConfig = {
     secondary: "+41 61 501 81 16",
     secondaryHref: "tel:+41615018116",
     whatsappHref: "https://wa.me/41792527557",
+    whatsappSecondaryHref: "https://wa.me/41615018116",
   },
 
   email: "info@dnamar.ch",
