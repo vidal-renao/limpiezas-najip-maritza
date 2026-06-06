@@ -1146,7 +1146,7 @@
       "title": "Contact Details",
       "items": [
         { "label": "📱 Mobile & WhatsApp", "value": "+41 79 252 75 57" },
-        { "label": "📱 WhatsApp", "value": "+41 61 501 81 16" },
+        { "label": "☎ Phone", "value": "+41 61 501 81 16" },
         { "label": "Email", "value": "info@dnamar.ch" },
         { "label": "Service Area", "value": "Basel & surrounding area" },
         { "label": "Availability", "value": "Mon–Fri 08:00–18:00 · Sat 09:00–14:00" }
@@ -1196,7 +1196,7 @@
       "subtitle": "Contact us through your preferred channel. We respond within 2 hours.",
       "whatsapp": { "title": "WhatsApp", "subtitle": "Fastest response · Chat instantly" },
       "phone": { "title": "Mobile", "subtitle": "+41 79 252 75 57 · Mon–Sat" },
-      "office": { "title": "WhatsApp", "subtitle": "+41 61 501 81 16 · WhatsApp" },
+      "office": { "title": "Phone", "subtitle": "+41 61 501 81 16 · Phone" },
       "note": "Mon–Fri 08–12 / 13–18 · Sat–Sun closed · Response guaranteed within 2 hours"
     }
   },
