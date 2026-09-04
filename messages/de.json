@@ -1,7 +1,7 @@
 {
   "common": {
     "requestQuote": "Kostenlose Offerte anfordern",
-    "viewPrices": "Preise ansehen",
+    "viewPrices": "Individuelle Offerte anfragen",
     "requestOffer": "Offerte anfordern",
     "requestNow": "Jetzt Offerte anfordern",
     "contact": "Kontakt",
@@ -31,7 +31,7 @@
   "nav": {
     "home": "Startseite",
     "services": "Leistungen",
-    "prices": "Preise",
+    "prices": "Offerte",
     "references": "Referenzen",
     "blog": "Blog",
     "about": "Über uns",
@@ -50,22 +50,70 @@
       "es": "ES"
     },
     "services_items": {
-      "haushaltsreinigung":   { "label": "Hausreinigung / Privat",          "desc": "Wohnungen & Privathaushalte" },
-      "bueroreinigung":       { "label": "Büroreinigung",                   "desc": "Büros & Gewerbeflächen" },
-      "praxisreinigung":      { "label": "Praxisreinigung",                 "desc": "Arztpraxen & Studios" },
-      "treppenhausreinigung": { "label": "Treppenhausreinigung",            "desc": "Gemeinschaftsflächen" },
-      "glasreinigung":        { "label": "Glasreinigung",                   "desc": "Fenster & Glasflächen" },
-      "unterhaltsreinigung":  { "label": "Unterhaltsreinigung",             "desc": "Liegenschaften & Objekte" },
-      "verkaufsflaeche":      { "label": "Verkaufsflächenreinigung",        "desc": "Shops & Handelsflächen" },
-      "bauendreinigung":      { "label": "Bauendreinigung",                 "desc": "Nach Umbau & Neubau" },
-      "grundreinigung":       { "label": "Grundreinigung",                  "desc": "Gründliche Tiefenreinigung" },
-      "haushaltsdienste":     { "label": "Haushaltsdienste",                "desc": "Bügeln & Wäschepflege" },
-      "fitnesscenter":        { "label": "Fitnesscenter-Reinigung",         "desc": "Sportstudios & Wellness" },
-      "innenreinigung":       { "label": "Innenreinigung",                  "desc": "Innenräume & Oberflächen" },
-      "entsorgung":           { "label": "Entsorgung",                      "desc": "Entrümpelung & Abfall" },
-      "umzugsreinigung":      { "label": "Umzugsreinigung",                 "desc": "Endreinigung mit Garantie" },
-      "renovationsreinigung": { "label": "Renovationsreinigung",            "desc": "Nach Umbau, Neubau & Bau" },
-      "tiefenreinigung":      { "label": "Tiefenreinigung",                 "desc": "Gründliche Grundreinigung" }
+      "haushaltsreinigung": {
+        "label": "Hausreinigung / Privat",
+        "desc": "Wohnungen & Privathaushalte"
+      },
+      "bueroreinigung": {
+        "label": "Büroreinigung",
+        "desc": "Büros & Gewerbeflächen"
+      },
+      "praxisreinigung": {
+        "label": "Praxisreinigung",
+        "desc": "Arztpraxen & Studios"
+      },
+      "treppenhausreinigung": {
+        "label": "Treppenhausreinigung",
+        "desc": "Gemeinschaftsflächen"
+      },
+      "glasreinigung": {
+        "label": "Glasreinigung",
+        "desc": "Fenster & Glasflächen"
+      },
+      "unterhaltsreinigung": {
+        "label": "Unterhaltsreinigung",
+        "desc": "Liegenschaften & Objekte"
+      },
+      "verkaufsflaeche": {
+        "label": "Verkaufsflächenreinigung",
+        "desc": "Shops & Handelsflächen"
+      },
+      "bauendreinigung": {
+        "label": "Bauendreinigung",
+        "desc": "Nach Umbau & Neubau"
+      },
+      "grundreinigung": {
+        "label": "Grundreinigung",
+        "desc": "Gründliche Tiefenreinigung"
+      },
+      "haushaltsdienste": {
+        "label": "Haushaltsdienste",
+        "desc": "Bügeln & Wäschepflege"
+      },
+      "fitnesscenter": {
+        "label": "Fitnesscenter-Reinigung",
+        "desc": "Sportstudios & Wellness"
+      },
+      "innenreinigung": {
+        "label": "Innenreinigung",
+        "desc": "Innenräume & Oberflächen"
+      },
+      "entsorgung": {
+        "label": "Entsorgung",
+        "desc": "Entrümpelung & Abfall"
+      },
+      "umzugsreinigung": {
+        "label": "Umzugsreinigung",
+        "desc": "Endreinigung mit Garantie"
+      },
+      "renovationsreinigung": {
+        "label": "Renovationsreinigung",
+        "desc": "Nach Umbau, Neubau & Bau"
+      },
+      "tiefenreinigung": {
+        "label": "Tiefenreinigung",
+        "desc": "Gründliche Grundreinigung"
+      }
     }
   },
   "footer": {
@@ -111,7 +159,12 @@
       "subtitle": "Maritza Rodriguez und Nadjib Rasuly und ihr Team bieten professionelle Reinigungsdienstleistungen für Privathaushalte und Unternehmen in der Region Basel – gründlich, diskret und persönlich.",
       "ctaPrimary": "Kostenlose Offerte anfordern",
       "ctaPhone": "+41 79 252 75 57",
-      "signals": ["Keine Vorauszahlung", "Abgabegarantie inklusive", "Antwort in 24 Stunden", "Lokal & versichert"],
+      "signals": [
+        "Keine Vorauszahlung",
+        "Abgabegarantie inklusive",
+        "Antwort in 24 Stunden",
+        "Lokal & versichert"
+      ],
       "maritzaRole": "Mitgründerin",
       "nadjibRole": "Mitgründer",
       "stats": {
@@ -125,7 +178,7 @@
       "10+ Jahre Erfahrung",
       "Versichert & Geprüft",
       "Lokales Team Basel",
-      "Festpreis-Garantie"
+      "Individuelle Offerte"
     ],
     "services": {
       "eyebrow": "Was wir anbieten",
@@ -297,7 +350,26 @@
       "subtitle": "Von Basel-Innenstadt bis Riehen, von Allschwil bis Pratteln – D'Namar ist Ihr lokales Reinigungsteam in der gesamten Region Basel und Umgebung.",
       "cta": "Offerte anfordern",
       "mapTitle": "Einsatzgebiet D'Namar Basel",
-      "items": ["Grossbasel", "Kleinbasel", "Gundeldingen", "St. Alban", "Bruderholz", "Riehen", "Bettingen", "Allschwil", "Binningen", "Birsfelden", "Muttenz", "Pratteln", "Bottmingen", "Reinach", "Münchenstein", "Dornach", "Arlesheim", "Schönenbuch"]
+      "items": [
+        "Grossbasel",
+        "Kleinbasel",
+        "Gundeldingen",
+        "St. Alban",
+        "Bruderholz",
+        "Riehen",
+        "Bettingen",
+        "Allschwil",
+        "Binningen",
+        "Birsfelden",
+        "Muttenz",
+        "Pratteln",
+        "Bottmingen",
+        "Reinach",
+        "Münchenstein",
+        "Dornach",
+        "Arlesheim",
+        "Schönenbuch"
+      ]
     },
     "gallery": {
       "title": "Unsere Arbeit",
@@ -343,7 +415,7 @@
         },
         {
           "q": "Was kostet eine Haushaltsreinigung in Basel?",
-          "a": "Die Preise richten sich nach Grösse und Zustand des Objekts. Als Orientierung: kleine Wohnungen ab CHF 180, grosse Wohnungen ab CHF 320. Stundenweise Reinigung ab CHF 45/Stunde. Wir erstellen gerne eine kostenlose Offerte."
+          "a": "Jeder Auftrag wird individuell nach Grösse, Zustand und gewünschtem Leistungsumfang kalkuliert. Wir erstellen Ihnen gerne eine kostenlose und unverbindliche Offerte."
         },
         {
           "q": "Was bedeutet die Abgabegarantie bei der Umzugsreinigung?",
@@ -382,7 +454,7 @@
   },
   "haushaltsreinigung": {
     "meta": {
-      "title": "Haushaltsreinigung Basel | Professionelle Wohnungsreinigung ab CHF 45/Std.",
+      "title": "Haushaltsreinigung Basel | Professionelle Wohnungsreinigung",
       "description": "Professionelle Haushaltsreinigung in Basel – Gundeldingen, St. Alban, Riehen und Kleinbasel. Regelmässig oder einmalig, mit Kalkschutz für Badezimmer. Offerte in 24 Stunden."
     },
     "breadcrumb": "Haushaltsreinigung",
@@ -393,10 +465,22 @@
       "subtitle": "Entspannen Sie sich – wir übernehmen die Reinigung Ihres Zuhauses. Regelmässig oder einmalig, immer gründlich, pünktlich und diskret. In St. Alban, Gundeldingen, Riehen und ganz Basel."
     },
     "benefits": [
-      { "title": "Flexibel & pünktlich", "desc": "Wir richten uns nach Ihrem Zeitplan – einmalig, wöchentlich oder nach Bedarf." },
-      { "title": "Versichert & vertrauenswürdig", "desc": "Unser Team ist vollständig versichert und arbeitet diskret in Ihrem Zuhause." },
-      { "title": "Professionelle Mittel", "desc": "Wir bringen alle Reinigungsmittel und Geräte mit – keine Zusatzkosten." },
-      { "title": "Persönliche Betreuung", "desc": "Immer dieselbe Ansprechperson – für ein Vertrauensverhältnis, das bleibt." }
+      {
+        "title": "Flexibel & pünktlich",
+        "desc": "Wir richten uns nach Ihrem Zeitplan – einmalig, wöchentlich oder nach Bedarf."
+      },
+      {
+        "title": "Versichert & vertrauenswürdig",
+        "desc": "Unser Team ist vollständig versichert und arbeitet diskret in Ihrem Zuhause."
+      },
+      {
+        "title": "Professionelle Mittel",
+        "desc": "Wir bringen alle Reinigungsmittel und Geräte mit – keine Zusatzkosten."
+      },
+      {
+        "title": "Persönliche Betreuung",
+        "desc": "Immer dieselbe Ansprechperson – für ein Vertrauensverhältnis, das bleibt."
+      }
     ],
     "seo": {
       "title": "Ihre Zeit ist wertvoll – wir übernehmen die Reinigung",
@@ -407,12 +491,24 @@
       "p4": "Was uns auszeichnet: Sie erhalten stets dieselbe Reinigungsperson, die Ihre Gewohnheiten kennt und respektiert. Das schafft Vertrauen – besonders wichtig, wenn wir in Ihrer Abwesenheit reinigen. Mit 4.9 Sternen Kundenbewertung und über 500 zufriedenen Haushalten in Basel stehen wir für Qualität, die man spürt."
     },
     "sidebar": {
-      "title": "Preisübersicht",
+      "title": "Individuelle Offerte",
       "rows": [
-        { "val": "ab CHF 45", "label": "pro Stunde" },
-        { "val": "ab CHF 180", "label": "Kleine Wohnung (bis 60 m²)" },
-        { "val": "ab CHF 280", "label": "Grosse Wohnung (bis 100 m²)" },
-        { "val": "24 Std.", "label": "Antwortzeit garantiert" }
+        {
+          "val": "Auf Anfrage",
+          "label": "pro Stunde"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "Kleine Wohnung (bis 60 m²)"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "Grosse Wohnung (bis 100 m²)"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "Antwortzeit garantiert"
+        }
       ],
       "kalkBadge": "Kalkschutz für Bad inklusive",
       "kalkText": "professionelle Versiegelung gegen Basler Hartwasser."
@@ -434,10 +530,10 @@
       ]
     },
     "priceTeaser": {
-      "label": "Richtpreis",
-      "price": "ab CHF 45",
-      "unit": "/ Std.",
-      "sub": "Kleine Wohnung ab CHF 180 · Grosse Wohnung ab CHF 280"
+      "label": "Individuelle Offerte",
+      "price": "Auf Anfrage",
+      "unit": "",
+      "sub": "Individuell nach Grösse, Zustand und Leistungsumfang"
     },
     "cta": {
       "title": "Bereit für ein saubereres Zuhause in Basel?",
@@ -446,7 +542,7 @@
   },
   "bueroreinigung": {
     "meta": {
-      "title": "Büroreinigung Basel | Professionelle Reinigung für Unternehmen – ab CHF 40/Std.",
+      "title": "Büroreinigung Basel | Professionelle Reinigung für Unternehmen",
       "description": "Professionelle Büroreinigung in Basel für Büros, Arztpraxen und Gewerbe. Diskret, ausserhalb der Arbeitszeiten, mit Kalkschutz in Sanitäranlagen. Kostenlose Offerte in 24 Stunden."
     },
     "breadcrumb": "Büroreinigung",
@@ -475,21 +571,45 @@
       "p4": "Was D'Namar von anderen unterscheidet: Sie erhalten stets dasselbe vertraute Team, das Ihren Betrieb kennt, Ihre Abläufe respektiert und diskret agiert. Mit über 10 Jahren Erfahrung in Basel und mehr als 500 zufriedenen Kunden – von der Einzelpraxis in Riehen bis zum Open-Space in Grossbasel – sind wir Ihr verlässlicher Partner für Sauberkeit auf höchstem Niveau."
     },
     "sidebar": {
-      "title": "Auf einen Blick",
+      "title": "Individuelle Offerte",
       "rows": [
-        { "val": "ab CHF 40", "label": "pro Stunde" },
-        { "val": "24 Std.", "label": "Antwortzeit garantiert" },
-        { "val": "10+", "label": "Jahre Erfahrung in Basel" },
-        { "val": "500+", "label": "Zufriedene Kunden" }
+        {
+          "val": "Auf Anfrage",
+          "label": "pro Stunde"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "Antwortzeit garantiert"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "Jahre Erfahrung in Basel"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "Zufriedene Kunden"
+        }
       ],
       "kalkBadge": "Kalkschutz inklusive",
       "kalkText": "für alle Sanitäranlagen – besonders wirksam bei Basler Hartwasser."
     },
     "benefits": [
-      { "title": "Ausserhalb der Bürozeiten", "desc": "Wir reinigen früh morgens, abends oder am Wochenende – damit Ihr Betrieb nicht unterbrochen wird." },
-      { "title": "Diskret & versichert", "desc": "Unser Team ist verschwiegenheitsverpflichtet, vollständig versichert und mit Referenzen geprüft." },
-      { "title": "Fixer Reinigungsrhythmus", "desc": "Wöchentlich, täglich oder nach Bedarf – wir passen uns Ihrem Betriebskalender an." },
-      { "title": "Transparente Abrechnung", "desc": "Monatliche Rechnung, keine versteckten Kosten, auf Wunsch mit Reinigungsprotokoll." }
+      {
+        "title": "Ausserhalb der Bürozeiten",
+        "desc": "Wir reinigen früh morgens, abends oder am Wochenende – damit Ihr Betrieb nicht unterbrochen wird."
+      },
+      {
+        "title": "Diskret & versichert",
+        "desc": "Unser Team ist verschwiegenheitsverpflichtet, vollständig versichert und mit Referenzen geprüft."
+      },
+      {
+        "title": "Fixer Reinigungsrhythmus",
+        "desc": "Wöchentlich, täglich oder nach Bedarf – wir passen uns Ihrem Betriebskalender an."
+      },
+      {
+        "title": "Transparente Abrechnung",
+        "desc": "Monatliche Rechnung, keine versteckten Kosten, auf Wunsch mit Reinigungsprotokoll."
+      }
     ],
     "tasks": {
       "title": "Leistungsumfang",
@@ -510,10 +630,10 @@
       ]
     },
     "priceTeaser": {
-      "label": "Richtpreis Gewerbe",
-      "price": "ab CHF 40",
-      "unit": "/ Std.",
-      "sub": "Pauschalpreise nach Objekt auf Anfrage",
+      "label": "Individuelle Offerte",
+      "price": "Auf Anfrage",
+      "unit": "",
+      "sub": "Individuell nach Grösse, Zustand und Leistungsumfang",
       "cta": "Kostenlose B2B-Offerte"
     },
     "cta": {
@@ -535,10 +655,22 @@
       "kalkBadge": "Mit Kalkschutz-Versiegelung bis 8 Wochen"
     },
     "benefits": [
-      { "title": "Kalkschutz-Versiegelung", "desc": "Wir tragen nach der Reinigung eine Schutzversiegelung auf – bis zu 8 Wochen Kalkschutz bei Basler Hartwasser." },
-      { "title": "Privat & Gewerbe", "desc": "Von der Altbauwohnung bis zur Glasfassade – wir reinigen jede Fensterfläche in Basel und Umgebung." },
-      { "title": "Innen & Aussen", "desc": "Vollständige Reinigung beider Seiten inklusive Rahmen, Dichtungen und Fensterbänken." },
-      { "title": "Osmotisch gereinigtes Wasser", "desc": "Wir arbeiten mit 100 % enthärtetem, osmotisch gereinigtem Wasser – keine Streifen, kein Kalk." }
+      {
+        "title": "Kalkschutz-Versiegelung",
+        "desc": "Wir tragen nach der Reinigung eine Schutzversiegelung auf – bis zu 8 Wochen Kalkschutz bei Basler Hartwasser."
+      },
+      {
+        "title": "Privat & Gewerbe",
+        "desc": "Von der Altbauwohnung bis zur Glasfassade – wir reinigen jede Fensterfläche in Basel und Umgebung."
+      },
+      {
+        "title": "Innen & Aussen",
+        "desc": "Vollständige Reinigung beider Seiten inklusive Rahmen, Dichtungen und Fensterbänken."
+      },
+      {
+        "title": "Osmotisch gereinigtes Wasser",
+        "desc": "Wir arbeiten mit 100 % enthärtetem, osmotisch gereinigtem Wasser – keine Streifen, kein Kalk."
+      }
     ],
     "seo": {
       "title": "Glasreinigung in Basel – und warum Kalkschutz entscheidend ist",
@@ -550,12 +682,24 @@
       "p4": "Unsere Glasreinigung ist ideal für regelmässige Intervalle – monatlich, vierteljährlich oder nach Bedarf. Für Geschäftsgebäude und Liegenschaften bieten wir Wartungsverträge mit dokumentierten Einsatzprotokollen an. Von der Einzelvilla in Riehen bis zum Bürogebäude in Grossbasel – kontaktieren Sie uns für eine kostenlose Offerte."
     },
     "sidebar": {
-      "title": "Preisübersicht",
+      "title": "Individuelle Offerte",
       "rows": [
-        { "val": "ab CHF 8", "label": "pro Fenster (einseitig)" },
-        { "val": "ab CHF 14", "label": "pro Fenster (beidseitig)" },
-        { "val": "ab CHF 120", "label": "Wohnung (bis 10 Fenster)" },
-        { "val": "auf Anfrage", "label": "Glasfronten & Gewerbe" }
+        {
+          "val": "Auf Anfrage",
+          "label": "pro Fenster (einseitig)"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "pro Fenster (beidseitig)"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "Wohnung (bis 10 Fenster)"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "Glasfronten & Gewerbe"
+        }
       ],
       "kalkTitle": "Kalkschutz-Versiegelung",
       "kalkText": "Bis zu 8 Wochen Schutz vor neuen Kalkablagerungen – mit professioneller Versiegelung nach der Reinigung. Ideal für Basler Hartwasser (bis 35 °fH)."
@@ -598,10 +742,22 @@
     "steps": {
       "title": "So funktioniert es",
       "items": [
-        { "title": "Termin buchen", "desc": "Kontaktieren Sie uns – wir koordinieren den Termin passend zu Ihrer Abgabe." },
-        { "title": "Abnahmeprotokoll prüfen", "desc": "Wir kennen die Anforderungen der Basler Verwaltungen und richten uns danach." },
-        { "title": "Gründliche Endreinigung", "desc": "Unser Team reinigt die Wohnung nach Verwaltungsstandard – vollständig." },
-        { "title": "Abgabegarantie", "desc": "Falls die Verwaltung Mängel feststellt, kommen wir kostenlos nochmals." }
+        {
+          "title": "Termin buchen",
+          "desc": "Kontaktieren Sie uns – wir koordinieren den Termin passend zu Ihrer Abgabe."
+        },
+        {
+          "title": "Abnahmeprotokoll prüfen",
+          "desc": "Wir kennen die Anforderungen der Basler Verwaltungen und richten uns danach."
+        },
+        {
+          "title": "Gründliche Endreinigung",
+          "desc": "Unser Team reinigt die Wohnung nach Verwaltungsstandard – vollständig."
+        },
+        {
+          "title": "Abgabegarantie",
+          "desc": "Falls die Verwaltung Mängel feststellt, kommen wir kostenlos nochmals."
+        }
       ]
     },
     "seo": {
@@ -614,11 +770,20 @@
       "p4": "Unser Team kann kurzfristig reagieren und koordiniert sich direkt mit Ihrer Verwaltung oder Ihrem Makler. Wir sind Ihr zuverlässiger Partner für die stressfreie Wohnungsübergabe in Basel – mit über 10 Jahren Erfahrung und mehr als 500 erfolgreichen Wohnungsabgaben im ganzen Stadtkanton."
     },
     "sidebar": {
-      "title": "Preisübersicht",
+      "title": "Individuelle Offerte",
       "rows": [
-        { "val": "ab CHF 350", "label": "2-Zi-Wohnung (bis 50 m²)" },
-        { "val": "ab CHF 480", "label": "3-Zi-Wohnung (bis 80 m²)" },
-        { "val": "ab CHF 650", "label": "4-Zi-Wohnung (bis 110 m²)" }
+        {
+          "val": "Auf Anfrage",
+          "label": "2-Zi-Wohnung (bis 50 m²)"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "3-Zi-Wohnung (bis 80 m²)"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "4-Zi-Wohnung (bis 110 m²)"
+        }
       ],
       "ctaLabel": "Termin anfragen",
       "kalkTitle": "Kalkentfernung inklusive",
@@ -661,10 +826,22 @@
       "ctaSecondary": "Direkt kontaktieren"
     },
     "features": [
-      { "title": "Regelmässiger Rhythmus", "desc": "Wöchentlich, zweiwöchentlich oder monatlich – wir passen uns Ihrem Vertrag an." },
-      { "title": "Für Verwaltungen", "desc": "Wir arbeiten mit Liegenschaftsverwaltungen und Eigentümern in ganz Basel zusammen." },
-      { "title": "Verlässliche Kommunikation", "desc": "Schnelle Reaktion bei Problemen – immer erreichbar und unkompliziert." },
-      { "title": "Reinigungsnachweis", "desc": "Auf Wunsch dokumentieren wir jeden Einsatz mit einem Nachweis für Ihre Unterlagen." }
+      {
+        "title": "Regelmässiger Rhythmus",
+        "desc": "Wöchentlich, zweiwöchentlich oder monatlich – wir passen uns Ihrem Vertrag an."
+      },
+      {
+        "title": "Für Verwaltungen",
+        "desc": "Wir arbeiten mit Liegenschaftsverwaltungen und Eigentümern in ganz Basel zusammen."
+      },
+      {
+        "title": "Verlässliche Kommunikation",
+        "desc": "Schnelle Reaktion bei Problemen – immer erreichbar und unkompliziert."
+      },
+      {
+        "title": "Reinigungsnachweis",
+        "desc": "Auf Wunsch dokumentieren wir jeden Einsatz mit einem Nachweis für Ihre Unterlagen."
+      }
     ],
     "seo": {
       "title": "Treppenhausreinigung für Basler Liegenschaften – diskret und verlässlich",
@@ -675,12 +852,24 @@
       "p4": "Für Liegenschaftsverwaltungen in Basel erstellen wir auf Wunsch nach jedem Einsatz ein digitales Reinigungsprotokoll – als Nachweis für Eigentümer und Mieter. Wir sind langjähriger Partner zahlreicher Basler Verwaltungen und verstehen die spezifischen Anforderungen an Gemeinschaftsflächen in Mehrfamilienhäusern, Gewerbeliegenschaften und Mischobjekten."
     },
     "sidebar": {
-      "title": "Preisübersicht",
+      "title": "Individuelle Offerte",
       "rows": [
-        { "val": "ab CHF 80", "label": "bis 3 Stockwerke" },
-        { "val": "ab CHF 130", "label": "bis 6 Stockwerke" },
-        { "val": "ab CHF 200", "label": "Grosse Liegenschaft" },
-        { "val": "auf Anfrage", "label": "Wartungsvertrag" }
+        {
+          "val": "Auf Anfrage",
+          "label": "bis 3 Stockwerke"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "bis 6 Stockwerke"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "Grosse Liegenschaft"
+        },
+        {
+          "val": "Auf Anfrage",
+          "label": "Wartungsvertrag"
+        }
       ],
       "kalkTitle": "Kalkschutz für Lift & Fliesen",
       "kalkText": "Professionelle Entkalkung und Schutzversiegelung für Keramikfliesen und Liftkabinen – ideal gegen Basler Hartwasser."
@@ -710,25 +899,25 @@
   },
   "preise": {
     "meta": {
-      "title": "Preise & Tarife | Reinigungsdienst Basel – D'Namar",
-      "description": "Transparente Preise für alle Reinigungsleistungen in Basel. Haushaltsreinigung ab CHF 45/Std., Umzugsreinigung ab CHF 380, Büroreinigung ab CHF 40/Std. Kostenlose Offerte in 24 Stunden."
+      "title": "Individuelle Offerten | Reinigungsdienst Basel – D'Namar",
+      "description": "Individuell kalkulierte Reinigungsleistungen in Basel. Sie erhalten eine kostenlose, unverbindliche Offerte innerhalb von 24 Stunden."
     },
     "hero": {
       "badge": "Transparenz & Fairness",
-      "title1": "Klare Preise.",
+      "title1": "Persönlich kalkuliert.",
       "titleBrand": "Keine versteckten Kosten.",
-      "subtitle": "Alle Tarife auf einen Blick – von der wöchentlichen Haushaltsreinigung bis zur Bauendreinigung. Der genaue Preis richtet sich nach Grösse, Zustand und Anforderungen Ihres Objekts. Wir erstellen Ihnen in 24 Stunden eine kostenlose, unverbindliche Offerte."
+      "subtitle": "Jeder Reinigungsauftrag ist anders. Teilen Sie uns Grösse, Zustand und Anforderungen Ihres Objekts mit – wir erstellen Ihnen innerhalb von 24 Stunden eine kostenlose, unverbindliche Offerte."
     },
     "tableHeaders": {
       "service": "Leistung",
       "details": "Details",
-      "price": "Preis"
+      "price": "Individuelle Offerte"
     },
-    "priceNote": "Preise exkl. MwSt. · Endpreis nach kostenloser Offerte.",
+    "priceNote": "Individuelle Kalkulation · Verbindlicher Betrag nach kostenloser Offerte.",
     "alwaysIncluded": {
       "eyebrow": "Immer dabei",
-      "title": "Im Preis inbegriffen",
-      "subtitle": "Bei jedem Auftrag – egal ob einmalig oder regelmässig – sind folgende Leistungen ohne Aufpreis inklusive.",
+      "title": "In jeder Offerte berücksichtigt",
+      "subtitle": "Der genaue Leistungsumfang wird transparent und passend zu Ihrem Objekt in der Offerte festgehalten.",
       "items": [
         "Alle Reinigungsmittel & Maschinen inklusive",
         "Geschultes und versichertes Personal",
@@ -738,16 +927,16 @@
         "Kalkschutz-Expertise für Basler Leitungswasser"
       ]
     },
-    "disclaimer": "Hinweis: Alle Preise sind Richtpreise und verstehen sich exkl. MwSt. Der endgültige Preis wird nach einer kostenlosen Besichtigung oder einer detaillierten schriftlichen Anfrage individuell festgelegt. Massgeblich ist ausschliesslich das schriftlich bestätigte Angebot. D'Namar behält sich das Recht vor, die Tarife jederzeit anzupassen.",
+    "disclaimer": "Jeder Auftrag wird individuell nach Besichtigung oder einer detaillierten schriftlichen Anfrage kalkuliert. Massgeblich ist ausschliesslich die schriftlich bestätigte Offerte.",
     "calculator": {
-      "title": "Preisrechner",
+      "title": "Offertenanfrage",
       "subtitle": "Schätzung in Sekunden",
       "serviceLabel": "Leistung",
       "sizeLabel": "Fläche",
       "frequencyLabel": "Häufigkeit",
-      "resultTitle": "Geschätzter Preis",
-      "resultNote": "Richtwert inkl. Materialien · Genaue Offerte kostenlos in 24h",
-      "ctaLabel": "Preis berechnen",
+      "resultTitle": "Ihre persönliche Offerte",
+      "resultNote": "Individuell nach Grösse, Zustand und Leistungsumfang",
+      "ctaLabel": "Individuelle Offerte anfragen",
       "services": {
         "haushalt": "Haushaltsreinigung",
         "buero": "Büroreinigung",
@@ -764,7 +953,7 @@
     },
     "cta": {
       "badge": "Kostenlos & unverbindlich",
-      "title": "Preis für Ihr Objekt berechnen lassen?",
+      "title": "Persönliche Offerte für Ihr Objekt anfordern",
       "subtitle": "Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden mit einer massgeschneiderten Offerte für Ihre Situation.",
       "hours": "Mo–Fr 08–12 / 13–18 Uhr · Sa–So geschlossen · Antwort in 24 Stunden"
     },
@@ -776,11 +965,37 @@
         "ctaLabel": "Haushaltsreinigung anfragen",
         "note": null,
         "rows": [
-          { "service": "Stundenweise Reinigung", "detail": "Flexibel buchbar · Mindestdauer 2 Stunden", "price": "CHF 45 – 55", "unit": "/ Stunde" },
-          { "service": "1–2-Zimmer-Wohnung", "detail": "Inkl. Bad, Küche und Böden", "price": "ab CHF 180", "unit": "/ Einsatz" },
-          { "service": "3–4-Zimmer-Wohnung", "detail": "Inkl. Bad, Küche und Böden", "price": "ab CHF 320", "unit": "/ Einsatz", "highlight": true },
-          { "service": "5+ Zimmer / Einfamilienhaus", "detail": "Inkl. Bad, Küche, Böden und Treppenhaus", "price": "ab CHF 480", "unit": "/ Einsatz" },
-          { "service": "Unterhaltsreinigung (monatlich)", "detail": "Festes Team, bevorzugte Termine, wiederkehrender Auftrag", "price": "ab CHF 160", "unit": "/ Monat" }
+          {
+            "service": "Stundenweise Reinigung",
+            "detail": "Flexibel buchbar · Mindestdauer 2 Stunden",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "1–2-Zimmer-Wohnung",
+            "detail": "Inkl. Bad, Küche und Böden",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "3–4-Zimmer-Wohnung",
+            "detail": "Inkl. Bad, Küche und Böden",
+            "price": "Auf Anfrage",
+            "unit": "",
+            "highlight": true
+          },
+          {
+            "service": "5+ Zimmer / Einfamilienhaus",
+            "detail": "Inkl. Bad, Küche, Böden und Treppenhaus",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "Unterhaltsreinigung (monatlich)",
+            "detail": "Festes Team, bevorzugte Termine, wiederkehrender Auftrag",
+            "price": "Auf Anfrage",
+            "unit": ""
+          }
         ]
       },
       "umzugsreinigung": {
@@ -790,10 +1005,31 @@
         "ctaLabel": "Umzugsreinigung anfragen",
         "note": "Die Abgabegarantie gilt für alle Umzugsreinigungen: Falls die Liegenschaftsverwaltung Beanstandungen hat, kommen wir kostenlos nochmals.",
         "rows": [
-          { "service": "1–2-Zimmer-Wohnung", "detail": "Inkl. Backofen, Kühlschrank, Bad und alle Böden", "price": "ab CHF 380", "unit": "/ Auftrag" },
-          { "service": "3–4-Zimmer-Wohnung", "detail": "Inkl. Backofen, Kühlschrank, Bad und alle Böden", "price": "ab CHF 580", "unit": "/ Auftrag", "highlight": true },
-          { "service": "5+ Zimmer / Einfamilienhaus", "detail": "Inkl. aller Oberflächen, Keller auf Anfrage", "price": "ab CHF 780", "unit": "/ Auftrag" },
-          { "service": "Abgabegarantie", "detail": "Kostenlose Nachbesserung bis zur erfolgreichen Abnahme", "price": "Inklusive", "unit": "" }
+          {
+            "service": "1–2-Zimmer-Wohnung",
+            "detail": "Inkl. Backofen, Kühlschrank, Bad und alle Böden",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "3–4-Zimmer-Wohnung",
+            "detail": "Inkl. Backofen, Kühlschrank, Bad und alle Böden",
+            "price": "Auf Anfrage",
+            "unit": "",
+            "highlight": true
+          },
+          {
+            "service": "5+ Zimmer / Einfamilienhaus",
+            "detail": "Inkl. aller Oberflächen, Keller auf Anfrage",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "Abgabegarantie",
+            "detail": "Kostenlose Nachbesserung bis zur erfolgreichen Abnahme",
+            "price": "Auf Anfrage",
+            "unit": ""
+          }
         ]
       },
       "bueroreinigung": {
@@ -803,11 +1039,37 @@
         "ctaLabel": "Büroreinigung anfragen",
         "note": null,
         "rows": [
-          { "service": "Stundenweise Reinigung", "detail": "Gewerbe & Büroflächen · Mindestdauer 2 Stunden", "price": "CHF 40 – 50", "unit": "/ Stunde" },
-          { "service": "Büro bis 100 m²", "detail": "Wöchentliche Unterhaltsreinigung, festes Team", "price": "ab CHF 280", "unit": "/ Monat" },
-          { "service": "Büro 100–250 m²", "detail": "Wöchentliche Unterhaltsreinigung, festes Team", "price": "ab CHF 480", "unit": "/ Monat", "highlight": true },
-          { "service": "Praxisreinigung", "detail": "Nach hygienischen Anforderungen · Protokoll auf Anfrage", "price": "auf Anfrage", "unit": "" },
-          { "service": "Grosse Gewerbefläche 250+ m²", "detail": "Individuelles Angebot nach Besichtigung", "price": "auf Anfrage", "unit": "" }
+          {
+            "service": "Stundenweise Reinigung",
+            "detail": "Gewerbe & Büroflächen · Mindestdauer 2 Stunden",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "Büro bis 100 m²",
+            "detail": "Wöchentliche Unterhaltsreinigung, festes Team",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "Büro 100–250 m²",
+            "detail": "Wöchentliche Unterhaltsreinigung, festes Team",
+            "price": "Auf Anfrage",
+            "unit": "",
+            "highlight": true
+          },
+          {
+            "service": "Praxisreinigung",
+            "detail": "Nach hygienischen Anforderungen · Protokoll auf Anfrage",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "Grosse Gewerbefläche 250+ m²",
+            "detail": "Individuelles Angebot nach Besichtigung",
+            "price": "Auf Anfrage",
+            "unit": ""
+          }
         ]
       },
       "glasreinigung": {
@@ -817,10 +1079,31 @@
         "ctaLabel": "Glasreinigung anfragen",
         "note": null,
         "rows": [
-          { "service": "Fensterfläche (pro m²)", "detail": "Innen & aussen, streifenfrei · Mindestauftrag CHF 90", "price": "ab CHF 8", "unit": "/ m²" },
-          { "service": "Privathaushalt (Pauschal)", "detail": "Bis 10 Standardfenster, inkl. Rahmen", "price": "ab CHF 90", "unit": "/ Einsatz" },
-          { "service": "Gewerbliche Glasfront", "detail": "Schaufenster, Bürogebäude – Preis nach Fläche", "price": "ab CHF 150", "unit": "/ Einsatz", "highlight": true },
-          { "service": "Kalkschutzversiegelung", "detail": "Schützt bis zu 8 Wochen gegen Neuablagerungen", "price": "ab CHF 60", "unit": "/ Einsatz" }
+          {
+            "service": "Fensterfläche (pro m²)",
+            "detail": "Individuell nach Umfang und Objekt",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "Privathaushalt (Pauschal)",
+            "detail": "Bis 10 Standardfenster, inkl. Rahmen",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "Gewerbliche Glasfront",
+            "detail": "Schaufenster, Bürogebäude – Preis nach Fläche",
+            "price": "Auf Anfrage",
+            "unit": "",
+            "highlight": true
+          },
+          {
+            "service": "Kalkschutzversiegelung",
+            "detail": "Schützt bis zu 8 Wochen gegen Neuablagerungen",
+            "price": "Auf Anfrage",
+            "unit": ""
+          }
         ]
       },
       "treppenhausreinigung": {
@@ -830,10 +1113,31 @@
         "ctaLabel": "Treppenhausreinigung anfragen",
         "note": null,
         "rows": [
-          { "service": "Wöchentliche Reinigung", "detail": "Bis 4 Stockwerke · Böden, Geländer, Briefkastenanlage", "price": "ab CHF 100", "unit": "/ Einsatz" },
-          { "service": "Zweiwöchentliche Reinigung", "detail": "Bis 4 Stockwerke · Böden, Geländer, Briefkastenanlage", "price": "ab CHF 130", "unit": "/ Einsatz", "highlight": true },
-          { "service": "Monatliche Grundreinigung", "detail": "Inkl. Fenster Treppenhaus und Keller", "price": "ab CHF 220", "unit": "/ Einsatz" },
-          { "service": "Mehrfamilienhäuser (6+ Parteien)", "detail": "Individuelles Angebot für Verwaltungen", "price": "auf Anfrage", "unit": "" }
+          {
+            "service": "Wöchentliche Reinigung",
+            "detail": "Bis 4 Stockwerke · Böden, Geländer, Briefkastenanlage",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "Zweiwöchentliche Reinigung",
+            "detail": "Bis 4 Stockwerke · Böden, Geländer, Briefkastenanlage",
+            "price": "Auf Anfrage",
+            "unit": "",
+            "highlight": true
+          },
+          {
+            "service": "Monatliche Grundreinigung",
+            "detail": "Inkl. Fenster Treppenhaus und Keller",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "Mehrfamilienhäuser (6+ Parteien)",
+            "detail": "Individuelles Angebot für Verwaltungen",
+            "price": "Auf Anfrage",
+            "unit": ""
+          }
         ]
       },
       "gewerbereinigung": {
@@ -843,10 +1147,31 @@
         "ctaLabel": "Spezialreinigung anfragen",
         "note": null,
         "rows": [
-          { "service": "Bauendreinigung", "detail": "Nach Renovation oder Neubau · Inkl. Fenster & Böden", "price": "ab CHF 400", "unit": "/ Auftrag" },
-          { "service": "Tiefenreinigung Küche", "detail": "Backofen, Herdplatten, Dunstabzug, Kalkentfernung", "price": "ab CHF 120", "unit": "/ Küche" },
-          { "service": "Teppich- & Polsterreinigung", "detail": "Nassextraktion oder Trockenreinigung je nach Material", "price": "ab CHF 4", "unit": "/ m²" },
-          { "service": "Grossbaustellen / Industrieanlagen", "detail": "Besichtigung erforderlich · Offerte innert 48 Std.", "price": "auf Anfrage", "unit": "", "highlight": true }
+          {
+            "service": "Bauendreinigung",
+            "detail": "Nach Renovation oder Neubau · Inkl. Fenster & Böden",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "Tiefenreinigung Küche",
+            "detail": "Backofen, Herdplatten, Dunstabzug, Kalkentfernung",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "Teppich- & Polsterreinigung",
+            "detail": "Nassextraktion oder Trockenreinigung je nach Material",
+            "price": "Auf Anfrage",
+            "unit": ""
+          },
+          {
+            "service": "Grossbaustellen / Industrieanlagen",
+            "detail": "Besichtigung erforderlich · Offerte innert 48 Std.",
+            "price": "Auf Anfrage",
+            "unit": "",
+            "highlight": true
+          }
         ]
       }
     }
@@ -868,10 +1193,22 @@
       "disclaimer": "Alle Bewertungen stammen von echten Kunden in Basel und Umgebung – unbearbeitet und direkt weitergegeben."
     },
     "stats": [
-      { "value": "500+", "label": "Zufriedene Kunden" },
-      { "value": "4.9", "label": "Durchschnittsbewertung" },
-      { "value": "10+", "label": "Jahre in Basel" },
-      { "value": "100%", "label": "Weiterempfehlungsrate" }
+      {
+        "value": "500+",
+        "label": "Zufriedene Kunden"
+      },
+      {
+        "value": "4.9",
+        "label": "Durchschnittsbewertung"
+      },
+      {
+        "value": "10+",
+        "label": "Jahre in Basel"
+      },
+      {
+        "value": "100%",
+        "label": "Weiterempfehlungsrate"
+      }
     ],
     "cta": {
       "badge": "Jetzt anfragen",
@@ -906,7 +1243,13 @@
     "verified": "Verifizierter Kunde",
     "no_reviews_title": "Noch keine Bewertungen",
     "no_reviews_text": "Seien Sie der erste Kunde, der eine Erfahrung teilt.",
-    "star_labels": ["5 Sterne", "4 Sterne", "3 Sterne", "2 Sterne", "1 Stern"]
+    "star_labels": [
+      "5 Sterne",
+      "4 Sterne",
+      "3 Sterne",
+      "2 Sterne",
+      "1 Stern"
+    ]
   },
   "ueber-uns": {
     "meta": {
@@ -920,10 +1263,22 @@
       "title2": "Nicht als Routine.",
       "subtitle": "Hinter D'Namar stehen keine anonymen Mitarbeitenden, sondern Menschen, die ihren Namen für ihre Arbeit einsetzen. Maritza Rodriguez und Nadjib Rasuly haben dieses Unternehmen aufgebaut, weil sie an echte Qualität glauben – und an den Unterschied, den persönlicher Einsatz macht.",
       "stats": [
-        { "value": "500+", "label": "Zufriedene Kunden" },
-        { "value": "10+", "label": "Jahre Erfahrung" },
-        { "value": "4.9 ★", "label": "Kundenbewertung" },
-        { "value": "100%", "label": "Abgabegarantie" }
+        {
+          "value": "500+",
+          "label": "Zufriedene Kunden"
+        },
+        {
+          "value": "10+",
+          "label": "Jahre Erfahrung"
+        },
+        {
+          "value": "4.9 ★",
+          "label": "Kundenbewertung"
+        },
+        {
+          "value": "100%",
+          "label": "Abgabegarantie"
+        }
       ]
     },
     "manifest": {
@@ -947,7 +1302,12 @@
         "quote": "«Sauberkeit bedeutet für mich mehr als nur putzen – es ist ein Ausdruck von Respekt gegenüber dem Menschen, für den ich arbeite. Ich gehe erst, wenn ich selbst zufrieden wäre.»",
         "p1": "Maritza bringt über zehn Jahre Erfahrung in der professionellen Haushalts- und Gewerbereinigung mit. Ihr Auge fürs Detail ist legendär unter Stammkunden: Kein Kalkfleck, kein Fettrand, kein übersehener Winkel. Dazu kommt ihre freundliche, diskrete Art – sie ist die erste Ansprechperson für Privatkunden in ganz Basel.",
         "p2": "Besonders am Herzen liegen ihr Umzugsreinigungen: «Die Wohnungsabgabe ist oft stressig. Ich möchte, dass meine Kunden entspannt zum Abgabetermin gehen – weil sie wissen, dass alles sitzt.»",
-        "tags": ["Haushaltsreinigung", "Umzugsreinigung", "Tiefenreinigung", "Privatkunden"]
+        "tags": [
+          "Haushaltsreinigung",
+          "Umzugsreinigung",
+          "Tiefenreinigung",
+          "Privatkunden"
+        ]
       },
       "nadjib": {
         "name": "Nadjib Rasuly",
@@ -955,7 +1315,12 @@
         "quote": "«Qualität erkennt man nicht nur im Glanz – sondern im Vertrauen, das Kunden uns schenken, indem sie uns wieder buchen. Das ist der Massstab, an dem ich meine Arbeit messe.»",
         "p1": "Nadjib ist die operative Kraft hinter D'Namar. Er koordiniert Einsätze, ist erster Ansprechpartner für Gewerbekunden und sorgt dafür, dass jeder Auftrag reibungslos abläuft – pünktlich, vollständig und nach Vereinbarung. Seine Präzision hat dazu beigetragen, dass viele Unternehmen in Basel D'Namar als festen Partner für die Unterhaltsreinigung gewählt haben.",
         "p2": "Sein Anspruch: «Jede Büroreinigung, jedes Treppenhaus, jede Praxis – alles wird so behandelt wie das Wichtigste, was wir heute machen. Weil es das für unsere Kunden ist.»",
-        "tags": ["Büroreinigung", "Treppenhausreinigung", "Gewerbereinigung", "B2B-Kunden"]
+        "tags": [
+          "Büroreinigung",
+          "Treppenhausreinigung",
+          "Gewerbereinigung",
+          "B2B-Kunden"
+        ]
       }
     },
     "qualityPromise": {
@@ -981,21 +1346,51 @@
       "title": "Unsere Werte",
       "subtitle": "Sechs Grundsätze, die unser Handeln täglich bestimmen – in jedem Haushalt, in jedem Büro, in jedem Treppenhaus.",
       "items": [
-        { "title": "Schweizer Pünktlichkeit", "desc": "Termine werden eingehalten – ohne Ausnahme. Ihr Vertrauen ist unser wichtigstes Kapital." },
-        { "title": "Familiärer Einsatz", "desc": "Wir behandeln Ihr Zuhause so, als wäre es unser eigenes – mit Sorgfalt, Diskretion und echtem Respekt." },
-        { "title": "Vollständig versichert", "desc": "Unser Team arbeitet mit Berufshaftpflicht. Für Ihre Sicherheit – und für unsere Professionalität." },
-        { "title": "Persönliche Betreuung", "desc": "Kein Callcenter, keine anonymen Teams. Bei D'Namar wissen Sie, wer zu Ihnen kommt – bei jedem Besuch." },
-        { "title": "Kalk-Expertise Basel", "desc": "Wir kennen den Basler Kalk und wissen genau, wie man ihn effektiv und materialschonend entfernt." },
-        { "title": "Qualitätsgarantie", "desc": "Wenn etwas nicht passt, kommen wir kostenlos zurück – bis Sie vollständig zufrieden sind. Unser Wort gilt." }
+        {
+          "title": "Schweizer Pünktlichkeit",
+          "desc": "Termine werden eingehalten – ohne Ausnahme. Ihr Vertrauen ist unser wichtigstes Kapital."
+        },
+        {
+          "title": "Familiärer Einsatz",
+          "desc": "Wir behandeln Ihr Zuhause so, als wäre es unser eigenes – mit Sorgfalt, Diskretion und echtem Respekt."
+        },
+        {
+          "title": "Vollständig versichert",
+          "desc": "Unser Team arbeitet mit Berufshaftpflicht. Für Ihre Sicherheit – und für unsere Professionalität."
+        },
+        {
+          "title": "Persönliche Betreuung",
+          "desc": "Kein Callcenter, keine anonymen Teams. Bei D'Namar wissen Sie, wer zu Ihnen kommt – bei jedem Besuch."
+        },
+        {
+          "title": "Kalk-Expertise Basel",
+          "desc": "Wir kennen den Basler Kalk und wissen genau, wie man ihn effektiv und materialschonend entfernt."
+        },
+        {
+          "title": "Qualitätsgarantie",
+          "desc": "Wenn etwas nicht passt, kommen wir kostenlos zurück – bis Sie vollständig zufrieden sind. Unser Wort gilt."
+        }
       ]
     },
     "timeline": {
       "eyebrow": "Unsere Geschichte",
       "title": "Wie alles begann",
       "items": [
-        { "year": "Die Gründung", "period": "2015", "text": "Maritza Rodriguez und Nadjib Rasuly gründen D'Namar in Basel – mit einem klaren Ziel: professionelle Reinigung persönlich, verlässlich und ohne versteckte Kosten anzubieten. Die ersten Kunden kommen über Mundpropaganda." },
-        { "year": "Das Wachstum", "period": "2018–2021", "text": "Dank konstanter Qualität und persönlicher Empfehlungen wächst der Kundenstamm stetig. D'Namar erweitert das Angebot auf Büros, Treppenhäuser und Umzugsreinigung mit Abgabegarantie." },
-        { "year": "Heute", "period": "2025", "text": "D'Namar ist ein etabliertes Reinigungsunternehmen in Basel mit über 500 zufriedenen Kunden, einem eingespielten Team und dem gleichen Herzblut wie am ersten Tag." }
+        {
+          "year": "Die Gründung",
+          "period": "2015",
+          "text": "Maritza Rodriguez und Nadjib Rasuly gründen D'Namar in Basel – mit einem klaren Ziel: professionelle Reinigung persönlich, verlässlich und ohne versteckte Kosten anzubieten. Die ersten Kunden kommen über Mundpropaganda."
+        },
+        {
+          "year": "Das Wachstum",
+          "period": "2018–2021",
+          "text": "Dank konstanter Qualität und persönlicher Empfehlungen wächst der Kundenstamm stetig. D'Namar erweitert das Angebot auf Büros, Treppenhäuser und Umzugsreinigung mit Abgabegarantie."
+        },
+        {
+          "year": "Heute",
+          "period": "2025",
+          "text": "D'Namar ist ein etabliertes Reinigungsunternehmen in Basel mit über 500 zufriedenen Kunden, einem eingespielten Team und dem gleichen Herzblut wie am ersten Tag."
+        }
       ]
     },
     "cta": {
@@ -1003,7 +1398,12 @@
       "titleBrand": "persönlich und kostenlos.",
       "subtitle": "Fordern Sie Ihre unverbindliche Offerte an. Wir melden uns innerhalb von 24 Stunden – persönlich, nicht automatisiert.",
       "ctaSecondary": "Direkt kontaktieren",
-      "trust": ["Abgabegarantie", "Berufshaftpflicht", "Lokal in Basel", "Antwort in 24 h"]
+      "trust": [
+        "Abgabegarantie",
+        "Berufshaftpflicht",
+        "Lokal in Basel",
+        "Antwort in 24 h"
+      ]
     }
   },
   "anfrage": {
@@ -1026,11 +1426,26 @@
     "sidebar": {
       "whyTitle": "Warum D'Namar?",
       "stats": [
-        { "val": "10+", "label": "Jahre Erfahrung in Basel" },
-        { "val": "500+", "label": "Zufriedene Kunden" },
-        { "val": "24 Std.", "label": "Antwortzeit garantiert" },
-        { "val": "4.9 ★", "label": "Kundenbewertung" },
-        { "val": "CHF 40–", "label": "Ab CHF 40 pro Stunde" }
+        {
+          "val": "10+",
+          "label": "Jahre Erfahrung in Basel"
+        },
+        {
+          "val": "500+",
+          "label": "Zufriedene Kunden"
+        },
+        {
+          "val": "24 Std.",
+          "label": "Antwortzeit garantiert"
+        },
+        {
+          "val": "4.9 ★",
+          "label": "Kundenbewertung"
+        },
+        {
+          "val": "Individuell",
+          "label": "Kostenlose Offerte in 24 Stunden"
+        }
       ],
       "guaranteeTitle": "Abgabegarantie",
       "guaranteeText": "Bei der Umzugsreinigung kommen wir kostenlos nochmals – bis zur erfolgreichen Abnahme durch die Verwaltung.",
@@ -1040,7 +1455,12 @@
     },
     "form": {
       "formLoading": "Formular wird geladen…",
-      "steps": ["Leistung", "Details", "Kontakt", "Absenden"],
+      "steps": [
+        "Leistung",
+        "Details",
+        "Kontakt",
+        "Absenden"
+      ],
       "step0": {
         "title": "Welche Leistung wünschen Sie?",
         "subtitle": "Wählen Sie eine Reinigungsart aus.",
@@ -1110,25 +1530,77 @@
         "retry": "Nochmals versuchen"
       },
       "services": {
-        "haushaltsreinigung": { "label": "Haushaltsreinigung", "desc": "Privathaushalte & Wohnungen" },
-        "bueroreinigung": { "label": "Büroreinigung", "desc": "Büros, Praxen & Gewerbe" },
-        "umzugsreinigung": { "label": "Umzugsreinigung", "desc": "Endreinigung mit Garantie" },
-        "renovationsreinigung": { "label": "Renovationsreinigung", "desc": "Nach Umbau, Neubau & Bau" },
-        "treppenhausreinigung": { "label": "Treppenhausreinigung", "desc": "Gemeinschaftsflächen & Lifte" },
-        "glasreinigung": { "label": "Glasreinigung", "desc": "Fenster & Glasflächen" },
-        "tiefenreinigung": { "label": "Tiefenreinigung", "desc": "Gründliche Grundreinigung" },
-        "anderes": { "label": "Anderes / Kombination", "desc": "Sonstiges oder mehrere Leistungen" }
+        "haushaltsreinigung": {
+          "label": "Haushaltsreinigung",
+          "desc": "Privathaushalte & Wohnungen"
+        },
+        "bueroreinigung": {
+          "label": "Büroreinigung",
+          "desc": "Büros, Praxen & Gewerbe"
+        },
+        "umzugsreinigung": {
+          "label": "Umzugsreinigung",
+          "desc": "Endreinigung mit Garantie"
+        },
+        "renovationsreinigung": {
+          "label": "Renovationsreinigung",
+          "desc": "Nach Umbau, Neubau & Bau"
+        },
+        "treppenhausreinigung": {
+          "label": "Treppenhausreinigung",
+          "desc": "Gemeinschaftsflächen & Lifte"
+        },
+        "glasreinigung": {
+          "label": "Glasreinigung",
+          "desc": "Fenster & Glasflächen"
+        },
+        "tiefenreinigung": {
+          "label": "Tiefenreinigung",
+          "desc": "Gründliche Grundreinigung"
+        },
+        "anderes": {
+          "label": "Anderes / Kombination",
+          "desc": "Sonstiges oder mehrere Leistungen"
+        }
       },
       "frequencies": {
-        "einmalig": { "label": "Einmalig", "sub": "Nur dieser Einsatz" },
-        "woechentlich": { "label": "Wöchentlich", "sub": "1× pro Woche" },
-        "zweiwochentlich": { "label": "2× pro Monat", "sub": "Alle 2 Wochen" },
-        "monatlich": { "label": "Monatlich", "sub": "1× pro Monat" },
-        "unbekannt": { "label": "Noch unklar", "sub": "Beratung gewünscht" }
+        "einmalig": {
+          "label": "Einmalig",
+          "sub": "Nur dieser Einsatz"
+        },
+        "woechentlich": {
+          "label": "Wöchentlich",
+          "sub": "1× pro Woche"
+        },
+        "zweiwochentlich": {
+          "label": "2× pro Monat",
+          "sub": "Alle 2 Wochen"
+        },
+        "monatlich": {
+          "label": "Monatlich",
+          "sub": "1× pro Monat"
+        },
+        "unbekannt": {
+          "label": "Noch unklar",
+          "sub": "Beratung gewünscht"
+        }
       },
       "sizes": {
-        "m2": ["< 50 m²", "50–80 m²", "80–120 m²", "120–200 m²", "> 200 m²", "Nicht relevant"],
-        "zimmer": ["1 Zimmer", "2 Zimmer", "3–4 Zimmer", "5+ Zimmer", "Nicht relevant"]
+        "m2": [
+          "< 50 m²",
+          "50–80 m²",
+          "80–120 m²",
+          "120–200 m²",
+          "> 200 m²",
+          "Nicht relevant"
+        ],
+        "zimmer": [
+          "1 Zimmer",
+          "2 Zimmer",
+          "3–4 Zimmer",
+          "5+ Zimmer",
+          "Nicht relevant"
+        ]
       }
     }
   },
@@ -1145,11 +1617,26 @@
     "info": {
       "title": "Kontaktdaten",
       "items": [
-        { "label": "📱 Mobile & WhatsApp", "value": "+41 79 252 75 57" },
-        { "label": "☎ Telefon", "value": "+41 61 501 81 16" },
-        { "label": "E-Mail", "value": "info@dnamar.ch" },
-        { "label": "Einsatzgebiet", "value": "Basel & Umgebung" },
-        { "label": "Erreichbarkeit", "value": "Mo–Fr 08:00–18:00 · Sa 09:00–14:00" }
+        {
+          "label": "📱 Mobile & WhatsApp",
+          "value": "+41 79 252 75 57"
+        },
+        {
+          "label": "☎ Telefon",
+          "value": "+41 61 501 81 16"
+        },
+        {
+          "label": "E-Mail",
+          "value": "info@dnamar.ch"
+        },
+        {
+          "label": "Einsatzgebiet",
+          "value": "Basel & Umgebung"
+        },
+        {
+          "label": "Erreichbarkeit",
+          "value": "Mo–Fr 08:00–18:00 · Sa 09:00–14:00"
+        }
       ]
     },
     "form": {
@@ -1194,9 +1681,18 @@
       "badge": "Direkt buchen",
       "title": "Termin vereinbaren",
       "subtitle": "Kontaktieren Sie uns über den Kanal, der Ihnen am liebsten ist. Wir antworten innerhalb von 2 Stunden.",
-      "whatsapp": { "title": "WhatsApp", "subtitle": "Schnellste Antwort · Sofort chatten" },
-      "phone": { "title": "Mobile", "subtitle": "+41 79 252 75 57 · Mo–Sa" },
-      "office": { "title": "Telefon", "subtitle": "+41 61 501 81 16 · Telefon" },
+      "whatsapp": {
+        "title": "WhatsApp",
+        "subtitle": "Schnellste Antwort · Sofort chatten"
+      },
+      "phone": {
+        "title": "Mobile",
+        "subtitle": "+41 79 252 75 57 · Mo–Sa"
+      },
+      "office": {
+        "title": "Telefon",
+        "subtitle": "+41 61 501 81 16 · Telefon"
+      },
       "note": "Mo–Fr 08–12 / 13–18 Uhr · Sa–So geschlossen · Antwort garantiert innerhalb 2 Stunden"
     }
   },
