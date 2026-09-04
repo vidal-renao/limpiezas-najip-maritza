@@ -321,8 +321,9 @@ export default async function HomePage({
                 <Image
                   src="/images/reinigungsfirma-basel-service.webp"
                   alt="D'Namar Reinigungsdienst GmbH Basel – Leistungsübersicht"
-                  width={600}
-                  height={800}
+                  width={709}
+                  height={997}
+                  sizes="(max-width: 1023px) calc(100vw - 2.5rem), 384px"
                   className="w-full h-auto object-contain"
                   style={{ width: "100%", height: "auto" }}
                 />
