@@ -10,7 +10,6 @@ export const siteConfig = {
     "Professioneller Reinigungsdienst in Basel für Privat und Gewerbe. Haushaltsreinigung, Büroreinigung, Umzugsreinigung, Tiefenreinigung und mehr.",
   url: "https://dnamar.ch",
   foundingYear: 2015,
-  currenciesAccepted: "CHF",
   paymentAccepted: "Banküberweisung, Bar",
 
   phone: {
@@ -126,7 +125,6 @@ export function buildLocalBusinessJsonLd() {
     ],
     email: siteConfig.email,
     image: `${siteConfig.url}/images/N.webp`,
-    currenciesAccepted: siteConfig.currenciesAccepted,
     paymentAccepted: siteConfig.paymentAccepted,
     areaServed: siteConfig.areaServed.map((a) => ({
       "@type": "City",
