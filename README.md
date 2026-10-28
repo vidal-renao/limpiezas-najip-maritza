@@ -1,6 +1,6 @@
-# D'Namar GmbH — AI-Powered SaaS Infrastructure (Basel, Switzerland)
+# D'Namar GmbH — Multilingual Business Website
 
-> **Production-grade cleaning service platform** built with a fullstack AI-assisted architecture. Scalable, multilingual, and optimized for Swiss local SEO — achieving **100/100 Lighthouse scores** across all metrics.
+> Corporate website for a cleaning company in Basel, Switzerland. Built with Next.js and TypeScript, with German, English and Spanish content, contact forms and a review workflow.
 
 ---
 
@@ -10,20 +10,18 @@
 [![Nodemailer](https://img.shields.io/badge/Email-Nodemailer_SMTP-22C55E?logo=maildotru&logoColor=white)](https://nodemailer.com)
 [![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)](https://vercel.com)
 [![i18n](https://img.shields.io/badge/i18n-DE%20%7C%20EN%20%7C%20ES-4caf82)](https://next-intl-docs.vercel.app)
-[![Swiss DSG](https://img.shields.io/badge/Compliance-Swiss_DSG-D52B1E?logo=shield&logoColor=white)](https://www.admin.ch/opc/de/classified-compilation/19920153/index.html)
-[![Lighthouse](https://img.shields.io/badge/Lighthouse-100%2F100-success?logo=googlechrome)](https://pagespeed.web.dev)
 
 ---
 
 ## Business Context
 
-**D'Namar GmbH** is a professional cleaning company based in Basel, Switzerland. This platform replaces a static brochure site with a fully dynamic, SEO-first web application — an AI-powered SaaS infrastructure capable of handling multi-channel client acquisition (organic search, WhatsApp, contact forms, and review submissions) without a traditional CMS.
+**D'Namar GmbH** is a professional cleaning company based in Basel, Switzerland. This platform replaces a static brochure site with a fully dynamic, SEO-first web application — a business website supporting multiple contact channels (organic search, WhatsApp, contact forms, and review submissions) without a traditional CMS.
 
 **Architecture highlights:**
 
-- **Swiss DSG compliant** — zero tracking cookies, no third-party analytics, data stays in Switzerland
-- **Decentralized Swiss hosting** — transactional email delivered via NOVATREND (mail.dnamar.ch), a Swiss provider with SSL/TLS and SPF/DKIM alignment on the `dnamar.ch` domain
-- **AI-assisted development** — fullstack architecture designed and implemented with Claude (Anthropic), enabling senior-quality output at SME velocity
+- **Privacy-related documentation** — dedicated privacy page and documented handling of form submissions
+- **Transactional email** — Nodemailer SMTP integration; application hosting and email delivery are separate services
+- **AI-assisted development** — fullstack architecture designed and implemented with Claude (Anthropic), as part of the development workflow
 
 **Live site:** [dnamar.ch](https://dnamar.ch)  
 **Repository:** [github.com/vidal-renao/limpiezas-najip-maritza](https://github.com/vidal-renao/limpiezas-najip-maritza)
@@ -51,7 +49,7 @@
 
 ### SEO & Performance
 
-- **100/100 Lighthouse** — Performance, Accessibility, Best Practices, SEO
+- **Performance work** — static generation, image optimization and localized metadata; measure results against a dated deployment
 - **JSON-LD Schemas:** `LocalBusiness`, `Service`, `FAQPage`, `AggregateRating`, `Blog`, `BlogPosting`
 - **Sitemap** auto-generated at `/sitemap.xml` with priority weights per page type
 - **Robots.txt** disallows `/api/` — protects server routes from indexing
@@ -70,7 +68,7 @@ app/
 │   ├── kontakt/            # Contact form (SMTP native)
 │   ├── anfrage/            # Quote request form (SMTP native)
 │   ├── impressum/          # Swiss legal notice (GmbH, full address)
-│   ├── datenschutz/        # Swiss DSG-compliant privacy policy
+│   ├── datenschutz/        # Privacy policy
 │   ├── tiefenreinigung/    # Deep cleaning service page
 │   ├── praxisreinigung/    # Medical practice cleaning page
 │   └── renovationsreinigung/ # Post-renovation cleaning page
@@ -123,18 +121,18 @@ Transactional email is delivered via **Nodemailer** over a native SMTP connectio
 | **Port** | `465` (SSL/TLS) |
 | **Sender** | `"Web Dnamar" <info@dnamar.ch>` |
 | **SPF/DKIM** | Aligned to `dnamar.ch` domain |
-| **Data residency** | Switzerland |
+| **Email provider location** | Switzerland; other application services require separate review |
 
-This architecture ensures full control over the email delivery pipeline with no third-party email SaaS dependency — compliant with Swiss DSG data sovereignty requirements.
+Email uses a direct SMTP integration. This does not establish the residency of all application data or certify legal compliance.
 
 ---
 
 ## Security
 
 - **XSS hardening:** `escapeHtml()` utility applied to all user inputs before HTML email composition (contact, anfrage, review routes)
-- **No secrets in repo:** `.env*` wildcard in `.gitignore`; `.env.example` documents required vars
-- **API routes unlisted:** `robots.txt` disallows `/api/` crawling
-- **No tracking cookies:** Swiss DSG compliant — zero third-party analytics
+- **Secret handling:** `.env*` is gitignored; `.env.example` documents required variables
+- **Crawling:** `robots.txt` disallows `/api/`; this is not access control
+- **Privacy:** dedicated privacy page; review actual third-party resources and deployment settings
 - **Native SMTP:** Email credentials scoped to NOVATREND — no external API keys in the transactional flow
 
 ---
@@ -171,7 +169,7 @@ npm run dev
 ### 4. Production build
 
 ```bash
-npm run build   # Verify: 66 pages, 0 errors, 0 warnings
+npm run build
 npm run start
 ```
 
@@ -192,16 +190,9 @@ npm run start
 
 ## Performance
 
-Lighthouse audit (mobile + desktop) — [pagespeed.web.dev](https://pagespeed.web.dev/report?url=https://dnamar.ch):
+Performance scores vary by route, device, network and deployment. Run a fresh Lighthouse audit and retain its dated report before quoting scores.
 
-| Metric | Score |
-| --- | --- |
-| Performance | 100 / 100 |
-| Accessibility | 100 / 100 |
-| Best Practices | 100 / 100 |
-| SEO | 100 / 100 |
-
-**SEO structured data:** JSON-LD schemas for `LocalBusiness`, `Service`, `FAQPage`, `AggregateRating`, `Blog`, and `BlogPosting` — enabling rich results in Google Search for Basel cleaning queries.
+**SEO structured data:** JSON-LD schemas for `LocalBusiness`, `Service`, `FAQPage`, `AggregateRating`, `Blog`, and `BlogPosting` — describing the site's business and service content; search appearance is not guaranteed.
 
 ---
 
